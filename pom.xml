@@ -8,7 +8,7 @@
         <version>2.7.8</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.kinzhan.dev</groupId>
+    <groupId>com.mtstore.server</groupId>
     <artifactId>mtstore</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <name>mtstore</name>

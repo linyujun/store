@@ -2757,7 +2757,7 @@ CREATE TABLE `kz_sys_gen_config`  (
   `module_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '模块名称',
   `pack` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '至于哪个包下',
   `path` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '前端代码生成的路径',
-  `api_path` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '前端Api文件路径',
+  `api_path` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '前端Api文件路径',ƒ
   `prefix` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '表前缀',
   `api_alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '接口名称',
   `page_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '编辑模式，page，dialog， drawer',
@@ -2769,47 +2769,47 @@ CREATE TABLE `kz_sys_gen_config`  (
 -- ----------------------------
 -- Records of kz_sys_gen_config
 -- ----------------------------
-INSERT INTO `kz_sys_gen_config` VALUES (2, 'kz_merchant', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'template', 'merchant\\', 'kz_', '商家', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (3, 'kz_sys_directory', 'songsir', NULL, '视频目录', 'com.kinzhan.dev.platform', 'sys/directory', 'sys/directory\\', 'kz_', '视频目录', NULL, NULL);
-INSERT INTO `kz_sys_gen_config` VALUES (4, 'kz_store_product', 'songsir', b'1', '普通商品', 'com.kinzhan.dev.platform', 'store/product', 'store/product\\', 'kz_', '普通商品', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (5, 'kz_sys_gen_config', 'songsir', NULL, '代码生成器配置', 'com.kinzhan.dev.platform', 'sys/gen/config', 'sys/gen/config\\', 'kz_', '代码生成器配置', NULL, NULL);
-INSERT INTO `kz_sys_gen_config` VALUES (6, 'kz_user_level', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'user\\level', 'user\\level\\', 'kz_', '用户等级', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (7, 'kz_user_group', 'songsir', NULL, 'template', 'com.kinzhan.dev.platform', 'user\\group', 'user\\group\\', 'kz_', '用户等级', NULL, NULL);
-INSERT INTO `kz_sys_gen_config` VALUES (8, 'kz_store_attr_template', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\attr\\template', 'store\\attr\\template\\', 'kz_', '规格模板', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (9, 'kz_store_product_attr', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\product\\attr', 'store\\product\\attr\\', 'kz_', '商品属性值', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (10, 'kz_diy_page', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'diy\\page', 'diy\\page\\', 'kz_', 'DIY页面', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (11, 'kz_agent', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'agent', 'agent\\', 'kz_', '代理商', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (12, 'kz_store_cart', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\cart', 'store\\cart\\', 'kz_', '商城购物车', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (14, 'kz_user_address', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'user\\address', 'user\\address\\', 'kz_', '用户收货地址', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (16, 'kz_store_order', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\order', 'store\\order\\', 'kz_', '商城订单', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (18, 'kz_store_order_detail', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\order\\detail', 'store\\order\\detail\\', 'kz_', '商城订单详情，快照', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (20, 'kz_store_order_status', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\order\\status', 'store\\order\\status\\', 'kz_', '商城订单状态记录', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (21, 'kz_diy_path', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'diy\\path', 'diy\\path\\', 'kz_', '页面路径', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (23, 'kz_article', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'article', 'article\\', 'kz_', '文章资讯', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (24, 'kz_article_category', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'article\\category', 'article\\category\\', 'kz_', '文章分类', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (25, 'kz_store', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store', 'store\\', 'kz_', '门店', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (26, 'kz_store_coupon', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\coupon', 'store\\coupon\\', 'kz_', '商城优惠券', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (27, 'kz_store_coupon_product', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\coupon\\product', 'store\\coupon\\product\\', 'kz_', '商城-优惠券商品关系', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (28, 'kz_store_coupon_category', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\coupon\\category', 'store\\coupon\\category\\', 'kz_', '商城-优惠券分类关系', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (29, 'kz_user_coupon', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'user\\coupon', 'user\\coupon\\', 'kz_', '用户优惠券', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (30, 'kz_store_service', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\service', 'store\\service\\', 'kz_', '商城商品服务', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (31, 'kz_store_comment', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\comment', 'store\\comment\\', 'kz_', '商城商品评价', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (32, 'kz_wx_task', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'wx\\task', 'wx\\task\\', 'kz_', '应用管理', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (33, 'kz_store_seckill', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\seckill', 'store\\seckill\\', 'kz_', '商城-秒杀会场', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (34, 'kz_store_seckill_detail', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\seckill\\detail', 'store\\seckill\\detail\\', 'kz_', '商城-秒杀商品关系\r\n', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (35, 'kz_store_recharge', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\recharge', 'store\\recharge\\', 'kz_', '商城充值方案', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (37, 'kz_user_tags', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'user\\tags', 'user\\tags\\', 'kz_', '用户标签', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (39, 'kz_store_express', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\express', 'store\\express\\', 'kz_', '商城运费模板', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (40, 'kz_store_combination', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\combination', 'store\\combination\\', 'kz_', '商城-拼团', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (41, 'kz_store_combination_log', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\combination\\log', 'store\\combination\\log\\', 'kz_', '商城-拼团记录', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (42, 'kz_store_bargain', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\bargain', 'store\\bargain\\', 'kz_', '商城-砍价', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (43, 'kz_store_bargain_log', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\bargain\\log', 'store\\bargain\\log\\', 'kz_', '商城-砍价记录', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (44, 'kz_store_after_sales', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'store\\after\\sales', 'store\\after\\sales\\', 'kz_', '商城-售后记录', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (45, 'kz_sys_address', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'sys\\address', 'sys\\address\\', 'kz_', '系统售后收货地址', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (46, 'kz_withdraw', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'withdraw', 'withdraw\\', 'kz_', '提现分润记录', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (47, 'kz_printer', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'printer', 'printer\\', 'kz_', '打印机', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (48, 'kz_print_template', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'print\\template', 'print\\template\\', 'kz_', '打印模板', 'page', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (49, 'kz_user_brokerage_bill', 'songsir', b'1', 'template', 'com.kinzhan.dev.platform', 'user\\brokerage\\bill', 'user\\brokerage\\bill\\', 'kz_', '用户佣金记录', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (2, 'kz_merchant', 'songsir', b'1', 'template', 'com.mtstore.server', 'template', 'merchant\\', 'kz_', '商家', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (3, 'kz_sys_directory', 'songsir', NULL, '视频目录', 'com.mtstore.server', 'sys/directory', 'sys/directory\\', 'kz_', '视频目录', NULL, NULL);
+INSERT INTO `kz_sys_gen_config` VALUES (4, 'kz_store_product', 'songsir', b'1', '普通商品', 'com.mtstore.server', 'store/product', 'store/product\\', 'kz_', '普通商品', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (5, 'kz_sys_gen_config', 'songsir', NULL, '代码生成器配置', 'com.mtstore.server', 'sys/gen/config', 'sys/gen/config\\', 'kz_', '代码生成器配置', NULL, NULL);
+INSERT INTO `kz_sys_gen_config` VALUES (6, 'kz_user_level', 'songsir', b'1', 'template', 'com.mtstore.server', 'user\\level', 'user\\level\\', 'kz_', '用户等级', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (7, 'kz_user_group', 'songsir', NULL, 'template', 'com.mtstore.server', 'user\\group', 'user\\group\\', 'kz_', '用户等级', NULL, NULL);
+INSERT INTO `kz_sys_gen_config` VALUES (8, 'kz_store_attr_template', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\attr\\template', 'store\\attr\\template\\', 'kz_', '规格模板', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (9, 'kz_store_product_attr', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\product\\attr', 'store\\product\\attr\\', 'kz_', '商品属性值', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (10, 'kz_diy_page', 'songsir', b'1', 'template', 'com.mtstore.server', 'diy\\page', 'diy\\page\\', 'kz_', 'DIY页面', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (11, 'kz_agent', 'songsir', b'1', 'template', 'com.mtstore.server', 'agent', 'agent\\', 'kz_', '代理商', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (12, 'kz_store_cart', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\cart', 'store\\cart\\', 'kz_', '商城购物车', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (14, 'kz_user_address', 'songsir', b'1', 'template', 'com.mtstore.server', 'user\\address', 'user\\address\\', 'kz_', '用户收货地址', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (16, 'kz_store_order', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\order', 'store\\order\\', 'kz_', '商城订单', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (18, 'kz_store_order_detail', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\order\\detail', 'store\\order\\detail\\', 'kz_', '商城订单详情，快照', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (20, 'kz_store_order_status', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\order\\status', 'store\\order\\status\\', 'kz_', '商城订单状态记录', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (21, 'kz_diy_path', 'songsir', b'1', 'template', 'com.mtstore.server', 'diy\\path', 'diy\\path\\', 'kz_', '页面路径', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (23, 'kz_article', 'songsir', b'1', 'template', 'com.mtstore.server', 'article', 'article\\', 'kz_', '文章资讯', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (24, 'kz_article_category', 'songsir', b'1', 'template', 'com.mtstore.server', 'article\\category', 'article\\category\\', 'kz_', '文章分类', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (25, 'kz_store', 'songsir', b'1', 'template', 'com.mtstore.server', 'store', 'store\\', 'kz_', '门店', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (26, 'kz_store_coupon', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\coupon', 'store\\coupon\\', 'kz_', '商城优惠券', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (27, 'kz_store_coupon_product', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\coupon\\product', 'store\\coupon\\product\\', 'kz_', '商城-优惠券商品关系', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (28, 'kz_store_coupon_category', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\coupon\\category', 'store\\coupon\\category\\', 'kz_', '商城-优惠券分类关系', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (29, 'kz_user_coupon', 'songsir', b'1', 'template', 'com.mtstore.server', 'user\\coupon', 'user\\coupon\\', 'kz_', '用户优惠券', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (30, 'kz_store_service', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\service', 'store\\service\\', 'kz_', '商城商品服务', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (31, 'kz_store_comment', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\comment', 'store\\comment\\', 'kz_', '商城商品评价', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (32, 'kz_wx_task', 'songsir', b'1', 'template', 'com.mtstore.server', 'wx\\task', 'wx\\task\\', 'kz_', '应用管理', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (33, 'kz_store_seckill', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\seckill', 'store\\seckill\\', 'kz_', '商城-秒杀会场', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (34, 'kz_store_seckill_detail', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\seckill\\detail', 'store\\seckill\\detail\\', 'kz_', '商城-秒杀商品关系\r\n', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (35, 'kz_store_recharge', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\recharge', 'store\\recharge\\', 'kz_', '商城充值方案', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (37, 'kz_user_tags', 'songsir', b'1', 'template', 'com.mtstore.server', 'user\\tags', 'user\\tags\\', 'kz_', '用户标签', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (39, 'kz_store_express', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\express', 'store\\express\\', 'kz_', '商城运费模板', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (40, 'kz_store_combination', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\combination', 'store\\combination\\', 'kz_', '商城-拼团', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (41, 'kz_store_combination_log', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\combination\\log', 'store\\combination\\log\\', 'kz_', '商城-拼团记录', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (42, 'kz_store_bargain', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\bargain', 'store\\bargain\\', 'kz_', '商城-砍价', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (43, 'kz_store_bargain_log', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\bargain\\log', 'store\\bargain\\log\\', 'kz_', '商城-砍价记录', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (44, 'kz_store_after_sales', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\after\\sales', 'store\\after\\sales\\', 'kz_', '商城-售后记录', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (45, 'kz_sys_address', 'songsir', b'1', 'template', 'com.mtstore.server', 'sys\\address', 'sys\\address\\', 'kz_', '系统售后收货地址', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (46, 'kz_withdraw', 'songsir', b'1', 'template', 'com.mtstore.server', 'withdraw', 'withdraw\\', 'kz_', '提现分润记录', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (47, 'kz_printer', 'songsir', b'1', 'template', 'com.mtstore.server', 'printer', 'printer\\', 'kz_', '打印机', 'dialog', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (48, 'kz_print_template', 'songsir', b'1', 'template', 'com.mtstore.server', 'print\\template', 'print\\template\\', 'kz_', '打印模板', 'page', 1);
+INSERT INTO `kz_sys_gen_config` VALUES (49, 'kz_user_brokerage_bill', 'songsir', b'1', 'template', 'com.mtstore.server', 'user\\brokerage\\bill', 'user\\brokerage\\bill\\', 'kz_', '用户佣金记录', 'dialog', 1);
 
 -- ----------------------------
 -- Table structure for kz_sys_import_log
