@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  **/
 @EnableTransactionManagement
 @Configuration
-@MapperScan({"com.mtstore.server.*.beans.mapper"})
+@MapperScan({"com.mtstore.server.beans.mapper"})
 public class MybatisPlusConfiguration {
     @Bean
     public MybatisObjectHandler mybatisObjectHandler() {

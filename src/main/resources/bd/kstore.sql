@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : 47.118.57.23_千栈机
+ Source Server         :127.0.0.1
  Source Server Type    : MySQL
  Source Server Version : 50734
- Source Host           : 47.118.57.23:3306
- Source Schema         : kstore
+ Source Host           :
+ Source Schema         : mtstore
 
  Target Server Type    : MySQL
  Target Server Version : 50734
  File Encoding         : 65001
 
- Date: 21/07/2023 17:43:39
+ Date: 12/10/2023 17:43:39
 */
 
 SET NAMES utf8mb4;
@@ -45,9 +45,7 @@ CREATE TABLE `kz_agent`  (
 -- ----------------------------
 -- Records of kz_agent
 -- ----------------------------
-INSERT INTO `kz_agent` VALUES (1, '杭州天迈1213', NULL, 1, '15958002937', NULL, NULL, NULL, NULL, NULL, 693, '2022-02-14 10:29:35', '2022-02-28 21:33:38', 1, 0, NULL);
-INSERT INTO `kz_agent` VALUES (32, '112232ty', NULL, NULL, '13282000251', NULL, NULL, NULL, NULL, NULL, 692, '2022-02-23 11:35:03', '2022-02-23 11:48:47', 1, 0, NULL);
-INSERT INTO `kz_agent` VALUES (33, '惠速达配送', NULL, NULL, '13675175408', NULL, NULL, NULL, NULL, NULL, 694, '2022-02-23 11:51:12', '2022-02-23 11:51:12', 1, 0, NULL);
+INSERT INTO `kz_agent` VALUES (1, '惠速达配送', NULL, NULL, '12345678901', NULL, NULL, NULL, NULL, NULL, 694, '2022-02-23 11:51:12', '2022-02-23 11:51:12', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_article
@@ -78,21 +76,10 @@ CREATE TABLE `kz_article`  (
 -- ----------------------------
 -- Records of kz_article
 -- ----------------------------
-INSERT INTO `kz_article` VALUES (33, 19, '蔬菜价格全面下调，物价局果断出手稳定市场1', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 98, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (34, 19, '蔬菜价格全面下调，物价局果断出手稳定市场2', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 87, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (35, 19, '蔬菜价格全面下调，物价局果断出手稳定市场3', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (36, 19, '蔬菜价格全面下调，物价局果断出手稳定市场4444', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (37, 19, '蔬菜价格全面下调，物价局果断出手稳定市场5555', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (38, 19, '蔬菜价格全面下调，物价局果断出手稳定市场666', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (39, 19, '蔬菜价格全面下调，物价局果断出手稳定市场77', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (40, 19, '蔬菜价格全面下调，物价局果断出手稳定市场999', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (41, 19, '蔬菜价格全面下调，物价局果断出手稳定市场1010', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (42, 19, '蔬菜价格全面下调，物价局果断出手稳定市场1012124', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (43, 19, '蔬菜价格全面下调，物价局果断出手稳定市场jhjgg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 87, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (44, 19, '蔬菜价格全面下调，物价局果断出手稳定市场cccc', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (45, 19, '蔬菜价格全面下调，物价局果断出手稳定市场uuuu', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 87, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (46, 19, '蔬菜价格全面下调，物价局果断出手稳定市场xxxx', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 87, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, NULL);
-INSERT INTO `kz_article` VALUES (47, 20, '蔬菜价格全面下调，物价局果断出手稳定市场lllllll', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-05-09 17:46:26', 1, 0, NULL);
+INSERT INTO `kz_article` VALUES (33, 19, '蔬菜价格全面下调，物价局果断出手稳定市场1', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 98, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, 0);
+INSERT INTO `kz_article` VALUES (34, 19, '蔬菜价格全面下调，物价局果断出手稳定市场2', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 87, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, 0);
+INSERT INTO `kz_article` VALUES (35, 19, '蔬菜价格全面下调，物价局果断出手稳定市场3', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, 0);
+INSERT INTO `kz_article` VALUES (46, 19, '蔬菜价格全面下调，物价局果断出手稳定市场xxxx', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 87, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, 0);
 INSERT INTO `kz_article` VALUES (48, 1, '618期间全场免运费，快来看看吧~', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685513530950.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685433494355.png\"]', '618期间全场免运费，快来看看吧~', '<p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p>', '管理员', NULL, NULL, NULL, 86, 1, '2023-06-08 14:19:36', '2023-06-08 14:19:56', 1, 0, 0);
 
 -- ----------------------------
@@ -125,10 +112,6 @@ INSERT INTO `kz_article_category` VALUES (19, 0, '热点新闻', NULL, NULL, NUL
 INSERT INTO `kz_article_category` VALUES (20, 0, '专业知识', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
 INSERT INTO `kz_article_category` VALUES (21, 0, '专业知识1', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
 INSERT INTO `kz_article_category` VALUES (22, 0, '专业知识2', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
-INSERT INTO `kz_article_category` VALUES (23, 0, '专业知识3', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
-INSERT INTO `kz_article_category` VALUES (24, 0, '专业知识4', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
-INSERT INTO `kz_article_category` VALUES (25, 0, '专业知识5', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
-INSERT INTO `kz_article_category` VALUES (26, 0, '专业知识6', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_category
@@ -155,31 +138,27 @@ CREATE TABLE `kz_category`  (
 -- ----------------------------
 -- Records of kz_category
 -- ----------------------------
-INSERT INTO `kz_category` VALUES (9, 0, '新鲜蔬菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png', NULL, 'pages/goods/goodsList?categoryId=9', 99, '2021-11-22 16:30:32', '2023-05-19 14:04:38', NULL, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (10, 0, '米面粮油', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', NULL, '/pages/goods/goodsList?categoryId=10', 99, '2023-03-29 15:38:38', '2023-05-05 18:11:49', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (11, 9, '新鲜叶菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148044.png', NULL, 'pages/goods/goodsList?categoryId=11', 99, '2023-03-29 15:58:17', '2023-05-23 09:36:55', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (12, 11, '三级分类', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1679022654713.png', NULL, '', 98, '2023-03-29 16:33:29', '2023-04-13 10:10:17', 1, 1, 1, 0);
-INSERT INTO `kz_category` VALUES (13, 10, '衬衫', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1680514493782.png', NULL, NULL, 1, '2023-04-11 16:53:51', '2023-04-13 10:10:13', 1, 1, 1, 0);
-INSERT INTO `kz_category` VALUES (14, 0, '调料酒水', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685441163656.png', NULL, '/pages/goods/goodsList?categoryId=14', 98, '2023-04-13 10:08:50', '2023-06-25 10:50:55', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (15, 0, '肉类冻品', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685441163666.png', NULL, '/pages/goods/goodsList?categoryId=15', 97, '2023-04-13 10:09:05', '2023-06-25 10:52:06', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (16, 0, '豆制品', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685441163670.png', NULL, '/pages/goods/goodsList?categoryId=16', 96, '2023-04-13 10:09:18', '2023-06-25 10:51:54', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (17, 0, '外卖首页', NULL, NULL, NULL, NULL, NULL, '2023-04-18 08:53:19', '2023-04-18 08:53:56', 1, 1, 1, 0);
-INSERT INTO `kz_category` VALUES (18, 0, '外卖首页', NULL, NULL, NULL, NULL, NULL, '2023-04-18 08:53:47', '2023-04-18 08:53:59', 1, 1, 1, 0);
-INSERT INTO `kz_category` VALUES (19, 0, '新鲜水果', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1686534447802.png', NULL, NULL, 99, '2023-05-16 16:48:38', '2023-06-25 10:51:18', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (20, 0, '南北干货', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685441163660.png', NULL, NULL, 98, '2023-05-16 17:12:09', '2023-06-25 10:51:34', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (21, 11, '青菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683619665956.png', NULL, NULL, 1, '2023-06-08 17:42:22', '2023-06-08 17:42:22', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (22, 11, '白菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683619494565.png', NULL, NULL, 2, '2023-06-08 17:42:38', '2023-06-08 17:42:38', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (23, 10, '大米', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683618692507.png', NULL, NULL, 1, '2023-06-08 17:43:44', '2023-06-08 17:43:44', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (24, 10, '菜籽油', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683618664655.png', NULL, NULL, 1, '2023-06-08 17:44:00', '2023-06-08 17:44:00', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (25, 9, '茎菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683619665956.png', NULL, NULL, 2, '2023-06-08 17:45:53', '2023-06-08 17:45:53', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (26, 9, '根茎', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', NULL, NULL, 3, '2023-06-08 17:46:07', '2023-06-08 17:46:07', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (27, 9, '豆荚', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:19', '2023-06-08 17:46:19', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (28, 9, '茄果', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:29', '2023-06-08 17:46:29', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (29, 9, '甘蓝', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:38', '2023-06-08 17:46:38', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (30, 9, '葱蒜', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:47', '2023-06-08 17:46:47', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (31, 9, '瓜菜', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:55', '2023-06-08 17:46:55', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (32, 9, '食用菌', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:47:02', '2023-06-08 17:47:02', 1, 1, 0, 0);
-INSERT INTO `kz_category` VALUES (33, 23, '泰国香米', NULL, NULL, NULL, '11', 3, '2023-06-09 17:54:23', '2023-06-09 17:54:23', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (1, 0, '新鲜蔬菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png', NULL, 'pages/goods/goodsList?categoryId=1', 99, '2021-11-22 16:30:32', '2023-05-19 14:04:38', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (2, 0, '米面粮油', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', NULL, '/pages/goods/goodsList?categoryId=2', 99, '2023-03-29 15:38:38', '2023-05-05 18:11:49', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (3, 0, '调料酒水', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685441163656.png', NULL, '/pages/goods/goodsList?categoryId=3', 98, '2023-04-13 10:08:50', '2023-06-25 10:50:55', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (4, 0, '肉类冻品', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685441163666.png', NULL, '/pages/goods/goodsList?categoryId=4', 97, '2023-04-13 10:09:05', '2023-06-25 10:52:06', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (5, 0, '豆制品', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685441163670.png', NULL, '/pages/goods/goodsList?categoryId=5', 96, '2023-04-13 10:09:18', '2023-06-25 10:51:54', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (6, 0, '新鲜水果', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1686534447802.png', NULL, NULL, 99, '2023-05-16 16:48:38', '2023-06-25 10:51:18', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (7, 0, '南北干货', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685441163660.png', NULL, NULL, 98, '2023-05-16 17:12:09', '2023-06-25 10:51:34', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (11, 1, '新鲜叶菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148044.png', NULL, 'pages/goods/goodsList?categoryId=11', 99, '2023-03-29 15:58:17', '2023-05-23 09:36:55', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (12, 1, '茎菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683619665956.png', NULL, NULL, 2, '2023-06-08 17:45:53', '2023-06-08 17:45:53', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (13, 1, '根茎', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', NULL, NULL, 3, '2023-06-08 17:46:07', '2023-06-08 17:46:07', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (14, 1, '豆荚', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:19', '2023-06-08 17:46:19', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (15, 1, '茄果', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:29', '2023-06-08 17:46:29', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (16, 1, '甘蓝', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:38', '2023-06-08 17:46:38', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (17, 1, '葱蒜', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:47', '2023-06-08 17:46:47', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (18, 1, '瓜菜', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:46:55', '2023-06-08 17:46:55', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (19, 1, '食用菌', NULL, NULL, NULL, NULL, NULL, '2023-06-08 17:47:02', '2023-06-08 17:47:02', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (111, 11, '青菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683619665956.png', NULL, NULL, 1, '2023-06-08 17:42:22', '2023-06-08 17:42:22', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (112, 11, '白菜', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683619494565.png', NULL, NULL, 2, '2023-06-08 17:42:38', '2023-06-08 17:42:38', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (21, 2, '大米', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683618692507.png', NULL, NULL, 1, '2023-06-08 17:43:44', '2023-06-08 17:43:44', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (22, 2, '菜籽油', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683618664655.png', NULL, NULL, 1, '2023-06-08 17:44:00', '2023-06-08 17:44:00', 1, 1, 0, 0);
+INSERT INTO `kz_category` VALUES (211, 21, '泰国香米', NULL, NULL, NULL, '11', 3, '2023-06-09 17:54:23', '2023-06-09 17:54:23', 1, 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_comment
@@ -191,10 +170,10 @@ CREATE TABLE `kz_comment`  (
   `create_time` datetime(0) NULL DEFAULT NULL,
   `update_time` datetime(0) NULL DEFAULT NULL,
   `enabled` tinyint(2) NULL DEFAULT 1,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '所属机构',
+  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
   `is_delete` tinyint(2) NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '评论' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for kz_diy_nav
@@ -293,7 +272,6 @@ INSERT INTO `kz_diy_path` VALUES (6, '商品分类', NULL, 'pages/tabs/classify'
 INSERT INTO `kz_diy_path` VALUES (7, '充值中心', NULL, 'pages/recharge/recharge', 'system', NULL, NULL, NULL, 1, '2023-05-10 11:45:52', '2023-05-10 19:19:56', 1, 0, 0);
 INSERT INTO `kz_diy_path` VALUES (8, '资讯中心', NULL, 'pages/service/find', 'system', NULL, NULL, NULL, 1, '2023-05-10 11:46:35', '2023-05-10 19:20:00', 1, 0, 0);
 INSERT INTO `kz_diy_path` VALUES (9, '我的推广', NULL, 'pages/promotion/promotion', 'system', NULL, NULL, NULL, 1, '2023-05-10 11:46:57', '2023-05-10 19:20:03', 1, 0, 0);
-INSERT INTO `kz_diy_path` VALUES (10, '她的', NULL, 'pages/tabs/temp1', 'system', NULL, NULL, NULL, 1, '2023-05-16 11:05:01', '2023-05-16 11:06:01', 1, 0, 0);
 INSERT INTO `kz_diy_path` VALUES (11, '设置', NULL, 'pages/userPage/setting', 'system', NULL, NULL, NULL, 1, '2023-05-19 11:20:02', '2023-05-19 11:20:02', 1, 0, 0);
 INSERT INTO `kz_diy_path` VALUES (12, '核销', NULL, 'pages/pay/writeOff', 'system', NULL, NULL, NULL, 1, '2023-05-25 10:41:23', '2023-05-25 10:42:46', 1, 0, 0);
 INSERT INTO `kz_diy_path` VALUES (13, '余额', NULL, 'pages/userPage/balance', 'system', NULL, NULL, NULL, 1, '2023-05-26 15:22:01', '2023-05-26 15:22:01', 1, 0, 0);
@@ -330,13 +308,13 @@ CREATE TABLE `kz_feedback`  (
   `is_delete` tinyint(1) NULL DEFAULT 0,
   `enabled` tinyint(1) NULL DEFAULT 1,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 44 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 44 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '意见反馈' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of kz_feedback
 -- ----------------------------
-INSERT INTO `kz_feedback` VALUES (42, NULL, '王同学1', '15026453200', 'GUEST', '测试反馈', 0, '未处理', NULL, '[\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023119/RDiVgaRzhZSe.png\"]', 0, 800009, 810, '2023-01-19 18:49:45', '2023-01-19 18:49:45', 0, 1);
-INSERT INTO `kz_feedback` VALUES (43, NULL, '王萌萌', '15026498906', 'GUEST', '反馈意  见反馈意见反馈意见反馈意见反馈意见反馈意见\n\n反馈意见反馈意见反馈意见', 0, '未处理', NULL, '[\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023210/NKOBbcTPVbUO.jpg\",\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023210/QiidwcOGzIoB.jpg\",\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023210/OTHVJzrSJdLs.jpg\"]', 0, 800014, 856, '2023-02-10 13:41:06', '2023-02-10 13:41:06', 0, 1);
+INSERT INTO `kz_feedback` VALUES (42, NULL, '王同学1', '15026453200', 'GUEST', '测试反馈', 0, '未处理', NULL, '[\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023119/RDiVgaRzhZSe.png\"]', 0, 0, 810, '2023-01-19 18:49:45', '2023-01-19 18:49:45', 0, 1);
+INSERT INTO `kz_feedback` VALUES (43, NULL, '王萌萌', '15026498906', 'GUEST', '反馈意  见反馈意见反馈意见反馈意见反馈意见反馈意见\n\n反馈意见反馈意见反馈意见', 0, '未处理', NULL, '[\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023210/NKOBbcTPVbUO.jpg\",\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023210/QiidwcOGzIoB.jpg\",\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023210/OTHVJzrSJdLs.jpg\"]', 0, 0, 856, '2023-02-10 13:41:06', '2023-02-10 13:41:06', 0, 1);
 
 -- ----------------------------
 -- Table structure for kz_merchant
@@ -378,90 +356,6 @@ CREATE TABLE `kz_merchant`  (
 INSERT INTO `kz_merchant` VALUES (13, NULL, '惠速达配送科技有限公司', '惠速达配送', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184889000.jpg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184923000.jpg', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184928000.jpg\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184928000.jpg\"]', '1111111111111111111111111111111111', '1', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '创之海科技园C203室', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184903000.jpg', NULL, NULL, '丁先生', '13675175408', NULL, NULL, NULL, NULL, '2023-05-04 15:24:40', '2023-05-04 15:24:40', 1, 1, 0, 0);
 
 -- ----------------------------
--- Table structure for kz_merchant_mp
--- ----------------------------
-DROP TABLE IF EXISTS `kz_merchant_mp`;
-CREATE TABLE `kz_merchant_mp`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '#',
-  `agent_id` int(11) NULL DEFAULT NULL COMMENT '上级代理商',
-  `merchant_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '商家名称，营业执照',
-  `short_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '商户简称',
-  `avatar_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '头像地址',
-  `front_img_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '商家头图',
-  `img_urls` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '图片',
-  `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '描述信息',
-  `category_id` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '分类',
-  `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '省市区',
-  `address_detail` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '详细地址',
-  `license_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '营业执照',
-  `latitude` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '经纬度',
-  `longitude` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '经纬度',
-  `contact_user` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '联系人',
-  `contact_phone` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '联系电话',
-  `expired_time` date NULL DEFAULT NULL COMMENT '到期时间',
-  `is_online` tinyint(1) NULL DEFAULT NULL COMMENT '是否上线',
-  `status` int(255) NULL DEFAULT NULL COMMENT '状态',
-  `status_desc` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '状态描述',
-  `create_time` datetime(0) NULL DEFAULT NULL COMMENT '创建时间',
-  `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
-  `create_user` int(11) NULL DEFAULT NULL COMMENT '创建人',
-  `enabled` tinyint(2) NULL DEFAULT 1 COMMENT '是否启用',
-  `is_delete` tinyint(2) NULL DEFAULT 0,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '商家小程序进件表' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Table structure for kz_merchant_payment
--- ----------------------------
-DROP TABLE IF EXISTS `kz_merchant_payment`;
-CREATE TABLE `kz_merchant_payment`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '#',
-  `agent_id` int(11) NULL DEFAULT NULL COMMENT '上级代理商',
-  `merchant_id` int(255) NOT NULL COMMENT '商户id',
-  `short_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '商户简称',
-  `subject_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '主体类型',
-  `contact_info` json NULL COMMENT '超级管理员信息',
-  `business_license_info` json NULL COMMENT '营业执照',
-  `identity_info` json NULL COMMENT '法人身份证件',
-  `business_info` json NULL COMMENT '经营资料',
-  `settlement_info` json NULL COMMENT '结算规则',
-  `bank_account_info` json NULL COMMENT '结算银行账户',
-  `addition_info` json NULL COMMENT '补充材料',
-  `status` int(255) NULL DEFAULT NULL COMMENT '状态',
-  `status_desc` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '状态描述',
-  `create_time` datetime(0) NULL DEFAULT NULL COMMENT '创建时间',
-  `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
-  `create_user` int(11) NULL DEFAULT NULL COMMENT '创建人',
-  `enabled` tinyint(2) NULL DEFAULT 1 COMMENT '是否启用',
-  `is_delete` tinyint(2) NULL DEFAULT 0,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '商家支付进件表' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Table structure for kz_merchant_wifi
--- ----------------------------
-DROP TABLE IF EXISTS `kz_merchant_wifi`;
-CREATE TABLE `kz_merchant_wifi`  (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `merchat_id` int(11) NULL DEFAULT NULL COMMENT '商户id',
-  `store_id` int(11) NULL DEFAULT NULL COMMENT '门店id',
-  `ssid` varchar(0) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '热点名称',
-  `secret` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '密钥',
-  `tags` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '位置',
-  `status` int(255) NULL DEFAULT NULL COMMENT '状态',
-  `status_desc` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '状态描述',
-  `create_time` datetime(0) NULL DEFAULT NULL COMMENT '创建时间',
-  `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
-  `create_user` int(11) NULL DEFAULT NULL COMMENT '创建人',
-  `enabled` tinyint(2) NULL DEFAULT 1 COMMENT '是否启用',
-  `is_delete` tinyint(2) NULL DEFAULT 0,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '商家WIFI' ROW_FORMAT = Dynamic;
-
--- ----------------------------
 -- Table structure for kz_notice
 -- ----------------------------
 DROP TABLE IF EXISTS `kz_notice`;
@@ -477,16 +371,14 @@ CREATE TABLE `kz_notice`  (
   `create_user` int(11) NULL DEFAULT NULL,
   `enabled` tinyint(2) NULL DEFAULT NULL,
   `is_delete` tinyint(2) NULL DEFAULT NULL,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '机构id',
+  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 50 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 50 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '通知' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of kz_notice
 -- ----------------------------
-INSERT INTO `kz_notice` VALUES (1, '开课啦！', '开课啦！开课啦！开课啦！开课啦！', 859, '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1676342897000.jpg\"]', 0, '2023-02-14 10:48:52', '2023-02-14 10:48:52', 10, 1, 0, 0);
-INSERT INTO `kz_notice` VALUES (2, '开课啦！', '开课啦！开课啦！开课啦！开课啦！', 857, '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1676342897000.jpg\"]', 0, '2023-02-14 10:48:52', '2023-02-14 10:48:52', 10, 1, 0, 0);
-INSERT INTO `kz_notice` VALUES (3, '开课啦！', '开课啦！开课啦！开课啦！开课啦！', 856, '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1676342897000.jpg\"]', 0, '2023-02-14 10:48:52', '2023-02-14 10:48:52', 10, 1, 0, 0);
+INSERT INTO `kz_notice` VALUES (1, '双十一大优惠！', '双十一大优惠！双十一大优惠！双十一大优惠！', 859, '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1676342897000.jpg\"]', 0, '2023-02-14 10:48:52', '2023-02-14 10:48:52', 10, 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_order
@@ -523,36 +415,13 @@ CREATE TABLE `kz_order`  (
 -- ----------------------------
 INSERT INTO `kz_order` VALUES (1, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '2023041005454978857', NULL, 'wx1017455022468637484270c07ba9f30000', NULL, NULL, 0.01, NULL, NULL, NULL, NULL, '{\"itemId\":0,\"planId\":0,\"total\":\"0.01\"}', '2023-04-10 17:45:50', NULL, '2023-04-10 17:45:50', 865, 1, 0, 0);
 INSERT INTO `kz_order` VALUES (2, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304210631367578306', NULL, 'wx2118313726383641b156838b666ffb0000', NULL, NULL, 20.00, NULL, NULL, NULL, NULL, 'null', '2023-04-21 18:31:37', NULL, '2023-04-21 18:31:37', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (3, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304210632386127035', NULL, 'wx211832391227920a5ba6ad098f1e920000', NULL, NULL, 20.00, NULL, NULL, NULL, NULL, 'null', '2023-04-21 18:32:39', NULL, '2023-04-21 18:32:39', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (4, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304230350080409065', NULL, 'wx23155010475358d1d25d589d1349ee0000', NULL, NULL, 20.00, NULL, NULL, NULL, NULL, 'null', '2023-04-23 15:50:09', NULL, '2023-04-23 15:50:09', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (5, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '20230423050157541408', NULL, 'wx2317015976606094add81db4bfd4590000', NULL, NULL, 230.00, NULL, NULL, NULL, NULL, 'null', '2023-04-23 17:01:58', NULL, '2023-04-23 17:01:58', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (6, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '2023042305591316873', NULL, 'wx23175913600985fb2914f23fe104820000', NULL, NULL, 230.00, NULL, NULL, NULL, NULL, 'null', '2023-04-23 17:59:14', NULL, '2023-04-23 17:59:14', 865, 1, 0, 0);
 INSERT INTO `kz_order` VALUES (7, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304230559129787621', NULL, 'wx23175913590037eb17c9de719fbb380000', NULL, NULL, 230.00, NULL, NULL, NULL, NULL, 'null', '2023-04-23 17:59:14', NULL, '2023-04-23 17:59:14', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (8, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304230559130306444', NULL, 'wx231759136239075a6d5d448608d6ad0000', NULL, NULL, 230.00, NULL, NULL, NULL, NULL, 'null', '2023-04-23 17:59:14', NULL, '2023-04-23 17:59:14', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (9, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304230629583706197', NULL, 'wx23182959011234b45b59092215b5890000', NULL, NULL, 230.00, NULL, NULL, NULL, NULL, 'null', '2023-04-23 18:29:59', NULL, '2023-04-23 18:29:59', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (10, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304230633543815498', NULL, 'wx23183355028264e911319a9a7d00a60000', NULL, NULL, 80.00, NULL, NULL, NULL, NULL, 'null', '2023-04-23 18:33:55', NULL, '2023-04-23 18:33:55', 865, 1, 0, 0);
 INSERT INTO `kz_order` VALUES (11, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304240917592362450', NULL, 'wx240918096963342611bc649068e7ba0000', NULL, NULL, 230.00, NULL, NULL, 0, '未支付', 'null', '2023-04-24 09:18:00', NULL, '2023-04-24 09:18:09', 865, 1, 0, 0);
 INSERT INTO `kz_order` VALUES (12, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304240921131497397', NULL, 'wx24092120536314a2fc8a94e8e548530000', NULL, NULL, 280.00, NULL, NULL, 0, '未支付', 'null', '2023-04-24 09:21:14', NULL, '2023-04-24 09:21:19', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (13, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304241111230432655', NULL, 'wx241111250996342b999c8134a557ec0000', NULL, NULL, 80.00, NULL, NULL, 0, '未支付', 'null', '2023-04-24 11:11:24', NULL, '2023-04-24 11:11:24', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (14, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304241142152115345', NULL, 'wx241142170555016e11cb2d9229e7c90000', NULL, NULL, 230.00, NULL, NULL, 0, '未支付', 'null', '2023-04-24 11:42:16', NULL, '2023-04-24 11:42:16', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (15, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304241149462282887', NULL, 'wx241149480522733ea6b054dc8ef1790000', NULL, NULL, 230.00, NULL, NULL, 0, '未支付', 'null', '2023-04-24 11:49:47', NULL, '2023-04-24 11:49:47', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (16, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304241150359053491', NULL, 'wx24115037789494969f3c5fc6e3b2470000', NULL, NULL, 230.00, NULL, NULL, 0, '未支付', 'null', '2023-04-24 11:50:36', NULL, '2023-04-24 11:50:36', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (17, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304251024179753802', NULL, 'wx25102420116582df48780e3bb772de0000', NULL, NULL, 80.00, NULL, NULL, 0, '未支付', 'null', '2023-04-25 10:24:19', NULL, '2023-04-25 10:24:19', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (18, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '20230425023302625580', NULL, 'wx2514330474542511a28ee66e2ca9970000', NULL, NULL, 150.00, NULL, NULL, 0, '未支付', 'null', '2023-04-25 14:33:03', NULL, '2023-04-25 14:33:03', 865, 1, 0, 0);
 INSERT INTO `kz_order` VALUES (19, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304260414397579642', NULL, 'wx261614420143662025e3d8d2073b1a0000', NULL, NULL, 0.03, NULL, NULL, 0, '未支付', '{\"levelId\":23}', '2023-04-26 16:14:40', NULL, '2023-04-26 16:14:40', 865, 1, 0, 0);
 INSERT INTO `kz_order` VALUES (20, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304260429460963439', NULL, 'wx261629484160628abc123cb9df6efa0000', NULL, NULL, 0.03, NULL, NULL, 0, '未支付', '{\"levelId\":23}', '2023-04-26 16:29:47', NULL, '2023-04-26 16:29:47', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (21, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '20230426044153050963', NULL, 'wx2616415535116674ad850526f5d0cb0000', NULL, NULL, 0.03, NULL, NULL, 0, '未支付', '{\"levelId\":23}', '2023-04-26 16:41:54', NULL, '2023-04-26 16:41:54', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (22, NULL, NULL, 'oq0id5EsPxoTUfaLm2EgloamlrK4', '202304260448274316615', NULL, 'wx261648296330876e7198d17c98024c0000', NULL, NULL, 0.01, NULL, NULL, 0, '未支付', '{\"total\":0.01}', '2023-04-26 16:48:28', NULL, '2023-04-26 16:48:28', 866, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (23, NULL, NULL, 'oq0id5EsPxoTUfaLm2EgloamlrK4', '202304260450190058746', NULL, 'wx26165021164992acacf8a7044085ab0000', NULL, NULL, 0.01, NULL, NULL, 0, '未支付', '{\"total\":0.01}', '2023-04-26 16:50:19', NULL, '2023-04-26 16:50:19', 866, 1, 0, 0);
 INSERT INTO `kz_order` VALUES (24, NULL, NULL, 'oq0id5EsPxoTUfaLm2EgloamlrK4', '202304260450435213208', NULL, 'wx2616504563859026e6343542d3aa540000', NULL, NULL, 0.03, NULL, NULL, 0, '未支付', '{\"levelId\":23}', '2023-04-26 16:50:44', NULL, '2023-04-26 16:50:44', 866, 1, 0, 0);
 INSERT INTO `kz_order` VALUES (25, NULL, NULL, 'oq0id5EsPxoTUfaLm2EgloamlrK4', '202304260450496728167', NULL, 'wx26165051837993abed07a6bdfabc6a0000', NULL, NULL, 0.03, NULL, NULL, 0, '未支付', '{\"levelId\":23}', '2023-04-26 16:50:50', NULL, '2023-04-26 16:50:50', 866, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (26, NULL, NULL, 'oq0id5EsPxoTUfaLm2EgloamlrK4', '202304260450577352654', NULL, 'wx26165059876024d9418f0ff93bc4140000', NULL, NULL, 0.03, NULL, NULL, 0, '未支付', '{\"levelId\":23}', '2023-04-26 16:50:58', NULL, '2023-04-26 16:50:58', 866, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (27, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304260536265328167', NULL, 'wx261736268653422c759b8c7eaf93780000', NULL, NULL, 0.03, NULL, NULL, 0, '未支付', '{\"levelId\":23}', '2023-04-26 17:36:27', NULL, '2023-04-26 17:36:27', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (28, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304260536352953415', NULL, 'wx26173635646472cee4c234549a91a70000', NULL, NULL, 0.03, NULL, NULL, 0, '未支付', '{\"levelId\":23}', '2023-04-26 17:36:36', NULL, '2023-04-26 17:36:36', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (29, NULL, NULL, 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', '202304260536535581950', NULL, 'wx261736538527523fe924cfcb10c8f60000', NULL, NULL, 0.03, NULL, NULL, 0, '未支付', '{\"levelId\":23}', '2023-04-26 17:36:54', NULL, '2023-04-26 17:36:54', 865, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (30, NULL, NULL, 'oq0id5EsPxoTUfaLm2EgloamlrK4', '202304260647399141979', NULL, 'wx26184740452134189874ad8984f7b30000', NULL, NULL, 0.01, NULL, NULL, 0, '未支付', '{\"total\":0.01}', '2023-04-26 18:47:40', NULL, '2023-04-26 18:47:40', 867, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (31, NULL, NULL, 'oq0id5EsPxoTUfaLm2EgloamlrK4', '202304260649011442788', NULL, 'wx2618490171426565e2e0fdcc6ebef00000', NULL, NULL, 0.01, NULL, 2, 0, '未支付', '{\"total\":0.01}', '2023-04-26 18:49:02', NULL, '2023-04-26 18:49:02', 867, 1, 0, 0);
-INSERT INTO `kz_order` VALUES (32, NULL, NULL, 'oq0id5EsPxoTUfaLm2EgloamlrK4', '202305090952225725985', NULL, NULL, NULL, NULL, 0.03, NULL, 3, 0, '未支付', '{\"levelId\":23}', '2023-05-09 09:52:23', NULL, '2023-05-09 09:52:23', 867, 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_order_queue
@@ -576,31 +445,6 @@ INSERT INTO `kz_order_queue` VALUES (1, '202304100545497885758', '2023-04-10 17:
 INSERT INTO `kz_order_queue` VALUES (4, '202304210631367578306', '2023-04-21 18:31:37', NULL, 0, NULL);
 INSERT INTO `kz_order_queue` VALUES (5, '202304210632386127035', '2023-04-21 18:32:39', NULL, 0, NULL);
 INSERT INTO `kz_order_queue` VALUES (6, '202304230350080409065', '2023-04-23 15:50:09', NULL, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (7, '20230423050157541408', '2023-04-23 17:01:58', NULL, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (8, '2023042305591316873', '2023-04-23 17:59:14', NULL, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (9, '202304230559130306444', '2023-04-23 17:59:14', NULL, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (10, '202304230559129787621', '2023-04-23 17:59:14', NULL, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (11, '202304230629583706197', '2023-04-23 18:29:59', NULL, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (12, '202304230633543815498', '2023-04-23 18:33:55', NULL, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (14, '202304240917592362450', '2023-04-24 09:18:08', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (15, '202304240921131497397', '2023-04-24 09:21:19', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (16, '202304241111230432655', '2023-04-24 11:11:24', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (17, '202304241142152115345', '2023-04-24 11:42:16', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (18, '202304241149462282887', '2023-04-24 11:49:47', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (19, '202304241150359053491', '2023-04-24 11:50:36', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (20, '202304251024179753802', '2023-04-25 10:24:19', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (21, '20230425023302625580', '2023-04-25 14:33:03', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (22, '202304260414397579642', '2023-04-26 16:14:40', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (23, '202304260429460963439', '2023-04-26 16:29:47', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (24, '20230426044153050963', '2023-04-26 16:41:54', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (25, '202304260448274316615', '2023-04-26 16:48:28', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (26, '202304260450190058746', '2023-04-26 16:50:19', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (27, '202304260450435213208', '2023-04-26 16:50:44', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (28, '202304260450496728167', '2023-04-26 16:50:50', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (29, '202304260450577352654', '2023-04-26 16:50:58', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (30, '202304260536265328167', '2023-04-26 17:36:27', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (31, '202304260536352953415', '2023-04-26 17:36:36', 0, 0, NULL);
-INSERT INTO `kz_order_queue` VALUES (32, '202304260536535581950', '2023-04-26 17:36:54', 0, 0, NULL);
 
 -- ----------------------------
 -- Table structure for kz_print_template
@@ -640,7 +484,7 @@ CREATE TABLE `kz_printer`  (
   `printer_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '打印机名称',
   `print_num` int(11) NULL DEFAULT NULL COMMENT '打印份数',
   `printer_type` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '打印机类型',
-  `sn_id` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '序列哈',
+  `sn_id` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '序列号',
   `sn_secret` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '设备密钥',
   `app_key` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'appId',
   `app_secret` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'app密钥',
@@ -656,7 +500,7 @@ CREATE TABLE `kz_printer`  (
   `is_delete` tinyint(2) NULL DEFAULT 0,
   `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '打印机表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '打印机信息表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of kz_printer
@@ -670,7 +514,7 @@ DROP TABLE IF EXISTS `kz_store`;
 CREATE TABLE `kz_store`  (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `uuid` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `merchant_id` int(11) NULL DEFAULT NULL COMMENT '商户id',
+  `merchant_id` int(11) NULL DEFAULT NULL COMMENT '门店id',
   `short_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '门店简称',
   `store_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '门店名称',
   `avatar_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '头像',
@@ -695,17 +539,13 @@ CREATE TABLE `kz_store`  (
   `tenant_id` int(11) NULL DEFAULT NULL COMMENT '所属机构',
   `is_delete` tinyint(2) NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '门店' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '门店信息' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of kz_store
 -- ----------------------------
-INSERT INTO `kz_store` VALUES (9, NULL, NULL, '星巴克星光大道店', '杭州市滨江区星巴克餐饮有限公司（星光大道店）', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区长河街道杭州滨江星光大道亚朵酒店国能中心', '30.209228', '120.205258', 1, '09:26', '21:26', '马先生', '15685424625', '11111', NULL, 62, '2023-01-19 16:17:34', '2023-04-28 10:57:54', 1, 0, 0);
-INSERT INTO `kz_store` VALUES (10, NULL, NULL, '星巴克宝龙店', '杭州市滨江区星巴克餐饮有限公司（宝龙店）', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区浦沿街道汉堡王(滨江宝龙城市广场店)宝龙城(杭州滨江店)', '30.18684', '120.168331', 1, '09:26', '21:26', '马先生', '15685424625', '2222222', NULL, 1, '2023-01-19 16:22:40', '2023-04-28 10:57:35', 1, 0, 0);
-INSERT INTO `kz_store` VALUES (11, NULL, NULL, '星巴克龙湖天街店', '杭州市滨江区星巴克餐饮有限公司（龙湖天街店）', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区长河街道龙湖杭州滨江天街龙湖郦城公馆', '30.200758', '120.203853', 1, '09:26', '21:26', '马先生', '15685424625', '232323', NULL, 62, '2023-01-19 16:33:21', '2023-04-28 10:57:11', 1, 0, 0);
-INSERT INTO `kz_store` VALUES (12, NULL, NULL, '星巴克星耀城店', '杭州市滨江区星巴克餐饮有限公司（星耀城店）', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区西兴街道星耀城九宜城(星耀城1期店)', '30.212533', '120.215519', 1, '09:26', '21:26', '马先生', '15685424625', '6666', NULL, 62, '2023-01-19 16:33:55', '2023-04-28 10:56:52', 1, 0, 0);
-INSERT INTO `kz_store` VALUES (13, NULL, NULL, '星巴克滨康店', '杭州市滨江区星巴克餐饮有限公司（滨康店）', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区西兴街道滨康小区', '30.1802', '120.209164', 1, '09:26', '21:26', '马先生', '15685424625', '5555', NULL, 62, '2023-01-19 16:36:19', '2023-04-28 11:34:29', 1, 0, 0);
-INSERT INTO `kz_store` VALUES (14, NULL, NULL, '星巴克鑫都汇店', '杭州市滨江区星巴克餐饮有限公司（鑫都汇店）', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区西兴街道兴耀·鑫都汇鑫都汇·城市生活广场', '30.18278', '120.218686', 1, '09:26', '21:26', '马先生', '15685424625', '11111', NULL, 94, '2023-02-05 20:28:30', '2023-04-28 10:56:08', 1, 0, 0);
+INSERT INTO `kz_store` VALUES (9, NULL, NULL, '惠速达配送超级体验店', '陆川县九洲市场', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区长河街道杭州滨江星光大道亚朵酒店国能中心', '30.209228', '120.205258', 1, '09:26', '21:26', '马先生', '15685424625', '11111', NULL, 62, '2023-01-19 16:17:34', '2023-04-28 10:57:54', 1, 0, 0);
+INSERT INTO `kz_store` VALUES (10, NULL, NULL, '惠速达配送城南中转仓', '陆川县城南', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区浦沿街道汉堡王(滨江宝龙城市广场店)宝龙城(杭州滨江店)', '30.18684', '120.168331', 1, '09:26', '21:26', '马先生', '15685424625', '2222222', NULL, 1, '2023-01-19 16:22:40', '2023-04-28 10:57:35', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_after_sales
@@ -771,11 +611,10 @@ CREATE TABLE `kz_store_attr_template`  (
 -- ----------------------------
 -- Records of kz_store_attr_template
 -- ----------------------------
-INSERT INTO `kz_store_attr_template` VALUES (10, '图文', '[{\"value\": \"纸张\", \"detail\": [\"A4\", \"A3\"]}, {\"value\": \"颜色\", \"detail\": [\"白色\", \"红色\"]}]', NULL, NULL, NULL, NULL, 1, 0, NULL);
-INSERT INTO `kz_store_attr_template` VALUES (24, '手机', '[{\"value\": \"颜色\", \"detail\": [\"黑色\", \"白色\"]}, {\"value\": \"尺寸\", \"detail\": [\"5寸\", \"7寸\"]}]', NULL, NULL, NULL, NULL, 1, 0, NULL);
-INSERT INTO `kz_store_attr_template` VALUES (25, '贴牌', '[{\"value\": \"模式\", \"detail\": [\"商务KTV\", \"量贩KTV\", \"清吧\"]}]', NULL, NULL, NULL, NULL, 1, 0, NULL);
-INSERT INTO `kz_store_attr_template` VALUES (26, '包装', '[{\"value\": \"包装\", \"detail\": [\"大罐\", \"小罐\"]}]', NULL, NULL, NULL, NULL, 1, 0, NULL);
-INSERT INTO `kz_store_attr_template` VALUES (27, '师徒四人', '[{\"value\": \"师徒四人\", \"detail\": [\"唐僧\", \"孙悟空\", \"猪八戒\", \"沙僧\", \"一套\"]}]', NULL, NULL, NULL, NULL, 1, 0, NULL);
+INSERT INTO `kz_store_attr_template` VALUES (10, '纸张', '[{\"value\": \"纸张\", \"detail\": [\"A4\", \"A3\"]}, {\"value\": \"颜色\", \"detail\": [\"白色\", \"红色\"]}]', NULL, NULL, NULL, NULL, 1, 0, 0);
+INSERT INTO `kz_store_attr_template` VALUES (24, '手机', '[{\"value\": \"颜色\", \"detail\": [\"黑色\", \"白色\"]}, {\"value\": \"尺寸\", \"detail\": [\"5寸\", \"7寸\"]}]', NULL, NULL, NULL, NULL, 1, 0, 0);
+INSERT INTO `kz_store_attr_template` VALUES (25, '酒吧', '[{\"value\": \"模式\", \"detail\": [\"商务KTV\", \"量贩KTV\", \"清吧\"]}]', NULL, NULL, NULL, NULL, 1, 0, 0);
+INSERT INTO `kz_store_attr_template` VALUES (26, '包装', '[{\"value\": \"包装\", \"detail\": [\"大罐\", \"小罐\"]}]', NULL, NULL, NULL, NULL, 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_bargain
@@ -844,8 +683,6 @@ CREATE TABLE `kz_store_bargain_log`  (
 -- Records of kz_store_bargain_log
 -- ----------------------------
 INSERT INTO `kz_store_bargain_log` VALUES (4, 1, 0, 868, 37, 792, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 90.00, 10.00, 0.00, 79.36, '[1, 10]', '2023-06-01 00:00:00', '2023-06-30 00:00:00', '2023-06-08 12:03:34', 1, '进行中', 868, '2023-06-08 11:03:34', '2023-06-08 11:24:15', 1, 0, 0, 3);
-INSERT INTO `kz_store_bargain_log` VALUES (6, 1, 4, 868, 37, 792, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 90.00, 10.00, 8.50, 81.50, '[1, 10]', '2023-06-01 00:00:00', '2023-06-30 00:00:00', '2023-06-08 12:03:34', 1, '进行中', 868, '2023-06-08 11:05:30', '2023-06-08 11:05:30', 1, 0, 0, 2);
-INSERT INTO `kz_store_bargain_log` VALUES (7, 1, 4, 867, 37, 792, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 90.00, 10.00, 2.14, 79.36, '[1, 10]', '2023-06-01 00:00:00', '2023-06-30 00:00:00', '2023-06-08 12:03:34', 1, '进行中', 868, '2023-06-08 11:24:15', '2023-06-08 11:24:15', 1, 0, 0, 3);
 
 -- ----------------------------
 -- Table structure for kz_store_cart
@@ -880,24 +717,6 @@ INSERT INTO `kz_store_cart` VALUES (148, 867, NULL, 63, 914, 1, 5, NULL, NULL, N
 INSERT INTO `kz_store_cart` VALUES (150, 868, NULL, 64, 915, 1, 5, NULL, NULL, NULL, NULL, 1, 868, '2023-06-06 11:54:03', '2023-06-06 11:54:03', 1, 0, 0);
 INSERT INTO `kz_store_cart` VALUES (151, 868, NULL, 65, 916, 1, 3, NULL, NULL, NULL, NULL, 1, 868, '2023-06-06 17:39:59', '2023-06-06 17:39:59', 1, 0, 0);
 INSERT INTO `kz_store_cart` VALUES (152, 868, NULL, 37, 786, 1, 1, NULL, NULL, NULL, NULL, 1, 868, '2023-06-06 17:59:13', '2023-06-25 09:28:38', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (154, 868, NULL, 37, 791, 1, 3, NULL, NULL, NULL, NULL, 1, 868, '2023-06-06 18:18:48', '2023-06-06 18:18:48', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (155, 868, NULL, 37, 786, 1, 3, 2, NULL, NULL, NULL, 1, 868, '2023-06-07 09:13:02', '2023-06-07 09:13:02', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (156, 867, NULL, 37, 787, 1, 3, 2, NULL, NULL, NULL, 1, 867, '2023-06-07 09:18:21', '2023-06-07 09:18:21', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (164, 868, NULL, 67, 943, 1, 4, NULL, NULL, 1, NULL, 1, 868, '2023-06-08 09:42:15', '2023-06-08 09:42:15', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (165, 868, NULL, 62, 935, 1, 1, NULL, NULL, NULL, NULL, 1, 868, '2023-06-08 11:41:29', '2023-06-08 11:41:29', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (167, 868, NULL, 37, 792, 1, 4, NULL, NULL, 1, 4, 1, 868, '2023-06-08 14:20:20', '2023-06-08 14:20:20', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (191, 868, NULL, 36, 944, 1, 1, NULL, NULL, NULL, NULL, 1, 868, '2023-06-12 17:15:27', '2023-06-25 11:51:59', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (255, 867, NULL, 66, 942, 4, 1, NULL, NULL, NULL, NULL, 0, 867, '2023-06-25 09:40:23', '2023-06-25 16:10:24', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (256, 868, NULL, 37, 790, 3, 1, NULL, NULL, NULL, NULL, 0, 868, '2023-06-25 09:44:14', '2023-06-25 09:44:14', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (257, 868, NULL, 52, 922, 2, 1, NULL, NULL, NULL, NULL, 0, 868, '2023-06-25 09:44:28', '2023-06-25 16:29:22', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (258, 868, NULL, 55, 904, 2, 1, NULL, NULL, NULL, NULL, 0, 868, '2023-06-25 09:44:38', '2023-06-25 16:27:36', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (259, 867, NULL, 36, 944, 1, 1, NULL, NULL, NULL, NULL, 0, 867, '2023-06-25 09:48:45', '2023-06-25 16:10:34', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (260, 868, NULL, 53, 945, 5, 1, NULL, NULL, NULL, NULL, 0, 868, '2023-06-25 09:49:49', '2023-06-25 16:25:17', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (261, 868, NULL, 54, 906, 2, 1, NULL, NULL, NULL, NULL, 0, 868, '2023-06-25 10:14:57', '2023-06-25 11:52:20', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (262, 868, NULL, 56, 907, 1, 1, NULL, NULL, NULL, NULL, 0, 868, '2023-06-25 11:52:07', '2023-06-25 11:52:07', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (263, 867, NULL, 54, 906, 1, 1, NULL, NULL, NULL, NULL, 0, 867, '2023-06-25 16:07:07', '2023-06-25 16:07:07', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (264, 867, NULL, 37, 790, 5, 1, NULL, NULL, NULL, NULL, 0, 867, '2023-06-25 16:11:08', '2023-06-25 16:11:08', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (266, 869, NULL, 54, 906, 1, 1, NULL, NULL, NULL, NULL, 0, 869, '2023-07-11 14:27:43', '2023-07-11 14:27:43', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_combination
@@ -931,8 +750,6 @@ CREATE TABLE `kz_store_combination`  (
 -- ----------------------------
 INSERT INTO `kz_store_combination` VALUES (1, '天天早上蔬菜拼', '[67, 66]', '2023-06-01 00:00:00', '2023-06-30 00:00:00', 2, 60, NULL, 1, NULL, '拼团不成退款', 2, '已结束', 1, '2023-06-02 14:28:54', '2023-06-06 16:43:44', 1, 0, 0);
 INSERT INTO `kz_store_combination` VALUES (2, '天天买', '[37, 65]', '2023-06-01 00:00:00', '2023-06-30 00:00:00', 2, 2, NULL, 1, '拼着买更实惠！', '1111', 2, '已结束', 1, '2023-06-02 14:50:24', '2023-06-09 14:48:14', 1, 0, 0);
-INSERT INTO `kz_store_combination` VALUES (4, '测试活动重复', '[66]', '2023-07-01 00:00:00', '2023-07-04 00:00:00', 2, 60, NULL, 1, '我的团长我的团~', '111111', 2, '已结束', 1, '2023-06-06 16:44:22', '2023-06-08 15:02:18', 1, 0, 0);
-
 -- ----------------------------
 -- Table structure for kz_store_combination_log
 -- ----------------------------
@@ -974,11 +791,6 @@ CREATE TABLE `kz_store_combination_log`  (
 INSERT INTO `kz_store_combination_log` VALUES (4, 4, 2, '202306070332434102537', '天天买', 37, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 0.01, 0.01, '2023-06-01 00:00:00', '2023-06-30 00:00:00', NULL, 2, '2023-06-07 16:32:44', 0, 1, 868, 1, '成功', 868, '2023-06-07 15:32:44', '2023-06-07 15:32:44', 1, 1, 0, 0);
 INSERT INTO `kz_store_combination_log` VALUES (5, 4, 2, '202306070333460545174', '天天买', 37, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 0.01, 0.01, '2023-06-01 00:00:00', '2023-06-30 00:00:00', NULL, 2, '2023-06-07 16:32:44', 0, 0, 867, 1, '成功', 868, '2023-06-07 15:33:52', '2023-06-07 15:33:52', 1, 1, 0, 0);
 INSERT INTO `kz_store_combination_log` VALUES (6, 6, 2, '202306070354431851325', '天天买', 37, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681371391192.png', 0.03, 0.03, '2023-06-01 00:00:00', '2023-06-30 00:00:00', NULL, 2, '2023-06-07 16:54:49', 0, 1, 867, 2, '失败', 0, '2023-06-07 15:54:49', '2023-06-07 15:54:49', 1, 0, 0, 0);
-INSERT INTO `kz_store_combination_log` VALUES (7, 7, 2, '202306080419329634996', '天天买', 37, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 0.01, 0.01, '2023-06-01 00:00:00', '2023-06-30 00:00:00', NULL, 2, '2023-06-08 17:19:33', 0, 1, 868, 2, '失败', 868, '2023-06-08 16:19:33', '2023-06-08 16:19:33', 1, 0, 0, 0);
-INSERT INTO `kz_store_combination_log` VALUES (8, 8, 2, '202306090248218029790', '天天买', 37, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681371391192.png', 0.03, 0.03, '2023-06-01 00:00:00', '2023-06-30 00:00:00', NULL, 2, '2023-06-09 14:50:27', 0, 1, 867, 2, '失败', 0, '2023-06-09 14:48:27', '2023-06-09 14:48:27', 1, 0, 0, 0);
-INSERT INTO `kz_store_combination_log` VALUES (9, 9, 2, '202306090818547894191', '天天买', 37, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681371391192.png', 0.03, 0.03, '2023-06-01 00:00:00', '2023-06-30 00:00:00', NULL, 2, '2023-06-09 20:21:01', 0, 1, 867, 2, '失败', 0, '2023-06-09 20:19:01', '2023-06-09 20:19:01', 1, 0, 0, 0);
-INSERT INTO `kz_store_combination_log` VALUES (10, 10, 2, '202306091128399513242', '天天买', 37, '浙江特级白萝卜，生津止渴赛人参', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681371391192.png', 0.03, 0.03, '2023-06-01 00:00:00', '2023-06-30 00:00:00', NULL, 2, '2023-06-09 23:30:47', 0, 1, 867, 2, '失败', 0, '2023-06-09 23:28:47', '2023-06-09 23:28:47', 1, 0, 0, 0);
-
 -- ----------------------------
 -- Table structure for kz_store_comment
 -- ----------------------------
@@ -1025,7 +837,6 @@ INSERT INTO `kz_store_comment` VALUES (24, '202305170546188109371', 36, '应季�
 INSERT INTO `kz_store_comment` VALUES (25, '202305170653349744603', 52, '五色糙米5斤低脂粗粮大米黑米主食饭新七色五谷杂粮孕妇三色健身', '默认', '//img.alicdn.com/imgextra/i4/2200608599252/O1CN014sHQVG2IDTEkYioMD_!!2200608599252-0-lubanu-s.jpg', 1, 0.03, 867, 0.03, 5, NULL, NULL, NULL, '很好感谢', NULL, '[\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/168439711358153.png\"]', NULL, NULL, 0, 1, '已评价', '2023-05-17 18:55:33', '2023-05-18 16:05:21', 867, 1, 0, 0);
 INSERT INTO `kz_store_comment` VALUES (26, '202305170653349744603', 53, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, 0.02, 867, 0.02, 2, NULL, NULL, NULL, '好的', NULL, '[\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/168439712008545.png\"]', NULL, NULL, 0, 1, '已评价', '2023-05-17 18:55:33', '2023-05-18 16:05:21', 867, 1, 0, 0);
 INSERT INTO `kz_store_comment` VALUES (27, '202305180923569892059', 53, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, 0.02, 868, 0.02, 5, NULL, NULL, NULL, '极地沙尘暴', NULL, '[\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/1684377448111138.png\",\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/1684377448122106.png\"]', '亲爱的，，非常感谢您对我们的厚爱与支持。您的满意是我们的动力，欢迎您再次光临，祝您生活愉快!', NULL, 1, 1, '已评价', '2023-05-18 09:26:24', '2023-05-18 12:06:23', 868, 1, 0, 0);
-INSERT INTO `kz_store_comment` VALUES (28, '202305180923569892059', 36, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 1, 0.02, 868, 0.02, 5, NULL, NULL, NULL, '泰山陨石坠', NULL, '[\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/1684377458899143.png\",\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/168437745892456.png\"]', '感谢小主喜欢，欢迎再来~', NULL, 1, 1, '已评价', '2023-05-18 09:26:24', '2023-05-23 18:38:51', 868, 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_coupon
@@ -1122,100 +933,6 @@ INSERT INTO `kz_store_coupon_product` VALUES (1, 3, 37, 1, '2023-05-08 10:36:14'
 INSERT INTO `kz_store_coupon_product` VALUES (2, 3, 41, 1, '2023-05-08 10:36:14', '2023-05-08 10:36:14', 1, 0, 0);
 INSERT INTO `kz_store_coupon_product` VALUES (3, 4, 41, 1, '2023-05-08 14:27:27', '2023-05-08 14:27:27', 1, 0, 0);
 INSERT INTO `kz_store_coupon_product` VALUES (4, 4, 37, 1, '2023-05-08 14:27:27', '2023-05-08 14:27:27', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (5, 4, 36, 1, '2023-05-08 14:27:27', '2023-05-08 14:27:27', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (6, 4, 41, 1, '2023-05-08 15:08:05', '2023-05-08 15:08:05', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (7, 4, 37, 1, '2023-05-08 15:08:05', '2023-05-08 15:08:05', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (8, 4, 36, 1, '2023-05-08 15:08:05', '2023-05-08 15:08:05', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (9, 4, 41, 1, '2023-05-08 15:08:26', '2023-05-08 15:08:26', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (10, 4, 37, 1, '2023-05-08 15:08:26', '2023-05-08 15:08:26', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (11, 4, 36, 1, '2023-05-08 15:08:26', '2023-05-08 15:08:26', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (12, 4, 41, 1, '2023-05-08 15:08:26', '2023-05-08 15:08:26', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (13, 4, 37, 1, '2023-05-08 15:08:26', '2023-05-08 15:08:26', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (14, 4, 36, 1, '2023-05-08 15:08:26', '2023-05-08 15:08:26', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (15, 4, 41, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (16, 4, 37, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (17, 4, 36, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (18, 4, 41, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (19, 4, 37, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (20, 4, 36, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (21, 4, 41, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (22, 4, 37, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (23, 4, 36, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (24, 4, 41, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (25, 4, 37, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (26, 4, 36, 1, '2023-05-08 15:09:33', '2023-05-08 15:09:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (27, 4, 41, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (28, 4, 37, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (29, 4, 36, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (30, 4, 41, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (31, 4, 37, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (32, 4, 36, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (33, 4, 41, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (34, 4, 37, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (35, 4, 36, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (36, 4, 41, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (37, 4, 37, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (38, 4, 36, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (39, 4, 41, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (40, 4, 37, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (41, 4, 36, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (42, 4, 41, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (43, 4, 37, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (44, 4, 36, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (45, 4, 41, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (46, 4, 37, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (47, 4, 36, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (48, 4, 41, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (49, 4, 37, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (50, 4, 36, 1, '2023-05-09 11:14:33', '2023-05-09 11:14:33', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (51, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (52, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (53, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (54, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (55, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (56, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (57, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (58, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (59, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (60, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (61, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (62, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (63, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (64, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (65, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (66, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (67, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (68, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (69, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (70, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (71, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (72, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (73, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (74, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (75, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (76, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (77, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (78, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (79, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (80, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (81, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (82, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (83, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (84, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (85, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (86, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (87, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (88, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (89, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (90, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (91, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (92, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (93, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (94, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (95, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (96, 4, 41, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (97, 4, 37, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
-INSERT INTO `kz_store_coupon_product` VALUES (98, 4, 36, 1, '2023-05-09 11:57:23', '2023-05-09 11:57:23', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_express
@@ -1252,8 +969,6 @@ CREATE TABLE `kz_store_express`  (
 -- Records of kz_store_express
 -- ----------------------------
 INSERT INTO `kz_store_express` VALUES (10005, 0, '默认运费', 'num', '[\"全部\"]', 1.00, 6.00, 1.00, 3.00, '', 1, 1, 0.00, 1, 100, 0, '2023-05-31 16:23:36', '2023-06-07 09:47:54', 1, 1, 0, 0);
-INSERT INTO `kz_store_express` VALUES (10006, 10005, '', 'num', '[\"河北省\", \"唐山市\", \"路南区\"]', 1.00, 12.00, 1.00, 3.00, '', 0, NULL, NULL, 1, 100, 0, '2023-06-07 09:47:54', '2023-06-07 09:47:54', 1, 1, 0, 0);
-INSERT INTO `kz_store_express` VALUES (10007, 10005, '', 'num', '[\"北京市\", \"全部\"]', 1.00, 0.00, 0.00, 0.00, '', 0, NULL, NULL, 1, 100, 0, '2023-06-07 09:47:54', '2023-06-07 09:47:54', 1, 1, 0, 0);
 INSERT INTO `kz_store_express` VALUES (10008, 10005, '', NULL, '[\"广东省\", \"全部\"]', NULL, NULL, NULL, NULL, '', 0, NULL, NULL, 0, 100, 0, '2023-06-07 09:47:54', '2023-06-07 09:47:54', 1, 1, 0, 0);
 
 -- ----------------------------
@@ -1306,9 +1021,7 @@ CREATE TABLE `kz_store_order`  (
   UNIQUE INDEX `un_order`(`order_id`) USING BTREE COMMENT '唯一',
   UNIQUE INDEX `uni_verify_code`(`verify_code`) USING BTREE COMMENT '核销码唯一',
   INDEX `idx_order`(`order_id`) USING BTREE COMMENT '索引',
-  INDEX `idx_uid`(`uid`) USING BTREE COMMENT '用户订单',
-  INDEX `idx_first_uid`(`first_uid`) USING BTREE COMMENT '一级分销',
-  INDEX `idx_sceond_uid`(`second_uid`) USING BTREE COMMENT '二级分销'
+  INDEX `idx_uid`(`uid`) USING BTREE COMMENT '用户订单'
 ) ENGINE = InnoDB AUTO_INCREMENT = 169 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '商城订单表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -1319,15 +1032,6 @@ INSERT INTO `kz_store_order` VALUES (38, '202305170653349744603', 867, 1, 2, 0.0
 INSERT INTO `kz_store_order` VALUES (39, '202305180923569892059', 868, 1, 2, 0.04, 0.04, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"18368836191\", \"address\": [\"广东省\", \"广州市\", \"海珠区\"], \"nickName\": \"张三\", \"addressDetail\": \"新港中路397号\"}', '{\"orderId\": \"202305180923569892059\", \"deliveryId\": \"STO\", \"deliveryNo\": \"773221128519785\", \"deliveryCompany\": \"申通快递\"}', NULL, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮,应季本园头茬上海青，富含维生素C', NULL, 1, 0, 'WEIXIN', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 8, '订单完成', NULL, 868, '2023-05-18 09:23:57', '2023-05-18 09:26:12', 1, 0, 0);
 INSERT INTO `kz_store_order` VALUES (40, '202305180221553942124', 867, 1, 1, 0.02, 0.02, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"13675175408\", \"address\": [\"浙江省\", \"杭州市\", \"滨江区\"], \"nickName\": \"丁晓松\", \"addressDetail\": \"铂金名筑3栋3单元1002室\"}', NULL, NULL, '应季本园头茬上海青，富含维生素C', NULL, 1, 0, 'WEIXIN', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 867, '2023-05-18 14:21:55', '2023-05-18 14:21:55', 1, 0, 0);
 INSERT INTO `kz_store_order` VALUES (41, '202305180359176877143', 867, 1, 6, 0.12, 0.12, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"13675175408\", \"address\": [\"浙江省\", \"杭州市\", \"滨江区\"], \"nickName\": \"丁晓松\", \"addressDetail\": \"铂金名筑3栋3单元1002室\"}', NULL, NULL, '应季本园头茬上海青，富含维生素C', NULL, 1, 0, 'WEIXIN', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 867, '2023-05-18 15:59:18', '2023-05-18 15:59:18', 1, 0, 0);
-INSERT INTO `kz_store_order` VALUES (42, '202305180721176434941', 867, 1, 3, 0.06, 0.06, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"13675175408\", \"address\": [\"浙江省\", \"杭州市\", \"滨江区\"], \"nickName\": \"丁晓松\", \"addressDetail\": \"铂金名筑3栋3单元1002室\"}', NULL, NULL, '应季本园头茬上海青，富含维生素C', NULL, 1, 0, 'WEIXIN', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 867, '2023-05-18 19:21:18', '2023-05-18 19:21:18', 1, 0, 0);
-INSERT INTO `kz_store_order` VALUES (43, '202305180749327512566', 867, 1, 3, 0.06, 0.06, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"13675175408\", \"address\": [\"浙江省\", \"杭州市\", \"滨江区\"], \"nickName\": \"丁晓松\", \"addressDetail\": \"铂金名筑3栋3单元1002室\"}', NULL, NULL, '应季本园头茬上海青，富含维生素C', NULL, 1, 0, 'WEIXIN', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 867, '2023-05-18 19:49:33', '2023-05-18 19:49:33', 1, 0, 0);
-INSERT INTO `kz_store_order` VALUES (44, '202305190525325953384', 868, 1, 2, 14.92, 14.92, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"18368836191\", \"address\": [\"广东省\", \"广州市\", \"海珠区\"], \"nickName\": \"张三\", \"addressDetail\": \"新港中路397号\"}', NULL, NULL, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮,血桃5斤水果新鲜现摘现发红心桃子当季毛桃整箱脆桃应季水蜜桃子', NULL, 0, 0, 'BALANCE', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, -1, '取消订单', NULL, 868, '2023-05-19 17:25:33', '2023-05-19 17:25:33', 1, 0, 0);
-INSERT INTO `kz_store_order` VALUES (45, '202305190536077042116', 868, 1, 1, 0.02, 0.02, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"18368836191\", \"address\": [\"广东省\", \"广州市\", \"海珠区\"], \"nickName\": \"张三\", \"addressDetail\": \"新港中路397号\"}', NULL, NULL, '应季本园头茬上海青，富含维生素C', NULL, 1, 0, 'BALANCE', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 868, '2023-05-19 17:36:08', '2023-05-19 17:36:08', 1, 0, 0);
-INSERT INTO `kz_store_order` VALUES (46, '202305190557505772613', 868, 1, 1, 0.02, 0.02, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"18368836191\", \"address\": [\"广东省\", \"广州市\", \"海珠区\"], \"nickName\": \"张三\", \"addressDetail\": \"新港中路397号\"}', NULL, NULL, '应季本园头茬上海青，富含维生素C', NULL, 1, 0, 'BALANCE', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 868, '2023-05-19 17:57:51', '2023-05-19 17:57:51', 1, 0, 0);
-INSERT INTO `kz_store_order` VALUES (47, '202305190622229242670', 868, 1, 1, 0.02, 0.02, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"18368836191\", \"address\": [\"广东省\", \"广州市\", \"海珠区\"], \"nickName\": \"张三\", \"addressDetail\": \"新港中路397号\"}', NULL, NULL, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', NULL, 1, 0, 'BALANCE', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 868, '2023-05-19 18:22:23', '2023-05-19 18:22:23', 1, 0, 0);
-INSERT INTO `kz_store_order` VALUES (48, '202305190623158811912', 868, 1, 1, 0.02, 0.02, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"18368836191\", \"address\": [\"广东省\", \"广州市\", \"海珠区\"], \"nickName\": \"张三\", \"addressDetail\": \"新港中路397号\"}', NULL, NULL, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', NULL, 1, 0, 'BALANCE', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 868, '2023-05-19 18:23:16', '2023-05-19 18:23:16', 1, 0, 0);
-INSERT INTO `kz_store_order` VALUES (49, '2023051906332932957', 868, 1, 1, 0.02, 0.02, NULL, 0.00, 0.00, NULL, '', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"18368836191\", \"address\": [\"广东省\", \"广州市\", \"海珠区\"], \"nickName\": \"张三\", \"addressDetail\": \"新港中路397号\"}', NULL, NULL, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', NULL, 1, 0, 'BALANCE', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 868, '2023-05-19 18:33:29', '2023-05-19 18:33:29', 1, 0, 0);
-INSERT INTO `kz_store_order` VALUES (50, '202305190637003719075', 867, 1, 1, 0.03, 0.03, NULL, 0.00, 0.00, NULL, '不要香菜\n', NULL, 0, 'DELIVERY', NULL, '{\"phone\": \"13675175408\", \"address\": [\"浙江省\", \"杭州市\", \"滨江区\"], \"nickName\": \"丁晓松\", \"addressDetail\": \"铂金名筑3栋3单元1002室\"}', NULL, NULL, '五色糙米5斤低脂粗粮大米黑米主食饭新七色五谷杂粮孕妇三色健身', NULL, 1, 0, 'BALANCE', NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, 2, '待发货', NULL, 867, '2023-05-19 18:37:00', '2023-05-19 18:37:00', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_order_detail
@@ -1367,24 +1071,7 @@ CREATE TABLE `kz_store_order_detail`  (
 INSERT INTO `kz_store_order_detail` VALUES (54, 868, NULL, '202305170546188109371', 36, 879, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-17 17:46:19', '2023-05-17 17:46:19', 1, 0, 0);
 INSERT INTO `kz_store_order_detail` VALUES (55, 867, NULL, '202305170653349744603', 52, 922, '五色糙米5斤低脂粗粮大米黑米主食饭新七色五谷杂粮孕妇三色健身', '默认', '//img.alicdn.com/imgextra/i4/2200608599252/O1CN014sHQVG2IDTEkYioMD_!!2200608599252-0-lubanu-s.jpg', 1, NULL, 0.00, 0.03, 0.03, NULL, NULL, NULL, NULL, 867, '2023-05-17 18:53:35', '2023-05-17 18:53:35', 1, 0, 0);
 INSERT INTO `kz_store_order_detail` VALUES (56, 867, NULL, '202305170653349744603', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 867, '2023-05-17 18:53:35', '2023-05-17 18:53:35', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (57, 868, NULL, '202305180923569892059', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-18 09:23:57', '2023-05-18 09:23:57', 1, 0, 0);
 INSERT INTO `kz_store_order_detail` VALUES (58, 868, NULL, '202305180923569892059', 36, 879, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-18 09:23:57', '2023-05-18 09:23:57', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (59, 867, NULL, '202305180221553942124', 36, 879, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 867, '2023-05-18 14:21:56', '2023-05-18 14:21:56', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (60, 867, NULL, '202305180359176877143', 36, 879, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 6, NULL, 0.00, 0.02, 0.12, NULL, NULL, NULL, NULL, 867, '2023-05-18 15:59:18', '2023-05-18 15:59:18', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (61, 867, NULL, '202305180721176434941', 36, 879, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 3, NULL, 0.00, 0.02, 0.06, NULL, NULL, NULL, NULL, 867, '2023-05-18 19:21:18', '2023-05-18 19:21:18', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (62, 867, NULL, '202305180749327512566', 36, 879, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 3, NULL, 0.00, 0.02, 0.06, NULL, NULL, NULL, NULL, 867, '2023-05-18 19:49:33', '2023-05-18 19:49:33', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (63, 868, NULL, '202305190525325953384', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-19 17:25:33', '2023-05-19 17:25:33', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (64, 868, NULL, '202305190525325953384', 54, 906, '血桃5斤水果新鲜现摘现发红心桃子当季毛桃整箱脆桃应季水蜜桃子', '默认', 'https://img.alicdn.com/imgextra/i1/444189831/O1CN01JT1iSy2MUeYDu7bvK_!!444189831.jpg', 1, NULL, 0.00, 14.90, 14.90, NULL, NULL, NULL, NULL, 868, '2023-05-19 17:25:33', '2023-05-19 17:25:33', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (65, 868, NULL, '202305190536077042116', 36, 932, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148044.png', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-19 17:36:08', '2023-05-19 17:36:08', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (66, 868, NULL, '202305190557505772613', 36, 932, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148044.png', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-19 17:57:51', '2023-05-19 17:57:51', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (67, 868, NULL, '202305190622229242670', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-19 18:22:23', '2023-05-19 18:22:23', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (68, 868, NULL, '202305190623158811912', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-19 18:23:16', '2023-05-19 18:23:16', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (69, 868, NULL, '2023051906332932957', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-19 18:33:29', '2023-05-19 18:33:29', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (70, 867, NULL, '202305190637003719075', 52, 922, '五色糙米5斤低脂粗粮大米黑米主食饭新七色五谷杂粮孕妇三色健身', '默认', '//img.alicdn.com/imgextra/i4/2200608599252/O1CN014sHQVG2IDTEkYioMD_!!2200608599252-0-lubanu-s.jpg', 1, NULL, 0.00, 0.03, 0.03, NULL, NULL, NULL, NULL, 867, '2023-05-19 18:37:00', '2023-05-19 18:37:00', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (71, 868, NULL, '202305250533201757791', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-25 17:33:20', '2023-05-25 17:33:20', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (72, 868, NULL, '202305260956125427278', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-26 09:56:13', '2023-05-26 09:56:13', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (73, 868, NULL, '202305261139205978145', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-26 11:39:21', '2023-05-26 11:39:21', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (74, 867, NULL, '202305301136130157352', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 2, NULL, 0.00, 0.02, 0.04, NULL, NULL, NULL, NULL, 867, '2023-05-30 11:36:13', '2023-05-30 11:36:13', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_order_status
@@ -1404,40 +1091,15 @@ CREATE TABLE `kz_store_order_status`  (
 -- Records of kz_store_order_status
 -- ----------------------------
 INSERT INTO `kz_store_order_status` VALUES (16, '202305170546188109371', 1, '创建订单', '2023-05-17 17:46:19', 0);
-INSERT INTO `kz_store_order_status` VALUES (17, '202305170546188109371', 2, '支付成功', '2023-05-17 17:46:40', NULL);
-INSERT INTO `kz_store_order_status` VALUES (18, '202305170546188109371', 3, '已发货', '2023-05-17 17:47:49', NULL);
+INSERT INTO `kz_store_order_status` VALUES (17, '202305170546188109371', 2, '支付成功', '2023-05-17 17:46:40', 0);
+INSERT INTO `kz_store_order_status` VALUES (18, '202305170546188109371', 3, '已发货', '2023-05-17 17:47:49', 0);
 INSERT INTO `kz_store_order_status` VALUES (20, '202305170546188109371', 4, '确认收货', '2023-05-17 18:06:20', 0);
-INSERT INTO `kz_store_order_status` VALUES (21, '202305170653349744603', 1, '创建订单', '2023-05-17 18:53:35', 0);
-INSERT INTO `kz_store_order_status` VALUES (22, '202305170653349744603', 2, '支付成功', '2023-05-17 18:53:42', NULL);
-INSERT INTO `kz_store_order_status` VALUES (23, '202305170653349744603', 3, '已发货', '2023-05-17 18:55:11', NULL);
-INSERT INTO `kz_store_order_status` VALUES (24, '202305170653349744603', 4, '确认收货', '2023-05-17 18:55:33', 0);
 INSERT INTO `kz_store_order_status` VALUES (25, '202305180923569892059', 1, '创建订单', '2023-05-18 09:23:57', 0);
-INSERT INTO `kz_store_order_status` VALUES (26, '202305180923569892059', 2, '支付成功', '2023-05-18 09:24:48', NULL);
-INSERT INTO `kz_store_order_status` VALUES (27, '202305180923569892059', 3, '已发货', '2023-05-18 09:26:12', NULL);
+INSERT INTO `kz_store_order_status` VALUES (26, '202305180923569892059', 2, '支付成功', '2023-05-18 09:24:48', 0);
+INSERT INTO `kz_store_order_status` VALUES (27, '202305180923569892059', 3, '已发货', '2023-05-18 09:26:12', 0);
 INSERT INTO `kz_store_order_status` VALUES (28, '202305180923569892059', 4, '确认收货', '2023-05-18 09:26:24', 0);
 INSERT INTO `kz_store_order_status` VALUES (31, '202305180923569892059', 7, '用户点评', '2023-05-18 10:37:40', 0);
 INSERT INTO `kz_store_order_status` VALUES (32, '202305180923569892059', 8, '订单完成', '2023-05-18 10:37:40', 0);
-INSERT INTO `kz_store_order_status` VALUES (33, '202305180221553942124', 1, '创建订单', '2023-05-18 14:21:56', 0);
-INSERT INTO `kz_store_order_status` VALUES (34, '202305180221553942124', 2, '支付成功', '2023-05-18 14:22:01', NULL);
-INSERT INTO `kz_store_order_status` VALUES (35, '202305180359176877143', 1, '创建订单', '2023-05-18 15:59:18', 0);
-INSERT INTO `kz_store_order_status` VALUES (36, '202305180359176877143', 2, '支付成功', '2023-05-18 15:59:26', NULL);
-INSERT INTO `kz_store_order_status` VALUES (37, '202305170653349744603', 7, '用户点评', '2023-05-18 16:05:21', 0);
-INSERT INTO `kz_store_order_status` VALUES (38, '202305170653349744603', 8, '订单完成', '2023-05-18 16:05:21', 0);
-INSERT INTO `kz_store_order_status` VALUES (39, '202305180721176434941', 1, '创建订单', '2023-05-18 19:21:18', 0);
-INSERT INTO `kz_store_order_status` VALUES (40, '202305180721176434941', 2, '支付成功', '2023-05-18 19:21:25', NULL);
-INSERT INTO `kz_store_order_status` VALUES (41, '202305180749327512566', 1, '创建订单', '2023-05-18 19:49:33', 0);
-INSERT INTO `kz_store_order_status` VALUES (42, '202305180749327512566', 2, '支付成功', '2023-05-18 19:49:40', NULL);
-INSERT INTO `kz_store_order_status` VALUES (43, '202305190525325953384', 1, '创建订单', '2023-05-19 17:25:33', 0);
-INSERT INTO `kz_store_order_status` VALUES (44, '202305190536077042116', 1, '创建订单', '2023-05-19 17:36:08', 0);
-INSERT INTO `kz_store_order_status` VALUES (45, '202305190536077042116', 2, '支付成功', '2023-05-19 17:36:08', 0);
-INSERT INTO `kz_store_order_status` VALUES (46, '202305190557505772613', 1, '创建订单', '2023-05-19 17:57:51', 0);
-INSERT INTO `kz_store_order_status` VALUES (47, '202305190557505772613', 2, '支付成功', '2023-05-19 17:57:51', 0);
-INSERT INTO `kz_store_order_status` VALUES (48, '202305190622229242670', 1, '创建订单', '2023-05-19 18:22:23', 0);
-INSERT INTO `kz_store_order_status` VALUES (49, '202305190622229242670', 2, '支付成功', '2023-05-19 18:22:23', 0);
-INSERT INTO `kz_store_order_status` VALUES (50, '202305190623158811912', 1, '创建订单', '2023-05-19 18:23:16', 0);
-INSERT INTO `kz_store_order_status` VALUES (51, '202305190623158811912', 2, '支付成功', '2023-05-19 18:23:16', 0);
-INSERT INTO `kz_store_order_status` VALUES (52, '2023051906332932957', 1, '创建订单', '2023-05-19 18:33:29', 0);
-INSERT INTO `kz_store_order_status` VALUES (53, '2023051906332932957', 2, '支付成功', '2023-05-19 18:33:29', 0);
 
 -- ----------------------------
 -- Table structure for kz_store_product
@@ -1586,29 +1248,6 @@ INSERT INTO `kz_store_product_detail` VALUES (873, '', 41, 'http://kmp-oss.oss-c
 INSERT INTO `kz_store_product_detail` VALUES (874, '', 41, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1678962370716.png', '1000g,3,白色', 99, 0, 1.00, 2.00, 3.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 6.00, 7.00, 0, 0, NULL, NULL, '2023-05-16 14:22:17', '2023-05-16 14:22:17', 1, 1, 0, 0, 0);
 INSERT INTO `kz_store_product_detail` VALUES (875, '', 41, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1679022654758.png', '1000g,2,青色', 99, 0, 1.00, 2.00, 3.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 6.00, 7.00, 0, 0, NULL, NULL, '2023-05-16 14:22:17', '2023-05-16 14:22:17', 1, 1, 0, 0, 0);
 INSERT INTO `kz_store_product_detail` VALUES (876, '', 41, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1678962370708.png', '1000g,3,青色', 99, 0, 1.00, 2.00, 3.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 6.00, 7.00, 0, 0, NULL, NULL, '2023-05-16 14:22:17', '2023-05-16 14:22:17', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (884, '', 46, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681371349636.png', '默认', 99, 0, 0.00, NULL, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-15 11:39:16', '2023-05-15 11:39:16', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (885, '', 47, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681371391192.png', '默认', 99, 0, 0.00, NULL, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-15 11:41:42', '2023-05-15 11:41:42', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (893, '', 48, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '默认', 99, 0, 0.02, 0.01, 0.03, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-16 11:05:21', '2023-05-16 11:05:21', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (894, '', 49, '//gd1.alicdn.com/imgextra/i4/2568161054/O1CN01aYBriY1Jem9UDtt9e_!!2568161054.jpg', '默认', 99, 0, 0.00, NULL, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-16 14:44:11', '2023-05-16 14:44:11', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (895, '', 50, '//img.alicdn.com/imgextra/i4/2568161054/O1CN01aYBriY1Jem9UDtt9e_!!2568161054.jpg', '默认', 99, 0, 0.00, NULL, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-16 14:43:58', '2023-05-16 14:43:58', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (898, '', 51, '//img.alicdn.com/imgextra/i4/2200608599252/O1CN014sHQVG2IDTEkYioMD_!!2200608599252-0-lubanu-s.jpg', '默认', 99, 0, 0.00, NULL, 0.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-16 12:38:50', '2023-05-16 12:38:50', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (904, '', 55, '//img.alicdn.com/imgextra/i3/3015214310/O1CN01Lfz9HN1hi1s6fmjrW_!!0-item_pic.jpg', '默认', 93, 0, 34.80, NULL, 179.80, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-16 15:46:43', '2023-06-25 16:27:36', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (906, '', 54, 'https://img.alicdn.com/imgextra/i1/444189831/O1CN01JT1iSy2MUeYDu7bvK_!!444189831.jpg', '默认', 49, 50, 14.90, NULL, 15.80, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-18 17:00:29', '2023-07-11 14:27:43', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (907, '', 56, '//img.alicdn.com/imgextra/i4/877425650/O1CN01bEBi0y1rbkW3W25t1_!!877425650.jpg', '默认', 98, 0, 26.80, NULL, 62.80, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-16 16:49:15', '2023-06-25 11:52:07', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (908, '', 57, '//img.alicdn.com/imgextra/i1/2939922051/O1CN01HOEgIy1R1P9KpBKRr_!!0-item_pic.jpg', '默认', 93, 0, 27.80, NULL, 124.00, 1.00, 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-06-26 14:51:39', '2023-06-26 14:51:39', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (909, '', 58, '//img.alicdn.com/imgextra/i1/2200772182649/O1CN01TeXg9z1VRHsiBd0gd_!!0-item_pic.jpg', '默认', 98, 0, 19.80, NULL, 159.00, 1.00, 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-16 16:48:57', '2023-05-24 20:01:00', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (910, '', 59, '//img.alicdn.com/imgextra/i2/2215068608487/O1CN01EVw9HU2CZ6FPngl3N_!!2215068608487.jpg', '默认', 97, 0, 59.90, NULL, 69.90, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-18 17:00:53', '2023-05-25 16:58:24', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (911, '', 60, '//img.alicdn.com/imgextra/i4/6000000008057/O1CN01AxTMI929O9wTxNAiL_!!6000000008057-0-sm.jpg', '默认', 98, 0, 146.00, NULL, 146.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-16 16:53:20', '2023-05-30 11:55:15', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (912, '', 61, '//img.alicdn.com/imgextra/i4/6000000007092/O1CN0121ly4f22GBjo2KmcY_!!6000000007092-0-sm.jpg', '默认', 17, 0, 420.00, NULL, 450.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-06-25 16:52:27', '2023-06-25 16:52:27', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (914, '', 63, '//img.alicdn.com/imgextra/i4/2200608599252/O1CN01E9bTGj2IDTEQm4EA2_!!2200608599252-0-lubanu-s.jpg', '默认', 91, 0, 48.80, NULL, 100.00, NULL, NULL, NULL, NULL, NULL, NULL, 10.00, 0.00, 1, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-07-11 14:49:56', '2023-07-11 14:49:56', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (916, '', 65, '//img.alicdn.com/imgextra/i1/2200608599252/O1CN01t8dUaB2IDTBzdnqYT_!!2200608599252-0-lubanu-s.jpg', '默认', 96, 0, 18.80, NULL, 30.00, 1.00, 10, NULL, NULL, 2.00, 3, 600.00, 0.00, 3, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-06-28 10:12:16', '2023-06-28 10:12:16', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (922, '', 52, '//img.alicdn.com/imgextra/i4/2200608599252/O1CN014sHQVG2IDTEkYioMD_!!2200608599252-0-lubanu-s.jpg', '默认', 86, 1, 0.03, 0.03, 0.03, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 0, NULL, NULL, '2023-05-17 09:11:17', '2023-06-25 16:29:22', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (935, '', 62, 'https://img.alicdn.com/imgextra/i1/6000000007041/O1CN01Riim5r21spUadRSy9_!!6000000007041-0-picassoopen.jpg', '默认', 75, 1, 1696.00, NULL, 2035.00, 1.00, 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1.00, 1.00, 0, 0, NULL, NULL, '2023-06-25 18:01:06', '2023-06-25 18:01:06', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (942, '', 66, '//img.alicdn.com/imgextra/i3/2200608599252/O1CN01evRsme2IDTDZgfZR2_!!0-item_pic.jpg', '默认', 79, 74, 6.90, NULL, 20.00, 1.00, NULL, NULL, NULL, 1.00, 10, 200.00, 0.01, 10, NULL, 10.00, 20.00, 20.00, NULL, 0.00, 0.00, 0, 69, NULL, NULL, '2023-07-03 20:19:05', '2023-07-03 20:19:05', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (944, '', 36, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148044.png', '默认', 99834, 97, 0.02, 0.01, 0.03, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1.00, 1.00, 3, 58, NULL, NULL, '2023-06-08 18:33:54', '2023-06-25 16:10:34', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (945, '', 53, 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', '默认', 9999961, 26, 0.02, 0.01, 0.01, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 45, NULL, NULL, '2023-06-08 18:34:06', '2023-06-25 16:25:17', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (946, '', 67, 'https://gw.alicdn.com/imgextra/O1CN01chNAuz2IDTAhH8U8j_!!2200608599252.jpg', '默认', 96, 69, 10.50, NULL, 20.00, 1.00, NULL, 9.00, NULL, 8.00, NULL, 600.00, NULL, NULL, NULL, 10.00, 20.00, 20.00, NULL, 1.00, 1.00, 0, 258, NULL, NULL, '2023-07-11 17:23:47', '2023-07-11 17:23:47', 1, 1, 0, 0, 0);
-INSERT INTO `kz_store_product_detail` VALUES (947, '', 64, '//img.alicdn.com/imgextra/i2/2200608599252/O1CN01Mi5IE72IDTDSZx6dr_!!2200608599252-0-lubanu-s.jpg', '默认', 97, 1, 10.90, NULL, 49.80, 1.00, NULL, NULL, NULL, NULL, NULL, 5.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0.00, 0.00, 0, 20, NULL, NULL, '2023-06-28 10:12:32', '2023-06-28 10:12:32', 1, 1, 0, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_product_history
@@ -1750,9 +1389,9 @@ CREATE TABLE `kz_store_service`  (
 -- ----------------------------
 -- Records of kz_store_service
 -- ----------------------------
-INSERT INTO `kz_store_service` VALUES (10001, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684202280754.png', '七天无理由退货', '满足相应条件时，消费者可申请7天无理由退货', 1, 100, 10001, '2023-05-13 21:31:02', '2023-05-16 09:59:56', NULL, 1, 0, NULL);
-INSERT INTO `kz_store_service` VALUES (10002, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683631713555.png', '全场包邮', '所有商品包邮（偏远地区除外）', 0, 100, 10001, '2023-05-13 21:31:04', '2023-05-13 21:33:11', NULL, 1, 0, NULL);
-INSERT INTO `kz_store_service` VALUES (10003, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683631749707.png', '48小时发货', '下单后48小时之内发货', 1, 100, 10001, '2023-05-13 21:31:07', '2023-05-13 21:32:37', NULL, 1, 0, NULL);
+INSERT INTO `kz_store_service` VALUES (10001, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684202280754.png', '七天无理由退货', '满足相应条件时，消费者可申请7天无理由退货', 1, 100, 10001, '2023-05-13 21:31:02', '2023-05-16 09:59:56', NULL, 1, 0, 0);
+INSERT INTO `kz_store_service` VALUES (10002, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683631713555.png', '全场包邮', '所有商品包邮（偏远地区除外）', 0, 100, 10001, '2023-05-13 21:31:04', '2023-05-13 21:33:11', NULL, 1, 0, 0);
+INSERT INTO `kz_store_service` VALUES (10003, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1683631749707.png', '48小时发货', '下单后48小时之内发货', 1, 100, 10001, '2023-05-13 21:31:07', '2023-05-13 21:32:37', NULL, 1, 0, 0);
 INSERT INTO `kz_store_service` VALUES (10004, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684202374932.png', '运费险', '退货免运费', 0, 5, 0, '2023-05-16 09:59:43', '2023-05-16 09:59:43', 1, 1, 0, 0);
 
 -- ----------------------------
@@ -1775,55 +1414,6 @@ CREATE TABLE `kz_store_tags`  (
   `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '特色分类表' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Table structure for kz_student
--- ----------------------------
-DROP TABLE IF EXISTS `kz_student`;
-CREATE TABLE `kz_student`  (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '用户唯一id',
-  `uid` int(11) NULL DEFAULT NULL COMMENT '用户id',
-  `nick_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `real_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '姓名',
-  `phone` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `gender` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `avatar_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `address` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '地址位置',
-  `birthday` date NULL DEFAULT NULL COMMENT '生日',
-  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '机构备注信息',
-  `batch_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '批次',
-  `push_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '极光推送id',
-  `create_time` datetime(0) NULL DEFAULT NULL,
-  `create_user` int(255) NULL DEFAULT NULL,
-  `update_time` datetime(0) NULL DEFAULT NULL,
-  `enabled` tinyint(2) NULL DEFAULT 1,
-  `is_delete` tinyint(2) NULL DEFAULT 0,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户字段',
-  PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE INDEX `un_uid`(`uid`, `tenant_id`) USING BTREE COMMENT '唯一i'
-) ENGINE = InnoDB AUTO_INCREMENT = 1970 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '用户绑定的机构' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of kz_student
--- ----------------------------
-INSERT INTO `kz_student` VALUES (1944, 'O800025-S862', 862, '丽丽', '钱丽丽', '15026498985', NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, '2012-10-01', '丽丽的机构备注\n丽丽的机构备注\n\n丽丽的机构备注', NULL, NULL, '2023-02-15 18:42:53', 139, '2023-02-15 18:42:53', 1, 0, 800025);
-INSERT INTO `kz_student` VALUES (1946, 'O800025-S865', 865, '虫虫', '虫虫', '15026498908', '女', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023223/smbvaHupFtHJ.jpg', '[\"上海市\",\"上海市\",\"黄浦区\"]', '2009-10-01', '2222222222222222222', NULL, '160a3797c8ed07ea335', '2023-02-15 18:42:53', 139, '2023-03-01 15:48:10', 1, 0, 800025);
-INSERT INTO `kz_student` VALUES (1947, 'O800025-S861', 861, '台1', '右台1', '15026498906', '男', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', '[\"上海市\",\"上海市\",\"杨浦区\"]', '2012-10-01', '这个孩子比较能吃苦', NULL, '160a3797c8ed07ea335', '2023-02-15 18:42:53', 139, '2023-02-28 19:01:26', 1, 0, 800025);
-INSERT INTO `kz_student` VALUES (1948, 'O800025-S866', 866, '张晓晓学员', '张晓晓学员', '15026498909', '男', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023223/gJcrVcvwansz.jpg', '[\"上海市\",\"上海市\",\"杨浦区\"]', '2023-02-23', NULL, NULL, '1507bfd3f7297dcd01c', '2023-02-15 18:42:53', 139, '2023-02-23 23:52:07', 1, 0, 800025);
-INSERT INTO `kz_student` VALUES (1950, 'O800025-S868', 868, '缪哈哈', '缪许南', '17306892035', '', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', '[\"上海市\",\"上海市\",\"杨浦区\"]', NULL, NULL, NULL, '1507bfd3f7297dcd01c', '2023-02-16 17:06:39', 138, '2023-02-26 15:03:04', 1, 0, 800025);
-INSERT INTO `kz_student` VALUES (1951, 'O800022-S869', 869, '张一一', '张一一', '13675175420', '女', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, '2023-02-15', '张一一', NULL, NULL, '2023-02-17 10:14:54', 134, '2023-02-17 10:14:54', 1, 0, 800022);
-INSERT INTO `kz_student` VALUES (1952, 'O800025-S870', 870, '苗苗EMILY机构C-店2—D班', '苗苗EMILY机构C-店2—D班', '15023453456', '男', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', '[\"上海市\",\"上海市\",\"杨浦区\"]', '2021-02-08', '机构计划管理员对苗苗的备注', NULL, '1507bfd3f7297dcd01c', '2023-02-18 14:43:34', 138, '2023-02-23 23:00:32', 1, 0, 800025);
-INSERT INTO `kz_student` VALUES (1953, 'O800024-S874', 874, 'B机构的学员天天', 'B机构的学员天天', '15474575151', '女', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, '2018-09-19', '1', NULL, NULL, '2023-02-20 11:24:14', 137, '2023-02-20 11:24:14', 1, 0, 800024);
-INSERT INTO `kz_student` VALUES (1954, 'O800025-S875', 875, '豆芽', '豆芽', '15474578965', '男', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', '[\"上海市\",\"上海市\",\"杨浦区\"]', '2023-02-09', '钱正喊他豆豆芽芽 老师备注\n', NULL, '1507bfd3f7297dcd01c', '2023-02-20 13:51:51', 138, '2023-02-28 17:10:43', 1, 0, 800025);
-INSERT INTO `kz_student` VALUES (1956, 'O800022-S877', 877, '陌陌', '丁谦陌', '18258283516', '男', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, '2023-02-22', '111', NULL, NULL, '2023-02-22 17:52:25', 134, '2023-02-22 17:52:45', 1, 0, 800022);
-INSERT INTO `kz_student` VALUES (1958, 'O800025-S878', 878, '11', '222', '15026498999', '女', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', '[\"上海市\",\"上海市\",\"杨浦区\"]', '2023-02-15', NULL, NULL, '1507bfd3f7297dcd01c', '2023-02-23 23:29:58', 138, '2023-02-23 23:46:49', 1, 0, 800025);
-INSERT INTO `kz_student` VALUES (1959, 'O800024-S878', 878, '在机构C存在的学员手机号', '在机构C存在的学员手机号', '15026498999', '女', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, '2023-01-31', '1', NULL, NULL, '2023-02-23 23:32:00', 137, '2023-02-23 23:32:00', 1, 0, 800024);
-INSERT INTO `kz_student` VALUES (1960, 'O800026-S879', 879, '豆芽', '王旺旺', '15384084791', '男', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', '[\"浙江省\",\"杭州市\",\"钱塘区\"]', '2011-02-02', NULL, NULL, '13065ffa4ee7feba595', '2023-02-25 16:52:21', 168, '2023-02-28 11:41:32', 0, 0, 800026);
-INSERT INTO `kz_student` VALUES (1962, 'O800025-S881', 881, '姜小阳', '姜小阳', '13462534467', '女', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, '2023-03-01', '1', NULL, NULL, '2023-02-26 14:19:09', 138, '2023-02-26 14:24:36', 1, 0, 800025);
-INSERT INTO `kz_student` VALUES (1967, 'O800022-S884', 884, '未绑定班级', '未绑定班级', '13675175430', '男', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, '2023-02-08', '未绑定班级', NULL, NULL, '2023-02-27 17:02:11', 134, '2023-02-27 17:02:11', 1, 0, 800022);
-INSERT INTO `kz_student` VALUES (1968, 'O800023-S885', 885, '机构A学员张小淘', '机构A学员张小淘', '15047454654', '女', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, '2023-02-14', NULL, NULL, NULL, '2023-02-28 12:45:06', 135, '2023-02-28 12:45:06', 1, 0, 800023);
-INSERT INTO `kz_student` VALUES (1969, 'O0-S860', 860, '小果豆', '徐睿谦', '15105802934', '男', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023228/ARcpabIVBlGD.jpg', '[\"浙江省\",\"杭州市\",\"钱塘区\"]', '2023-02-28', NULL, NULL, '1517bfd3f72bcdaa1ab', '2023-02-28 14:18:43', 168, '2023-03-16 16:49:54', 1, 0, 800026);
 
 -- ----------------------------
 -- Table structure for kz_sys_address
@@ -1851,9 +1441,6 @@ CREATE TABLE `kz_sys_address`  (
 -- Records of kz_sys_address
 -- ----------------------------
 INSERT INTO `kz_sys_address` VALUES (23, '13675175408', '丁晓松', NULL, '[\"浙江省\", \"杭州市\", \"滨江区\"]', '铂金名筑3栋3单元1002室', NULL, 1, 867, '2023-05-09 14:37:40', '2023-06-21 16:37:13', 1, 1, 0);
-INSERT INTO `kz_sys_address` VALUES (24, '18368836191', '张三', NULL, '[\"广东省\", \"广州市\", \"海珠区\"]', '新港中路397号', '', 0, 868, '2023-05-11 11:47:31', '2023-05-11 11:47:31', 1, 0, 0);
-INSERT INTO `kz_sys_address` VALUES (25, '18368836191', '缪许南', NULL, '[\"浙江省\", \"杭州市\", \"滨江区\"]', '缤纷路600号', '家', 1, 868, '2023-06-01 16:14:26', '2023-06-21 16:37:10', 1, 1, 0);
-
 -- ----------------------------
 -- Table structure for kz_sys_column_config
 -- ----------------------------
@@ -2595,7 +2182,7 @@ CREATE TABLE `kz_sys_config`  (
   `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `uni_field`(`k`) USING BTREE COMMENT '字段唯一'
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '系统基础配置' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of kz_sys_config
@@ -2634,9 +2221,6 @@ CREATE TABLE `kz_sys_dept`  (
 -- ----------------------------
 INSERT INTO `kz_sys_dept` VALUES (1, '平台', 0, '1', 1, '平台描述', 1, 1, NULL, '2023-03-02 11:56:05', '2023-03-21 11:49:57', 1, 0, 0);
 INSERT INTO `kz_sys_dept` VALUES (2, '杭州市市场监督管理局', 1, NULL, NULL, '杭州市市场监督管理局', 1, 100, '1', '2023-03-21 11:30:29', '2023-03-29 19:50:25', 1, 0, 0);
-INSERT INTO `kz_sys_dept` VALUES (3, '滨江区市场管理局', 2, NULL, NULL, '哈哈哈', 1, 10, '1', '2023-03-21 11:31:40', '2023-03-29 19:50:44', 1, 0, 0);
-INSERT INTO `kz_sys_dept` VALUES (5, '啦啦啦', 1, NULL, NULL, '双方都符合发过火', 1, 11, '1', '2023-03-21 11:36:05', '2023-03-21 11:51:50', 1, 0, 1);
-INSERT INTO `kz_sys_dept` VALUES (6, '宁波市场监督管理局', 1, NULL, NULL, '111', 1, 10, '1', '2023-03-29 19:51:31', '2023-03-29 19:51:31', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_sys_dict
@@ -2706,16 +2290,15 @@ CREATE TABLE `kz_sys_directory`  (
   `create_time` datetime(0) NULL DEFAULT NULL,
   `update_time` datetime(0) NULL DEFAULT NULL,
   `enabled` tinyint(2) NULL DEFAULT 1,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '所属机构',
+  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
   `is_delete` tinyint(2) NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `un_name`(`title`, `tenant_id`) USING BTREE COMMENT '文件夹名称唯一'
-) ENGINE = InnoDB AUTO_INCREMENT = 42 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '视频目录表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 42 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '目录表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of kz_sys_directory
 -- ----------------------------
-INSERT INTO `kz_sys_directory` VALUES (32, '3333333333', NULL, NULL, 1, NULL, '2023-03-16 17:37:55', '2023-03-16 17:51:01', 1, 0, 1);
 INSERT INTO `kz_sys_directory` VALUES (33, '默认', NULL, NULL, 0, NULL, '2023-03-31 17:54:53', '2023-05-31 11:10:30', 1, 0, 0);
 INSERT INTO `kz_sys_directory` VALUES (34, '等级图标', NULL, NULL, 7, NULL, '2023-04-25 16:06:48', '2023-05-31 11:10:30', 1, 0, 0);
 INSERT INTO `kz_sys_directory` VALUES (35, '个人中心图标', NULL, NULL, 6, 1, '2023-05-09 16:38:16', '2023-05-31 11:10:30', 1, 0, 0);
@@ -2757,7 +2340,7 @@ CREATE TABLE `kz_sys_gen_config`  (
   `module_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '模块名称',
   `pack` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '至于哪个包下',
   `path` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '前端代码生成的路径',
-  `api_path` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '前端Api文件路径',ƒ
+  `api_path` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '前端Api文件路径',
   `prefix` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '表前缀',
   `api_alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '接口名称',
   `page_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '编辑模式，page，dialog， drawer',
@@ -2810,53 +2393,6 @@ INSERT INTO `kz_sys_gen_config` VALUES (46, 'kz_withdraw', 'songsir', b'1', 'tem
 INSERT INTO `kz_sys_gen_config` VALUES (47, 'kz_printer', 'songsir', b'1', 'template', 'com.mtstore.server', 'printer', 'printer\\', 'kz_', '打印机', 'dialog', 1);
 INSERT INTO `kz_sys_gen_config` VALUES (48, 'kz_print_template', 'songsir', b'1', 'template', 'com.mtstore.server', 'print\\template', 'print\\template\\', 'kz_', '打印模板', 'page', 1);
 INSERT INTO `kz_sys_gen_config` VALUES (49, 'kz_user_brokerage_bill', 'songsir', b'1', 'template', 'com.mtstore.server', 'user\\brokerage\\bill', 'user\\brokerage\\bill\\', 'kz_', '用户佣金记录', 'dialog', 1);
-
--- ----------------------------
--- Table structure for kz_sys_import_log
--- ----------------------------
-DROP TABLE IF EXISTS `kz_sys_import_log`;
-CREATE TABLE `kz_sys_import_log`  (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `target` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'student,teacher,plan,grade',
-  `file_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `file_path` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `total_line` int(10) NULL DEFAULT NULL COMMENT '总条数',
-  `success_line` int(10) NULL DEFAULT NULL COMMENT '成功条数',
-  `fail_line` int(10) NULL DEFAULT NULL COMMENT '失败条数',
-  `fail_result` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '错误原因',
-  `error` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '失败原因',
-  `result` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '成功，失败',
-  `create_user` int(11) NULL DEFAULT NULL,
-  `create_time` datetime(0) NULL DEFAULT NULL,
-  `update_time` datetime(0) NULL DEFAULT NULL,
-  `enabled` tinyint(2) NULL DEFAULT 1,
-  `is_delete` tinyint(2) NULL DEFAULT 0,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '多租户字段',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of kz_sys_import_log
--- ----------------------------
-INSERT INTO `kz_sys_import_log` VALUES (2, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/62dedb3c-d8e2-4592-bd40-0aab540977c3.xlsx', 6, 0, 2, NULL, '第 4 行，[手机号必填, 昵称必填]\r第 5 行，[手机号必填, 昵称必填]\r第 6 行，[手机号必填, 昵称必填]\r第 7 行，[昵称必填, 手机号必填]\r第 8 行，[手机号必填, 昵称必填]\r第 9 行，[昵称必填, 手机号必填]\r', '失败', 62, '2023-02-13 22:09:27', '2023-02-13 22:09:27', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (3, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/978fce49-69d7-419d-b48d-df6a396ce7d1.xlsx', 6, 0, 2, NULL, '第 5 行，[手机号必填, 昵称必填]\r第 6 行，[昵称必填, 手机号必填]\r第 7 行，[手机号必填, 昵称必填]\r第 8 行，[昵称必填, 手机号必填]\r第 9 行，[昵称必填, 手机号必填]\r', '失败', 62, '2023-02-13 22:15:36', '2023-02-13 22:15:36', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (4, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/978fce49-69d7-419d-b48d-df6a396ce7d1.xlsx', 6, 0, 2, NULL, '第 5 行，[昵称必填, 手机号必填]\r第 6 行，[手机号必填, 昵称必填]\r第 7 行，[手机号必填, 昵称必填]\r第 8 行，[手机号必填, 昵称必填]\r第 9 行，[手机号必填, 昵称必填]\r', '失败', 62, '2023-02-13 22:22:21', '2023-02-13 22:22:21', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (5, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/978fce49-69d7-419d-b48d-df6a396ce7d1.xlsx', 6, 0, 2, NULL, '第 5 行，[手机号必填, 昵称必填]\r第 6 行，[昵称必填, 手机号必填]\r第 7 行，[手机号必填, 昵称必填]\r第 8 行，[手机号必填, 昵称必填]\r第 9 行，[手机号必填, 昵称必填]\r', '失败', 62, '2023-02-13 22:22:25', '2023-02-13 22:22:25', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (6, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/978fce49-69d7-419d-b48d-df6a396ce7d1.xlsx', 0, 0, 2, NULL, '', '成功', 62, '2023-02-13 22:36:49', '2023-02-13 22:36:49', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (7, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/d7ded323-2c7b-4098-b031-8dd89710ce8c.xlsx', 1, 1, 2, NULL, '', '成功', 62, '2023-02-13 22:40:06', '2023-02-13 22:40:06', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (8, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/3d112959-eafa-46ec-a2c9-6d4ae10803b9.xlsx', 1, 0, 2, NULL, '第 4 行，15726453236， 手机号重复\n', '失败', 62, '2023-02-13 22:41:41', '2023-02-13 22:41:41', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (9, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/3d112959-eafa-46ec-a2c9-6d4ae10803b9.xlsx', 1, 0, 2, NULL, '第 4 行，15726453236， 手机号重复\n', '失败', 62, '2023-02-13 22:42:35', '2023-02-13 22:42:35', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (10, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/3d112959-eafa-46ec-a2c9-6d4ae10803b9.xlsx', 1, 0, 2, NULL, '第 4 行，15726453236， 手机号重复\n', '失败', 62, '2023-02-13 22:42:36', '2023-02-13 22:42:36', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (11, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/3d112959-eafa-46ec-a2c9-6d4ae10803b9.xlsx', 1, 0, 2, NULL, '第 4 行，15726453236， 手机号重复\n', '失败', 62, '2023-02-13 22:42:36', '2023-02-13 22:42:36', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (12, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/3d112959-eafa-46ec-a2c9-6d4ae10803b9.xlsx', 1, 0, 2, NULL, '第 4 行，15726453236， 手机号重复\n', '失败', 62, '2023-02-13 22:42:36', '2023-02-13 22:42:36', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (13, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/3d112959-eafa-46ec-a2c9-6d4ae10803b9.xlsx', 1, 0, 2, NULL, '第 4 行，15726453236， 手机号重复\n', '失败', 62, '2023-02-13 22:42:51', '2023-02-13 22:42:51', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (14, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/5d0e79d4-489b-40d1-911f-8ad675c1aacd.xlsx', 4, 0, 2, NULL, '第 4 行，[手机号必填, 昵称必填]\r第 5 行，[手机号必填, 昵称必填]\r第 6 行，[手机号必填, 昵称必填]\r第 7 行，[手机号必填, 昵称必填]\r', '失败', 62, '2023-02-13 22:54:04', '2023-02-13 22:54:04', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (15, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/5d0e79d4-489b-40d1-911f-8ad675c1aacd.xlsx', 4, 0, 2, NULL, '第 4 行，[昵称必填, 手机号必填]\r第 5 行，[手机号必填, 昵称必填]\r第 6 行，[手机号必填, 昵称必填]\r第 7 行，[手机号必填, 昵称必填]\r', '失败', 62, '2023-02-13 22:56:09', '2023-02-13 22:56:09', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (16, 'STUDENT', '0aab540977c3.xlsx', 'upload/file/5d0e79d4-489b-40d1-911f-8ad675c1aacd.xlsx', 4, 0, 2, NULL, '第 4 行，[手机号必填, 昵称必填]\r第 5 行，[昵称必填, 手机号必填]\r第 6 行，[手机号必填, 昵称必填]\r第 7 行，[昵称必填, 手机号必填]\r', '失败', 62, '2023-02-13 22:56:52', '2023-02-13 22:56:52', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (17, 'TEACHER', '0aab540977c3.xlsx', 'upload/file/f1f3b060-6d93-4fce-9bc6-43a5c51eb8af.xlsx', 0, 0, 2, NULL, '', '成功', 62, '2023-02-13 22:58:41', '2023-02-13 22:58:41', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (18, 'STUDENT', 'bda77f5b-32df-4be2-82c1-c7ba1ef1d867.xlsx', 'upload/file/bda77f5b-32df-4be2-82c1-c7ba1ef1d867.xlsx', 4, 0, 4, NULL, '第 4 行，[昵称必填, 手机号必填]\n第 5 行，[手机号必填, 昵称必填]\n第 6 行，[手机号必填, 昵称必填]\n第 7 行，[手机号必填, 昵称必填]\n', '失败', 62, '2023-02-14 11:09:17', '2023-02-14 11:09:17', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (19, 'TEACHER', 'd48bcb38-e3a2-4741-afa4-bdcd913ad9d6.xlsx', 'upload/file/d48bcb38-e3a2-4741-afa4-bdcd913ad9d6.xlsx', 3, 0, 0, NULL, '第 6 行，[手机号必填]\r', '失败', 62, '2023-02-16 22:07:13', '2023-02-16 22:07:13', 1, 0, 800009);
-INSERT INTO `kz_sys_import_log` VALUES (20, 'PLAN', '61561aa9-0686-4f46-84db-f4df787dca48.xlsx', 'upload/file/61561aa9-0686-4f46-84db-f4df787dca48.xlsx', 5, 0, 5, NULL, '第 4 行，关联教案不存在~\n第 5 行，关联教案不存在~\n第 6 行，关联教案不存在~\n第 7 行，关联教案不存在~\n第 8 行，关联教案不存在~\n', '失败', 62, '2023-02-16 22:26:37', '2023-02-16 22:26:37', 1, 0, 800009);
 
 -- ----------------------------
 -- Table structure for kz_sys_logging_log
@@ -3376,7 +2912,7 @@ CREATE TABLE `kz_sys_property`  (
 -- ----------------------------
 -- Records of kz_sys_property
 -- ----------------------------
-INSERT INTO `kz_sys_property` VALUES (1, 7, 'wx.miniapp', '小程序名称', NULL, 'appName', '千麦生鲜商城', 0, 'input', 0, 0, 1, 1, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (1, 7, 'wx.miniapp', '小程序名称', NULL, 'appName', '惠速达配送', 0, 'input', 0, 0, 1, 1, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (2, 7, 'wx.miniapp', '小程序AppId', NULL, 'appId', 'wx68b06c460cd4a3bd', 0, 'input', 0, 0, 2, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (3, 7, 'wx.miniapp', '小程序Secret', NULL, 'secret', '2c7a5395e7f48e3f260848de5f860c1d', 0, 'input', 0, 0, 3, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (4, 7, 'wx.miniapp', '小程序消息通知Token', NULL, 'token', 'kFzkBds7daFVozGgK1vHnPsnHucrZuO5', 0, 'input', 0, 0, 4, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
@@ -3461,26 +2997,6 @@ INSERT INTO `kz_sys_property` VALUES (110, 10, 'oss', 'accessKeySecret', NULL, '
 INSERT INTO `kz_sys_property` VALUES (118, 10, 'oss', '存储引擎', NULL, 'oEngine', 'oss', 0, 'radio', 0, 0, 1, 1, '2023-06-26 14:33:12', '2023-06-26 14:33:12', 1, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (119, 22, 'shopSettings', '副主题色', NULL, 'secondColor', '#FFBD41', 0, 'color', 0, 0, 5, 1, '2023-06-26 16:38:12', '2023-06-26 16:38:12', 1, 1, 0);
 
--- ----------------------------
--- Table structure for kz_sys_push
--- ----------------------------
-DROP TABLE IF EXISTS `kz_sys_push`;
-CREATE TABLE `kz_sys_push`  (
-  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '标题',
-  `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '内容',
-  `img_urls` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '图片列表',
-  `filters` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '查询条件',
-  `status` tinyint(2) NULL DEFAULT NULL COMMENT '推送状态',
-  `status_desc` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '状态描述',
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '机构id',
-  `create_user` int(11) NULL DEFAULT NULL,
-  `create_time` datetime(0) NULL DEFAULT NULL,
-  `update_time` datetime(0) NULL DEFAULT NULL,
-  `enabled` tinyint(2) NULL DEFAULT 1,
-  `is_delete` tinyint(2) NULL DEFAULT 0,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for kz_sys_quartz_job
@@ -3507,18 +3023,16 @@ CREATE TABLE `kz_sys_quartz_job`  (
 -- ----------------------------
 -- Records of kz_sys_quartz_job
 -- ----------------------------
-INSERT INTO `kz_sys_quartz_job` VALUES (1, 'visitsTask', '0 0 0 * * ?', b'1', '更新访客记录', 'run', NULL, '每日0点创建新的访客记录', NULL, '2019-01-08 14:53:31', '2023-03-13 11:32:12', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (2, 'testTask', '0/5 * * * * ?', b'1', '测试1', 'run1', 'test', '带参测试，多参使用json', NULL, '2019-08-22 14:08:29', NULL, 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (3, 'testTask', '0/5 * * * * ?', b'1', '测试43', 'run', '', '不带参测试', NULL, '2019-09-26 16:44:39', '2023-03-13 15:15:36', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (4, 'orderSyncTask', '0/5 * * * * ?', b'1', '订单支付主动同步', 'syncQueueOrder', NULL, '主动同步订单支付状态，2秒一次处理订单队列', 1, '2023-05-18 19:45:42', '2023-05-30 20:22:28', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (5, 'couponTask', '0 5 0 ? * *', b'0', '用户优惠券过期检测', 'userCouponCheck', NULL, '每天凌晨5分检测用户优惠券过期', 1, '2023-06-01 17:57:22', '2023-06-01 18:10:22', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (6, 'seckillTask', '0/5 * * * * ?', b'1', '秒杀活动检测', 'run', NULL, '检测秒杀活动状态，自动开启状态，或者关闭', 1, '2023-06-01 20:07:40', '2023-07-04 09:07:54', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (7, 'couponTask', '0 0 0/1 * * ?', b'0', '优惠券检测任务', 'couponCheck', NULL, '优惠券开放或者过期检测任务', 1, '2023-06-06 14:14:25', '2023-06-06 14:16:24', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (8, 'combinationTask', '0 0 0/1 * * ?', b'0', '拼团活动检测', 'run', NULL, '每小时一次拼团活动检测', 1, '2023-06-07 11:23:57', '2023-06-07 11:23:57', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (9, 'combinationTask', '0 0/1 * * * ?', b'0', '拼团记录检测', 'checkLog', NULL, '拼团成功，失败检测', 1, '2023-06-07 15:12:30', '2023-06-07 15:17:30', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (10, 'bargainTask', '0 0/5 * * * ?', b'0', '砍价活动检测', 'run', NULL, '砍价活动检测,根据开始，结束时间，开启关闭', 1, '2023-06-07 20:09:00', '2023-06-07 20:12:05', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (11, 'storeOrderTask', '0 0/5 * * * ?', b'0', '过期订单清理', 'closeOrder', NULL, '过期订单清理', 1, '2023-06-12 20:44:21', '2023-06-12 20:58:58', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_job` VALUES (12, 'printerTask', '0 0/5 * * * ?', b'0', '同步打印机状态', 'run', NULL, '同步打印机状态', 1, '2023-06-15 20:00:31', '2023-06-15 20:00:31', 0, 1, NULL);
+INSERT INTO `kz_sys_quartz_job` VALUES (1, 'visitsTask', '0 0 0 * * ?', b'1', '更新访客记录', 'run', NULL, '每日0点创建新的访客记录', NULL, '2019-01-08 14:53:31', '2023-03-13 11:32:12', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (4, 'orderSyncTask', '0/5 * * * * ?', b'1', '订单支付主动同步', 'syncQueueOrder', NULL, '主动同步订单支付状态，2秒一次处理订单队列', 1, '2023-05-18 19:45:42', '2023-05-30 20:22:28', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (5, 'couponTask', '0 5 0 ? * *', b'0', '用户优惠券过期检测', 'userCouponCheck', NULL, '每天凌晨5分检测用户优惠券过期', 1, '2023-06-01 17:57:22', '2023-06-01 18:10:22', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (6, 'seckillTask', '0/5 * * * * ?', b'1', '秒杀活动检测', 'run', NULL, '检测秒杀活动状态，自动开启状态，或者关闭', 1, '2023-06-01 20:07:40', '2023-07-04 09:07:54', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (7, 'couponTask', '0 0 0/1 * * ?', b'0', '优惠券检测任务', 'couponCheck', NULL, '优惠券开放或者过期检测任务', 1, '2023-06-06 14:14:25', '2023-06-06 14:16:24', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (8, 'combinationTask', '0 0 0/1 * * ?', b'0', '拼团活动检测', 'run', NULL, '每小时一次拼团活动检测', 1, '2023-06-07 11:23:57', '2023-06-07 11:23:57', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (9, 'combinationTask', '0 0/1 * * * ?', b'0', '拼团记录检测', 'checkLog', NULL, '拼团成功，失败检测', 1, '2023-06-07 15:12:30', '2023-06-07 15:17:30', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (10, 'bargainTask', '0 0/5 * * * ?', b'0', '砍价活动检测', 'run', NULL, '砍价活动检测,根据开始，结束时间，开启关闭', 1, '2023-06-07 20:09:00', '2023-06-07 20:12:05', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (11, 'storeOrderTask', '0 0/5 * * * ?', b'0', '过期订单清理', 'closeOrder', NULL, '过期订单清理', 1, '2023-06-12 20:44:21', '2023-06-12 20:58:58', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (12, 'printerTask', '0 0/5 * * * ?', b'0', '同步打印机状态', 'run', NULL, '同步打印机状态', 1, '2023-06-15 20:00:31', '2023-06-15 20:00:31', 0, 1, 0);
 
 -- ----------------------------
 -- Table structure for kz_sys_quartz_log
@@ -3544,12 +3058,6 @@ CREATE TABLE `kz_sys_quartz_log`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 859104 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '定时任务日志' ROW_FORMAT = Dynamic;
 
--- ----------------------------
--- Records of kz_sys_quartz_log
--- ----------------------------
-INSERT INTO `kz_sys_quartz_log` VALUES (859098, 6, 'seckillTask', '0/5 * * * * ?', NULL, b'1', '秒杀活动检测', 'run', NULL, 306, 0, '2023-07-21 17:43:30', '2023-07-21 17:43:30', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_log` VALUES (859099, 6, 'seckillTask', '0/5 * * * * ?', NULL, b'1', '秒杀活动检测', 'run', NULL, 25, 0, '2023-07-21 17:43:35', '2023-07-21 17:43:35', 0, 1, NULL);
-INSERT INTO `kz_sys_quartz_log` VALUES (859100, 6, 'seckillTask', '0/5 * * * * ?', NULL, b'1', '秒杀活动检测', 'run', NULL, 26, 0, '2023-07-21 17:43:40', '2023-07-21 17:43:40', 0, 1, NULL);
 
 -- ----------------------------
 -- Table structure for kz_sys_role
@@ -3579,7 +3087,6 @@ INSERT INTO `kz_sys_role` VALUES (1, 'SA', '超级管理员', NULL, 1, 1, '2022-
 INSERT INTO `kz_sys_role` VALUES (2, 'ADMIN', '管理员', NULL, 1, 1, '2021-07-08 10:27:05', '2021-07-08 10:27:12', NULL, 1, 0, 0);
 INSERT INTO `kz_sys_role` VALUES (3, 'COMPANY', '机构', NULL, 1, 0, '2021-07-08 10:27:07', '2022-12-03 14:55:05', NULL, 1, 0, 0);
 INSERT INTO `kz_sys_role` VALUES (4, 'AGENT', '代理商', NULL, 1, 0, '2022-03-28 14:09:10', '2022-03-28 14:11:35', NULL, 1, 0, 0);
-INSERT INTO `kz_sys_role` VALUES (5, 'TEACHER', '老师', NULL, 1, 0, '2022-11-25 19:46:43', '2022-11-25 19:46:46', NULL, 1, 0, 0);
 INSERT INTO `kz_sys_role` VALUES (6, 'STORE', '门店', NULL, 1, 0, '2022-11-25 19:52:41', '2022-11-25 19:52:41', NULL, 1, 0, 0);
 INSERT INTO `kz_sys_role` VALUES (7, 'SALE', '销售', NULL, 0, 0, '2022-11-25 19:52:41', '2022-12-29 11:07:51', NULL, 1, 0, 0);
 INSERT INTO `kz_sys_role` VALUES (8, 'STORE_SINGLE', '单个门店', NULL, 0, 0, '2023-02-13 15:34:55', '2023-02-13 15:34:55', 62, 1, 0, 800009);
@@ -3621,13 +3128,6 @@ CREATE TABLE `kz_sys_tenant`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 800013 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '机构表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
--- Records of kz_sys_tenant
--- ----------------------------
-INSERT INTO `kz_sys_tenant` VALUES (800009, '杭州壹嘻街舞有限公司', '壹嘻街舞', '默认机构', '壹嘻街舞V2', '[12]', NULL, NULL, NULL, NULL, '13675175409', NULL, NULL, '2023-01-01 00:00:00', '2027-02-01 00:00:00', NULL, 'global', 'week', '4', 1, NULL, '缪老师', NULL, '2023-01-19 15:40:18', '2023-02-21 16:33:52', 1, 0);
-INSERT INTO `kz_sys_tenant` VALUES (800011, '杭州星起舞', '星起舞', '默认机构', '星起舞', '[12]', NULL, NULL, NULL, NULL, '17706538408', NULL, NULL, '2023-02-01 00:00:00', '2023-02-28 00:00:00', NULL, 'paid', 'week', '22', 1, NULL, '李老师', 10, '2023-02-05 20:18:15', '2023-02-05 20:18:15', 1, 0);
-INSERT INTO `kz_sys_tenant` VALUES (800012, '新机构', '新机构', '没有', '新机构', '[12]', NULL, NULL, NULL, NULL, '13675178503', NULL, NULL, '2023-02-01 00:00:00', '2023-02-28 00:00:00', NULL, 'global', 'week', '22:00', 1, NULL, 'XO', NULL, '2023-02-15 13:29:55', '2023-02-15 18:10:46', 1, 0);
-
--- ----------------------------
 -- Table structure for kz_sys_upload
 -- ----------------------------
 DROP TABLE IF EXISTS `kz_sys_upload`;
@@ -3643,7 +3143,7 @@ CREATE TABLE `kz_sys_upload`  (
   `create_time` datetime(0) NULL DEFAULT NULL,
   `update_time` datetime(0) NULL DEFAULT NULL,
   `enabled` tinyint(2) NULL DEFAULT 1,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '所属机构',
+  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
   `is_delete` tinyint(2) NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 193 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '上传文件表' ROW_FORMAT = Dynamic;
@@ -3828,7 +3328,7 @@ CREATE TABLE `kz_sys_user`  (
   `enabled` tinyint(2) NOT NULL DEFAULT 1,
   `create_user` int(255) NULL DEFAULT NULL,
   `is_delete` tinyint(2) NULL DEFAULT NULL,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '默认机构',
+  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
   `store_id` int(11) NULL DEFAULT NULL COMMENT '默认门店',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 109 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '系统用户表' ROW_FORMAT = Dynamic;
@@ -3838,47 +3338,6 @@ CREATE TABLE `kz_sys_user`  (
 -- ----------------------------
 INSERT INTO `kz_sys_user` VALUES (1, 1, NULL, 'super-admin', '超级管理员', '男', '$2a$10$i4h9iA5r8ofJFVUwL15uR.eEixo0uU9BTJttLV94PWRVQn.m5ACBy', 'dingxiaosong1987@126.com', '13675175408', '2022-04-02 17:50:26', '2023-06-28 16:38:23', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 10, 0, 0, NULL);
 INSERT INTO `kz_sys_user` VALUES (10, 2, NULL, 'admin', '管理员', '男', '$2a$10$lYqZEMlbSwSNwUK/3UO/Oe5yfiZngx7NcRzsLXekAWB7rC1UuOKGi', 'dingxiaosong1987@126.com', '13900000000', '2021-09-27 08:13:31', '2023-02-15 16:33:30', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 8, 0, 0, NULL);
-INSERT INTO `kz_sys_user` VALUES (11, 3, NULL, 'org1', '机构测试', '男', '$2a$10$gChuLKFehzpx6Nr8XzOjW.YvgoAL3F2or5f1S1Nr2qewNvf2Ksjiy', NULL, '15355456408', '2022-12-03 14:57:36', '2022-12-03 14:57:36', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 1, 0, 0, NULL);
-INSERT INTO `kz_sys_user` VALUES (61, 5, NULL, '17345258255', NULL, NULL, '$2a$10$LKssEk4XZU.R2RicW2WRDeHkcljgQdZGkDTEYIk4y3yTilQqKjlJG', NULL, '17345258255', '2023-01-17 11:28:35', '2023-01-17 11:28:35', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 20, 0, 800007, NULL);
-INSERT INTO `kz_sys_user` VALUES (62, 3, NULL, '13675175409', '壹嘻街舞', NULL, '$2a$10$/iNd/m/P0Lh/LlLIPua./OO8dtZJidXbzyiJ2aALDd5KXgmG3qXoW', NULL, '13675175409', '2023-01-19 15:40:18', '2023-02-21 16:33:52', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 10, 0, 800009, 0);
-INSERT INTO `kz_sys_user` VALUES (63, 5, NULL, '17345258225', 'JAMES12', '男', '$2a$10$bHkouOsykXfFHmQqBU6Lqufdby65GJmx4gmJwdq9uD3DP2LYjlDca', NULL, '17345258225', '2023-01-19 16:22:13', '2023-02-13 17:56:25', NULL, 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1676186784000.jpg', NULL, NULL, 1, 62, 0, 800009, 9);
-INSERT INTO `kz_sys_user` VALUES (64, 5, NULL, '17345258226', 'JAMES1', '女', '$2a$10$U3UGw5Xreod4Qs3GRvLcP.X1QkmM3gHHeCpx.HNl0Wr9zFWw3XvBa', NULL, '17345258226', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (65, 5, NULL, '17345258227', 'JAMES1', '男', '$2a$10$mUGkJX17xUAt.0OPsk3FnOO8.4EPHo79znrmLEwRN2aqddRxnPWMe', NULL, '17345258227', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (66, 5, NULL, '17345258228', 'JAMES1', '女', '$2a$10$NJr51K7GTY2tNWPbhL5S9OwwNWhwqHcLS2R9mUZiHQAAt0HWZDwFK', NULL, '17345258228', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (67, 5, NULL, '17345258229', 'JAMES1', '男', '$2a$10$Oosn8KkkxmHTYUcfa6/bq..CE0F6kwt.QtUd3N9ZVtwOLo.sSs2cu', NULL, '17345258229', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (68, 5, NULL, '17345258230', 'JAMES1', '女', '$2a$10$Ns8Jodv5WdMadPCsu7PQH.3FmR99FGr8CTIunotPHECNNckGvreQ6', NULL, '17345258230', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (69, 5, NULL, '17345258231', 'JAMES1', '男', '$2a$10$y0X0KxIe4d2I0AesYo0Mh.5pqH2xD8FKWxJX2HpLa7xYNyWHjmEV6', NULL, '17345258231', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (70, 5, NULL, '17345258232', 'JAMES1', '女', '$2a$10$g3xO01rKNcRrwxhp9fPIVuCcRRPgaxC7i3zAd47KiUH8M7JknG.0q', NULL, '17345258232', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (71, 5, NULL, '17345258233', 'JAMES1', '男', '$2a$10$5Hxpf.QGT87GZR30RQoWduvxWHIbVt3RduldwlX6R/AQARC9ilOy2', NULL, '17345258233', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (72, 5, NULL, '17345258234', 'JAMES1', '女', '$2a$10$lIZqgA0k4ZQDFoVAuiOmv.Bonx4yDS7qrZnzMAhNQ2jFTSZeyST3.', NULL, '17345258234', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (73, 5, NULL, '17345258235', 'JAMES1', '男', '$2a$10$lsKqsnuPXcNTs4lnvZhP8eeQx/QJyFCySAX6gIMMrOb13GLDfCDeW', NULL, '17345258235', '2023-01-19 16:22:14', '2023-01-19 16:22:14', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (74, 5, NULL, '17345258236', 'JAMES1', '女', '$2a$10$tOW2xb2mycoLfME/ckb6guyBMKNCRKQvknwzowEtrqnlpoWhzSTRq', NULL, '17345258236', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (75, 5, NULL, '17345258237', 'JAMES1', '男', '$2a$10$L8ObdiWjs5sVUa4GtSWGxOTGaVbhfh0EMD6TYZjC87k9Rywmq77AC', NULL, '17345258237', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (76, 5, NULL, '17345258238', 'JAMES1', '女', '$2a$10$SBajce9FzBEyQkNvgfYYzuOk6rm671R9Hs/3u0nDqO8Del9H3ocre', NULL, '17345258238', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (77, 5, NULL, '17345258239', 'JAMES1', '男', '$2a$10$K28U85wZ2XFSSgvin1.W7.KQSfDylleTK9kl/XQzYZDEm3XT.gz4W', NULL, '17345258239', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (78, 5, NULL, '17345258240', 'JAMES1', '女', '$2a$10$M7K2lzUrCvdo29cdxPh.X.8eg1E2XAo1mD7iS34f0V79wZVAjbD9O', NULL, '17345258240', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (79, 5, NULL, '17345258241', 'JAMES1', '男', '$2a$10$cLTVIl2CRPYHEG2ygd11V.yYSJqTU/yqLu598MjguLoD0uzdAcata', NULL, '17345258241', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (80, 5, NULL, '17345258242', 'JAMES1', '女', '$2a$10$3GmFEnRcaVOeBJWqz9wTa.FrataWt1oqaoRM92Pfsi9202QmyQbtq', NULL, '17345258242', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (81, 5, NULL, '17345258243', 'JAMES1', '男', '$2a$10$0NN/QmrbjZju77U3BNPM7eFmGJ3hz7n/y1mVQHmrx.Iol4bYx1q3S', NULL, '17345258243', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (82, 5, NULL, '17345258244', 'JAMES1', '女', '$2a$10$KAg0LlJbgfVtsnjq9qA9NuHww7zUMF8md8xDvH4IE1BOEjKNMtsuy', NULL, '17345258244', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (83, 5, NULL, '17345258245', 'JAMES1', '男', '$2a$10$5vqcqZ/0WqypImQmFAThdOqcs8mwe.V9obnf4dkcta0HmRzDmUw1O', NULL, '17345258245', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (84, 5, NULL, '17345258246', 'JAMES1', '女', '$2a$10$TVUbkyh1E..cy1kMsf788uh7IPDKHPK9QgheP6KQbfPBI4MXpnWS2', NULL, '17345258246', '2023-01-19 16:22:15', '2023-01-19 16:22:15', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (85, 5, NULL, '17345258247', 'JAMES1', '男', '$2a$10$t.fTHeJhYorCB6hdgo97TefjIZaD/ak6IpiKzMgoQb0ClVveVzg6.', NULL, '17345258247', '2023-01-19 16:22:16', '2023-01-19 16:22:16', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (86, 5, NULL, '17345258248', 'JAMES1', '女', '$2a$10$.5o.rrbk0GECzPhEJ9Is6uYLQZ6a5S1/q6zQ6jofXr/v38kIlMjVG', NULL, '17345258248', '2023-01-19 16:22:16', '2023-01-19 16:22:16', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (87, 5, NULL, '17345258249', 'JAMES1', '男', '$2a$10$5FvVV3IIV/S86sOrJtNCRuBlFP7Hgl6xbgJ.iy0ajXgHxnzR7gocW', NULL, '17345258249', '2023-01-19 16:22:16', '2023-01-19 16:22:16', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (88, 5, NULL, '17345258250', 'JAMES1', '女', '$2a$10$YuKoR0qphtYdciawm.p5RewATHMAC9VGAHlcfWbywj0PWO7RK7vrC', NULL, '17345258250', '2023-01-19 16:22:16', '2023-01-19 16:22:16', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (89, 5, NULL, '17345258251', 'JAMES1', '男', '$2a$10$O9rwA2k/2zIhGEd8RWVsHuk3K/1r7M.EAugXK1Aqt7mEguOxfXajG', NULL, '17345258251', '2023-01-19 16:22:16', '2023-01-19 16:22:16', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (90, 5, NULL, '17345258252', 'JAMES1', '女', '$2a$10$LXWYhLiT6cQqu2u0.6VRGuB3N/8VdCdbQK8pJY7f6VRo6Ch.plhzW', NULL, '17345258252', '2023-01-19 16:22:16', '2023-01-19 16:22:16', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (91, 5, NULL, '17345258253', 'JAMES1', '男', '$2a$10$A/VAg4HLFSBi9ZNwV.aedurn3L.e.Mb6orIkOAFWmz/uYgLUYoYQq', NULL, '17345258253', '2023-01-19 16:22:16', '2023-01-19 16:22:16', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (92, 5, NULL, '17345258254', 'JAMES1', '女', '$2a$10$uYlgvvhaLwOCehULepHykusuAVv8fZ3cNiYqPb5l4bGq4/vkMDez2', NULL, '17345258254', '2023-01-19 16:22:16', '2023-01-19 16:22:16', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (93, 5, NULL, '17345258255', 'JAMES1', '男', '$2a$10$m7CZkM5UEDxwcow0PWBy/OcGXthrz/WkQnxp0uBHHoHXZVFOO0JGy', NULL, '17345258255', '2023-01-19 16:22:16', '2023-01-19 16:22:16', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (94, 3, NULL, '17706538408', NULL, NULL, '$2a$10$dFVkh/NKqcXWE7KkkTOQcOyYkjd.4R6buKscSXRFkrMGAa.yydo4m', NULL, '17706538408', '2023-02-05 20:18:15', '2023-02-05 20:18:15', NULL, NULL, NULL, NULL, 1, 10, 0, 800011, 14);
-INSERT INTO `kz_sys_user` VALUES (95, 5, NULL, '18258283516', '聪聪老师', '女', '$2a$10$s7Y5nwlo6CW6jfJxuXvoGOL2VIMqHhHoxcj6HNLnStILhg5iyb.qm', NULL, '18258283516', '2023-02-05 20:34:01', '2023-02-05 20:34:01', NULL, 'http://192.168.1.5:8200/upload/images/bdd17bd4-ffd1-437c-a39a-49255410fbcc.jpg', NULL, NULL, 1, 94, 0, 800011, NULL);
-INSERT INTO `kz_sys_user` VALUES (96, 8, NULL, 'aa', '门店店长', NULL, '$2a$10$Ml2SM99RlnWt0lgCuSgRgOju/61yaKQK0XR0Jl31hih4dmoU47h/m', NULL, '15777777777', '2023-02-13 15:26:56', '2023-02-13 16:36:15', NULL, NULL, 'STORE', '[9]', 1, 62, 0, 800009, 9);
-INSERT INTO `kz_sys_user` VALUES (97, 5, NULL, '17345258256', 'JAMES31', '男', '$2a$10$p6YNY7P24dMcMX24XyQfnu3Alp72cQ8tfo4mnSpnFBBVHIKWbAGAa', NULL, '17345258256', '2023-02-13 16:54:26', '2023-02-13 16:54:26', NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/teacher.jpeg', NULL, NULL, 1, 62, 0, 800009, NULL);
-INSERT INTO `kz_sys_user` VALUES (98, 3, NULL, '13675178500', '新机构', NULL, '$2a$10$4ZEEMyZo8hxNdj5wakUTPetUQanDcbjVaILvm7CkPAAHAOOg3QodC', NULL, '13675178500', '2023-02-15 13:29:55', '2023-02-15 13:29:55', NULL, NULL, NULL, NULL, 1, 10, 0, 800012, NULL);
-INSERT INTO `kz_sys_user` VALUES (106, 3, NULL, '13675178501', NULL, NULL, '$2a$10$BlPU.wb1gn9g89vEKUmxTu.lndWj3OaWHepA8MWr31XN3YT71fzWe', NULL, '13675178501', '2023-02-15 17:59:32', '2023-02-15 17:59:32', NULL, NULL, NULL, NULL, 1, 10, 0, 800012, NULL);
-INSERT INTO `kz_sys_user` VALUES (108, 3, NULL, '13675178503', NULL, NULL, '$2a$10$RK4mvCk1Rx4YElBwcKwKIeXCnjC8iukn1M8ywG1RJ3fqJIgkcSoS2', NULL, '13675178503', '2023-02-15 18:10:46', '2023-02-15 18:10:46', NULL, NULL, NULL, NULL, 1, 10, 0, 800012, NULL);
 
 -- ----------------------------
 -- Table structure for kz_user
@@ -3913,7 +3372,7 @@ CREATE TABLE `kz_user`  (
   `update_time` datetime(0) NULL DEFAULT NULL,
   `enabled` tinyint(1) NOT NULL DEFAULT 1,
   `is_delete` tinyint(1) NULL DEFAULT 0,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '所属机构',
+  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
   `store_id` int(11) NULL DEFAULT NULL COMMENT '默认门店',
   `log_id` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '上传日志id',
   `version` int(255) NULL DEFAULT NULL COMMENT '乐观锁',
@@ -3925,57 +3384,9 @@ CREATE TABLE `kz_user`  (
 -- ----------------------------
 -- Records of kz_user
 -- ----------------------------
-INSERT INTO `kz_user` VALUES (810, NULL, NULL, '王同学1', '学员1', '15026453200', NULL, 14, '[\"浙江省\",\"杭州市\",\"滨江区\"]', NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-02-06 11:00:45', 1, 0, 800009, 9, NULL, 0);
-INSERT INTO `kz_user` VALUES (811, NULL, NULL, '王同学2', '学员2', '15026453201', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (812, NULL, NULL, '王同学3', '学员3', '15026453202', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (813, NULL, NULL, '王同学4', '学员4', '15026453203', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (814, NULL, NULL, '王同学5', '学员5', '15026453204', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (815, NULL, NULL, '王同学6', '学员6', '15026453205', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (816, NULL, NULL, '王同学7', '学员7', '15026453206', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-02-09 17:48:09', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (817, NULL, NULL, '王同学8', '学员8', '15026453207', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-02-09 17:44:52', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (818, NULL, NULL, '王同学9', '学员9', '15026453208', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (819, NULL, NULL, '王同学10', '学员10', '15026453209', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (820, NULL, NULL, '王同学11', '学员11', '15026453210', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (821, NULL, NULL, '王同学12', '学员12', '15026453211', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (822, NULL, NULL, '王同学13', '学员13', '15026453212', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:43', '2023-01-19 16:21:43', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (823, NULL, NULL, '王同学14', '学员14', '15026453213', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (824, NULL, NULL, '王同学15', '学员15', '15026453214', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (825, NULL, NULL, '王同学16', '学员16', '15026453215', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (826, NULL, NULL, '王同学17', '学员17', '15026453216', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (827, NULL, NULL, '王同学18', '学员18', '15026453217', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (828, NULL, NULL, '王同学19', '学员19', '15026453218', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (829, NULL, NULL, '王同学20', '学员20', '15026453219', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (830, NULL, NULL, '王同学21', '学员21', '15026453220', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (831, NULL, NULL, '王同学22', '学员22', '15026453221', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (832, NULL, NULL, '王同学23', '学员23', '15026453222', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (833, NULL, NULL, '王同学24', '学员24', '15026453223', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (834, NULL, NULL, '王同学25', '学员25', '15026453224', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (835, NULL, NULL, '王同学26', '学员26', '15026453225', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (836, NULL, NULL, '王同学27', '学员27', '15026453226', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (837, NULL, NULL, '王同学28', '学员28', '15026453227', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (838, NULL, NULL, '王同学29', '学员29', '15026453228', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (839, NULL, NULL, '王同学30', '学员30', '15026453229', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (840, NULL, NULL, '王同学31', '学员31', '15026453230', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (841, NULL, NULL, '王同学32', '学员32', '15026453231', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 858, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (842, NULL, NULL, '王同学33', '学员33', '15026453232', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 858, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (843, NULL, NULL, '王同学34', '学员34', '15026453233', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 858, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (844, NULL, NULL, '王同学35', '学员35', '15026453234', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (845, NULL, NULL, '王同学36', '学员36', '15026453235', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (846, NULL, NULL, '王同学37', '学员37', '15026453237', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (847, NULL, NULL, '王同学38', '学员38', '15026453238', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (848, NULL, NULL, '王同学39', '学员39', '15026453239', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 859, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (849, NULL, NULL, '王同学40', '学员40', '15026453240', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 859, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-01-19 16:21:44', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (850, NULL, NULL, '王同学41', '学员41', '15026453241', '男', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-01-19 16:21:44', '2023-02-03 11:37:40', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (851, NULL, NULL, '随机', '随机', '18654242424', '女', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-02-03 18:06:21', '2023-02-03 18:06:21', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (852, NULL, NULL, '随即2', '随即2', '13654242421', '女', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 0, NULL, NULL, 0, 62, '2023-02-03 18:08:24', '2023-02-03 18:08:24', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (853, NULL, NULL, '随即3', '随即3', '13852525251', '男', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 0, NULL, NULL, 0, 62, '2023-02-03 18:09:35', '2023-02-03 18:09:35', 1, 0, 800009, NULL, NULL, 0);
 INSERT INTO `kz_user` VALUES (854, NULL, NULL, '11', '2312323', '13692424124', '男', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 868, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 0, NULL, NULL, 0, 62, '2023-02-03 18:12:37', '2023-02-03 18:12:37', 1, 0, 800009, NULL, NULL, 0);
 INSERT INTO `kz_user` VALUES (855, NULL, NULL, '213', '2132321', '13685264225', '女', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-02-03 18:14:45', '2023-06-19 10:33:37', 1, 0, 800009, NULL, NULL, 1);
-INSERT INTO `kz_user` VALUES (856, NULL, NULL, '213', '2132321', '13685264226', '女', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 867, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-02-03 18:17:30', '2023-02-03 18:17:30', 1, 0, 800009, NULL, NULL, 0);
 INSERT INTO `kz_user` VALUES (857, NULL, NULL, '23', '213123', '13653542424', '男', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 867, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-02-03 18:18:44', '2023-02-03 18:19:36', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (858, NULL, NULL, '测试学员', '测试学员', '15863124014', '男', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 867, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 94, '2023-02-05 20:39:22', '2023-02-05 20:39:22', 1, 0, 800011, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (859, NULL, NULL, '测试一条', '测试一条', '15726453236', NULL, 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/default/student.jpg', 867, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 62, '2023-02-13 22:40:06', '2023-02-13 22:44:15', 1, 0, 800009, NULL, NULL, 0);
-INSERT INTO `kz_user` VALUES (860, NULL, NULL, '小果豆', '徐睿谦', '15105802934', '男', 14, '[\"浙江省\",\"杭州市\",\"钱塘区\"]', NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023228/ARcpabIVBlGD.jpg', NULL, 0, NULL, 0.00, 0.00, 0.00, NULL, NULL, 1, NULL, NULL, 0, 1, '2023-03-16 16:49:54', '2023-03-16 16:49:54', 1, 0, 0, NULL, NULL, 0);
 INSERT INTO `kz_user` VALUES (867, '3074741382781009334', 'oq0id5EsPxoTUfaLm2EgloamlrK4', '买菜小哥', NULL, '13675175408', '男', 14, NULL, NULL, 'https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/1682576832292106.png', 868, 0, NULL, 449.49, 1416.00, 500.00, 600, NULL, 1, '2023-06-08 00:00:00', '2023-06-28 11:49:16', 1, 0, '2023-04-26 18:37:36', '2023-06-28 11:49:16', 1, 0, 0, NULL, NULL, 245);
 INSERT INTO `kz_user` VALUES (868, '3036053857494956330', 'oq0id5NtaqFy8pWB1ydIrC2EfUSs', 'Mercurial.', NULL, '18368836191', '男', 14, NULL, NULL, 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/168793428287121.png', NULL, 0, NULL, 2088.87, 1997.00, 350.00, 1500, NULL, 1, '2023-05-29 00:00:00', '2023-06-28 17:22:43', 1, 0, '2023-04-27 09:32:59', '2023-06-28 17:22:43', 1, 0, 0, NULL, NULL, 261);
 INSERT INTO `kz_user` VALUES (869, '3094320545916246151', 'oq0id5AtXqu6YlIed8KfdKKZMgKY', '微信用户', NULL, '15388900913', '', NULL, NULL, NULL, 'https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132', NULL, 0, NULL, 0.00, 10.00, NULL, NULL, NULL, 0, NULL, '2023-07-20 22:33:43', 0, 0, '2023-07-11 14:21:35', '2023-07-20 22:33:43', 1, 0, 0, NULL, NULL, NULL);
@@ -4009,8 +3420,7 @@ CREATE TABLE `kz_user_address`  (
 -- Records of kz_user_address
 -- ----------------------------
 INSERT INTO `kz_user_address` VALUES (23, 867, '13675175408', '丁晓松', NULL, '[\"浙江省\", \"杭州市\", \"滨江区\"]', '铂金名筑3栋3单元1002室', NULL, 1, 867, '2023-05-09 14:37:40', '2023-05-09 14:37:40', 1, 0, 0);
-INSERT INTO `kz_user_address` VALUES (24, 868, '18368836191', '张三', NULL, '[\"广东省\", \"广州市\", \"海珠区\"]', '新港中路397号', '', 0, 868, '2023-05-11 11:47:31', '2023-05-11 11:47:31', 1, 0, 0);
-INSERT INTO `kz_user_address` VALUES (25, 868, '18368836191', '缪许南', NULL, '[\"浙江省\", \"杭州市\", \"滨江区\"]', '缤纷路600号', '家', 1, 868, '2023-06-01 16:14:26', '2023-06-01 16:17:19', 1, 0, 0);
+
 
 -- ----------------------------
 -- Table structure for kz_user_balance
@@ -4057,38 +3467,9 @@ CREATE TABLE `kz_user_bill`  (
 -- ----------------------------
 INSERT INTO `kz_user_bill` VALUES (2756, 'credit', 'SYSTEM_USER_HANDLE', 100.00, 100.00, '+', '管理员操作', '测试充值', NULL, 868, 1, '2023-04-12 16:48:20', '2023-04-12 16:48:20', 1, 0, 0);
 INSERT INTO `kz_user_bill` VALUES (2757, 'balance', 'SYSTEM_USER_HANDLE', 500.00, 500.00, '0', '管理员操作', '1111', NULL, 868, 1, '2023-04-12 16:50:50', '2023-04-12 16:50:50', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2758, 'balance', 'SYSTEM_USER_HANDLE', 10.00, 490.00, '-', '管理员操作', '1111', NULL, 868, 1, '2023-04-12 16:50:57', '2023-04-12 16:50:57', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2759, 'balance', 'SYSTEM_USER_HANDLE', 20.00, 510.00, '+', '管理员操作', '1111', NULL, 868, 1, '2023-04-12 16:51:03', '2023-04-12 16:51:03', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2760, 'credit', 'SYSTEM_USER_HANDLE', 6.00, 6.00, '+', '管理员操作', '1111', NULL, 868, 1, '2023-04-27 14:25:27', '2023-04-27 14:25:27', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2761, 'credit', 'SYSTEM_USER_HANDLE', 3.00, 3.00, '0', '管理员操作', '111', NULL, 868, 1, '2023-04-27 14:25:35', '2023-04-27 14:25:35', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2762, 'credit', 'SYSTEM_USER_HANDLE', 1000.00, 1000.00, '0', '管理员操作', '111', NULL, 868, 1, '2023-04-27 14:25:43', '2023-04-27 14:25:43', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2763, 'balance', 'SYSTEM_USER_HANDLE', 500.00, 500.00, '0', '管理员操作', '111', NULL, 868, 1, '2023-04-27 14:25:51', '2023-04-27 14:25:51', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2764, 'balance', 'SYSTEM_USER_HANDLE', 50.00, 550.00, '+', '管理员操作', '111', NULL, 867, 1, '2023-05-09 14:36:46', '2023-05-09 14:36:46', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2765, 'credit', 'SYSTEM_USER_HANDLE', 1.00, 1001.00, '+', '管理员操作', '1111', NULL, 867, 1, '2023-05-09 14:37:09', '2023-05-09 14:37:09', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2766, 'BALANCE', 'BUY_PRODUCT', 0.02, 1598.98, '-', '购买商品奖励', '应季本园头茬上海青，富含维生素C', NULL, 868, 868, '2023-05-19 17:36:08', '2023-05-19 17:36:08', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2767, 'BALANCE', 'BUY_PRODUCT', 0.02, 1598.96, '-', '购买商品奖励', '应季本园头茬上海青，富含维生素C', NULL, 868, 868, '2023-05-19 17:57:51', '2023-05-19 17:57:51', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2768, 'BALANCE', 'BUY_PRODUCT', 0.02, 1598.94, '-', '购买商品奖励', '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', NULL, 868, 868, '2023-05-19 18:22:23', '2023-05-19 18:22:23', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2769, 'BALANCE', 'BUY_PRODUCT', 0.02, 1598.92, '-', '购买商品奖励', '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', NULL, 868, 868, '2023-05-19 18:23:16', '2023-05-19 18:23:16', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2770, 'BALANCE', 'BUY_PRODUCT', 0.02, 1598.90, '-', '购买商品奖励', '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', NULL, 868, 868, '2023-05-19 18:33:29', '2023-05-19 18:33:29', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2771, 'BALANCE', 'BUY_PRODUCT', 0.03, 549.97, '-', '购买商品奖励', '五色糙米5斤低脂粗粮大米黑米主食饭新七色五谷杂粮孕妇三色健身', NULL, 867, 867, '2023-05-19 18:37:00', '2023-05-19 18:37:00', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2772, 'BALANCE', 'BUY_PRODUCT', 0.02, 1598.88, '-', '购买商品奖励', '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', NULL, 868, 868, '2023-05-26 11:39:21', '2023-05-26 11:39:21', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2773, 'BALANCE', 'RECHARGE', 0.01, 1598.89, '+', '充值', '充值 0.01', NULL, 868, 0, '2023-05-26 17:24:35', '2023-05-26 17:24:35', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2774, 'BALANCE', 'RECHARGE', 100.01, 1698.90, '+', '充值', '充值 0.01;赠送 100.00', NULL, 868, 0, '2023-05-26 17:26:55', '2023-05-26 17:26:55', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2775, 'credit', 'SYSTEM_USER_HANDLE', 3.00, 1997.00, '-', '管理员操作', '2222', NULL, 868, 1, '2023-06-05 16:49:11', '2023-06-05 16:49:11', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2776, 'CREDIT', 'BUY_PRODUCT', 80.00, 921.00, '-', '消费：购买商品', '浙江特级白萝卜，生津止渴赛人参', NULL, 867, 0, '2023-06-06 09:34:11', '2023-06-06 09:34:11', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2777, 'CREDIT', 'BUY_PRODUCT', 5.00, 916.00, '-', '消费：购买商品', '东北红衣生花生米500g黑龙江四粒红花生仁新鲜红皮不带壳生的新货', NULL, 867, 0, '2023-06-06 11:53:06', '2023-06-06 11:53:06', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2778, 'credit', 'SYSTEM_USER_HANDLE', 500.00, 1416.00, '+', '管理员操作', '1111', NULL, 867, 1, '2023-06-06 15:51:16', '2023-06-06 15:51:16', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2780, 'BALANCE', 'BUY_PRODUCT', 0.01, 1698.89, '-', '消费：购买商品', '浙江特级白萝卜，生津止渴赛人参', NULL, 868, 868, '2023-06-07 14:23:03', '2023-06-07 14:23:03', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2781, 'BALANCE', 'BUY_PRODUCT', 0.01, 1698.88, '-', '消费：购买商品', '浙江特级白萝卜，生津止渴赛人参', NULL, 868, 868, '2023-06-07 15:32:44', '2023-06-07 15:32:44', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2782, 'BALANCE', 'BUY_PRODUCT', 0.01, 1698.87, '-', '消费：购买商品', '浙江特级白萝卜，生津止渴赛人参', NULL, 868, 868, '2023-06-08 16:19:33', '2023-06-08 16:19:33', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2783, 'BALANCE', 'RECHARGE', 0.02, 549.99, '+', '充值', '充值 0.02', NULL, 867, 0, '2023-06-09 23:31:20', '2023-06-09 23:31:20', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2784, 'BALANCE', 'BUY_PRODUCT', 100.50, 449.49, '-', '消费：购买商品', '海盐黑胡椒粒碎研磨柠檬低脂健身鸡胸肉煎牛排混合调料食用胡椒粉 : 默认 × 1,\n浙江特级白萝卜，生津止渴赛人参 : 500g,靛青色 × 1', NULL, 867, 867, '2023-06-14 17:00:29', '2023-06-14 17:00:29', 1, 0, 0);
 INSERT INTO `kz_user_bill` VALUES (2785, 'BALANCE', 'WITHDRAW_BROKERAGE', 10.00, 1708.87, '+', '佣金提取到余额', NULL, NULL, 868, 868, '2023-06-19 18:09:56', '2023-06-19 18:09:56', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2786, 'BALANCE', 'WITHDRAW_BROKERAGE', 10.00, 1718.87, '+', '佣金提取到余额', NULL, NULL, 868, 868, '2023-06-19 18:18:31', '2023-06-19 18:18:31', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2787, 'BALANCE', 'WITHDRAW_BROKERAGE', 370.00, 2088.87, '+', '佣金提取到余额', NULL, NULL, 868, 868, '2023-06-19 18:18:51', '2023-06-19 18:18:51', 1, 0, 0);
 INSERT INTO `kz_user_bill` VALUES (2788, 'CREDIT', 'FIRST_LOGIN', 10.00, 10.00, '+', '用户注册', '用户注册赠送10积分', NULL, 869, 0, '2023-07-11 14:21:35', '2023-07-11 14:21:35', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2789, 'CREDIT', 'FIRST_LOGIN', 10.00, 10.00, '+', '用户注册', '用户注册赠送10积分', NULL, 870, 0, '2023-07-11 15:04:56', '2023-07-11 15:04:56', 1, 0, 0);
-INSERT INTO `kz_user_bill` VALUES (2790, 'CREDIT', 'FIRST_LOGIN', 10.00, 10.00, '+', '用户注册', '用户注册赠送10积分', NULL, 871, 0, '2023-07-20 11:22:46', '2023-07-20 11:22:46', 1, 0, 0);
+
 
 -- ----------------------------
 -- Table structure for kz_user_brokerage_bill
@@ -4118,8 +3499,6 @@ CREATE TABLE `kz_user_brokerage_bill`  (
 -- Records of kz_user_brokerage_bill
 -- ----------------------------
 INSERT INTO `kz_user_brokerage_bill` VALUES (2775, 'WITHDRAW_BROKERAGE', '佣金提取到余额', 10.00, 350.00, '-', NULL, NULL, 868, 868, '2023-06-19 18:09:56', '2023-06-19 18:09:56', 1, 0, 0);
-INSERT INTO `kz_user_brokerage_bill` VALUES (2776, 'WITHDRAW_BROKERAGE', '佣金提取到余额', 10.00, 340.00, '-', NULL, NULL, 868, 868, '2023-06-19 18:18:31', '2023-06-19 18:18:31', 1, 0, 0);
-INSERT INTO `kz_user_brokerage_bill` VALUES (2777, 'WITHDRAW_BROKERAGE', '佣金提取到余额', 370.00, -30.00, '-', NULL, NULL, 868, 868, '2023-06-19 18:18:51', '2023-06-19 18:18:51', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_user_coupon
@@ -4157,82 +3536,18 @@ CREATE TABLE `kz_user_coupon`  (
 -- ----------------------------
 INSERT INTO `kz_user_coupon` VALUES (14, '248303977155005', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:16:59', '2023-05-09 10:16:59', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (15, '470142743935943', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:17:19', '2023-05-09 10:17:19', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (16, '186691081788927', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:17:21', '2023-05-09 10:17:21', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (17, '548012839240192', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:17:21', '2023-05-09 10:17:21', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (18, '604700538608760', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:17:22', '2023-05-09 10:17:22', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (19, '800516103664731', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:17:23', '2023-05-09 10:17:23', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (20, '798297576014376', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:17:23', '2023-05-09 10:17:23', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (21, '127538037943457', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:17:24', '2023-05-09 10:17:24', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (22, '117204486803596', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:17:24', '2023-05-09 10:17:24', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (23, '435676648478079', '10元无门槛', 867, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-09 10:17:25', '2023-05-09 10:17:25', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (24, '434816116406261', '10元无门槛', 868, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '过期', 868, '2023-05-09 10:18:33', '2023-05-09 10:18:33', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (25, '223451303065577', '品类优惠券', 868, 2, 'FULL', 'user', NULL, 6.00, 10.00, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 868, '2023-05-09 10:22:50', '2023-05-09 10:22:50', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (26, '881231809690351', '商品优惠券', 868, 3, 'DISCOUNT', 'user', NULL, 0.00, 50.00, 0.90, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 868, '2023-05-09 11:00:31', '2023-05-09 11:00:31', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (27, '978942375572868', 'cs优惠券', 868, 4, 'ALL', 'user', NULL, 4.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 1, '已使用', 868, '2023-05-09 11:00:32', '2023-05-09 11:00:32', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (28, '987158576738507', '10元无门槛', 868, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 868, '2023-05-11 10:16:06', '2023-05-11 10:16:06', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (29, '287870584438410', '10元无门槛', 868, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 868, '2023-05-11 10:17:44', '2023-05-11 10:17:44', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (30, '853213488719313', '10元无门槛', 868, 1, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 868, '2023-05-11 10:22:01', '2023-05-11 10:22:01', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (31, '710986838590881', '商品优惠券', 867, 3, 'DISCOUNT', 'user', NULL, 0.00, 50.00, 0.90, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-24 20:01:09', '2023-05-24 20:01:09', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (32, '154300390173244', 'cs优惠券', 867, 4, 'ALL', 'user', NULL, 4.00, NULL, NULL, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-24 20:01:10', '2023-05-24 20:01:10', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (33, '121805350686976', '商品优惠券', 867, 3, 'DISCOUNT', 'user', NULL, 0.00, 50.00, 0.90, '2023-05-08 00:00:00', '2023-05-31 00:00:00', NULL, 2, '已过期', 867, '2023-05-26 14:07:35', '2023-05-26 14:07:35', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (34, '907949692580055', '新人见面礼', 867, 5, 'ALL', 'user', NULL, 10.00, NULL, NULL, '2023-06-01 00:00:00', '2024-01-01 00:00:00', NULL, 0, '未使用', 867, '2023-06-06 14:05:23', '2023-06-06 14:05:23', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (35, '925485830773754', '618满减', 867, 6, 'FULL', 'user', NULL, 50.00, 300.00, NULL, '2023-06-18 00:00:00', '2023-06-18 00:00:00', NULL, 2, '已过期', 867, '2023-06-06 14:05:23', '2023-06-06 14:05:23', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (72, '812228797762017', '618满减', 868, 6, 'FULL', 'system', NULL, 50.00, 300.00, NULL, '2023-06-18 00:00:00', '2023-06-18 00:00:00', NULL, 2, '已过期', 1, '2023-06-06 15:42:19', '2023-06-06 15:42:19', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (73, '235389647258256', '618满减', 868, 6, 'FULL', 'system', NULL, 50.00, 300.00, NULL, '2023-06-18 00:00:00', '2023-06-18 00:00:00', NULL, 2, '已过期', 1, '2023-06-06 15:42:19', '2023-06-06 15:42:19', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (74, '914161311623076', '618满减', 868, 6, 'FULL', 'system', NULL, 50.00, 300.00, NULL, '2023-06-18 00:00:00', '2023-06-18 00:00:00', NULL, 2, '已过期', 1, '2023-06-06 15:42:19', '2023-06-06 15:42:19', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (75, '457785026756217', '618满减', 867, 6, 'FULL', 'system', NULL, 50.00, 300.00, NULL, '2023-06-18 00:00:00', '2023-06-18 00:00:00', NULL, 2, '已过期', 1, '2023-06-06 15:42:19', '2023-06-06 15:42:19', 1, 0, 0);
-INSERT INTO `kz_user_coupon` VALUES (76, '642224448196914', '618满减', 867, 6, 'FULL', 'system', NULL, 50.00, 300.00, NULL, '2023-06-18 00:00:00', '2023-06-18 00:00:00', NULL, 2, '已过期', 1, '2023-06-06 15:42:19', '2023-06-06 15:42:19', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (77, '297518960277091', '618满减', 867, 6, 'FULL', 'system', NULL, 50.00, 300.00, NULL, '2023-06-18 00:00:00', '2023-06-18 00:00:00', NULL, 2, '已过期', 1, '2023-06-06 15:42:19', '2023-06-06 15:42:19', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (78, '044882086472065', '618满减', 867, 6, 'FULL', 'user', NULL, 50.00, 300.00, NULL, '2023-06-18 00:00:00', '2023-06-18 00:00:00', NULL, 2, '已过期', 867, '2023-06-09 23:25:33', '2023-06-09 23:25:33', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (79, '883689748068471', '全场9折', 868, 8, 'DISCOUNT', 'user', NULL, NULL, 100.00, 0.90, '2023-06-01 00:00:00', '2024-07-31 00:00:00', NULL, 0, '未使用', 868, '2023-06-28 09:47:30', '2023-06-28 09:47:30', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (80, '123896220293988', '618满减', 868, 7, 'FULL', 'user', NULL, 50.00, 300.00, NULL, '2023-06-17 00:00:00', '2023-07-31 00:00:00', NULL, 0, '未使用', 868, '2023-06-28 09:47:32', '2023-06-28 09:47:32', 1, 0, 0);
 INSERT INTO `kz_user_coupon` VALUES (81, '977326867229918', '全场9折', 871, 8, 'DISCOUNT', 'user', NULL, NULL, 100.00, 0.90, '2023-06-01 00:00:00', '2024-07-31 00:00:00', NULL, 0, '未使用', 871, '2023-07-20 11:24:12', '2023-07-20 11:24:12', 1, 0, 0);
-
--- ----------------------------
--- Table structure for kz_user_favorite
--- ----------------------------
-DROP TABLE IF EXISTS `kz_user_favorite`;
-CREATE TABLE `kz_user_favorite`  (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `target_id` int(11) NULL DEFAULT NULL COMMENT '收藏的对象id',
-  `type` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'plan,video',
-  `create_user` int(11) NULL DEFAULT NULL,
-  `create_time` datetime(0) NULL DEFAULT NULL,
-  `update_time` datetime(0) NULL DEFAULT NULL,
-  `enabled` tinyint(2) NULL DEFAULT 1,
-  `is_delete` tinyint(2) NULL DEFAULT 0,
-  PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE INDEX `un_video`(`target_id`, `type`, `create_user`) USING BTREE COMMENT '收藏唯一',
-  INDEX `idx_user`(`create_user`) USING BTREE COMMENT '用户索引'
-) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '用户收藏' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of kz_user_favorite
--- ----------------------------
-INSERT INTO `kz_user_favorite` VALUES (13, 4, 'video', 686, '2022-06-01 20:09:05', '2022-06-01 20:09:05', 1, 0);
-
--- ----------------------------
--- Table structure for kz_user_history
--- ----------------------------
-DROP TABLE IF EXISTS `kz_user_history`;
-CREATE TABLE `kz_user_history`  (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `target_id` int(11) NULL DEFAULT NULL COMMENT '收藏的对象id',
-  `type` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'plan,video',
-  `create_user` int(11) NULL DEFAULT NULL,
-  `create_time` datetime(0) NULL DEFAULT NULL,
-  `update_time` datetime(0) NULL DEFAULT NULL,
-  `enabled` tinyint(2) NULL DEFAULT 1,
-  `is_delete` tinyint(2) NULL DEFAULT 0,
-  PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE INDEX `un_video`(`target_id`, `type`, `create_user`) USING BTREE COMMENT '收藏唯一',
-  INDEX `idx_user`(`create_user`) USING BTREE COMMENT '用户索引'
-) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '用户足迹' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of kz_user_history
--- ----------------------------
-INSERT INTO `kz_user_history` VALUES (13, 4, 'video', 686, '2022-06-01 20:09:05', '2022-06-01 20:09:05', 1, 0);
 
 -- ----------------------------
 -- Table structure for kz_user_level
@@ -4303,52 +3618,6 @@ INSERT INTO `kz_user_tags` VALUES (16, '女性', NULL, NULL, '女性', 2, '2023-
 INSERT INTO `kz_user_tags` VALUES (17, '消费达人', NULL, NULL, '消费达人', 6, '2023-05-26 18:04:05', '2023-05-26 18:04:05', 1, 1, 0, 0);
 
 -- ----------------------------
--- Table structure for kz_video
--- ----------------------------
-DROP TABLE IF EXISTS `kz_video`;
-CREATE TABLE `kz_video`  (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '唯一id',
-  `directory_id` int(11) NULL DEFAULT NULL COMMENT '目录id',
-  `directory_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '目录名称',
-  `video_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '标题',
-  `cover_img_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '视频封面',
-  `video_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '视频',
-  `keypoint` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '要点讲解',
-  `level` int(1) NULL DEFAULT NULL COMMENT '难度等级',
-  `errors` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '常见错误',
-  `belongs_to` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '归属',
-  `dance_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '舞种',
-  `duration` int(10) NULL DEFAULT NULL COMMENT '时长',
-  `visited` int(10) NULL DEFAULT 0 COMMENT '访问次数',
-  `tags` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
-  `target` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '所属用户角色，平台，机构，老师',
-  `is_permit` tinyint(1) NULL DEFAULT 0 COMMENT '是否授权全部用户',
-  `teacher_ids` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '授权老师',
-  `groups` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '授权机构组',
-  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '描述',
-  `create_user` int(11) NULL DEFAULT NULL,
-  `create_time` datetime(0) NULL DEFAULT NULL,
-  `update_time` datetime(0) NULL DEFAULT NULL,
-  `is_used` tinyint(2) NULL DEFAULT 0 COMMENT '是否已经被关联',
-  `enabled` tinyint(2) NULL DEFAULT 1,
-  `is_delete` tinyint(2) NULL DEFAULT 0,
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 132 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '视频记录表' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of kz_video
--- ----------------------------
-INSERT INTO `kz_video` VALUES (125, 'O800009-V125', 22, '默认文件夹', '少儿舞蹈启蒙1', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1675774193000.jpg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1674117244000.mp4', NULL, 5, NULL, '基本功', 'POPPING', 60, 2, '[\"视频标签2\"]', 'COMPANY', 0, NULL, NULL, '少儿舞蹈启蒙1', 62, '2023-01-19 16:34:21', '2023-02-08 10:45:46', 0, 1, 0, 800009);
-INSERT INTO `kz_video` VALUES (126, 'O0-V126', 23, '平台文件夹', '平台视频', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1674117354000.jpg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1674117348000.mp4', NULL, 5, NULL, '基本功', 'POPPING', 60, 0, '[\"视频标签1\"]', 'ADMIN', 1, NULL, '[\"默认机构\"]', '平台视频', 10, '2023-01-19 16:36:03', '2023-02-06 14:40:41', 0, 1, 0, 0);
-INSERT INTO `kz_video` VALUES (127, 'O800009-V127', 24, '我的文件夹', '测试我的视频', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023119/ntmwoctwDQTr.png', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023119/maBMRXKowDcI.mp4', NULL, 4, NULL, '基本功', 'BREAKING', 60, 0, NULL, 'ADMIN', 0, NULL, NULL, '111', 63, '2023-01-19 19:31:38', '2023-02-06 16:28:05', 0, 1, 0, 800009);
-INSERT INTO `kz_video` VALUES (128, 'O0-V128', 23, '平台文件夹', '视频1号', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1675672122000.jpg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1675672116000.mp4', NULL, 5, NULL, '大基本功', 'POPPING', 60, 0, '[\"视频标签1\"]', 'ADMIN', 1, NULL, '[\"默认机构\"]', '哈哈哈哈哈哈哈啦啦啦啦啦啦啦啦', 10, '2023-02-06 16:28:53', '2023-02-08 11:15:01', 0, 1, 0, 0);
-INSERT INTO `kz_video` VALUES (129, 'O0-V129', 23, '平台文件夹', '竖的视频', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1675774193000.jpg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1675933124000.mp4', NULL, 5, NULL, '基本功', 'POPPING', 18, 0, '[]', 'SA', 0, NULL, NULL, NULL, 1, '2023-02-09 16:58:50', '2023-02-09 16:58:50', 0, 1, 0, 0);
-INSERT INTO `kz_video` VALUES (130, 'O0-V130', 24, '我的文件夹', '我的竖的视频', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1675774193000.jpg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1675933196000.mp4', NULL, 0, NULL, '基本功', 'POPPING', 18, 0, '[\"视频标签2\"]', 'SA', 1, NULL, '[\"默认机构\"]', '666', 1, '2023-02-09 17:00:07', '2023-02-09 17:00:07', 0, 1, 0, 0);
-INSERT INTO `kz_video` VALUES (131, 'O800009-V131', 22, '默认文件夹', '竖的视频', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1675774193000.jpg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1675933347000.mp4', NULL, 0, NULL, '基本功', 'POPPING', 18, 0, '[\"视频标签2\"]', 'COMPANY', 0, NULL, NULL, '666', 62, '2023-02-09 17:02:34', '2023-02-09 17:02:34', 0, 1, 0, 800009);
-
--- ----------------------------
 -- Table structure for kz_withdraw
 -- ----------------------------
 DROP TABLE IF EXISTS `kz_withdraw`;
@@ -4405,9 +3674,6 @@ CREATE TABLE `kz_wx_task`  (
 -- ----------------------------
 -- Records of kz_wx_task
 -- ----------------------------
-INSERT INTO `kz_wx_task` VALUES (1, 'personal', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2023-05-23 16:11:05', '2023-05-25 14:41:42', 1, 1, 0);
-INSERT INTO `kz_wx_task` VALUES (2, 'personal', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2023-05-23 16:12:45', '2023-05-25 14:41:39', 1, 1, 0);
-INSERT INTO `kz_wx_task` VALUES (3, 'personal', NULL, NULL, NULL, NULL, '{\"idname\": \"丁晓松\", \"wxuser\": \"songsirvt\", \"componentPhone\": \"13675175408\"}', NULL, NULL, 1, '2023-05-23 19:15:29', '2023-05-25 14:41:36', 1, 1, 0);
 INSERT INTO `kz_wx_task` VALUES (4, 'personal', 'wxbffa21d9a2ea56c8', NULL, '9d94405ba598e21a', 'https://mp.weixin.qq.com/publicpoc/fastregisterpersonalwxa?action=scan&tid=9d94405ba598e21a#wechat_redirect', '{\"idname\": \"丁晓松\", \"wxuser\": \"songsirvt\", \"componentPhone\": \"13675175408\"}', NULL, NULL, 1, '2023-05-24 16:33:13', '2023-05-24 16:33:13', 1, 0, 0);
 
 SET FOREIGN_KEY_CHECKS = 1;

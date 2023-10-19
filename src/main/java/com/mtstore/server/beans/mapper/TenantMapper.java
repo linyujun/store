@@ -22,20 +22,4 @@ public interface TenantMapper extends BaseMapper<SysTenantEntity> {
     @Cacheable(cacheManager = "cacheManager", cacheNames = "agents", key = "#id")
     @Select("SELECT short_name FROM kz_sys_tenant where id = #{id} limit 1")
     String selectNameById(Integer id);
-
-    /**
-     * 查找老师所在的机构列表
-     * @param uid
-     * @return
-     */
-    @Select("select * from kz_sys_tenant where id in (select tenant_id from kz_teacher where uid = #{uid})")
-    List<SysTenantEntity> findAllByTeacherUid(Integer uid);
-
-    /**
-     * 查找用户所在的机构列表
-     * @param uid
-     * @return
-     */
-    @Select("select * from kz_sys_tenant where id in (select tenant_id from kz_student where uid = #{uid})")
-    List<SysTenantEntity> findAllByUid(Integer uid);
 }
