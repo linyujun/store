@@ -62,7 +62,7 @@ public class SysPermissionServiceImp extends ServiceImpl<SysPermissionMapper, Sy
             if (CollectionUtils.isNotEmpty(menuIds)) {
                 List<SysMenuEntity> menuList = sysMenuService.lambdaQuery()
                         .in(SysMenuEntity::getId, menuIds)
-                        .eq(SysMenuEntity::getType, 2)
+                        .eq(SysMenuEntity::getMtype, 2)
                         .list();
                 if (null != menuList) {
                     return menuList

@@ -32,7 +32,7 @@ public class FeedbackEntity extends BaseEntity {
     private String role;
 
     @ApiModelProperty("反馈类型")
-    private String type;
+    private String mtype;
 
     @ApiModelProperty("留言内容")
     private String content;

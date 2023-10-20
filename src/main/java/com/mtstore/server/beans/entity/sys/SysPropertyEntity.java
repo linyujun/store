@@ -1,5 +1,6 @@
 package com.mtstore.server.beans.entity.sys;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.*;
 import lombok.experimental.Accessors;
@@ -13,13 +14,13 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = true)
 @TableName(value = "kz_sys_property")
 public class SysPropertyEntity extends SysBaseEntity {
-    private String groups;
+    private String mgroups;
     private Integer parentId;
     private String label;
     private String pk;
     private String k;
     private String v;
-    private String type;
+    private String mtype;
     private Boolean isHidden;
     private Boolean isSync;
     private Boolean multiple;

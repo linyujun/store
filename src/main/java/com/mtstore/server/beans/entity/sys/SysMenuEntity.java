@@ -61,7 +61,7 @@ public class SysMenuEntity extends SysBaseEntity {
     private Boolean hidden;
 
     @ApiModelProperty("菜单类型 （0目录，1菜单，2按钮）")
-    private Integer type;
+    private Integer mtype;
 
     @ApiModelProperty("是否动态菜单")
     private Boolean dynamicNewTab;

@@ -291,7 +291,7 @@ INSERT INTO `kz_diy_path` VALUES (22, '砍价记录', NULL, 'pages/product/barga
 DROP TABLE IF EXISTS `kz_feedback`;
 CREATE TABLE `kz_feedback`  (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '反馈类型',
+  `mtype` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '反馈类型',
   `nick_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '昵称',
   `phone` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '手机',
   `role` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '角色',
@@ -1256,7 +1256,7 @@ DROP TABLE IF EXISTS `kz_store_product_history`;
 CREATE TABLE `kz_store_product_history`  (
   `id` int(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `uid` bigint(20) UNSIGNED NULL DEFAULT NULL COMMENT '用户ID',
-  `type` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '类型(收藏(collect）、点赞(like))',
+  `mtype` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '类型(收藏(collect）、点赞(like))',
   `product_id` bigint(20) UNSIGNED NULL DEFAULT NULL COMMENT '商品ID',
   `create_time` datetime(0) NULL DEFAULT NULL COMMENT '添加时间',
   `update_time` datetime(0) NULL DEFAULT NULL,
@@ -1265,8 +1265,8 @@ CREATE TABLE `kz_store_product_history`  (
   `enabled` tinyint(2) NULL DEFAULT NULL,
   `tenant_id` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE INDEX `uid`(`uid`, `product_id`, `type`) USING BTREE,
-  INDEX `type`(`type`) USING BTREE
+  UNIQUE INDEX `uid`(`uid`, `product_id`, `mtype`) USING BTREE,
+  INDEX `mtype`(`mtype`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 590 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '商城用户足迹，点赞，收藏表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
@@ -2162,39 +2162,6 @@ INSERT INTO `kz_sys_column_config` VALUES (778, 'kz_user_brokerage_bill', 'is_de
 INSERT INTO `kz_sys_column_config` VALUES (779, 'kz_user_brokerage_bill', 'tenant_id', 'int', NULL, '', b'0', 'number', '', b'0', b'0', NULL, '', NULL);
 
 -- ----------------------------
--- Table structure for kz_sys_config
--- ----------------------------
-DROP TABLE IF EXISTS `kz_sys_config`;
-CREATE TABLE `kz_sys_config`  (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `label` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '字段名称',
-  `group_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '分组',
-  `k` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `v` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '组件类型',
-  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '描述信息',
-  `is_hidden` tinyint(1) NULL DEFAULT NULL COMMENT '是否隐藏，0 不隐藏，1 隐藏，后台使用',
-  `create_user` int(11) NULL DEFAULT NULL,
-  `enabled` tinyint(2) NULL DEFAULT 1,
-  `create_time` datetime(0) NULL DEFAULT NULL,
-  `update_time` datetime(0) NULL DEFAULT NULL,
-  `is_delete` tinyint(2) NULL DEFAULT 0 COMMENT '系统删除',
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
-  PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE INDEX `uni_field`(`k`) USING BTREE COMMENT '字段唯一'
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '系统基础配置' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of kz_sys_config
--- ----------------------------
-INSERT INTO `kz_sys_config` VALUES (1, '套餐说明', NULL, 'packageDesc', '1、套餐购买默认有效期一个月\n2、企业升级套餐时退差价的方式返回到账户，计算公式：退款金额 =（付费金额/每月天数）* 未使用天数', 'textarea', '', 0, 1, 1, '2022-12-01 22:00:55', '2022-12-01 22:00:57', 0, 0);
-INSERT INTO `kz_sys_config` VALUES (2, '职位审核', NULL, 'isAudit', '0', 'switch', NULL, 0, 1, 1, '2022-12-07 17:33:45', '2022-12-07 17:33:47', 0, 0);
-INSERT INTO `kz_sys_config` VALUES (3, '默认套餐', NULL, 'defaultPackage', '8', 'input', NULL, 0, NULL, 1, '2022-12-07 17:33:45', '2022-12-07 17:33:45', 0, 0);
-INSERT INTO `kz_sys_config` VALUES (4, '试用', NULL, 'onTrailLimit', '60', 'input', NULL, 0, NULL, 1, '2022-12-07 17:33:45', '2022-12-07 17:33:45', 0, 0);
-INSERT INTO `kz_sys_config` VALUES (5, '付费', NULL, 'paidLimit', '200', 'input', NULL, NULL, NULL, 1, '2022-12-07 17:33:45', '2022-12-07 17:33:45', 0, 0);
-INSERT INTO `kz_sys_config` VALUES (6, '审核模式', NULL, 'reviewMode', '1', 'switch', NULL, NULL, NULL, 1, '2022-12-07 17:33:45', '2022-12-07 17:33:45', 0, 0);
-
--- ----------------------------
 -- Table structure for kz_sys_dept
 -- ----------------------------
 DROP TABLE IF EXISTS `kz_sys_dept`;
@@ -2423,7 +2390,7 @@ CREATE TABLE `kz_sys_menu`  (
   `no_column` tinyint(1) NULL DEFAULT NULL COMMENT '隐藏二级菜单',
   `dynamic_new_tab` tinyint(1) NULL DEFAULT 0 COMMENT '是否是动态组件',
   `hidden` tinyint(1) NULL DEFAULT 0 COMMENT '隐藏菜单:  0-否，1-是',
-  `type` tinyint(1) NULL DEFAULT 0 COMMENT '菜单类型 （0目录，1菜单，2按钮）',
+  `mtype` tinyint(1) NULL DEFAULT 0 COMMENT '菜单类型 （0目录，1菜单，2按钮）',
   `remarks` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '备注信息',
   `create_user` int(11) NULL DEFAULT NULL COMMENT '创建者',
   `create_time` datetime(0) NULL DEFAULT NULL COMMENT '创建时间',
@@ -2614,7 +2581,7 @@ CREATE TABLE `kz_sys_operate_log`  (
   `ip_address` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `create_time` datetime(0) NULL DEFAULT NULL,
   `create_user` int(11) NULL DEFAULT NULL,
-  `type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `mtype` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `result` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `module` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
@@ -2888,13 +2855,13 @@ DROP TABLE IF EXISTS `kz_sys_property`;
 CREATE TABLE `kz_sys_property`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `parent_id` int(11) NULL DEFAULT 0,
-  `groups` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '所属分组',
+  `mgroups` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '所属分组',
   `label` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '属性名称',
   `pk` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '系统配置key',
   `k` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '属性',
   `v` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '属性值',
   `multiple` tinyint(1) NULL DEFAULT 0 COMMENT '是否多值',
-  `type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '表单类型',
+  `mtype` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '表单类型',
   `is_hidden` tinyint(1) NULL DEFAULT 0 COMMENT '是否显示',
   `is_sync` tinyint(1) NULL DEFAULT 0 COMMENT '是否同步',
   `sort` int(11) NULL DEFAULT NULL COMMENT '排序',

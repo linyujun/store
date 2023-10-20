@@ -140,7 +140,7 @@ public class SysPropertyServiceImpl extends ServiceImpl<SysPropertyMapper, SysPr
         List<SysPropertyEntity> result = getList(keys);
         if (CollectionUtils.isEmpty(result)) return null;
         return result.stream().collect(Collectors.toMap(prop -> prop.getK(), prop -> {
-            if (prop.getType().equals("number")) {
+            if (prop.getMtype().equals("number")) {
                 return Integer.parseInt(prop.getV());
             }
             return prop.getV();
@@ -172,7 +172,7 @@ public class SysPropertyServiceImpl extends ServiceImpl<SysPropertyMapper, SysPr
         HashMap property = new HashMap<>();
         List<SysPropertyEntity> propertyList = findListByGroup(group);
         propertyList.forEach(entity -> {
-            property.put("group", entity.getGroups());
+            property.put("group", entity.getMgroups());
             property.put(entity.getK(), entity.getV());
         });
 
@@ -198,7 +198,7 @@ public class SysPropertyServiceImpl extends ServiceImpl<SysPropertyMapper, SysPr
     @Override
     public LinkedHashMap getConfigMap(String groups) {
         List<SysPropertyEntity> result = lambdaQuery()
-                .eq(SysPropertyEntity::getGroups, groups)
+                .eq(SysPropertyEntity::getMgroups, groups)
                 .gt(SysPropertyEntity::getParentId, 0)
                 .orderByAsc(SysPropertyEntity::getSort)
                 .orderByAsc(SysPropertyEntity::getId)
@@ -216,7 +216,7 @@ public class SysPropertyServiceImpl extends ServiceImpl<SysPropertyMapper, SysPr
     public Map<String, Object> getFormData(String groups) {
         List<SysPropertyEntity> result =
                 lambdaQuery()
-                        .eq(SysPropertyEntity::getGroups, groups)
+                        .eq(SysPropertyEntity::getMgroups, groups)
                         .gt(SysPropertyEntity::getParentId, 0)
                         .orderByAsc(SysPropertyEntity::getSort)
                         .list();
@@ -229,9 +229,9 @@ public class SysPropertyServiceImpl extends ServiceImpl<SysPropertyMapper, SysPr
         Map<String, Object> resultMap = new HashMap<>();
         if(CollectionUtils.isEmpty(todoList)) return null;
         todoList.forEach(entity -> {
-            if (entity.getType().equals("switch")) {
+            if (entity.getMtype().equals("switch")) {
                 resultMap.put(entity.getK(), null != entity.getV() && entity.getV().equals("1") ? true : false);
-            } else if (entity.getType().equals("number")) {
+            } else if (entity.getMtype().equals("number")) {
                 resultMap.put(entity.getK(), Integer.parseInt(entity.getV()));
             } else {
                 resultMap.put(entity.getK(), entity.getV());
@@ -298,7 +298,7 @@ public class SysPropertyServiceImpl extends ServiceImpl<SysPropertyMapper, SysPr
 
     private List<SysPropertyEntity> findListByGroup(String group) {
         List<SysPropertyEntity> propertyList = lambdaQuery()
-                .eq(SysPropertyEntity::getGroups, group)
+                .eq(SysPropertyEntity::getMgroups, group)
                 .eq(SysPropertyEntity::getEnabled, true)
                 .eq(SysPropertyEntity::getIsDelete, false).list();;
 
@@ -312,7 +312,7 @@ public class SysPropertyServiceImpl extends ServiceImpl<SysPropertyMapper, SysPr
                 v = v instanceof ArrayList ? JSONObject.toJSONString(v) :  v;
                 lambdaUpdate()
                         .eq(SysPropertyEntity::getK, k)
-                        .eq(SysPropertyEntity::getGroups, dto.getGroup())
+                        .eq(SysPropertyEntity::getMgroups, dto.getGroup())
                         .set(SysPropertyEntity::getV, v).update();
             });
         }
@@ -323,7 +323,7 @@ public class SysPropertyServiceImpl extends ServiceImpl<SysPropertyMapper, SysPr
 
     private Boolean isSync(String group) {
         SysPropertyEntity sysPropertyEntity = lambdaQuery()
-                .eq(SysPropertyEntity::getGroups, group)
+                .eq(SysPropertyEntity::getMgroups, group)
                 .eq(SysPropertyEntity::getParentId, 0).one();
         if (null != sysPropertyEntity) {
             return sysPropertyEntity.getIsSync();
@@ -340,7 +340,7 @@ public class SysPropertyServiceImpl extends ServiceImpl<SysPropertyMapper, SysPr
         if (CollectionUtils.isNotEmpty(dto.getAttributes())) {
             List<SysPropertyEntity> childList = dto.getAttributes().stream().map(e -> {
                 e.setParentId(entity.getId());
-                e.setGroups(entity.getGroups());
+                e.setGroups(entity.getMgroups());
                 e.setSort(index.incrementAndGet());
                 return BeanUtil.copyProperties(e, SysPropertyEntity.class);
             }).collect(Collectors.toList());

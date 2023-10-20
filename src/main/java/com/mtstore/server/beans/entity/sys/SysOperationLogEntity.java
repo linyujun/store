@@ -17,7 +17,7 @@ import lombok.experimental.Accessors;
 @TableName(value = "kz_sys_operate_log")
 public class SysOperationLogEntity extends SysBaseEntity {
     String ipAddress;
-    String type;
+    String mtype;
     String description;
     String result;
     String module;
