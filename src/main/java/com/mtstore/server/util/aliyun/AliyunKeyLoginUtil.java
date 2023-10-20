@@ -8,8 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class AliyunKeyLoginUtil {
 
-    final static String accessKeyId = ".....LTAI5t7JR7wwTXgZ32gJaen6.....";
-    final static String accessKeySecret = ".....OvLcLDVgzqN7SMggHMLVcwMjcZhCxk.....";
+    final static String accessKeyId = "test";
+    final static String accessKeySecret = "test";
 
     public static com.aliyun.dypnsapi20170525.Client createClient(String accessKeyId, String accessKeySecret) throws Exception {
         com.aliyun.teaopenapi.models.Config config = new com.aliyun.teaopenapi.models.Config()
