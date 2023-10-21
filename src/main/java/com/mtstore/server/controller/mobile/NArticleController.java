@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mtstore.server.beans.common.R;
 import com.mtstore.server.beans.dto.article.ArticleQueryDto;
 import com.mtstore.server.beans.dto.filter.QueryDto;
+import com.mtstore.server.beans.dto.logged.LoggedUser;
 import com.mtstore.server.beans.entity.ArticleCategoryEntity;
 import com.mtstore.server.beans.entity.ArticleEntity;
 import com.mtstore.server.service.ArticleCategoryService;
@@ -43,7 +44,7 @@ public class NArticleController {
     public Object getOne(@PathVariable("id") Integer id){
         try {
             ArticleEntity entity = articleService.getById(id);
-
+            log.info(LoggedUser.get().getUserId() + " 查询文章资讯详情：" + id);
             return R.ok("获取成功", entity);
         } finally {
             articleService.visited(id);

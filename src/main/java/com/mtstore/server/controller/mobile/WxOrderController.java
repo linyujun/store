@@ -61,7 +61,6 @@ public class WxOrderController {
     @SneakyThrows
     @Transactional
     public Object createBalanceOrder(@RequestBody @Validated OrderCartDto dto){
-        log.info("create order: {}", dto);
         StoreOrderEntity orderEntity = storeOrderService.createOrderByCart(dto, PayTypeEnum.BALANCE);
         String orderId = orderEntity.getOrderId();
         userBillService.expand(LoggedUser.get().getUserId(),
@@ -71,7 +70,7 @@ public class WxOrderController {
             orderEntity.getProductInfo()
         );
         storeOrderService.paid(orderId);
-
+        log.info(LoggedUser.get().getUserId() + " 购买商品-余额支付: {}", dto);
         return R.ok("购买成功", orderId);
     }
 
@@ -79,11 +78,10 @@ public class WxOrderController {
     @PostMapping("/cartOrder")
     @SneakyThrows
     public Object createCartOrder(@RequestBody @Validated OrderCartDto dto){
-        log.info("create order: {}", dto);
         StoreOrderEntity orderEntity = storeOrderService.createOrderByCart(dto, PayTypeEnum.WEIXIN);
         String orderId = orderEntity.getOrderId();
         SortedMap orderInfo = createPrepayOrder(orderId, orderEntity.getPayPrice(), PayBizEnum.STORE, convertToJSONObject(dto));
-
+        log.info(LoggedUser.get().getUserId() + " 购买商品-微信支付: {}", dto);
         return R.ok("成功", orderInfo);
     }
 
@@ -94,7 +92,7 @@ public class WxOrderController {
     public Object createRechargeOrder(@RequestBody @Validated OrderRechargeDto orderDto) throws WxPayException {
         final String orderId = OrderUtil.nextId();
         SortedMap orderInfo = createPrepayOrder(orderId, orderDto.getTotal(), PayBizEnum.RECHARGE, convertToJSONObject(orderDto));
-
+        log.info(LoggedUser.get().getUserId() + " 充值-微信支付: {}", orderInfo);
         return R.ok("成功", orderInfo);
     }
 
@@ -105,7 +103,7 @@ public class WxOrderController {
     public Object createDirectPayOrder(@RequestBody @Validated OrderDirectPayDto orderDto) throws WxPayException {
         final String orderId = OrderUtil.nextId();
         SortedMap orderInfo = createPrepayOrder(orderId, orderDto.getTotal(), PayBizEnum.DIRECT, convertToJSONObject(orderDto));
-
+        log.info(LoggedUser.get().getUserId() + " 购买商品-当面付: {}", orderInfo);
         return R.ok("成功", orderInfo);
     }
 
@@ -114,11 +112,10 @@ public class WxOrderController {
     @PostMapping("/vipOrder")
     @SneakyThrows
     public Object createVipOrder(@RequestBody @Validated OrderVipDto dto){
-        log.info("create order: {}", dto);
         final String orderId = OrderUtil.nextId();
         UserLevelEntity userLevelEntity = userLevelService.getById(dto.getLevelId());
         SortedMap orderInfo = createPrepayOrder(orderId, userLevelEntity.getPrice(), PayBizEnum.VIP, convertToJSONObject(dto));
-
+        log.info(LoggedUser.get().getUserId() + "开通VIP: {}", dto);
         return R.ok("成功", orderInfo);
     }
 
@@ -127,7 +124,7 @@ public class WxOrderController {
     @SneakyThrows
     @Transactional
     public Object rePayOrder(@RequestBody RePayOrderDto orderDto) {
-        log.info("create order: {}", orderDto);
+        log.info(LoggedUser.get().getUserId() + " 重新支付订单: {}", orderDto);
         StoreOrderEntity orderEntity = storeOrderService.findByOrderId(orderDto.getOrderId());
         if (null == orderEntity) {
             throw new RuntimeException("订单不存在，请确认！");
@@ -152,9 +149,12 @@ public class WxOrderController {
      */
     @SneakyThrows
     private SortedMap createPrepayOrder(String orderId, BigDecimal total, PayBizEnum bizType, JSONObject orderDto) {
+
         if (null == LoggedUser.get().getOpenId()) {
             throw new RuntimeException("请在微信中发起支付功能");
         }
+        log.info(LoggedUser.get().getUserId() + " 创建微信预订单: " + orderId + " -> " + total);
+
         String notifyUrl = sysPropertyService.getValue("notifyUrl");
         final WxPayUnifiedOrderRequest wxPayUnifiedOrderRequest = WxPayUnifiedOrderRequest.newBuilder()
                 //调起支付的人的 openId

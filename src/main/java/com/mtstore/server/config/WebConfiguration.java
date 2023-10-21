@@ -1,6 +1,7 @@
 package com.mtstore.server.config;
 
 import com.mtstore.server.config.interceptor.AuthenticationInterceptor;
+import com.mtstore.server.config.interceptor.UrlLogInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -33,6 +34,7 @@ public class WebConfiguration implements WebMvcConfigurer {
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new UrlLogInterceptor()).addPathPatterns("/**");
         registry.addInterceptor(new AuthenticationInterceptor()).addPathPatterns("/**");
     }
 }

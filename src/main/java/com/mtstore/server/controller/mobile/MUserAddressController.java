@@ -10,6 +10,7 @@ import com.mtstore.server.service.UserAddressService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,6 +23,7 @@ import java.util.Arrays;
 @RequiredArgsConstructor
 @Api(tags = "移动端-用户-收货地址管理")
 @RestController
+@Slf4j
 @RequestMapping("/app/user/address")
 public class MUserAddressController {
 
@@ -47,7 +49,7 @@ public class MUserAddressController {
     @ApiOperation("新增用户收货地址")
     public Object save(@Validated @RequestBody UserAddressDto dto){
         userAddressService.saveOrUpdate(dto);
-
+        log.info(LoggedUser.get().getUserId() + " 新增用户收货地址： {}" , dto);
         return R.ok("保存成功", true);
     }
 
@@ -82,7 +84,7 @@ public class MUserAddressController {
     @GetMapping("/default/{id}")
     public Object setDefault(@PathVariable("id") Integer id) {
         userAddressService.setDefault(id);
-
+        log.info(LoggedUser.get().getUserId() + " 设置默认地址：" + id);
         return R.ok("操作成功");
     }
 
@@ -90,7 +92,7 @@ public class MUserAddressController {
     @GetMapping("/delete/{id}")
     public Object deleteOne(@PathVariable("id") Integer id) {
         userAddressService.forceDelete(id);
-
+        log.info(LoggedUser.get().getUserId() + " 删除地址：" + id);
         return R.ok("操作成功");
     }
 }

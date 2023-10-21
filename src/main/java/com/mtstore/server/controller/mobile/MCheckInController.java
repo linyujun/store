@@ -1,6 +1,7 @@
 package com.mtstore.server.controller.mobile;
 
 import com.mtstore.server.beans.common.R;
+import com.mtstore.server.beans.dto.logged.LoggedUser;
 import com.mtstore.server.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -23,7 +24,7 @@ public class MCheckInController {
     @PostMapping
     public Object checkIn() {
         userService.checkIn();
-
+        log.info(LoggedUser.get().getUserId() + " 签到");
         return R.ok("签到成功");
     }
 

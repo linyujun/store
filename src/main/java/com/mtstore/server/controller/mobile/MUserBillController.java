@@ -78,7 +78,7 @@ public class MUserBillController {
                 BillEnum.BILL_CATEGORY_BALANCE,
                 dto.getTotal(),
                 null);
-
+        log.info(LoggedUser.get().getUserId() + " 佣金提取到余额： {}" , dto);
         return R.ok("操作成功", dto);
     }
 }

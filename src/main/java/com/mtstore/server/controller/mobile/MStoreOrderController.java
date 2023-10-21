@@ -1,5 +1,6 @@
 package com.mtstore.server.controller.mobile;
 
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mtstore.server.beans.common.R;
 import com.mtstore.server.beans.dto.filter.QueryDto;
@@ -15,6 +16,7 @@ import com.mtstore.server.service.StoreOrderStatusService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,6 +30,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Api(tags = "移动端-商城-订单管理")
 @RestController
+@Slf4j
 @RequestMapping("/app/store/order")
 public class MStoreOrderController {
 
@@ -48,7 +51,7 @@ public class MStoreOrderController {
     @GetMapping("/express/{orderId}")
     @ApiOperation("跟踪物流状态")
     public Object getExpressInfo(@PathVariable("orderId") String orderId){
-
+        log.info(LoggedUser.get().getUserId() + " 跟踪物流状态：" + orderId);
         return R.ok("获取成功", storeOrderService.getExpressInfo(orderId));
     }
 
@@ -57,7 +60,7 @@ public class MStoreOrderController {
     public Object confirmOrder(@PathVariable("orderId") String orderId){
         storeOrderService.receive(orderId);
         storeOrderService.initComments(orderId);
-
+        log.info(LoggedUser.get().getUserId() + " 确认收货：" + orderId);
         return R.ok("操作成功");
     }
 

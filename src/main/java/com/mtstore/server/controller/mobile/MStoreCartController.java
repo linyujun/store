@@ -10,6 +10,7 @@ import com.mtstore.server.beans.entity.StoreCartEntity;
 import com.mtstore.server.beans.common.R;
 import lombok.RequiredArgsConstructor;
 import com.mtstore.server.service.StoreCartService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,7 @@ import io.swagger.annotations.*;
 @RequiredArgsConstructor
 @Api(tags = "移动端-商城-购物车管理")
 @RestController
+@Slf4j
 @RequestMapping("/app/store/cart")
 public class MStoreCartController {
 
@@ -31,7 +33,7 @@ public class MStoreCartController {
     @ApiOperation("加入购物车")
     public Object add(@Validated @RequestBody CartDto dto){
         StoreCartEntity entity = storeCartService.add(dto);
-
+        log.info(LoggedUser.get().getUserId() + " 加入购物车： {}" , dto);
         return R.ok("添加成功", entity);
     }
 
@@ -70,7 +72,7 @@ public class MStoreCartController {
     @GetMapping("/delete/{id}")
     public Object deleteOne(@PathVariable("id") Integer id) {
         storeCartService.forceDelete(id);
-
+        log.info(LoggedUser.get().getUserId() + " 移出购物车：" + id);
         return R.ok("操作成功");
     }
 
@@ -80,7 +82,7 @@ public class MStoreCartController {
         Arrays.asList(ids).forEach(id->{
             storeCartService.forceDelete(id);
         });
-
+        log.info(LoggedUser.get().getUserId() + " 批量删除购物车");
         return R.ok("操作成功");
     }
 
@@ -88,7 +90,7 @@ public class MStoreCartController {
     @DeleteMapping("/clear")
     public Object clear() {
         storeCartService.forceDeleteByUserId(LoggedUser.get().getUserId());
-
+        log.info(LoggedUser.get().getUserId() + " 清空购物车");
         return R.ok("操作成功");
     }
 }

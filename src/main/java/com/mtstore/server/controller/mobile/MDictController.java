@@ -32,7 +32,7 @@ public class MDictController {
     @ApiOperation("返回所有字典和枚举值")
     @GetMapping({ "/dict" })
     public Object list() {
-//        List<SysDictEntity> listDict = sysDictService.lambdaQuery().eq(SysDictEntity::getEnabled,true).list();
+
         List<SysDictEntity> listDict = sysDictService.lambdaQuery().list();
         List<TreeBuilder.Node> nodes = new ArrayList();
         listDict.forEach(entity ->{
@@ -41,7 +41,7 @@ public class MDictController {
             nodes.add(node);
         });
         log.info("dict {}", nodes);
-//            return null;
+
         List<TreeBuilder.Node> result = new TreeBuilder().buildTree(nodes);
 
         return R.ok("获取成功", result);
@@ -71,7 +71,7 @@ public class MDictController {
             nodes.add(node);
         });
         log.info("dict {}", nodes);
-//            return null;
+
         List<TreeBuilder.Node> result = new TreeBuilder().buildTree(nodes);
 
         return R.ok("获取成功", result);

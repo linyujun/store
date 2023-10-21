@@ -31,7 +31,7 @@ public class MWithdrawController {
     @ApiOperation("提现申请-发起")
     @PostMapping("/apply")
     public Object save(@RequestBody @Validated WithdrawDto dto) {
-
+        log.info(LoggedUser.get().getUserId() + " 提现申请-发起：{}" , dto);
         return R.ok("保存成功", withdrawService.saveOrUpdate(dto));
     }
 
@@ -60,7 +60,7 @@ public class MWithdrawController {
     @ApiOperation("取消")
     public Object cancel(@RequestBody @Validated WithdrawCancelDto dto) {
         Boolean result = withdrawService.cancel(dto);
-
+        log.info(LoggedUser.get().getUserId() + " 提现申请-取消：{}" , dto);
         return R.ok("操作成功", result);
     }
 

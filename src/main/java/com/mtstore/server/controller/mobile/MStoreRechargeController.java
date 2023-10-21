@@ -8,6 +8,7 @@ import com.mtstore.server.service.SysPropertyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @Api(tags = "移动端-充值")
 @RequiredArgsConstructor
 @RestController
+@Slf4j
 @RequestMapping("/app/store/recharge")
 public class MStoreRechargeController {
 

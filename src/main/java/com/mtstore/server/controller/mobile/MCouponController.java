@@ -12,6 +12,7 @@ import com.mtstore.server.service.UserCouponService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Api(tags = "移动端-商城-优惠券模块")
 @RequestMapping("/app/store/coupon")
+@Slf4j
 public class MCouponController {
 
     private final CouponService couponService;
@@ -59,7 +61,7 @@ public class MCouponController {
     @ApiOperation(value = "领取优惠券")
     public Object issue(@PathVariable("couponId") Integer couponId) {
         couponService.issue(couponId, LoggedUser.get().getUserId());
-
+        log.info(LoggedUser.get().getUserId() + " 领取优惠券：" + couponId);
         return R.ok("领取成功");
     }
 }

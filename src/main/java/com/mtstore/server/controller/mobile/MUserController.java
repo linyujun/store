@@ -35,7 +35,7 @@ public class MUserController {
             InterceptorIgnoreHelper.handle(IgnoreStrategy.builder().tenantLine(true).build());
             UserEntity user = userService.findCurrentUser();
             Assert.notNull(user, "用户不存在，请确认");
-
+            log.info(LoggedUser.get().getUserId() + " 查看当前用户信息");
             return R.ok("成功", user);
         } finally {
             userService.loginSuccess(LoggedUser.get().getUserId());
@@ -47,7 +47,7 @@ public class MUserController {
     @PostMapping
     public Object save(@RequestBody @Validated UserInfoDto dto) {
         UserEntity user = userService.saveOrUpdate(dto);
-
+        log.info(LoggedUser.get().getUserId() + " 更新当前用户信息：{}" , dto);
         return R.ok("更新成功", user);
     }
 }

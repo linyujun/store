@@ -32,7 +32,7 @@ import java.util.Optional;
 @Slf4j
 public class SysUserService extends ServiceImpl<SysUserMapper, SysUserEntity>{
 
-    public final String DEFAULT_PWD = "Aa123456789";
+    public final String DEFAULT_PWD = "mt123456";
 
     private final SysUserMapper sysUserMapper;
 

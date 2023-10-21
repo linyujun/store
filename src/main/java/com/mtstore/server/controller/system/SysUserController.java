@@ -34,7 +34,7 @@ import java.util.Optional;
 @RequestMapping({ "/api/sys/user" })
 @RequiredArgsConstructor
 public class SysUserController {
-    public final String DEFAULT_PWD = "Aa123456789";
+    public final String DEFAULT_PWD = "mt123456";
 
     private final SysUserService sysUserService;
 
@@ -80,7 +80,7 @@ public class SysUserController {
 
     @PostMapping
     public Object save(@RequestBody @Validated SysUserInfoDto dto) {
-        log.info("dto {}", dto);
+        log.info("保存系统用户信息 {}", dto);
         SysUserEntity entity;
         if (null != dto.getId()) {
             entity = sysUserService.findById(dto.getId());
@@ -111,8 +111,8 @@ public class SysUserController {
         String password = null != dto.getPassword() ? dto.getPassword(): DEFAULT_PWD;
         String hashed = BCrypt.hashpw(password, BCrypt.gensalt());
         entity.setPassword(hashed);
-        log.info("entity {}", entity);
         sysUserService.saveOrUpdate(entity);
+        log.info("保存系统用户信息成功 {}", entity);
 
         return R.ok("保存成功", entity);
     }
@@ -147,11 +147,11 @@ public class SysUserController {
     @GetMapping("/delete/{id}")
     @ResponseBody
     public Object deleteOne(@PathVariable("id") Integer id) {
+        log.info("删除系统用户： " + id);
         if (LoggedUser.get().getUserId().equals(id)) {
             throw new RuntimeException("不可以删除自己~");
         }
         sysUserService.forceDeleteById(id);
-
         return R.ok("操作成功");
     }
 
@@ -161,7 +161,7 @@ public class SysUserController {
      */
     @PostMapping("/resetPwd")
     public Object resetPwd(@RequestBody @Validated ResetPwdDto resetPwdDto) {
-        log.info("ResetPwdDto {}", resetPwdDto);
+        log.info("修改系统用户密码 {}", resetPwdDto);
         if (!resetPwdDto.getConfirmPwd().equals(resetPwdDto.getNewPwd())) {
             throw new RuntimeException("新密码和确认密码不一致！");
         }
@@ -181,7 +181,7 @@ public class SysUserController {
     @PostMapping("/resetUser")
     public Object resetUser(@RequestBody @Validated ResetUserDto userDto) {
         sysUserService.resetPwd(userDto.getId(), null);
-
+        log.info("重置系统用户密码 {}", userDto);
         return R.ok("密码已经重置，请及时登陆修改！");
     }
 

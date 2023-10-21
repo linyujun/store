@@ -10,6 +10,7 @@ import com.mtstore.server.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,6 +24,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @Api(tags = "移动端-商城-评论管理")
 @RestController
+@Slf4j
 @RequestMapping("/app/store/comment")
 public class MStoreCommentController {
 
@@ -45,6 +47,7 @@ public class MStoreCommentController {
                     storeOrderService.finish(orderId);
                 });
 
+        log.info(LoggedUser.get().getUserId() + " 用户评价： {}" , dtoList);
         return R.ok("评价成功");
     }
 

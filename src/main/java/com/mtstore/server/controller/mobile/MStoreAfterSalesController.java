@@ -11,6 +11,7 @@ import com.mtstore.server.service.StoreAfterSalesService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/app/store/afterSales")
 @Api(tags = "移动端-售后")
+@Slf4j
 public class MStoreAfterSalesController {
 
     private final StoreAfterSalesService storeAfterSalesService;
@@ -46,7 +48,7 @@ public class MStoreAfterSalesController {
     @PostMapping
     @ApiOperation("发起售后")
     public Object save(@Validated @RequestBody StoreAfterSalesDto dto){
-
+        log.info(LoggedUser.get().getUserId() + " 发起售后：" + dto.getOrderId());
         return R.ok("保存成功", storeAfterSalesService.saveOrUpdate(dto));
     }
 

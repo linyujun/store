@@ -56,9 +56,8 @@ public class WxLoginController {
             log.info(session.getSessionKey());
             log.info(session.getOpenid());
             UserPayloadDto userPayloadDto = loginService.loginWx(null, session.getOpenid(), dto.getUserInfo());
-            log.info("user {}", userPayloadDto);
             String token = jwtHelper.createJWT(userPayloadDto);
-
+            log.info("微信登录 {}", userPayloadDto);
             return R.ok("登陆成功", JwtTokenVo.builder().accessToken(token).build());
         } catch (Exception e) {
             log.error(e.getMessage(), e);
@@ -75,7 +74,6 @@ public class WxLoginController {
     @PostMapping("/phone")
     public Object phone(@RequestBody UserWxLoginDto loginDto) {
         try {
-            log.info("UserWxLoginDto {}", loginDto);
             WxMaJscode2SessionResult session = wxService.getUserService().getSessionInfo(loginDto.getCode());
             WxMaPhoneNumberInfo phoneNoInfo = wxService.getUserService().getPhoneNoInfo(session.getSessionKey(),
                     loginDto.getEncryptedData(), loginDto.getIv());
@@ -87,7 +85,7 @@ public class WxLoginController {
                 }
             }
             String token = jwtHelper.createJWT(userPayloadDto);
-
+            log.info("微信授权手机号登录 {}", loginDto);
             return R.ok("登陆成功", JwtTokenVo.builder()
                     .accessToken(token)
                     .userInfo(userPayloadDto)
@@ -114,7 +112,7 @@ public class WxLoginController {
             }
             // 解密用户信息
             WxMaUserInfo userInfo = wxService.getUserService().getUserInfo(sessionKey, encryptedData, iv);
-
+            log.info("获取用户信息接口 {}", userInfo);
             return R.ok("获取成功" ,userInfo);
         } catch (Exception e) {
             e.printStackTrace();
