@@ -38,7 +38,7 @@ public class UserEntity extends BaseEntity {
 
     private String phone;
 
-    @ApiModelProperty("学生姓名")
+    @ApiModelProperty("姓名")
     private String realName;
 
     @ApiModelProperty("昵称")
@@ -47,7 +47,7 @@ public class UserEntity extends BaseEntity {
     @ApiModelProperty("性别")
     private String gender;
 
-    @ApiModelProperty("学生头像")
+    @ApiModelProperty("头像")
     private String avatarUrl;
 
     @ApiModelProperty("地址位置")
@@ -99,7 +99,7 @@ public class UserEntity extends BaseEntity {
     @TableField(exist = false)
     private Boolean isFirstLogin = false;
 
-    private Boolean isPromoter;
+    private Boolean isPromoter;//是否分销
 
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private LocalDate lastCheckTime;

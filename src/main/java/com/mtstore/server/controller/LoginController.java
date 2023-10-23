@@ -43,7 +43,7 @@ import java.util.concurrent.TimeUnit;
  * @author songsir
  * @date 2021/6/4
  **/
-@Api(tags="登录模块")
+@Api(tags="管理后台登录模块")
 @Slf4j
 @RestController
 @RequiredArgsConstructor
@@ -78,7 +78,7 @@ public class LoginController {
                 publisher.publishEvent(new UserInvitedEvent(this, loginDto.getInviteId()));
             }
         }
-        log.info("user {}", loginDto);
+        log.info("后台手机，短信验证码登录 {}", loginDto);
         String token = jwtHelper.createJWT(userPayloadDto);
         return R.ok("登陆成功", JwtTokenVo
                 .builder()
@@ -106,7 +106,7 @@ public class LoginController {
     @PostMapping("/login/mock")
     public Object mockLogin(@RequestBody @Validated MockLoginDto user) {
         UserPayloadDto userPayloadDto = loginService.mockLogin(user.getUserId());
-        log.info("user {}", userPayloadDto);
+        log.info("Mock登录 {}", userPayloadDto);
         String token = jwtHelper.createJWT(userPayloadDto);
 
         return R.ok("登陆成功", JwtTokenVo.builder().accessToken(token).userInfo(userPayloadDto).build());
@@ -118,7 +118,7 @@ public class LoginController {
      * @return 返回登录后的信息
      */
     @PostMapping("/login/admin")
-    @ApiOperation("后台账号密码登录")
+    @ApiOperation("后台管理员账号密码登录")
     public Object loginAdmin(@RequestBody @Validated AdminLoginDto user, HttpServletRequest request) {
         Integer limit = 0;
         String clientIP = ServletUtil.getClientIP(request, null);
@@ -159,7 +159,7 @@ public class LoginController {
             if (null == userPayloadDto) {
                 throw new RuntimeException("登录失败~");
             }
-            log.info("user {}", userPayloadDto);
+            log.info("后台管理员账号密码登录 {}", userPayloadDto);
             String token = jwtHelper.createJWT(userPayloadDto);
             redisUtil.delete(clientIP);
             return R.ok("登陆成功", JwtTokenVo
@@ -186,7 +186,7 @@ public class LoginController {
     @PostMapping("/sendMsg")
     @ApiOperation("发送短信验证码")
     public Object sendMsg(@RequestBody @Validated MsgDto msgDto) {
-        log.info("request {}", msgDto);
+        log.info("发送短信 request {}", msgDto);
 //        String captchaCode = redisUtil.get(msgDto.getCsrfToken());
 //        // 判断验证码
 //        if (captchaCode==null || !captchaCode.equals(msgDto.getCaptchaCode().trim().toLowerCase())) {
@@ -207,7 +207,7 @@ public class LoginController {
     @PostMapping("/testMsg")
     @ApiOperation("发送短信验证码")
     public Object testSendMsg(@RequestBody @Validated MsgDto msgDto) {
-        log.info("request {}", msgDto);
+        log.info("发送短信验证码 request {}", msgDto);
 
         return R.ok("发送成功", sendMsgService.test(msgDto.getPhone()));
     }
@@ -220,7 +220,7 @@ public class LoginController {
     @PostMapping("/getMobile")
     @ApiOperation("一键登录Token换手机号")
     public Object GetMobile(@RequestBody @Validated GetMobileDto msgDto){
-        log.info("request {}", msgDto);
+        log.info("一键登录Token换手机号 request {}", msgDto);
         String mobile = AliyunKeyLoginUtil.getMobile(msgDto.getAccessToken());
 
         return R.ok("获取成功", mobile);
@@ -248,6 +248,7 @@ public class LoginController {
         result.put("image", specCaptcha.toBase64());
         result.put("showCaptcha", limit > 3);
 
+        log.info("获取图形验证码：" + clientIP);
         return R.ok("获取成功", result);
     }
 

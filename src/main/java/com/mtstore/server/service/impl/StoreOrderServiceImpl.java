@@ -204,6 +204,8 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
         handleFee(orderEntity);
         saveOrUpdate(orderEntity);
 
+        log.info("订单已支付，等待发货：{}", orderEntity);
+
         orderStatusService.paid(orderId);
     }
 

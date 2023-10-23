@@ -7,13 +7,13 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mtstore.server.beans.dto.mall.product.ProductDto;
 import com.mtstore.server.beans.dto.mall.product.ActivityProductDto;
 import com.mtstore.server.beans.entity.ProductDetailEntity;
-import com.mtstore.server.service.CategoryService;
 import com.mtstore.server.service.ProductDetailService;
 import com.mtstore.server.beans.common.R;
 import com.mtstore.server.beans.dto.filter.PageDto;
 import com.mtstore.server.beans.entity.ProductEntity;
 import com.mtstore.server.service.ProductService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -27,11 +27,11 @@ import javax.servlet.http.HttpServletResponse;
 */
 @RequiredArgsConstructor
 @RestController
+@Slf4j
 @RequestMapping("/api/storeProduct")
 public class ProductController {
 
     private final ProductService productService;
-    private final CategoryService categoryService;
     private final ProductDetailService productDetailService;
 
     @GetMapping("{id}")
@@ -55,19 +55,8 @@ public class ProductController {
     @PostMapping
     public Object save(@Validated @RequestBody ProductDto dto){
         ProductEntity result = productService.save(dto);
-
+        log.info("保存商品信息 {}", dto);
         return R.ok("保存成功", result);
-    }
-
-    /**
-     * 设置秒杀商品
-     * @param dto
-     * @return
-     */
-    @PostMapping("/seckill")
-    public Object saveSeckillGoods(@Validated @RequestBody ActivityProductDto dto){
-
-        return R.ok("保存成功", productService.saveSeckillProdcut(dto));
     }
 
     /**
@@ -77,43 +66,8 @@ public class ProductController {
      */
     @PostMapping("/credit")
     public Object saveCreditGoods(@Validated @RequestBody ActivityProductDto dto){
-
+        log.info("设置积分商品 {}", dto);
         return R.ok("保存成功", productService.saveCreditProduct(dto));
-    }
-
-
-    /**
-     * 设置拼团商品
-     * @param dto
-     * @return
-     */
-    @PostMapping("/combination")
-    public Object saveCombinationGoods(@Validated @RequestBody ActivityProductDto dto){
-
-        return R.ok("保存成功", productService.saveCombinationProduct(dto));
-    }
-
-
-    /**
-     * 设置砍价商品
-     * @param dto
-     * @return
-     */
-    @PostMapping("/bargain")
-    public Object saveBargainGoods(@Validated @RequestBody ActivityProductDto dto){
-
-        return R.ok("保存成功", productService.saveBargainProduct(dto));
-    }
-
-    /**
-     * 设置分销商品
-     * @param dto
-     * @return
-     */
-    @PostMapping("/promote")
-    public Object saveRebateGoods(@Validated @RequestBody ActivityProductDto dto){
-
-        return R.ok("保存成功", productService.saveRebateProduct(dto));
     }
 
     /**
@@ -160,7 +114,7 @@ public class ProductController {
         Arrays.asList(ids).forEach(id->{
             productService.removeById(id);
         });
-
+        log.info("批量删除商品");
         return R.ok("操作成功");
     }
 
@@ -174,7 +128,7 @@ public class ProductController {
         Arrays.asList(ids).forEach(id->{
             productService.online(id);
         });
-
+        log.info("批量上架商品");
         return R.ok("操作成功");
     }
 
@@ -188,7 +142,7 @@ public class ProductController {
         Arrays.asList(ids).forEach(id->{
             productService.offline(id);
         });
-
+        log.info("批量下架商品");
         return R.ok("操作成功");
     }
 
@@ -200,7 +154,7 @@ public class ProductController {
     @GetMapping("/enabled/{id}")
     public Object enabled(@PathVariable("id") Integer id) {
         productService.enabled(id);
-
+        log.info("单个商品上架/下架：" + id);
         return R.ok("操作成功");
     }
 
@@ -220,7 +174,7 @@ public class ProductController {
     @GetMapping("/delete/{id}")
     public Object deleteOne(@PathVariable("id") Integer id) {
         productService.removeById(id);
-
+        log.info("删除商品：" + id);
         return R.ok("操作成功");
     }
 

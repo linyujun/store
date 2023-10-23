@@ -74,6 +74,7 @@ public class WxOrderService {
         if (null != orderResult && orderResult.getTradeState().equalsIgnoreCase("SUCCESS")) {
             OrderEntity orderEntity = orderService.findByOrderId(outerOrderId);
             if (null == orderEntity) {
+                log.error("微信支付成功但是未找到对应订单：{}", orderResult);
                 throw new RuntimeException("未找到对应订单~");
             }
 
@@ -91,6 +92,8 @@ public class WxOrderService {
 
             orderQueueService.finishOrder(outerOrderId);
             orderService.orderPaySuccess(outerOrderId, orderResult.getTransactionId(), orderResult.getTimeEnd());
+        } else {
+            log.error("微信支付失败：{}", orderResult);
         }
     }
 

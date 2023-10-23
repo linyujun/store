@@ -10,6 +10,7 @@ import com.mtstore.server.beans.dto.mall.coupon.CouponDto;
 import com.mtstore.server.beans.entity.CouponEntity;
 import lombok.RequiredArgsConstructor;
 import com.mtstore.server.service.CouponService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,6 +24,7 @@ import javax.servlet.http.HttpServletResponse;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/storeCoupon")
+@Slf4j
 public class CouponController {
 
     private final CouponService couponService;
@@ -38,7 +40,7 @@ public class CouponController {
     @PostMapping
     public Object save(@Validated @RequestBody CouponDto dto){
         couponService.saveOrUpdate(dto);
-
+        log.info("保存优惠券：{}", dto);
         return R.ok("保存成功", true);
     }
 
@@ -50,7 +52,7 @@ public class CouponController {
     @PostMapping("/send")
     public Object send(@Validated @RequestBody SendCouponDto dto){
         couponService.send(dto.getCouponId(), dto.getNum(), dto.getUserIds());
-
+        log.info("定向发送优惠券：{}", dto);
         return R.ok("操作成功", true);
     }
 
@@ -102,7 +104,7 @@ public class CouponController {
     @GetMapping("/delete/{id}")
     public Object deleteOne(@PathVariable("id") Integer id) {
         couponService.removeById(id);
-
+        log.info("删除优惠券：" + id);
         return R.ok("操作成功");
     }
 
@@ -115,6 +117,7 @@ public class CouponController {
     @ResponseBody
     public Object disable(@PathVariable("id") Integer id) {
         couponService.disable(id);
+        log.info("禁用优惠券：" + id);
         return R.ok("操作成功", true);
     }
 

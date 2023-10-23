@@ -4,6 +4,7 @@ import com.mtstore.server.beans.common.R;
 import com.mtstore.server.beans.dto.feedback.FeedbackDto;
 import com.mtstore.server.beans.dto.feedback.ReplyDto;
 import com.mtstore.server.beans.dto.filter.PageDto;
+import com.mtstore.server.beans.dto.logged.LoggedUser;
 import com.mtstore.server.beans.entity.FeedbackEntity;
 import com.mtstore.server.service.FeedbackService;
 import lombok.RequiredArgsConstructor;
@@ -30,7 +31,7 @@ public class FeedbackController {
     @PostMapping
     public Object save(@RequestBody @Validated FeedbackDto dto) {
         service.saveOrUpdate(dto);
-
+        log.info(LoggedUser.get().getUserId() + " 意见反馈：{}", dto);
         return R.ok("成功", true);
     }
 

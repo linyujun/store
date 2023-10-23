@@ -3,6 +3,7 @@ package com.mtstore.server.controller;
 import java.util.*;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.mtstore.server.beans.dto.logged.LoggedUser;
 import com.mtstore.server.beans.dto.mall.order.OrderDto;
 import com.mtstore.server.beans.dto.mall.order.OrderDeliveryDto;
 import com.mtstore.server.beans.dto.mall.order.OrderExportDto;
@@ -14,6 +15,7 @@ import com.mtstore.server.beans.dto.filter.PageDto;
 import com.mtstore.server.beans.entity.StoreOrderEntity;
 import lombok.RequiredArgsConstructor;
 import com.mtstore.server.service.StoreOrderService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -25,10 +27,12 @@ import static com.baomidou.mybatisplus.extension.toolkit.Db.list;
 
 /**
 * @author songsir
+ * 订单状态修改
 * @date 2023-04-20
 */
 @RequiredArgsConstructor
 @RestController
+@Slf4j
 @RequestMapping("/api/store/order")
 public class StoreOrderController {
 
@@ -51,7 +55,7 @@ public class StoreOrderController {
     @Transactional
     public Object save(@Validated @RequestBody OrderDto dto){
         storeOrderService.saveOrUpdate(dto);
-
+        log.info(LoggedUser.get().getUserId() + " 保存或者更新订单状态 {}" , dto);
         return R.ok("保存成功", true);
     }
 
@@ -63,7 +67,7 @@ public class StoreOrderController {
     @PostMapping("/sendOut")
     public Object sendOut(@Validated @RequestBody OrderDeliveryDto dto){
         storeOrderService.send(dto.getOrderId(), dto);
-
+        log.info(LoggedUser.get().getUserId() + " 订单发货 {}" , dto);
         return R.ok("操作成功", true);
     }
 
@@ -80,14 +84,14 @@ public class StoreOrderController {
         Arrays.asList(ids).forEach(id->{
             storeOrderService.removeById(id);
         });
-
+        log.info(LoggedUser.get().getUserId() + " 批量删除订单");
         return R.ok("操作成功");
     }
 
     @GetMapping("/delete/{id}")
     public Object deleteOne(@PathVariable("id") Integer id) {
         storeOrderService.removeById(id);
-
+        log.info(LoggedUser.get().getUserId() + " 删除订单：" + id);
         return R.ok("操作成功");
     }
 

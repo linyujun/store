@@ -3,6 +3,7 @@ package com.mtstore.server.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mtstore.server.beans.common.R;
 import com.mtstore.server.beans.dto.filter.PageDto;
+import com.mtstore.server.beans.dto.logged.LoggedUser;
 import com.mtstore.server.beans.entity.OrderEntity;
 import com.mtstore.server.service.OrderService;
 import com.mtstore.server.service.WxOrderService;
@@ -48,7 +49,7 @@ public class OrderController {
     @GetMapping("/confirm/{orderId}")
     public Object confirmOrder(@PathVariable("orderId") String orderId) {
         service.confirmOrder(orderId);
-
+        log.info(LoggedUser.get().getUserId() + " 订单核销：" + orderId);
         return R.ok("操作成功");
     }
 
@@ -60,20 +61,19 @@ public class OrderController {
     @GetMapping("/refund/{orderId}")
     public Object refundOrder(@PathVariable("orderId") String orderId) {
         wxOrderService.refundOrder(orderId);
-
+        log.info(LoggedUser.get().getUserId() + " 订单退款：" + orderId);
         return R.ok("操作成功");
     }
 
     @GetMapping("/delete/{id}")
     public Object deleteOne(@PathVariable("id") Integer id) {
         service.removeById(id);
-
+        log.info(LoggedUser.get().getUserId() + " 删除订单：" + id);
         return R.ok("操作成功");
     }
 
     @PostMapping("/getPageList")
     public Object findPage(@RequestBody PageDto pageDto) {
-        log.info("pageDto {}", pageDto);
         QueryWrapper<OrderEntity> wrapper = new QueryWrapper<>();
         wrapper.orderByDesc("id");
 
