@@ -23,7 +23,7 @@ import java.util.List;
 @CrossOrigin
 @RequiredArgsConstructor
 @Api(tags="移动端-DIY装修模块")
-@RequestMapping({ "/diy" })
+@RequestMapping({ "/open/diy" })
 public class NDiyController {
     final DiyNavService diyNavService;
     final DiyPageService diyPageService;

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/store")
+@RequestMapping("/open/store")
 @CrossOrigin
 @Api(tags="移动端-门店模块")
 public class NStoreController {

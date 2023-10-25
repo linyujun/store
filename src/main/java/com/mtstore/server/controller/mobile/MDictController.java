@@ -9,10 +9,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,11 +23,12 @@ import java.util.List;
 @CrossOrigin
 @RequiredArgsConstructor
 @Api(tags="移动端-字典模块")
+@RequestMapping("/dict")
 public class MDictController {
     private final SysDictService sysDictService;
 
     @ApiOperation("返回所有字典和枚举值")
-    @GetMapping({ "/dict" })
+    @GetMapping({ "/list" })
     public Object list() {
 
         List<SysDictEntity> listDict = sysDictService.lambdaQuery().list();
@@ -47,21 +45,21 @@ public class MDictController {
         return R.ok("获取成功", result);
     }
 
-    @GetMapping({ "/dict/simple" })
+    @GetMapping({ "/simple" })
     public Object simpleList() {
         List<SysDictEntity> listDict = sysDictService.list(null);
 
         return R.ok("获取成功", listDict);
     }
 
-    @GetMapping({ "/dict/root" })
+    @GetMapping({ "/root" })
     public Object getRoot() {
         List<SysDictEntity> listDict = sysDictService.findAllByParentId(0);
 
         return R.ok("获取成功", listDict);
     }
 
-    @GetMapping({ "/dict/parent/{parentId}" })
+    @GetMapping({ "/parent/{parentId}" })
     public Object getParent(@PathVariable("parentId") Integer parentId) {
         List<SysDictEntity> listDict = sysDictService.findAllChildren(parentId);
         List<TreeBuilder.Node> nodes = new ArrayList();
@@ -77,7 +75,7 @@ public class MDictController {
         return R.ok("获取成功", result);
     }
 
-    @GetMapping({ "/dict/getChildren/{name}" })
+    @GetMapping({ "/getChildren/{name}" })
     public Object getChildren(@PathVariable("name") String key) {
         List listDict = sysDictService.findAllByName(key);
 

@@ -29,10 +29,7 @@ import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -47,6 +44,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/login")
 public class LoginController {
 
     private final ApplicationEventPublisher publisher;
@@ -64,7 +62,7 @@ public class LoginController {
      * @return 返回登录后的信息
      */
     @ApiOperation("手机，短信验证码登录")
-    @PostMapping("/login")
+    @PostMapping("/phone")
     @SneakyThrows
     public Object login(@RequestBody @Validated UserLoginDto loginDto) {
         if (!sendMsgService.verify(loginDto.getPhone(), loginDto.getCaptchaCode())
@@ -103,7 +101,7 @@ public class LoginController {
      * @return 返回登录后的信息
      */
     @ApiOperation("Mock登录")
-    @PostMapping("/login/mock")
+    @PostMapping("/mock")
     public Object mockLogin(@RequestBody @Validated MockLoginDto user) {
         UserPayloadDto userPayloadDto = loginService.mockLogin(user.getUserId());
         log.info("Mock登录 {}", userPayloadDto);
@@ -117,7 +115,7 @@ public class LoginController {
      * 登录
      * @return 返回登录后的信息
      */
-    @PostMapping("/login/admin")
+    @PostMapping("/admin")
     @ApiOperation("后台管理员账号密码登录")
     public Object loginAdmin(@RequestBody @Validated AdminLoginDto user, HttpServletRequest request) {
         Integer limit = 0;

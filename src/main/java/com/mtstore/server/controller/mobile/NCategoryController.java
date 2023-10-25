@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/category")
+@RequestMapping("/open/category")
 @CrossOrigin
 @Api(tags="移动端-分类模块")
 public class NCategoryController {

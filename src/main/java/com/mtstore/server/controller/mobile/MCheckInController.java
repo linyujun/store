@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @CrossOrigin
-@RequestMapping({ "/app/checkIn" })
+@RequestMapping({ "/app" })
 @Api(tags="移动端-签到模块")
 @RequiredArgsConstructor
 public class MCheckInController {
@@ -21,7 +21,7 @@ public class MCheckInController {
     private final UserService userService;
 
     @ApiOperation("签到接口-签到")
-    @PostMapping
+    @PostMapping("/checkIn")
     public Object checkIn() {
         userService.checkIn();
         log.info(LoggedUser.get().getUserId() + " 签到");

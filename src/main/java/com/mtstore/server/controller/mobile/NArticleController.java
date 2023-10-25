@@ -20,7 +20,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/article")
+@RequestMapping("/open/article")
 @CrossOrigin
 @Api(tags="移动端-资讯模块")
 public class NArticleController {

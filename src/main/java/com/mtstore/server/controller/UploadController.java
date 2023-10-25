@@ -27,6 +27,7 @@ import java.util.Map;
 @CrossOrigin
 @Slf4j
 @Api(tags="上传模块")
+@RequestMapping("/open/upload")
 public class UploadController {
     private String[] permitPath = {"images", "avatar", "video", "file"};
     private static String UPLOADED_FOLDER = "upload/";
@@ -37,7 +38,7 @@ public class UploadController {
      * @return
      */
     @ApiOperation("上传文件[images, avatar, video]")
-    @PostMapping("/upload/{subDir}")
+    @PostMapping("/{subDir}")
     public Object uploadFile(
             HttpServletRequest request,
             @ApiParam(name = "upload", value = "文件", required = true)

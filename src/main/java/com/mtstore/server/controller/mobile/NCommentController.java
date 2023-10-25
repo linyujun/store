@@ -14,10 +14,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
@@ -31,6 +28,7 @@ import java.util.Optional;
 @CrossOrigin
 @RequiredArgsConstructor
 @Api(tags="移动端-评论")
+@RequestMapping("/open/comment")
 public class NCommentController {
     private final StoreCommentService storeCommentService;
 
@@ -39,7 +37,7 @@ public class NCommentController {
     private final StoreOrderService storeOrderService;
 
     @ApiOperation("分页查询评论数据")
-    @PostMapping("/comment/getPageList")
+    @PostMapping("/getPageList")
     public Object findPage(@RequestBody QueryDto<CommentQueryDto> pageDto) {
         QueryWrapper<StoreCommentEntity> queryWrapper = new QueryWrapper();
         Page<StoreCommentEntity> pageResult = storeCommentService.pageList(pageDto, queryWrapper);

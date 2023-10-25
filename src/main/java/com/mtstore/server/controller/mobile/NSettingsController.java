@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/settings")
+@RequestMapping("/open/settings")
 @Api(tags="移动端-全局配置模块")
 public class NSettingsController {
 

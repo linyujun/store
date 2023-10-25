@@ -47,7 +47,7 @@ public class MCombinationController {
         return R.ok("获取成功", page);
     }
 
-    @GetMapping("/combination/log/{id}")
+    @GetMapping("/open/combination/log/{id}")
     @ApiOperation(value = "拼团记录详情")
     public Object getLogDetail(@PathVariable("id") Integer id){
         StoreCombinationLogEntity entity = combinationLogService.getById(id);
@@ -59,7 +59,7 @@ public class MCombinationController {
         return R.ok("获取成功", entity);
     }
 
-    @PostMapping("/combination/page")
+    @PostMapping("/open/combination/page")
     @ApiOperation(value = "获取拼团商品-分页")
     public Object getList(@RequestBody(required = false) QueryDto<ProductQueryDto> queryDto){
         List<StoreCombinationEntity> resultList = combinationService
@@ -86,7 +86,7 @@ public class MCombinationController {
         return R.ok("获取成功", page);
     }
 
-    @GetMapping("/combination/{id}")
+    @GetMapping("/open/combination/{id}")
     @ApiOperation(value = "拼团活动详情")
     public Object getDetail(@PathVariable("id") Integer id){
         StoreCombinationEntity entity = combinationService.getById(id);

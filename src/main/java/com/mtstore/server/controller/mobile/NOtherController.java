@@ -24,7 +24,7 @@ public class NOtherController {
     final SysPropertyService configService;
 
     @ApiOperation(value ="查看配置信息")
-    @GetMapping("/config")
+    @GetMapping("/open/config")
     public Object getAllSettings() {
 
         return R.ok("成功", configService.getMap());

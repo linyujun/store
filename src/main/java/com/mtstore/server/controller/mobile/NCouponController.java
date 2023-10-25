@@ -22,10 +22,11 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RequiredArgsConstructor
 @Api(tags="移动端-领券中心")
+@RequestMapping("/open/coupon")
 public class NCouponController {
     private final CouponService couponService;
 
-    @PostMapping("/coupon/getPageList")
+    @PostMapping("/getPageList")
     @ApiOperation(value = "领券中心分页")
     public Object findPage(@RequestBody QueryDto<CouponQueryDto> queryDto) {
         QueryWrapper<CouponEntity> queryWrapper = new QueryWrapper<>();

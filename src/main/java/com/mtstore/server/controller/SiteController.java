@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin
 @RequiredArgsConstructor
-@RequestMapping("/site")
+@RequestMapping("/open/site")
 public class SiteController {
 
     final SysPropertyService sysPropertyService;

@@ -67,7 +67,7 @@ public class MBargainController {
         return R.ok("获取成功", page);
     }
 
-    @GetMapping("/bargain/log/{id}")
+    @GetMapping("/open/bargain/log/{id}")
     @ApiOperation(value = "砍价记录详情")
     public Object getLogDetail(@PathVariable("id") Integer id){
         StoreBargainLogEntity entity = bargainLogService.getById(id);
@@ -82,7 +82,7 @@ public class MBargainController {
         return R.ok("获取成功", entity);
     }
 
-    @PostMapping("/bargain/page")
+    @PostMapping("/open/bargain/page")
     @ApiOperation(value = "获取砍价商品-分页")
     public Object getList(@RequestBody(required = false) QueryDto<ProductQueryDto> queryDto){
         List<StoreBargainEntity> resultList = bargainService
@@ -110,7 +110,7 @@ public class MBargainController {
         return R.ok("获取成功", page);
     }
 
-    @GetMapping("/bargain/{id}")
+    @GetMapping("/open/bargain/{id}")
     @ApiOperation(value = "砍价活动详情")
     public Object getDetail(@PathVariable("id") Integer id){
         StoreBargainEntity entity = bargainService.getById(id);

@@ -20,7 +20,7 @@ import java.util.Optional;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/product")
+@RequestMapping("/open/product")
 @CrossOrigin
 @Api(tags="移动端-商城-商品管理")
 public class NProductController {
