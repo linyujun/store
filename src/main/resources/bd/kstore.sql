@@ -45,7 +45,7 @@ CREATE TABLE `kz_agent`  (
 -- ----------------------------
 -- Records of kz_agent
 -- ----------------------------
-INSERT INTO `kz_agent` VALUES (1, '惠速达配送', NULL, NULL, '12345678901', NULL, NULL, NULL, NULL, NULL, 694, '2022-02-23 11:51:12', '2022-02-23 11:51:12', 1, 0, 0);
+INSERT INTO `kz_agent` VALUES (1, '惠立达配送', NULL, NULL, '12345678901', NULL, NULL, NULL, NULL, NULL, 694, '2022-02-23 11:51:12', '2022-02-23 11:51:12', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_article
@@ -76,11 +76,7 @@ CREATE TABLE `kz_article`  (
 -- ----------------------------
 -- Records of kz_article
 -- ----------------------------
-INSERT INTO `kz_article` VALUES (33, 19, '蔬菜价格全面下调，物价局果断出手稳定市场1', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 98, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, 0);
-INSERT INTO `kz_article` VALUES (34, 19, '蔬菜价格全面下调，物价局果断出手稳定市场2', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 87, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, 0);
-INSERT INTO `kz_article` VALUES (35, 19, '蔬菜价格全面下调，物价局果断出手稳定市场3', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 86, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, 0);
-INSERT INTO `kz_article` VALUES (46, 19, '蔬菜价格全面下调，物价局果断出手稳定市场xxxx', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 87, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, 0);
-INSERT INTO `kz_article` VALUES (48, 1, '618期间全场免运费，快来看看吧~', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685513530950.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1685433494355.png\"]', '618期间全场免运费，快来看看吧~', '<p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p><p>618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~618期间全场免运费，快来看看吧~</p>', '管理员', NULL, NULL, NULL, 86, 1, '2023-06-08 14:19:36', '2023-06-08 14:19:56', 1, 0, 0);
+INSERT INTO `kz_article` VALUES (33, 19, '蔬菜价格全面下调，物价局果断出手稳定市场', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681352148034.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351704244.png\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681351634059.png\"]', '蔬菜价格全面下调', '<p>是法萨芬水电费是大法官是多少</p>', '管理员', NULL, NULL, NULL, 98, 694, '2022-02-23 11:51:12', '2023-04-27 11:47:56', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_article_category
@@ -109,9 +105,8 @@ CREATE TABLE `kz_article_category`  (
 -- ----------------------------
 INSERT INTO `kz_article_category` VALUES (1, 0, '公告', NULL, NULL, NULL, NULL, NULL, '2023-06-08 14:18:14', '2023-06-08 14:18:14', 1, 1, 0, 0);
 INSERT INTO `kz_article_category` VALUES (19, 0, '热点新闻', NULL, NULL, NULL, NULL, 1, '2023-04-27 10:33:20', '2023-04-27 10:33:20', 1, 1, 0, 0);
-INSERT INTO `kz_article_category` VALUES (20, 0, '专业知识', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
-INSERT INTO `kz_article_category` VALUES (21, 0, '专业知识1', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
-INSERT INTO `kz_article_category` VALUES (22, 0, '专业知识2', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
+INSERT INTO `kz_article_category` VALUES (20, 0, '养生常识', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
+INSERT INTO `kz_article_category` VALUES (21, 0, '营养晚餐', NULL, NULL, NULL, NULL, 2, '2023-04-27 10:33:33', '2023-04-27 10:33:33', 1, 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_category
@@ -313,7 +308,7 @@ CREATE TABLE `kz_feedback`  (
 -- ----------------------------
 -- Records of kz_feedback
 -- ----------------------------
-INSERT INTO `kz_feedback` VALUES (42, NULL, '王同学1', '15026453200', 'GUEST', '测试反馈', 0, '未处理', NULL, '[\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023119/RDiVgaRzhZSe.png\"]', 0, 0, 810, '2023-01-19 18:49:45', '2023-01-19 18:49:45', 0, 1);
+INSERT INTO `kz_feedback` VALUES (42, NULL, '王同学', '15026453200', 'GUEST', '测试反馈', 0, '未处理', NULL, '[\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023119/RDiVgaRzhZSe.png\"]', 0, 0, 810, '2023-01-19 18:49:45', '2023-01-19 18:49:45', 0, 1);
 INSERT INTO `kz_feedback` VALUES (43, NULL, '王萌萌', '15026498906', 'GUEST', '反馈意  见反馈意见反馈意见反馈意见反馈意见反馈意见\n\n反馈意见反馈意见反馈意见', 0, '未处理', NULL, '[\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023210/NKOBbcTPVbUO.jpg\",\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023210/QiidwcOGzIoB.jpg\",\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/dance/2023210/OTHVJzrSJdLs.jpg\"]', 0, 0, 856, '2023-02-10 13:41:06', '2023-02-10 13:41:06', 0, 1);
 
 -- ----------------------------
@@ -353,7 +348,7 @@ CREATE TABLE `kz_merchant`  (
 -- ----------------------------
 -- Records of kz_merchant
 -- ----------------------------
-INSERT INTO `kz_merchant` VALUES (13, NULL, '惠速达配送科技有限公司', '惠速达配送', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184889000.jpg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184923000.jpg', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184928000.jpg\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184928000.jpg\"]', '1111111111111111111111111111111111', '1', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '创之海科技园C203室', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184903000.jpg', NULL, NULL, '丁先生', '13675175408', NULL, NULL, NULL, NULL, '2023-05-04 15:24:40', '2023-05-04 15:24:40', 1, 1, 0, 0);
+INSERT INTO `kz_merchant` VALUES (13, NULL, '惠立达配送科技有限公司', '惠立达配送', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184889000.jpg', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184923000.jpg', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184928000.jpg\",\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184928000.jpg\"]', '1111111111111111111111111111111111', '1', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '创之海科技园C203室', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/yxjwAPP/upload1683184903000.jpg', NULL, NULL, '丁先生', '13675175408', NULL, NULL, NULL, NULL, '2023-05-04 15:24:40', '2023-05-04 15:24:40', 1, 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_notice
@@ -544,8 +539,8 @@ CREATE TABLE `kz_store`  (
 -- ----------------------------
 -- Records of kz_store
 -- ----------------------------
-INSERT INTO `kz_store` VALUES (9, NULL, NULL, '惠速达配送超级体验店', '陆川县九洲市场', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区长河街道杭州滨江星光大道亚朵酒店国能中心', '30.209228', '120.205258', 1, '09:26', '21:26', '马先生', '15685424625', '11111', NULL, 62, '2023-01-19 16:17:34', '2023-04-28 10:57:54', 1, 0, 0);
-INSERT INTO `kz_store` VALUES (10, NULL, NULL, '惠速达配送城南中转仓', '陆川县城南', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区浦沿街道汉堡王(滨江宝龙城市广场店)宝龙城(杭州滨江店)', '30.18684', '120.168331', 1, '09:26', '21:26', '马先生', '15685424625', '2222222', NULL, 1, '2023-01-19 16:22:40', '2023-04-28 10:57:35', 1, 0, 0);
+INSERT INTO `kz_store` VALUES (9, NULL, NULL, '惠立达配送超级体验店', '陆川县九洲市场', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区长河街道杭州滨江星光大道亚朵酒店国能中心', '30.209228', '120.205258', 1, '09:26', '21:26', '马先生', '15685424625', '11111', NULL, 62, '2023-01-19 16:17:34', '2023-04-28 10:57:54', 1, 0, 0);
+INSERT INTO `kz_store` VALUES (10, NULL, NULL, '惠立达配送城南中转仓', '陆川县城南', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682582997379.png', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png', '[\"http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1682583071750.png\"]', 'local', '[\"浙江省\",\"杭州市\",\"滨江区\"]', '浙江省杭州市滨江区浦沿街道汉堡王(滨江宝龙城市广场店)宝龙城(杭州滨江店)', '30.18684', '120.168331', 1, '09:26', '21:26', '马先生', '15685424625', '2222222', NULL, 1, '2023-01-19 16:22:40', '2023-04-28 10:57:35', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_after_sales
@@ -1886,21 +1881,6 @@ INSERT INTO `kz_sys_column_config` VALUES (502, 'kz_store_comment', 'create_user
 INSERT INTO `kz_sys_column_config` VALUES (503, 'kz_store_comment', 'enabled', 'tinyint', NULL, '', b'0', 'switch', '', b'0', b'0', NULL, '', NULL);
 INSERT INTO `kz_sys_column_config` VALUES (504, 'kz_store_comment', 'is_delete', 'tinyint', NULL, '', b'0', 'switch', '', b'0', b'0', NULL, '', NULL);
 INSERT INTO `kz_sys_column_config` VALUES (505, 'kz_store_comment', 'tenant_id', 'int', NULL, '', b'0', 'number', '', b'0', b'0', NULL, '租户id', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (506, 'kz_wx_task', 'id', 'int', NULL, 'auto_increment', b'0', 'number', 'PRI', b'1', b'0', NULL, '', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (507, 'kz_wx_task', 'app_type', 'varchar', NULL, '', b'1', 'input', '', b'1', b'0', NULL, '小程序类型，个人personal，企业company', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (508, 'kz_wx_task', 'app_id', 'varchar', NULL, '', b'1', 'input', '', b'1', b'0', NULL, '', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (509, 'kz_wx_task', 'app_secret', 'varchar', NULL, '', b'1', 'input', '', b'1', b'0', NULL, '', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (510, 'kz_wx_task', 'task_id', 'varchar', NULL, '', b'1', 'input', '', b'1', b'0', NULL, '任务id', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (511, 'kz_wx_task', 'authorize_url', 'varchar', NULL, '', b'1', 'input', '', b'1', b'0', NULL, '给用户扫码认证的验证url', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (512, 'kz_wx_task', 'payload', 'json', NULL, '', b'1', NULL, '', b'1', b'0', NULL, '请求实体', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (513, 'kz_wx_task', 'status', 'int', NULL, '', b'1', 'number', '', b'1', b'0', NULL, '状态', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (514, 'kz_wx_task', 'status_desc', 'varchar', NULL, '', b'1', 'input', '', b'1', b'0', NULL, '状态描述', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (515, 'kz_wx_task', 'create_user', 'int', NULL, '', b'0', 'number', '', b'0', b'0', NULL, '操作员', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (516, 'kz_wx_task', 'create_time', 'datetime', NULL, '', b'0', 'datetime', '', b'1', b'0', NULL, '添加时间', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (517, 'kz_wx_task', 'update_time', 'datetime', NULL, '', b'0', 'datetime', '', b'0', b'0', NULL, '更新时间', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (518, 'kz_wx_task', 'enabled', 'tinyint', NULL, '', b'1', 'switch', '', b'1', b'0', NULL, '状态', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (519, 'kz_wx_task', 'is_delete', 'tinyint', NULL, '', b'0', 'switch', '', b'0', b'0', NULL, '逻辑删除', NULL);
-INSERT INTO `kz_sys_column_config` VALUES (520, 'kz_wx_task', 'tenant_id', 'int', NULL, '', b'0', 'number', '', b'0', b'0', NULL, '租户id', NULL);
 INSERT INTO `kz_sys_column_config` VALUES (521, 'kz_store_seckill', 'id', 'int', NULL, 'auto_increment', NULL, NULL, 'PRI', NULL, b'0', NULL, '', NULL);
 INSERT INTO `kz_sys_column_config` VALUES (522, 'kz_store_seckill', 'activity_name', 'varchar', NULL, '', NULL, NULL, '', NULL, b'0', NULL, '活动名称', NULL);
 INSERT INTO `kz_sys_column_config` VALUES (523, 'kz_store_seckill', 'start_time', 'datetime', NULL, '', NULL, NULL, '', NULL, b'0', NULL, '秒杀开始时间', NULL);
@@ -2344,7 +2324,6 @@ INSERT INTO `kz_sys_gen_config` VALUES (28, 'kz_store_coupon_category', 'songsir
 INSERT INTO `kz_sys_gen_config` VALUES (29, 'kz_user_coupon', 'songsir', b'1', 'template', 'com.mtstore.server', 'user\\coupon', 'user\\coupon\\', 'kz_', '用户优惠券', 'page', 1);
 INSERT INTO `kz_sys_gen_config` VALUES (30, 'kz_store_service', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\service', 'store\\service\\', 'kz_', '商城商品服务', 'dialog', 1);
 INSERT INTO `kz_sys_gen_config` VALUES (31, 'kz_store_comment', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\comment', 'store\\comment\\', 'kz_', '商城商品评价', 'dialog', 1);
-INSERT INTO `kz_sys_gen_config` VALUES (32, 'kz_wx_task', 'songsir', b'1', 'template', 'com.mtstore.server', 'wx\\task', 'wx\\task\\', 'kz_', '应用管理', 'page', 1);
 INSERT INTO `kz_sys_gen_config` VALUES (33, 'kz_store_seckill', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\seckill', 'store\\seckill\\', 'kz_', '商城-秒杀会场', 'page', 1);
 INSERT INTO `kz_sys_gen_config` VALUES (34, 'kz_store_seckill_detail', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\seckill\\detail', 'store\\seckill\\detail\\', 'kz_', '商城-秒杀商品关系\r\n', 'page', 1);
 INSERT INTO `kz_sys_gen_config` VALUES (35, 'kz_store_recharge', 'songsir', b'1', 'template', 'com.mtstore.server', 'store\\recharge', 'store\\recharge\\', 'kz_', '商城充值方案', 'dialog', 1);
@@ -2879,19 +2858,16 @@ CREATE TABLE `kz_sys_property`  (
 -- ----------------------------
 -- Records of kz_sys_property
 -- ----------------------------
-INSERT INTO `kz_sys_property` VALUES (1, 7, 'wx.miniapp', '小程序名称', NULL, 'appName', '惠速达配送', 0, 'input', 0, 0, 1, 1, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (2, 7, 'wx.miniapp', '小程序AppId', NULL, 'appId', 'wx68b06c460cd4a3bd', 0, 'input', 0, 0, 2, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (3, 7, 'wx.miniapp', '小程序Secret', NULL, 'secret', '2c7a5395e7f48e3f260848de5f860c1d', 0, 'input', 0, 0, 3, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (4, 7, 'wx.miniapp', '小程序消息通知Token', NULL, 'token', 'kFzkBds7daFVozGgK1vHnPsnHucrZuO5', 0, 'input', 0, 0, 4, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (5, 7, 'wx.miniapp', '小程序消息通知aesKey', NULL, 'aesKey', 'GttqH0mA6sjF4YEeaYYeztbBTzhT79WD4ghb67hJUbu', 0, 'input', 0, 0, 5, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (6, 7, 'wx.miniapp', '小程序消息通知格式', NULL, 'msgDataFormat', 'JSON', 0, 'input', 0, 0, 6, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (1, 7, 'wx.miniapp', '小程序名称', NULL, 'appName', '惠立达配送', 0, 'input', 0, 0, 1, 1, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (2, 7, 'wx.miniapp', '小程序AppId', NULL, 'appId', '', 0, 'input', 0, 0, 2, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (3, 7, 'wx.miniapp', '小程序Secret', NULL, 'secret', '', 0, 'input', 0, 0, 3, 0, '2022-03-24 20:52:26', '2023-05-15 11:19:52', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (7, 0, 'wx.miniapp', '小程序管理', NULL, 'group', '', 0, 'form', 0, 0, 0, 0, '2022-04-13 11:00:17', '2023-05-15 11:19:52', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (8, 0, 'wx.pay', '支付配置', NULL, 'payment', NULL, 0, NULL, 0, 1, NULL, 0, NULL, '2023-05-30 20:49:06', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (9, 0, 'aliyun.msg', '短信配置', NULL, 'aliyun.msg', NULL, 0, NULL, 0, 0, NULL, 0, NULL, '2023-03-21 09:36:51', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (10, 0, 'oss', '存储配置', NULL, 'oss', NULL, 0, NULL, 0, 0, NULL, 0, NULL, '2023-06-26 14:33:12', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (18, 8, 'wx.pay', '小程序appid', 'wx.pay.appId', 'mAppId', 'wx329cc0563d6ec2ca', 0, 'input', 0, 0, 1, 0, NULL, NULL, NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (19, 8, 'wx.pay', '微信支付商户号', 'wx.pay.mchId', 'mchId', '1611075905', 0, 'input', 0, 0, 2, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (20, 8, 'wx.pay', '微信支付商户密钥', 'wx.pay.mchKey', 'mchKey', 'yQL0H05fONuuMgeC5HqPoFSbw0nBmWzC', 0, 'input', 0, 0, 3, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (18, 8, 'wx.pay', '小程序appid', 'wx.pay.appId', 'mAppId', '', 0, 'input', 0, 0, 1, 0, NULL, NULL, NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (19, 8, 'wx.pay', '微信支付商户号', 'wx.pay.mchId', 'mchId', '', 0, 'input', 0, 0, 2, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (20, 8, 'wx.pay', '微信支付商户密钥', 'wx.pay.mchKey', 'mchKey', '', 0, 'input', 0, 0, 3, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (21, 8, 'wx.pay', 'p12证书', 'wx.pay.keyPath', 'keyPath', 'upload/file/ae5876d1-5b45-4ab6-863c-0b206c5f0dc6.p12', 0, 'input', 0, 0, 4, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (22, 0, 'shopSettings', '店铺设置', NULL, 'shopSettings', NULL, 0, 'form', 0, 0, NULL, 0, '2023-03-16 11:47:33', '2023-06-26 16:38:11', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (23, 9, 'aliyun.msg', '短信服务商', NULL, 'msgOrgType', 'ALIYUN', 0, 'radio', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
@@ -2928,20 +2904,15 @@ INSERT INTO `kz_sys_property` VALUES (58, 0, 'agreement', '用户协议', NULL, 
 INSERT INTO `kz_sys_property` VALUES (59, 58, 'agreement', '用户隐私协议', NULL, 'privacy', '隐私政策\r\n本应用尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，本应用会按照本隐私权政策的规定使用和披露您的个人信息。但本应用将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，本应用不会将这些信息对外披露或向第三方提供。本应用会不时更新本隐私权政策。 您在同意本应用服务使用协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于本应用服务使用协议不可分割的一部分。\r\n\r\n1. 适用范围\r\na) 在您注册本应用帐号时，您根据本应用要求提供的个人注册信息；\r\nb) 在您使用本应用网络服务，或访问本应用平台网页时，本应用自动接收并记录的您的浏览器和计算机上的信息，包括但不限于您的IP地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据；\r\nc) 本应用通过合法途径从商业伙伴处取得的用户个人数据。\r\n您了解并同意，以下信息不适用本隐私权政策：\r\na) 您在使用本应用平台提供的搜索服务时输入的关键字信息；\r\nb) 本应用收集到的您在本应用发布的有关信息数据，包括但不限于参与活动、成交信息及评价详情；\r\nc) 违反法律规定或违反本应用规则行为及本应用已对您采取的措施。\r\n2. 信息使用\r\na) 本应用不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可，或该第三方和本应用（含本应用关联公司）单独或共同为您提供服务，且在该服务结束后，其将被禁止访问包括其以前能够访问的所有这些资料。\r\nb) 本应用亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何本应用平台用户如从事上述活动，一经发现，本应用有权立即终止与该用户的服务协议。\r\nc) 为服务用户的目的，本应用可能通过使用您的个人信息，向您提供您感兴趣的信息，包括但不限于向您发出产品和服务信息，或者与本应用合作伙伴共享信息以便他们向您发送有关其产品和服务的信息（后者需要您的事先同意）。\r\n3. 信息披露\r\n在如下情况下，本应用将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息：\r\na) 经您事先同意，向第三方披露；\r\nb) 为提供您所要求的产品和服务，而必须和第三方分享您的个人信息；\r\nc) 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；\r\nd) 如您出现违反中国有关法律、法规或者本应用服务协议或相关规则的情况，需要向第三方披露；\r\ne) 如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；\r\nf) 在本应用平台上创建的某一交易中，如交易任何一方履行或部分履行了交易义务并提出信息披露请求的，本应用有权决定向该用户提供其交易对方的联络方式等必要信息，以促成交易的完成或纠纷的解决。\r\ng) 其它本应用根据法律、法规或者网站政策认为合适的披露。\r\n\r\n4. 信息存储和交换\r\n本应用收集的有关您的信息和资料将保存在本应用及（或）其关联公司的服务器上，这些信息和资料可能传送至您所在国家、地区或本应用收集信息和资料所在地的境外并在境外被访问、存储和展示。\r\n5. Cookie的使用\r\na) 在您未拒绝接受cookies的情况下，本应用会在您的计算机上设定或取用cookies ，以便您能登录或使用依赖于cookies的本应用平台服务或功能。本应用使用cookies可为您提供更加周到的个性化服务，包括推广服务。\r\nb) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的本应用网络服务或功能。\r\nc) 通过本应用所设cookies所取得的有关信息，将适用本政策。\r\n6. 信息安全\r\na) 本应用帐号均有安全保护功能，请妥善保管您的用户名及密码信息。本应用将通过对用户密码进行加密等安全措施确保您的信息不丢失，不被滥用和变造。尽管有前述安全措施，但同时也请您注意在信息网络上不存在“完善的安全措施”。\r\nb) 在使用本应用网络服务进行网上交易时，您不可避免的要向交易对方或潜在的交易对方披露自己的个人信息，如联络方式或者邮政地址。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是本应用用户名及密码发生泄露，请您立即联络本应用客服，以便本应用采取相应措施。\r\n\r\n用户协议\r\n\"当您申请用户时，表示您已经同意遵守本规章。\r\n\r\n欢迎您加入本站点参与交流和讨论，本站点为社区，为维护网上公共秩序和社会稳定，请您自觉遵守以下条款：\r\n\r\n一、不得利用本站危害国家安全、泄露国家秘密，不得侵犯国家社会集体的和公民的合法权益，不得利用本站制作、复制和传播下列信息：\r\n（一）煽动抗拒、破坏宪法和法律、行政法规实施的；\r\n（二）煽动颠覆国家政权，推翻社会主义制度的；\r\n（三）煽动分裂国家、破坏国家统一的；\r\n（四）煽动民族仇恨、民族歧视，破坏民族团结的；\r\n（五）捏造或者歪曲事实，散布谣言，扰乱社会秩序的；\r\n（六）宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的；　\r\n（七）公然侮辱他人或者捏造事实诽谤他人的，或者进行其他恶意攻击的；\r\n（八）损害国家机关信誉的；\r\n（九）其他违反宪法和法律行政法规的；\r\n（十）进行商业广告行为的。\r\n二、互相尊重，对自己的言论和行为负责。\r\n三、禁止在申请用户时使用相关本站的词汇，或是带有侮辱、毁谤、造谣类的或是有其含义的各种语言进行注册用户，否则我们会将其删除。\r\n四、禁止以任何方式对本站进行各种破坏行为。\r\n五、如果您有违反国家相关法律法规的行为，本站概不负责，您的登录信息均被记录无疑，必要时，我们会向相关的国家管理部门提供此类信息。\"', 0, 'textarea', 0, 0, 1, 1, '2023-05-10 15:36:15', '2023-05-31 14:33:04', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (60, 0, 'website', '站点配置', NULL, 'website', NULL, 0, 'form', 1, 0, NULL, 1, '2023-05-15 11:12:11', '2023-05-15 16:17:45', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (61, 60, 'website', '站点logo', NULL, 'logo', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1687863851728.png', 0, 'input', 0, 0, NULL, 1, '2023-05-15 11:15:08', '2023-05-15 16:17:45', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (62, 60, 'website', '站点名称', NULL, 'siteName', '千麦生鲜商城', 0, 'input', 0, 0, NULL, 1, '2023-05-15 11:15:08', '2023-05-15 16:17:45', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (63, 60, 'website', '站点介绍', NULL, 'description', '千麦生鲜商城管理系统，五合一社交电商小程序系统', 0, 'textarea', 0, 0, NULL, 1, '2023-05-15 11:16:57', '2023-05-15 16:17:45', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (62, 60, 'website', '站点名称', NULL, 'siteName', '惠立达配送', 0, 'input', 0, 0, NULL, 1, '2023-05-15 11:15:08', '2023-05-15 16:17:45', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (63, 60, 'website', '站点介绍', NULL, 'description', '惠立达配送，让新鲜食材触手可及，开启健康生活新篇章！', 0, 'textarea', 0, 0, NULL, 1, '2023-05-15 11:16:57', '2023-05-15 16:17:45', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (64, 60, 'website', '登录页背景图', NULL, 'background', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684121447519.png', 0, 'input', 0, 0, NULL, 1, '2023-05-15 11:16:57', '2023-05-15 16:17:45', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (69, 7, 'wx.miniapp', '小程序原始id', NULL, 'input', NULL, 0, 'input', 0, 0, NULL, 0, '2023-05-15 11:19:52', '2023-05-15 11:19:52', 1, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (70, 60, 'website', '备案号', NULL, 'beian', '浙ICP备2021017792号', 0, 'input', 0, 0, NULL, 0, '2023-05-15 16:17:45', '2023-05-15 16:17:45', 1, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (70, 60, 'website', '备案号', NULL, 'beian', '桂ICP备2021017792号', 0, 'input', 0, 0, NULL, 0, '2023-05-15 16:17:45', '2023-05-15 16:17:45', 1, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (71, 42, 'promote', '分销海报', NULL, 'posterImgs', '[\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684406829072.png\",\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684406829082.png\"]', 1, 'input', 0, 0, NULL, 1, '2023-05-18 18:40:43', '2023-05-18 18:40:43', 1, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (72, 0, 'wx.open', '微信开放平台', NULL, 'wx.open', NULL, 0, 'form', 1, 0, NULL, 0, '2023-05-19 18:11:36', '2023-05-19 18:21:29', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (79, 72, 'wx.open', 'appId', NULL, 'componentAppId', 'wx3c2689bf3092c4eb', 0, 'input', 0, 0, NULL, 0, '2023-05-19 18:15:12', '2023-05-19 18:21:29', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (80, 72, 'wx.open', 'appSecret', NULL, 'componentAppSecret', 'c8c3413b872723b749ecee8e5c292fb3', 0, 'input', 0, 0, NULL, 0, '2023-05-19 18:15:12', '2023-05-19 18:21:29', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (81, 72, 'wx.open', '消息校验Token', NULL, 'componentToken', 'KpnZ299NpuE33UK38urPNuqKu92UuEBP', 0, 'input', 0, 0, NULL, 0, '2023-05-19 18:15:12', '2023-05-19 18:21:29', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (82, 72, 'wx.open', '消息加解密Key', NULL, 'componentAesKey', 'unI5U5F5Gr8eightI5IoU2ebeeR5INzS282OI228EDB', 0, 'input', 0, 0, NULL, 0, '2023-05-19 18:15:12', '2023-05-19 18:21:29', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (83, 72, 'wx.open', 'verifyTicket', NULL, 'componentVerifyTicket', 'ticket@@@CfdeVxGePHpgLxxoACj1KCqVn_dDfk2Tp4Q47JQbC42iadbOtd8ko8LfbTC36IrlTaye3j7piMaWah3_dXpKMA', 0, 'input', 0, 0, NULL, 0, '2023-05-29 15:41:33', '2023-05-29 15:41:35', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (84, 58, 'agreement', '充值说明', NULL, 'rechargeDesc', '1、充值后帐户的金额不可提现，可用于商城消费使用\n2、佣金导入账户之后不能再次导出\n3、账户充值出现问题可联系商城客服，也可拨打商城客服热线\n4、充值赠送活动，请选择如上充值方案，自定义充值金额不享受赠送福利', 0, 'textarea', 0, 0, 2, 0, '2023-05-26 15:14:49', '2023-05-31 14:33:04', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (85, 8, 'wx.pay', '支付回调地址', NULL, 'notifyUrl', 'https://api.b2c.kinstore.cn/callback/notify/order', 0, 'input', 0, 0, 5, 0, '2023-05-30 20:42:51', '2023-05-30 20:49:06', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (85, 8, 'wx.pay', '支付回调地址', NULL, 'notifyUrl', 'https://www.bitworldonline.cn/wx/notify/order', 0, 'input', 0, 0, 5, 0, '2023-05-30 20:42:51', '2023-05-30 20:49:06', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (86, 58, 'agreement', '划线价说明', NULL, 'underlineDesc', '划线价格：划线的价格可能是商品的专柜价、吊牌价、正品零售价、指导价、曾经展示过的销售价等，仅供您参考。\n\n未划线价格：未划线的价格是商品的销售标价，具体的成交价格可能因会员使用优惠券、积分等发生变化，最终以订单结算价格为准。\n\n若商家针对划线价格进行说明，以商家的表述为准。', 0, 'textarea', 0, 0, 3, 1, '2023-05-31 14:33:04', '2023-05-31 14:33:04', 1, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (87, 0, 'credit', '积分设置', NULL, 'credit', NULL, 0, 'form', 1, 0, NULL, 0, '2023-06-05 11:01:57', '2023-06-05 11:04:53', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (91, 87, 'credit', '签到积分奖励', NULL, 'checkInPrice', '10', 0, 'input', 0, 0, 1, 1, '2023-06-05 11:04:53', '2023-06-05 11:04:53', 1, 1, 0);
@@ -2953,10 +2924,6 @@ INSERT INTO `kz_sys_property` VALUES (96, 95, 'print', '选择打印机', NULL, 
 INSERT INTO `kz_sys_property` VALUES (97, 95, 'print', '选择打印模板', NULL, 'templateId', '19', 0, 'number', 0, 0, 3, 0, '2023-06-16 11:31:04', '2023-06-16 14:29:26', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (98, 95, 'print', '订单打印方式', NULL, 'printScope', '[\"PAID\",\"ORDER\"]', 1, 'checkbox', 0, 0, 4, 0, '2023-06-16 11:31:04', '2023-06-16 14:29:26', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (99, 95, 'print', '开启打印', NULL, 'printSwitch', '1', 0, 'switch', 0, 0, 1, 0, '2023-06-16 14:28:54', '2023-06-16 14:29:26', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (101, 0, 'mp', '微信公众号配置', NULL, 'mp', NULL, 0, 'form', 1, 0, NULL, 0, '2023-06-21 14:32:38', '2023-06-21 14:41:28', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (102, 101, 'mp', '公众号名称', NULL, 'mpTitle', '惠速达配送', 0, 'input', 0, 0, 1, 1, '2023-06-21 14:34:16', '2023-06-21 14:41:28', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (103, 101, 'mp', '公众号二维码', NULL, 'mpQrCode', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1687330121841.png', 0, 'input', 0, 0, 2, 1, '2023-06-21 14:34:16', '2023-06-21 14:41:28', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (104, 101, 'mp', '公众号logo', NULL, 'mpLogo', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684481268957.png', 0, 'input', 0, 0, 3, 1, '2023-06-21 14:41:28', '2023-06-21 14:41:28', 1, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (107, 10, 'oss', '区域', NULL, 'region', 'oss-cn-hangzhou', 0, 'select', 0, 0, 2, 1, '2023-06-26 14:17:29', '2023-06-26 14:33:13', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (108, 10, 'oss', 'bucket', NULL, 'bucket', 'kmp-oss', 0, 'input', 0, 0, 3, 1, '2023-06-26 14:17:29', '2023-06-26 14:33:13', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (109, 10, 'oss', 'accessKeyId', NULL, 'oAccessKeyId', 'LTAI5t7JR7wwTXgZ32gJaen6', 0, 'input', 0, 0, 4, 1, '2023-06-26 14:19:40', '2023-06-26 14:33:13', NULL, 1, 0);
@@ -2992,14 +2959,14 @@ CREATE TABLE `kz_sys_quartz_job`  (
 -- ----------------------------
 INSERT INTO `kz_sys_quartz_job` VALUES (1, 'visitsTask', '0 0 0 * * ?', b'1', '更新访客记录', 'run', NULL, '每日0点创建新的访客记录', NULL, '2019-01-08 14:53:31', '2023-03-13 11:32:12', 0, 1, 0);
 INSERT INTO `kz_sys_quartz_job` VALUES (4, 'orderSyncTask', '0/5 * * * * ?', b'1', '订单支付主动同步', 'syncQueueOrder', NULL, '主动同步订单支付状态，2秒一次处理订单队列', 1, '2023-05-18 19:45:42', '2023-05-30 20:22:28', 0, 1, 0);
-INSERT INTO `kz_sys_quartz_job` VALUES (5, 'couponTask', '0 5 0 ? * *', b'0', '用户优惠券过期检测', 'userCouponCheck', NULL, '每天凌晨5分检测用户优惠券过期', 1, '2023-06-01 17:57:22', '2023-06-01 18:10:22', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (5, 'couponTask', '0 5 0 ? * *', b'1', '用户优惠券过期检测', 'userCouponCheck', NULL, '每天凌晨5分检测用户优惠券过期', 1, '2023-06-01 17:57:22', '2023-06-01 18:10:22', 0, 1, 0);
 INSERT INTO `kz_sys_quartz_job` VALUES (6, 'seckillTask', '0/5 * * * * ?', b'1', '秒杀活动检测', 'run', NULL, '检测秒杀活动状态，自动开启状态，或者关闭', 1, '2023-06-01 20:07:40', '2023-07-04 09:07:54', 0, 1, 0);
-INSERT INTO `kz_sys_quartz_job` VALUES (7, 'couponTask', '0 0 0/1 * * ?', b'0', '优惠券检测任务', 'couponCheck', NULL, '优惠券开放或者过期检测任务', 1, '2023-06-06 14:14:25', '2023-06-06 14:16:24', 0, 1, 0);
-INSERT INTO `kz_sys_quartz_job` VALUES (8, 'combinationTask', '0 0 0/1 * * ?', b'0', '拼团活动检测', 'run', NULL, '每小时一次拼团活动检测', 1, '2023-06-07 11:23:57', '2023-06-07 11:23:57', 0, 1, 0);
-INSERT INTO `kz_sys_quartz_job` VALUES (9, 'combinationTask', '0 0/1 * * * ?', b'0', '拼团记录检测', 'checkLog', NULL, '拼团成功，失败检测', 1, '2023-06-07 15:12:30', '2023-06-07 15:17:30', 0, 1, 0);
-INSERT INTO `kz_sys_quartz_job` VALUES (10, 'bargainTask', '0 0/5 * * * ?', b'0', '砍价活动检测', 'run', NULL, '砍价活动检测,根据开始，结束时间，开启关闭', 1, '2023-06-07 20:09:00', '2023-06-07 20:12:05', 0, 1, 0);
-INSERT INTO `kz_sys_quartz_job` VALUES (11, 'storeOrderTask', '0 0/5 * * * ?', b'0', '过期订单清理', 'closeOrder', NULL, '过期订单清理', 1, '2023-06-12 20:44:21', '2023-06-12 20:58:58', 0, 1, 0);
-INSERT INTO `kz_sys_quartz_job` VALUES (12, 'printerTask', '0 0/5 * * * ?', b'0', '同步打印机状态', 'run', NULL, '同步打印机状态', 1, '2023-06-15 20:00:31', '2023-06-15 20:00:31', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (7, 'couponTask', '0 0 0/1 * * ?', b'1', '优惠券检测任务', 'couponCheck', NULL, '优惠券开放或者过期检测任务', 1, '2023-06-06 14:14:25', '2023-06-06 14:16:24', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (8, 'combinationTask', '0 0 0/1 * * ?', b'1', '拼团活动检测', 'run', NULL, '每小时一次拼团活动检测', 1, '2023-06-07 11:23:57', '2023-06-07 11:23:57', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (9, 'combinationTask', '0 0/1 * * * ?', b'1', '拼团记录检测', 'checkLog', NULL, '拼团成功，失败检测', 1, '2023-06-07 15:12:30', '2023-06-07 15:17:30', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (10, 'bargainTask', '0 0/5 * * * ?', b'1', '砍价活动检测', 'run', NULL, '砍价活动检测,根据开始，结束时间，开启关闭', 1, '2023-06-07 20:09:00', '2023-06-07 20:12:05', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (11, 'storeOrderTask', '0 0/5 * * * ?', b'1', '过期订单清理', 'closeOrder', NULL, '过期订单清理', 1, '2023-06-12 20:44:21', '2023-06-12 20:58:58', 0, 1, 0);
+INSERT INTO `kz_sys_quartz_job` VALUES (12, 'printerTask', '0 0/5 * * * ?', b'1', '同步打印机状态', 'run', NULL, '同步打印机状态', 1, '2023-06-15 20:00:31', '2023-06-15 20:00:31', 0, 1, 0);
 
 -- ----------------------------
 -- Table structure for kz_sys_quartz_log
@@ -3614,33 +3581,5 @@ CREATE TABLE `kz_withdraw`  (
 -- Records of kz_withdraw
 -- ----------------------------
 INSERT INTO `kz_withdraw` VALUES (886, 2.00, 1.98, 'https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/collectionCode/1686800988546123.png', 1, '驳回', '请上传正确的收款码！', NULL, NULL, NULL, NULL, 868, '2023-06-15 11:50:16', '2023-06-15 11:50:51', 868, 1, 0, 0);
-
--- ----------------------------
--- Table structure for kz_wx_task
--- ----------------------------
-DROP TABLE IF EXISTS `kz_wx_task`;
-CREATE TABLE `kz_wx_task`  (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `app_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '小程序类型，个人personal，企业company',
-  `app_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `app_secret` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `task_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '任务id',
-  `authorize_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '给用户扫码认证的验证url',
-  `payload` json NULL COMMENT '请求实体',
-  `status` int(11) NULL DEFAULT NULL COMMENT '状态',
-  `status_desc` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '状态描述',
-  `create_user` int(11) NULL DEFAULT NULL COMMENT '操作员',
-  `create_time` datetime(0) NULL DEFAULT NULL COMMENT '添加时间',
-  `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
-  `enabled` tinyint(2) NULL DEFAULT 1 COMMENT '状态',
-  `is_delete` tinyint(2) NULL DEFAULT 0 COMMENT '逻辑删除',
-  `tenant_id` int(11) NULL DEFAULT NULL COMMENT '租户id',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '应用管理' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of kz_wx_task
--- ----------------------------
-INSERT INTO `kz_wx_task` VALUES (4, 'personal', 'wxbffa21d9a2ea56c8', NULL, '9d94405ba598e21a', 'https://mp.weixin.qq.com/publicpoc/fastregisterpersonalwxa?action=scan&tid=9d94405ba598e21a#wechat_redirect', '{\"idname\": \"丁晓松\", \"wxuser\": \"songsirvt\", \"componentPhone\": \"13675175408\"}', NULL, NULL, 1, '2023-05-24 16:33:13', '2023-05-24 16:33:13', 1, 0, 0);
 
 SET FOREIGN_KEY_CHECKS = 1;
