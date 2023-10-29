@@ -58,10 +58,12 @@ public class CouponServiceImpl extends ServiceImpl<StoreCouponMapper, CouponEnti
         entity.setStatusDesc("正常");
         saveOrUpdate(entity);
 
+        //如果是商品优惠券
         if (dto.getScope() == CouponScopeEnum.PRODUCT) {
             couponProductService.save(entity.getId(), dto.getProductIds());
         }
 
+        //如果是分类优惠券
         if (dto.getScope() == CouponScopeEnum.CATEGORY) {
             couponCategoryService.save(entity.getId(), dto.getCategoryId(), dto.getCategoryList());
         }
@@ -85,12 +87,9 @@ public class CouponServiceImpl extends ServiceImpl<StoreCouponMapper, CouponEnti
                 .lambdaQuery()
                 .eq(CouponProductEntity::getProductId, productId).list();
         if (CollectionUtils.isEmpty(todoList)) {
-
             return null;
         }
-        List<Integer> couponIds = todoList.stream().map(CouponProductEntity::getCouponId).collect(Collectors.toList());
-
-        return couponIds;
+        return todoList.stream().map(CouponProductEntity::getCouponId).collect(Collectors.toList());
     }
 
     @Override
@@ -99,12 +98,9 @@ public class CouponServiceImpl extends ServiceImpl<StoreCouponMapper, CouponEnti
                 .lambdaQuery()
                 .eq(CouponCategoryEntity::getCategoryId, categoryId).list();
         if (CollectionUtils.isEmpty(todoList)) {
-
             return null;
         }
-        List<Integer> couponIds = todoList.stream().map(CouponCategoryEntity::getCouponId).collect(Collectors.toList());
-
-        return couponIds;
+        return todoList.stream().map(CouponCategoryEntity::getCouponId).collect(Collectors.toList());
     }
 
     @Override
@@ -124,7 +120,7 @@ public class CouponServiceImpl extends ServiceImpl<StoreCouponMapper, CouponEnti
     @Override
     public BigDecimal calcPriceByCouponId(BigDecimal totalPrice, Integer userCouponId, Integer userId) {
         CouponEntity couponEntity = findCouponByUserId(userId, userCouponId);
-        log.error("couponEntity {}", couponEntity);
+        log.info("couponEntity {}", couponEntity);
         if (null == couponEntity) {
             return BigDecimal.ZERO;
         }
@@ -216,8 +212,7 @@ public class CouponServiceImpl extends ServiceImpl<StoreCouponMapper, CouponEnti
         if (couponEntity.getHoldLimit() > 0) {
             //获取当前用户优惠券的持有量
             Long holdNum = userCouponService.countHoldNum(couponEntity.getId(), LoggedUser.get().getId());
-            log.info("limit {}", couponEntity.getHoldLimit());
-            log.info("holdNum {}", holdNum);
+            log.info("limit {},holdNum {}", couponEntity.getHoldLimit(), holdNum);
             if (couponEntity.getHoldLimit() > 0 &&  holdNum >= couponEntity.getHoldLimit()) {
                 throw new RuntimeException("优惠券已达到领取上限~");
             }

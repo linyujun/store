@@ -12,12 +12,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 /**
- * <p>
- *  服务实现类
- * </p>
- *
  * @author songsir
- * @since 2022-12-22
+ * 意见反馈
  */
 @Service
 public class FeedbackServiceImp extends ServiceImpl<FeedbackMapper, FeedbackEntity> implements FeedbackService {

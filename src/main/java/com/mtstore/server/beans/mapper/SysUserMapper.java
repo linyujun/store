@@ -17,7 +17,7 @@ public interface SysUserMapper extends BaseMapper<SysUserEntity> {
     @Results({
             @Result(column = "role_id", property = "roleId"),
             @Result(column = "role_id", property = "role",
-                    one = @One(select = "mapper.beans.com.mtstore.server.SysRoleMapper.selectById")),
+                    one = @One(select = "com.mtstore.server.beans.mapper.SysRoleMapper.selectById")),
     })
     @Select("SELECT * FROM kz_sys_user where user_name = #{name} limit 1")
     SysUserEntity selectByName(@Param("name") String userName);
@@ -25,7 +25,7 @@ public interface SysUserMapper extends BaseMapper<SysUserEntity> {
     @Results({
             @Result(column = "role_id", property = "roleId"),
             @Result(column = "role_id", property = "role",
-                    one = @One(select = "mapper.beans.com.mtstore.server.SysRoleMapper.selectById")),
+                    one = @One(select = "com.mtstore.server.beans.mapper.SysRoleMapper.selectById")),
     })
     @Select("SELECT * FROM kz_sys_user where user_name=#{needle} or phone=#{needle} limit 1")
     SysUserEntity selectByAny(@Param("needle") String needle);
@@ -33,7 +33,7 @@ public interface SysUserMapper extends BaseMapper<SysUserEntity> {
     @Results({
             @Result(column = "role_id", property = "roleId"),
             @Result(column = "role_id", property = "role",
-                    one = @One(select = "mapper.beans.com.mtstore.server.SysRoleMapper.selectById")),
+                    one = @One(select = "com.mtstore.server.beans.mapper.SysRoleMapper.selectById")),
     })
     @Select("SELECT * FROM kz_sys_user where phone = #{phone} limit 1")
     SysUserEntity selectByPhone(@Param("phone") String phone);
@@ -41,7 +41,7 @@ public interface SysUserMapper extends BaseMapper<SysUserEntity> {
     @Results({
             @Result(column = "role_id", property = "roleId"),
             @Result(column = "role_id", property = "role",
-                    one = @One(select = "mapper.beans.com.mtstore.server.SysRoleMapper.selectById")),
+                    one = @One(select = "com.mtstore.server.beans.mapper.SysRoleMapper.selectById")),
     })
     @Select("SELECT * FROM kz_sys_user ${ew.customSqlSegment}")
     Page<SysUserEntity> getPage(Page page, @Param("ew") Wrapper wrapper);

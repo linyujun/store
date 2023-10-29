@@ -10,8 +10,8 @@ import java.util.stream.Stream;
 public enum CouponScopeEnum {
 
     ALL("ALL","全场通用"),
-    PRODUCT("PRODUCT","分类"),
-    CATEGORY("CATEGORY", "商品");
+    PRODUCT("PRODUCT","商品"),
+    CATEGORY("CATEGORY", "分类");
 
     private String value;
 

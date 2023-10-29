@@ -12,7 +12,7 @@ import java.time.*;
 
 /**
 * @author songsir
-* @date 2023-04-06
+* 商家对象
 */
 @Data
 @TableName(value = "kz_merchant", autoResultMap = true)

@@ -23,8 +23,6 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 
-import static com.baomidou.mybatisplus.extension.toolkit.Db.list;
-
 /**
 * @author songsir
  * 订单状态修改

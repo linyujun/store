@@ -3270,8 +3270,8 @@ CREATE TABLE `kz_sys_user`  (
 -- ----------------------------
 -- Records of kz_sys_user
 -- ----------------------------
-INSERT INTO `kz_sys_user` VALUES (1, 1, NULL, 'super-admin', '超级管理员', '男', '$2a$10$i4h9iA5r8ofJFVUwL15uR.eEixo0uU9BTJttLV94PWRVQn.m5ACBy', 'dingxiaosong1987@126.com', '13675175408', '2022-04-02 17:50:26', '2023-06-28 16:38:23', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 10, 0, 0, NULL);
-INSERT INTO `kz_sys_user` VALUES (10, 2, NULL, 'admin', '管理员', '男', '$2a$10$lYqZEMlbSwSNwUK/3UO/Oe5yfiZngx7NcRzsLXekAWB7rC1UuOKGi', 'dingxiaosong1987@126.com', '13900000000', '2021-09-27 08:13:31', '2023-02-15 16:33:30', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 8, 0, 0, NULL);
+INSERT INTO `kz_sys_user` VALUES (1, 1, NULL, 'super-admin', '超级管理员', '男', '', 'dingxiaosong1987@126.com', '13675175408', '2022-04-02 17:50:26', '2023-06-28 16:38:23', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 10, 0, 0, NULL);
+INSERT INTO `kz_sys_user` VALUES (10, 2, NULL, 'admin', '管理员', '男', '', 'dingxiaosong1987@126.com', '13900000000', '2021-09-27 08:13:31', '2023-02-15 16:33:30', NULL, 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', NULL, NULL, 1, 8, 0, 0, NULL);
 
 -- ----------------------------
 -- Table structure for kz_user

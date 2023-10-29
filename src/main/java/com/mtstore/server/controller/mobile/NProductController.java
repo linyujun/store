@@ -38,7 +38,7 @@ public class NProductController {
             return R.ok("获取成功", entity);
         } finally {
             //TODO 记录访问次数和用户足迹
-            log.info(LoggedUser.get().getUserId() + " 进入商品详情：" + id);
+            log.info("进入商品详情：" + id);
         }
     }
 
@@ -55,14 +55,12 @@ public class NProductController {
                 queryDto.getFilter().setCategoryId(null);
             }
         });
-        log.info(LoggedUser.get().getUserId() + " 商品分页: " + queryDto.getPage());
         return R.ok("获取成功", productService.pageList(queryDto, wrapper));
     }
 
     @GetMapping("/category/{categoryId}")
     @ApiOperation("分类下所有商品")
     public Object getProductsByCategory(@PathVariable("categoryId") Integer categoryId) {
-        log.info(LoggedUser.get().getUserId() + " 分类下所有商品：" + categoryId);
         return R.ok("获取成功", productService.findAllByCategoryId(categoryId));
     }
 

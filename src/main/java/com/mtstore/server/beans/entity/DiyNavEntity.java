@@ -11,7 +11,7 @@ import lombok.Setter;
 
 /**
  * <p>
- * 商品分类表
+ * 导航栏DIY表
  * </p>
  *
  * @author songsir

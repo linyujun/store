@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 /**
  * <p>
- * 商品分类表 服务实现类
+ * 导航栏DIY
  * </p>
  *
  * @author songsir

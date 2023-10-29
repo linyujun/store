@@ -14,10 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * <p>
- *  分类实现类
- * </p>
- *
+ *  商品分类实现类
  * @author songsir
  * @since 2021-11-22
  */

@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 /**
 * @author songsir
-* @date 2023-05-06
+* 优惠券-商品关系
 */
 @Service
 @RequiredArgsConstructor

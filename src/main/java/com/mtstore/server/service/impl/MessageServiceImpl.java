@@ -14,6 +14,9 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 小程序消息
+ */
 @Slf4j
 @Service
 @RequiredArgsConstructor
