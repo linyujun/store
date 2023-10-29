@@ -639,7 +639,7 @@ CREATE TABLE `kz_store_bargain`  (
 -- ----------------------------
 -- Records of kz_store_bargain
 -- ----------------------------
-INSERT INTO `kz_store_bargain` VALUES (1, '日常砍价活动', '[1, 10]', '[67, 37]', '是兄弟就来帮我砍一刀~', '2023-06-01 00:00:00', '2023-06-30 00:00:00', 60, '1111', 2, '已结束', 1, '2023-06-07 19:24:53', '2023-06-08 10:57:43', 1, 0, 0);
+INSERT INTO `kz_store_bargain` VALUES (1, '日常砍价活动', '[1, 10]', '[37, 41]', '是兄弟就来帮我砍一刀~', '2023-06-01 00:00:00', '2023-06-30 00:00:00', 60, '1111', 2, '已结束', 1, '2023-06-07 19:24:53', '2023-06-08 10:57:43', 1, 0, 0);
 
 -- ----------------------------
 -- Table structure for kz_store_bargain_log
@@ -708,11 +708,8 @@ CREATE TABLE `kz_store_cart`  (
 -- ----------------------------
 -- Records of kz_store_cart
 -- ----------------------------
-INSERT INTO `kz_store_cart` VALUES (148, 867, NULL, 63, 914, 1, 5, NULL, NULL, NULL, NULL, 1, 867, '2023-06-06 11:51:59', '2023-06-06 11:52:10', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (150, 868, NULL, 64, 915, 1, 5, NULL, NULL, NULL, NULL, 1, 868, '2023-06-06 11:54:03', '2023-06-06 11:54:03', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (151, 868, NULL, 65, 916, 1, 3, NULL, NULL, NULL, NULL, 1, 868, '2023-06-06 17:39:59', '2023-06-06 17:39:59', 1, 0, 0);
-INSERT INTO `kz_store_cart` VALUES (152, 868, NULL, 37, 786, 1, 1, NULL, NULL, NULL, NULL, 1, 868, '2023-06-06 17:59:13', '2023-06-25 09:28:38', 1, 0, 0);
-
+INSERT INTO `kz_store_cart` VALUES (148, 867, NULL, 37, 789, 1, 5, NULL, NULL, NULL, NULL, 1, 867, '2023-06-06 11:51:59', '2023-06-06 11:52:10', 1, 0, 0);
+INSERT INTO `kz_store_cart` VALUES (150, 868, NULL, 41, 876, 1, 5, NULL, NULL, NULL, NULL, 1, 868, '2023-06-06 11:54:03', '2023-06-06 11:54:03', 1, 0, 0);
 -- ----------------------------
 -- Table structure for kz_store_combination
 -- ----------------------------
@@ -743,8 +740,8 @@ CREATE TABLE `kz_store_combination`  (
 -- ----------------------------
 -- Records of kz_store_combination
 -- ----------------------------
-INSERT INTO `kz_store_combination` VALUES (1, '天天早上蔬菜拼', '[67, 66]', '2023-06-01 00:00:00', '2023-06-30 00:00:00', 2, 60, NULL, 1, NULL, '拼团不成退款', 2, '已结束', 1, '2023-06-02 14:28:54', '2023-06-06 16:43:44', 1, 0, 0);
-INSERT INTO `kz_store_combination` VALUES (2, '天天买', '[37, 65]', '2023-06-01 00:00:00', '2023-06-30 00:00:00', 2, 2, NULL, 1, '拼着买更实惠！', '1111', 2, '已结束', 1, '2023-06-02 14:50:24', '2023-06-09 14:48:14', 1, 0, 0);
+INSERT INTO `kz_store_combination` VALUES (1, '天天早上蔬菜拼', '[37, 41]', '2023-06-01 00:00:00', '2023-06-30 00:00:00', 2, 60, NULL, 1, NULL, '拼团不成退款', 2, '已结束', 1, '2023-06-02 14:28:54', '2023-06-06 16:43:44', 1, 0, 0);
+INSERT INTO `kz_store_combination` VALUES (2, '天天买', '[37, 41]', '2023-06-01 00:00:00', '2023-06-30 00:00:00', 2, 2, NULL, 1, '拼着买更实惠！', '1111', 2, '已结束', 1, '2023-06-02 14:50:24', '2023-06-09 14:48:14', 1, 0, 0);
 -- ----------------------------
 -- Table structure for kz_store_combination_log
 -- ----------------------------
@@ -828,11 +825,8 @@ CREATE TABLE `kz_store_comment`  (
 -- ----------------------------
 -- Records of kz_store_comment
 -- ----------------------------
-INSERT INTO `kz_store_comment` VALUES (24, '202305170546188109371', 36, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 1, 0.02, 868, 0.02, 1, 5, 5, 5, 'hhhhhhhhh', NULL, NULL, NULL, NULL, 0, 0, NULL, '2023-05-17 18:06:20', '2023-05-17 18:50:31', 868, 1, 0, 0);
-INSERT INTO `kz_store_comment` VALUES (25, '202305170653349744603', 52, '五色糙米5斤低脂粗粮大米黑米主食饭新七色五谷杂粮孕妇三色健身', '默认', '//img.alicdn.com/imgextra/i4/2200608599252/O1CN014sHQVG2IDTEkYioMD_!!2200608599252-0-lubanu-s.jpg', 1, 0.03, 867, 0.03, 5, NULL, NULL, NULL, '很好感谢', NULL, '[\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/168439711358153.png\"]', NULL, NULL, 0, 1, '已评价', '2023-05-17 18:55:33', '2023-05-18 16:05:21', 867, 1, 0, 0);
-INSERT INTO `kz_store_comment` VALUES (26, '202305170653349744603', 53, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, 0.02, 867, 0.02, 2, NULL, NULL, NULL, '好的', NULL, '[\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/168439712008545.png\"]', NULL, NULL, 0, 1, '已评价', '2023-05-17 18:55:33', '2023-05-18 16:05:21', 867, 1, 0, 0);
-INSERT INTO `kz_store_comment` VALUES (27, '202305180923569892059', 53, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, 0.02, 868, 0.02, 5, NULL, NULL, NULL, '极地沙尘暴', NULL, '[\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/1684377448111138.png\",\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/1684377448122106.png\"]', '亲爱的，，非常感谢您对我们的厚爱与支持。您的满意是我们的动力，欢迎您再次光临，祝您生活愉快!', NULL, 1, 1, '已评价', '2023-05-18 09:26:24', '2023-05-18 12:06:23', 868, 1, 0, 0);
-
+INSERT INTO `kz_store_comment` VALUES (24, '202305170546188109371', 37, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 1, 0.02, 868, 0.02, 1, 5, 5, 5, 'hhhhhhhhh', NULL, NULL, NULL, NULL, 0, 0, NULL, '2023-05-17 18:06:20', '2023-05-17 18:50:31', 868, 1, 0, 0);
+INSERT INTO `kz_store_comment` VALUES (25, '202305170653349744603', 41, '五色糙米5斤低脂粗粮大米黑米主食饭新七色五谷杂粮孕妇三色健身', '默认', '//img.alicdn.com/imgextra/i4/2200608599252/O1CN014sHQVG2IDTEkYioMD_!!2200608599252-0-lubanu-s.jpg', 1, 0.03, 867, 0.03, 5, NULL, NULL, NULL, '很好感谢', NULL, '[\"https://kinzhan-im-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/168439711358153.png\"]', NULL, NULL, 0, 1, '已评价', '2023-05-17 18:55:33', '2023-05-18 16:05:21', 867, 1, 0, 0);
 -- ----------------------------
 -- Table structure for kz_store_coupon
 -- ----------------------------
@@ -1063,11 +1057,8 @@ CREATE TABLE `kz_store_order_detail`  (
 -- ----------------------------
 -- Records of kz_store_order_detail
 -- ----------------------------
-INSERT INTO `kz_store_order_detail` VALUES (54, 868, NULL, '202305170546188109371', 36, 879, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-17 17:46:19', '2023-05-17 17:46:19', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (55, 867, NULL, '202305170653349744603', 52, 922, '五色糙米5斤低脂粗粮大米黑米主食饭新七色五谷杂粮孕妇三色健身', '默认', '//img.alicdn.com/imgextra/i4/2200608599252/O1CN014sHQVG2IDTEkYioMD_!!2200608599252-0-lubanu-s.jpg', 1, NULL, 0.00, 0.03, 0.03, NULL, NULL, NULL, NULL, 867, '2023-05-17 18:53:35', '2023-05-17 18:53:35', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (56, 867, NULL, '202305170653349744603', 53, 921, '2022东北黏玉米棒黄糯苞米现摘真空包装新鲜甜玉米粒粘非即食粗粮', '默认', 'https://img.alicdn.com/imgextra/i2/2200608599252/O1CN012UGWOp2IDTDxE3ajW_!!2200608599252.jpg', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 867, '2023-05-17 18:53:35', '2023-05-17 18:53:35', 1, 0, 0);
-INSERT INTO `kz_store_order_detail` VALUES (58, 868, NULL, '202305180923569892059', 36, 879, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-18 09:23:57', '2023-05-18 09:23:57', 1, 0, 0);
-
+INSERT INTO `kz_store_order_detail` VALUES (54, 868, NULL, '202305170546188109371', 37, 789, '应季本园头茬上海青，富含维生素C', '默认', 'http://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1681375393826.png', 1, NULL, 0.00, 0.02, 0.02, NULL, NULL, NULL, NULL, 868, '2023-05-17 17:46:19', '2023-05-17 17:46:19', 1, 0, 0);
+INSERT INTO `kz_store_order_detail` VALUES (55, 867, NULL, '202305170653349744603', 41, 876, '五色糙米5斤低脂粗粮大米黑米主食饭新七色五谷杂粮孕妇三色健身', '默认', '//img.alicdn.com/imgextra/i4/2200608599252/O1CN014sHQVG2IDTEkYioMD_!!2200608599252-0-lubanu-s.jpg', 1, NULL, 0.00, 0.03, 0.03, NULL, NULL, NULL, NULL, 867, '2023-05-17 18:53:35', '2023-05-17 18:53:35', 1, 0, 0);
 -- ----------------------------
 -- Table structure for kz_store_order_status
 -- ----------------------------

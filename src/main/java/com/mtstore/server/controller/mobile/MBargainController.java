@@ -85,7 +85,7 @@ public class MBargainController {
     @PostMapping("/open/bargain/page")
     @ApiOperation(value = "获取砍价商品-分页")
     public Object getList(@RequestBody(required = false) QueryDto<ProductQueryDto> queryDto){
-        List<StoreBargainEntity> resultList = bargainService
+        /*List<StoreBargainEntity> resultList = bargainService
                 .lambdaQuery()
                 .eq(StoreBargainEntity::getStatus, ActivityStatusEnum.RUNNING)
                 .list();
@@ -107,7 +107,8 @@ public class MBargainController {
             });
         });
 
-        return R.ok("获取成功", page);
+        return R.ok("获取成功", page);*/
+        return R.ok("获取成功", null);
     }
 
     @GetMapping("/open/bargain/{id}")

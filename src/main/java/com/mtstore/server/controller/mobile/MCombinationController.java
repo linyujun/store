@@ -62,7 +62,7 @@ public class MCombinationController {
     @PostMapping("/open/combination/page")
     @ApiOperation(value = "获取拼团商品-分页")
     public Object getList(@RequestBody(required = false) QueryDto<ProductQueryDto> queryDto){
-        List<StoreCombinationEntity> resultList = combinationService
+        /*List<StoreCombinationEntity> resultList = combinationService
                 .lambdaQuery()
                 .eq(StoreCombinationEntity::getStatus, ActivityStatusEnum.RUNNING)
                 .list();
@@ -83,7 +83,8 @@ public class MCombinationController {
             });
         });
 
-        return R.ok("获取成功", page);
+        return R.ok("获取成功", page);*/
+        return R.ok("获取成功", null);
     }
 
     @GetMapping("/open/combination/{id}")
