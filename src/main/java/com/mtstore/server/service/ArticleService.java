@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.article.ArticleDto;
 
 /**
 * @author songsir
-* @date 2023-04-27
+* 文章
 */
 public interface ArticleService extends IKService<ArticleEntity, ArticleDto>{
 

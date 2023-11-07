@@ -7,12 +7,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**
- * <p>
- * 组织架构 服务实现类
- * </p>
- *
  * @author songsir
- * @since 2023-03-03
+ * 组织架构 服务实现类
  */
 @Service
 public class SysDeptServiceImp extends ServiceImpl<SysDeptMapper, SysDeptEntity> implements SysDeptService {

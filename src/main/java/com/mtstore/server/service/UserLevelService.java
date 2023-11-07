@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.user.UserLevelDto;
 
 /**
 * @author songsir
-* @date 2023-04-25
+* 用户等级
 */
 public interface UserLevelService extends IKService<UserLevelEntity, UserLevelDto>{
 

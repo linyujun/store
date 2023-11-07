@@ -10,7 +10,7 @@ import com.mtstore.server.beans.entity.sys.SysQuartzLog;
 
 /**
 * @author hupeng
-* @date 2020-05-13
+* 定时任务日志
 */
 public interface QuartzLogService  extends IKService<SysQuartzLog, BaseDto> {
 }

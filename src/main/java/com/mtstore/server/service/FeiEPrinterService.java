@@ -16,6 +16,9 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.springframework.stereotype.Component;
 
+/**
+ * 打印服务
+ */
 @Component
 public class FeiEPrinterService {
     public static final String URL = "http://api.feieyun.cn/Api/Open/";//不需要修改
@@ -23,7 +26,14 @@ public class FeiEPrinterService {
     public static final String UKEY = "YIPSw3AEHfWCMJbc";//*必填*: 飞鹅云后台注册账号后生成的UKEY 【备注：这不是填打印机的KEY】
     public static final String SN = "932522977";//*必填*：打印机编号，必须要在管理后台里添加打印机或调用API接口添加之后，才能调用API
     //=====================以下是函数实现部分================================================
-    private static String addprinter(String snlist){
+
+
+    /**
+     * 添加打印机到云服务
+     * @param snlist 打印机编号
+     * @return
+     */
+    private static String addPrinter(String snlist){
         //通过POST请求，发送打印信息到服务器
         RequestConfig requestConfig = RequestConfig.custom()
                 .setSocketTimeout(30000)//读取超时
@@ -85,14 +95,14 @@ public class FeiEPrinterService {
     }
 
     /**
-     * 二次封装，配置和打印内容从外部传入
+     * 打印内容，二次封装，配置和打印内容从外部传入
      * @param snId
      * @param appId
      * @param appSecret
-     * @param template
+     * @param content
      * @return
      */
-    public String print(String snId, String appId, String appSecret, String template) {
+    public String print(String snId, String appId, String appSecret, String content) {
         //通过POST请求，发送打印信息到服务器
         RequestConfig requestConfig = RequestConfig.custom()
                 .setSocketTimeout(30000)//读取超时
@@ -109,7 +119,7 @@ public class FeiEPrinterService {
         nvps.add(new BasicNameValuePair("sig",signature(appId,appSecret,STIME)));
         nvps.add(new BasicNameValuePair("apiname","Open_printMsg"));//固定值,不需要修改
         nvps.add(new BasicNameValuePair("sn",snId));
-        nvps.add(new BasicNameValuePair("content", template));
+        nvps.add(new BasicNameValuePair("content", content));
         nvps.add(new BasicNameValuePair("times","1"));//打印联数
         CloseableHttpResponse response = null;
         String result = null;

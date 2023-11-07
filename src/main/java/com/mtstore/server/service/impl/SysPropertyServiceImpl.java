@@ -26,6 +26,10 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 
+/**
+ * @author ww
+ * 系统属性
+ **/
 @Slf4j
 @Service
 @AllArgsConstructor

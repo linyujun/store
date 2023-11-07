@@ -16,12 +16,8 @@ import lombok.experimental.Accessors;
 import lombok.experimental.SuperBuilder;
 
 /**
- * <p>
- *
- * </p>
- *
  * @author songsir
- * @since 2021-11-22
+ * 订单
  */
 @Data
 @SuperBuilder

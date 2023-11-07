@@ -9,12 +9,8 @@ import lombok.Setter;
 import java.math.BigDecimal;
 
 /**
- * <p>
- * 用户账户余额表
- * </p>
- *
  * @author songsir
- * @since 2022-04-06
+ * 用户账户余
  */
 @Getter
 @Setter

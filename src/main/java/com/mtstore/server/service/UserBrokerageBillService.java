@@ -6,8 +6,7 @@ import com.mtstore.server.beans.dto.user.UserBrokerageBillDto;
 import java.math.BigDecimal;
 
 /**
-* @author songsir
-* @date 2023-06-19
+* 用户佣金记录
 */
 public interface UserBrokerageBillService extends IKService<UserBrokerageBillEntity, UserBrokerageBillDto>{
 

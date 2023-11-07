@@ -5,7 +5,7 @@ import com.mtstore.server.beans.entity.AgentEntity;
 
 /**
 * @author songsir
-* @date 2023-04-18
+* 代理商表
 */
 public interface AgentService extends IKService<AgentEntity, AgentDto>{
 }

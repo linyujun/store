@@ -5,7 +5,7 @@ import com.mtstore.server.beans.entity.StoreAttrTemplateEntity;
 
 /**
 * @author songsir
-* @date 2023-04-14
+* 规格模板
 */
 public interface StoreAttrTemplateService extends IKService<StoreAttrTemplateEntity, AttrTemplateDto> {
 }

@@ -29,8 +29,6 @@ public class CallbackController {
 
     final WxPayService wxService;
 
-    private final ApplicationEventPublisher publisher;
-
     @ApiOperation("微信支付回调接口")
     @PostMapping("/order")
     public String orderNotify(@RequestBody String xmlData) throws WxPayException {
@@ -50,8 +48,6 @@ public class CallbackController {
             if(!wxOrderService.syncOrder(notifyResult.getOutTradeNo())) {
                 throw new RuntimeException("本地处理失败");
             }
-            //支付成功，打印订单
-            publisher.publishEvent(new OrderPaidEvent(this, notifyResult.getOutTradeNo()));
             return WxPayNotifyResponse.success("成功");
         } catch (Exception e) {
             e.printStackTrace();

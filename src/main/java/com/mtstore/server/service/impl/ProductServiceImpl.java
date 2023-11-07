@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 
 /**
 * @author songsir
-* @date 2023-04-11
+* spu
 */
 @Service
 @RequiredArgsConstructor
@@ -48,7 +48,7 @@ public class ProductServiceImpl extends ServiceImpl<StoreProductMapper, ProductE
             if (CollectionUtils.isNotEmpty(v.getServiceIds())) {
                 entity.setServices(storeServiceService.listByIds(v.getServiceIds()));
             }
-            callback(entity);
+            setCoupons(entity);
             lambdaUpdate().eq(ProductEntity::getId, id).setSql("visited=visited+" + 1).update();
         });
 
@@ -60,7 +60,7 @@ public class ProductServiceImpl extends ServiceImpl<StoreProductMapper, ProductE
      * 匹配可用的优惠券给前端
      * @param entity
      */
-    private void callback(ProductEntity entity) {
+    private void setCoupons(ProductEntity entity) {
         List<Integer> resultList = new ArrayList<>();
         Optional.ofNullable(couponService.findCouponsByCategoryId(entity.getCategoryId())).ifPresent(resultList::addAll);
         Optional.ofNullable(couponService.findCouponsByProductId(entity.getId())).ifPresent(resultList::addAll);
@@ -100,40 +100,6 @@ public class ProductServiceImpl extends ServiceImpl<StoreProductMapper, ProductE
     }
 
     /**
-     * 配置秒杀活动商品信息
-     * @param dto
-     * @return
-     */
-    @Override
-    @Transactional
-    public ProductEntity saveSeckillProdcut(ActivityProductDto dto) {
-        ProductEntity entity = Optional
-                .ofNullable(dto.getProductId())
-                .map(this::getById)
-                .orElseThrow(() -> new RuntimeException("商品不存在~"));
-        if (null == dto.getDetails()) throw new RuntimeException("秒杀价格未设置");
-        List<String> activityList = Optional.ofNullable(entity.getActivity()).orElse(new ArrayList());
-        activityList.add("SECKILL");
-        activityList = activityList.stream().distinct().collect(Collectors.toList());
-        //存储最低秒杀价到主商品
-        Optional<BigDecimal> minimumPrice = dto.getDetails().stream()
-                .map(ProductDetailDto::getSeckillPrice) // Assuming the getPrice method returns the BigDecimal price
-                .min(BigDecimal::compareTo);
-        entity.setActivity(activityList);
-        entity.setSeckillPrice(minimumPrice.orElse(BigDecimal.ZERO));
-        saveOrUpdate(entity);
-        dto.getDetails().forEach((item) -> {
-            productDetailService.lambdaUpdate()
-                    .eq(ProductDetailEntity::getId, item.getId())
-                    .set(ProductDetailEntity::getSeckillNum, item.getSeckillNum())
-                    .set(ProductDetailEntity::getSeckillPrice, item.getSeckillPrice())
-                    .update();
-        });
-
-        return entity;
-    }
-
-    /**
      * 配置积分商品信息
      * @param dto
      * @return
@@ -162,106 +128,6 @@ public class ProductServiceImpl extends ServiceImpl<StoreProductMapper, ProductE
                     .set(ProductDetailEntity::getCredit, item.getCredit())
                     .set(ProductDetailEntity::getCreditPrice, item.getCreditPrice())
                     .set(ProductDetailEntity::getCreditNum, item.getCreditNum())
-                    .update();
-        });
-
-        return entity;
-    }
-
-    /**
-     * 配置拼团商品信息
-     * @param dto
-     * @return
-     */
-    @Override
-    public ProductEntity saveCombinationProduct(ActivityProductDto dto) {
-        ProductEntity entity = Optional
-                .ofNullable(dto.getProductId())
-                .map(this::getById)
-                .orElseThrow(() -> new RuntimeException("商品不存在~"));
-        if (null == dto.getDetails()) throw new RuntimeException("拼团商品未设置");
-        List<String> activityList = Optional.ofNullable(entity.getActivity()).orElse(new ArrayList());
-        activityList.add("COMBINATION");
-        activityList = activityList.stream().distinct().collect(Collectors.toList());
-        //存储最低秒杀价到主商品
-        Optional<BigDecimal> minimumPrice = dto.getDetails().stream()
-                .map(ProductDetailDto::getCombinationPrice) // Assuming the getPrice method returns the BigDecimal price
-                .min(BigDecimal::compareTo);
-        entity.setActivity(activityList);
-        entity.setCombinationPrice(minimumPrice.orElse(BigDecimal.ZERO));
-        saveOrUpdate(entity);
-        dto.getDetails().forEach((item) -> {
-            productDetailService.lambdaUpdate()
-                    .eq(ProductDetailEntity::getId, item.getId())
-                    .set(ProductDetailEntity::getCombinationNum, item.getCombinationNum())
-                    .set(ProductDetailEntity::getCombinationPrice, item.getCombinationPrice())
-                    .update();
-        });
-
-        return entity;
-    }
-
-    @Override
-    public ProductEntity saveBargainProduct(ActivityProductDto dto) {
-        ProductEntity entity = Optional
-                .ofNullable(dto.getProductId())
-                .map(this::getById)
-                .orElseThrow(() -> new RuntimeException("商品不存在~"));
-        if (null == dto.getDetails()) throw new RuntimeException("砍价商品未设置");
-        List<String> activityList = Optional.ofNullable(entity.getActivity()).orElse(new ArrayList());
-        activityList.add("BARGAIN");
-        activityList = activityList.stream().distinct().collect(Collectors.toList());
-        //存储最低秒杀价到主商品
-        Optional<BigDecimal> minimumPrice = dto.getDetails().stream()
-                .map(ProductDetailDto::getBargainPrice) // Assuming the getPrice method returns the BigDecimal price
-                .min(BigDecimal::compareTo);
-        entity.setActivity(activityList);
-        entity.setBargainPrice(minimumPrice.orElse(BigDecimal.ZERO));
-        saveOrUpdate(entity);
-        dto.getDetails().forEach((item) -> {
-            productDetailService.lambdaUpdate()
-                    .eq(ProductDetailEntity::getId, item.getId())
-                    .set(ProductDetailEntity::getBargainNum, item.getBargainNum())
-                    .set(ProductDetailEntity::getBargainPrice, item.getBargainPrice())
-                    .update();
-        });
-
-        return entity;
-    }
-
-    @Override
-    public ProductEntity saveRebateProduct(ActivityProductDto dto) {
-        BigDecimal defaultRate = Optional.ofNullable(propertyService.getValue("firstRate")).map(BigDecimal::new).orElse(BigDecimal.ZERO);
-        ProductEntity entity = Optional
-                .ofNullable(dto.getProductId())
-                .map(this::getById)
-                .orElseThrow(() -> new RuntimeException("商品不存在~"));
-        if (null == dto.getDetails()) throw new RuntimeException("分销商品未设置");
-        if (StringUtils.isEmpty(dto.getRebateType())) throw new RuntimeException("返佣方式必须设置");
-        List<String> activityList = Optional.ofNullable(entity.getActivity()).orElse(new ArrayList());
-        activityList.add("PROMOTE");
-        activityList = activityList.stream().distinct().collect(Collectors.toList());
-        //存储最高返佣价到主商品
-        Optional<BigDecimal> maxPrice = dto.getDetails().stream()
-                .map(ProductDetailDto::getFirstFee) // Assuming the getPrice method returns the BigDecimal price
-                .max(BigDecimal::compareTo);
-        entity.setActivity(activityList);
-        entity.setRebateType(dto.getRebateType());
-        if (dto.getRebateType().equals("CASH")) {
-            entity.setRebatePrice(maxPrice.orElse(BigDecimal.ZERO));
-        } else if (dto.getRebateType().equals("CUSTOM")) {
-            entity.setRebatePrice(entity.getPrice().multiply(maxPrice.get().divide(BigDecimal.valueOf(100))));
-        } else {
-            entity.setRebatePrice(entity.getPrice().multiply(defaultRate.divide(BigDecimal.valueOf(100))));
-        }
-        saveOrUpdate(entity);
-        dto.getDetails().forEach((item) -> {
-            productDetailService.lambdaUpdate()
-                    .eq(ProductDetailEntity::getId, item.getId())
-                    .set(ProductDetailEntity::getFirstFee, item.getFirstFee())
-                    .set(ProductDetailEntity::getSecondFee, item.getSecondFee())
-                    .set(ProductDetailEntity::getThirdFee, item.getSecondFee())
-                    .set(ProductDetailEntity::getRebateType, dto.getRebateType())
                     .update();
         });
 

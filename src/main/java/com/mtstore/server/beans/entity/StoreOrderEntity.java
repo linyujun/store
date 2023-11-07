@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-04-20
+* 订单对象，包含多个商品
 */
 @Data
 @TableName(value = "kz_store_order", autoResultMap = true)

@@ -22,12 +22,8 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
- * <p>
- * 账单记录 服务实现类
- * </p>
- *
  * @author songsir
- * @since 2022-10-12
+ * 账单记录
  */
 @Service
 @RequiredArgsConstructor
@@ -39,11 +35,6 @@ public class UserBillServiceImp extends ServiceImpl<UserBillMapper, UserBillEnti
 
     /**
      * 收入，积分或者余额
-     * @param uid
-     * @param action
-     * @param category
-     * @param amount
-     * @param description
      */
     @Override
     @Transactional
@@ -69,9 +60,7 @@ public class UserBillServiceImp extends ServiceImpl<UserBillMapper, UserBillEnti
     }
 
     /**
-     * 积分收入
-     * @param uid
-     * @param action
+     * 购物或者签到送积分收入
      */
     @Override
     public void incomeCredit(Integer uid, String action) {
@@ -84,12 +73,7 @@ public class UserBillServiceImp extends ServiceImpl<UserBillMapper, UserBillEnti
     }
 
     /**
-     * 积分或者余额
-     * @param uid
-     * @param action
-     * @param category
-     * @param amount
-     * @param description
+     * 消费，积分或者余额
      */
     @Override
     public void expand(Integer uid, String action, String category, BigDecimal amount, String description) {
@@ -115,11 +99,6 @@ public class UserBillServiceImp extends ServiceImpl<UserBillMapper, UserBillEnti
 
     /**
      * 直接修改最终余额
-     * @param uid
-     * @param action
-     * @param category
-     * @param amount
-     * @param description
      */
     @Override
     public void last(Integer uid, String action, String category, BigDecimal amount, String description) {
@@ -145,9 +124,6 @@ public class UserBillServiceImp extends ServiceImpl<UserBillMapper, UserBillEnti
 
     /**
      * 积分明细分页
-     * @param dto
-     * @param wrapper
-     * @return
      */
     @Override
     public Page<UserBillEntity> getCreditPageList(PageDto dto, QueryWrapper wrapper) {
@@ -159,9 +135,6 @@ public class UserBillServiceImp extends ServiceImpl<UserBillMapper, UserBillEnti
 
     /**
      * 余额明细分页
-     * @param dto
-     * @param wrapper
-     * @return
      */
     @Override
     public Page<UserBillEntity> getBalancePageList(PageDto dto, QueryWrapper wrapper) {
@@ -174,8 +147,6 @@ public class UserBillServiceImp extends ServiceImpl<UserBillMapper, UserBillEnti
 
     /**
      * 查看某个动作的积分总额
-     * @param action
-     * @return
      */
     @Override
     public BigDecimal getTotalByAction(String action) {
@@ -190,8 +161,6 @@ public class UserBillServiceImp extends ServiceImpl<UserBillMapper, UserBillEnti
 
     /**
      * 查看某个分类的积分总额
-     * @param category
-     * @return
      */
     @Override
     public BigDecimal getTotalByCategory(String category) {

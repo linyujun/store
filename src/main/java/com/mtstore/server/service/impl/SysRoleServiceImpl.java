@@ -7,12 +7,8 @@ import com.mtstore.server.service.SysRoleService;
 import org.springframework.stereotype.Service;
 
 /**
- * <p>
- *  角色实现类
- * </p>
- *
  * @author songsir
- * @since 2021-11-22
+ * 系统角色
  */
 @Service
 public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRoleEntity> implements SysRoleService {

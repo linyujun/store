@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.mall.bargain.StoreBargainLogDto;
 
 /**
 * @author songsir
-* @date 2023-06-07
+* 砍价记录
 */
 public interface StoreBargainLogService extends IKService<StoreBargainLogEntity, StoreBargainLogDto>{
 

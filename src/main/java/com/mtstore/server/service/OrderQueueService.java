@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * <p>
- *  服务类
+ *  订单队列
  * </p>
  *
  * @author songsir

@@ -7,7 +7,7 @@ import com.mtstore.server.beans.dto.mall.aftersales.StoreAfterSalesDto;
 
 /**
 * @author songsir
-* @date 2023-06-12
+* 售后服务
 */
 public interface StoreAfterSalesService extends IKService<StoreAfterSalesEntity, StoreAfterSalesDto>{
 
@@ -25,7 +25,7 @@ public interface StoreAfterSalesService extends IKService<StoreAfterSalesEntity,
     StoreAfterSalesEntity audit(StoreAfterSalesAuditDto dto);
 
     /**
-     * 退货方式
+     * 已经退货
      * @param dto
      * @return
      */

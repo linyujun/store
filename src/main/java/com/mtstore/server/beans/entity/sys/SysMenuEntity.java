@@ -8,12 +8,8 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
- * <p>
- * 系统菜单表
- * </p>
- *
  * @author songsir
- * @since 2021-11-18
+ * 系统菜单表
  */
 @Data
 @Accessors(chain = true)

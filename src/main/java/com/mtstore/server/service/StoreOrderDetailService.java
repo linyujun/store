@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
 * @author songsir
-* @date 2023-04-20
+* 订单详情，sku级别
 */
 public interface StoreOrderDetailService extends IKService<StoreOrderDetailEntity, OrderDetailDto>{
 

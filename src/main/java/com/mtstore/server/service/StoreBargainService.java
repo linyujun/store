@@ -8,12 +8,12 @@ import com.mtstore.server.beans.entity.StoreBargainLogEntity;
 
 /**
 * @author songsir
-* @date 2023-06-07
+* 砍价
 */
 public interface StoreBargainService extends IKService<StoreBargainEntity, StoreBargainDto>{
 
     /**
-     * 创建一个砍价活动
+     * 发起砍价
      * @param dto
      * @return
      */

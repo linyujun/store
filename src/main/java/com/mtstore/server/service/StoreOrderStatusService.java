@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-04-20
+* 订单状态
 */
 public interface StoreOrderStatusService extends IKService<StoreOrderStatusEntity, OrderStatusDto>{
 

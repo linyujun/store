@@ -19,12 +19,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * <p>
- *  服务类
- * </p>
- *
  * @author songsir
- * @since 2021-11-22
+ * 用户端订单
  */
 public interface OrderService extends IService<OrderEntity> {
     /**
@@ -48,12 +44,12 @@ public interface OrderService extends IService<OrderEntity> {
 
     /**
      * 修改支付订单金额
-     * @param orderNo
+     * @param orderId
      * @param total
      */
-    default void updateOrderTotal(String orderNo, BigDecimal total) {
+    default void updateOrderTotal(String orderId, BigDecimal total) {
         lambdaUpdate()
-                .eq(OrderEntity::getOrderId, orderNo)
+                .eq(OrderEntity::getOrderId, orderId)
                 .set(OrderEntity::getTotal, total)
                 .update();
     }

@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 /**
 * @author songsir
-* @date 2023-04-14
+* 商品详情 sku
 */
 @Service
 @RequiredArgsConstructor

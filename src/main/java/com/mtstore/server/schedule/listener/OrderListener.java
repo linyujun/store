@@ -76,6 +76,7 @@ public class OrderListener {
     private  String getTemplate(String content, StoreOrderEntity orderInfo) {
         TemplateEngine engine = TemplateUtil.createEngine(new TemplateConfig());
         Template template = engine.getTemplate(content);
+
         List<String> detailList = orderInfo.getDetails().stream().map(detail -> {
             List<String> lineList = cutTitle(detail.getProductName());
             lineList.set(0, lineList.get(0) + String.format(" %s%s  %s",
@@ -91,13 +92,14 @@ public class OrderListener {
         dataMap.put("details", String.join("", detailList));
         dataMap.put("storePhone", "0571-88888888");
         dataMap.put("storeAddress", "浙江省杭州市滨江区");
+
         String result = template.render(dataMap);
 
         return result;
     }
 
     /**
-     * 此代表通过OPENCHAT生成
+     * 将文本截断为最多14个汉字一行
      * @param content
      * @return
      */

@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-05-31
+* 运费模板
 */
 @Data
 @TableName(value = "kz_store_express", autoResultMap = true)

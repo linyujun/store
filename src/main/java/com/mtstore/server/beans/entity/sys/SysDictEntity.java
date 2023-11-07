@@ -8,7 +8,7 @@ import lombok.experimental.SuperBuilder;
 
 /**
  * @author ww
- * @date 2021/6/9
+ * 系统字典
  **/
 @Data
 @SuperBuilder

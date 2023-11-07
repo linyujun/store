@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.mall.seckill.SeckillDto;
 
 /**
 * @author songsir
-* @date 2023-05-23
+* 秒杀会场
 */
 public interface StoreSeckillService extends IKService<StoreSeckillEntity, SeckillDto>{
 

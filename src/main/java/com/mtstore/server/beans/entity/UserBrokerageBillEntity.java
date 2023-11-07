@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 
 /**
 * @author songsir
-* @date 2023-06-19
+* 用户佣金记录
 */
 @Data
 @TableName(value = "kz_user_brokerage_bill", autoResultMap = true)

@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-04-19
+* 用户收货地址
 */
 public interface UserAddressService extends IKService<UserAddressEntity, UserAddressDto>{
 

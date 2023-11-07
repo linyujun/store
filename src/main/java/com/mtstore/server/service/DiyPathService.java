@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.diy.DiyPathDto;
 
 /**
 * @author songsir
-* @date 2023-04-25
+* 页面路径
 */
 public interface DiyPathService extends IKService<DiyPathEntity, DiyPathDto>{
 }

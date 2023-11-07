@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-06-02
+* 拼团记录
 */
 public interface StoreCombinationLogService extends IKService<StoreCombinationLogEntity, StoreCombinationLogDto>{
 

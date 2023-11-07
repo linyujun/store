@@ -14,6 +14,10 @@ import java.util.List;
 import java.util.Optional;
 
 
+/**
+ * @author ww
+ * 系统字典
+ **/
 @Service
 public class SysDictServiceImpl extends ServiceImpl<SysDictMapper, SysDictEntity> implements SysDictService {
 

@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  * @author songsir
- * @date 2021/7/23
+ * 小程序端用户信息
  **/
 public interface UserService extends IKService<UserEntity, UserInfoDto> {
 

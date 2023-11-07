@@ -6,7 +6,7 @@ import com.mtstore.server.beans.entity.sys.SysTenantEntity;
 
 /**
  * <p>
- * 代理商表 服务类
+ * 代理商
  * </p>
  *
  * @author songsir

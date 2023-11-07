@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-04-11
+* spu
 */
 public interface ProductService extends IKService<ProductEntity, ProductDto>{
 
@@ -19,15 +19,7 @@ public interface ProductService extends IKService<ProductEntity, ProductDto>{
 
     ProductEntity save(ProductDto dto);
 
-    ProductEntity saveSeckillProdcut(ActivityProductDto dto);
-
     ProductEntity saveCreditProduct(ActivityProductDto dto);
-
-    ProductEntity saveCombinationProduct(ActivityProductDto dto);
-
-    ProductEntity saveBargainProduct(ActivityProductDto dto);
-
-    ProductEntity saveRebateProduct(ActivityProductDto dto);
 
     void removeActivity(String activity ,Integer id);
 

@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-06-12
+* 售后
 */
 @Data
 @TableName(value = "kz_store_after_sales", autoResultMap = true)

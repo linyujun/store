@@ -16,7 +16,7 @@ import java.util.Optional;
 
 /**
  * @author ww
- * @date 2021/6/5
+ * 登录
  **/
 @Slf4j
 @Service
@@ -51,16 +51,16 @@ public class LoginService {
      * @param payload
      */
     public void loginCallback(UserPayloadDto payload) {
-
+        log.info("login {}", payload);
     }
 
     /**
-     * 执行插入用户，写入角色等操作
+     * 手机端应用登录，关联角色
      * @param phone
      * @param roleName
      * @return
      */
-    public UserPayloadDto login(String phone, String roleName) {
+    public UserPayloadDto loginByPhone(String phone, String roleName) {
         UserEntity userEntity = userService.loginByPhone(phone);
         if (null == userEntity) {
             return null;
@@ -73,13 +73,12 @@ public class LoginService {
         userPayloadDto.setUserId(userEntity.getId());
         userPayloadDto.setPlatform("APP");
         loginCallback(userPayloadDto);
-        log.info("userPayloadDto {}", userPayloadDto);
 
         return userPayloadDto;
     }
 
     /**
-     * 微信登陆
+     * 小程序微信登陆
      * @param phone
      * @param openId
      * @param wxUserInfo
@@ -100,7 +99,7 @@ public class LoginService {
     }
 
     /**
-     * 后台用户登陆
+     * 管理后台用户登陆
      * @param userName
      * @param password
      * @return

@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-05-23
+* 秒杀商品关系
 */
 public interface StoreSeckillDetailService extends IKService<StoreSeckillDetailEntity, SeckillDetailDto>{
 

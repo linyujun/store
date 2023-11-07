@@ -26,12 +26,8 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 /**
- * <p>
- * 提现分润记录表 服务实现类
- * </p>
- *
  * @author songsir
- * @since 2022-09-20
+ * 提现记录表
  */
 @Slf4j
 @Service

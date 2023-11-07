@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * <p>
- * 用户加入的计划 服务类
+ * 用户加入的计划
  * </p>
  *
  * @author songsir

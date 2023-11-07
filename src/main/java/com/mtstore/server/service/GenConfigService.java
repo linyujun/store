@@ -10,7 +10,7 @@ import com.mtstore.server.beans.entity.sys.SysGenConfig;
 
 /**
  * @author Zheng Jie
- * @date 2019-01-14
+ *  代码生成配置
  */
 public interface GenConfigService extends IService<SysGenConfig> {
 

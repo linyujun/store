@@ -8,12 +8,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * <p>
- *
- * </p>
- *
  * @author songsir
- * @since 2023-03-16
+ * 系统上传路径
  */
 @Getter
 @Setter

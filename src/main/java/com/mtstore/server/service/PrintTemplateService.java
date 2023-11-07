@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.printer.template.PrintTemplateDto;
 
 /**
 * @author songsir
-* @date 2023-06-15
+* 打印模板
 */
 public interface PrintTemplateService extends IKService<PrintTemplateEntity, PrintTemplateDto>{
 

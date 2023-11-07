@@ -5,7 +5,7 @@ import com.mtstore.server.beans.entity.DiyPageEntity;
 
 /**
 * @author songsir
-* @date 2023-04-17
+* DIY页面
 */
 public interface DiyPageService extends IKService<DiyPageEntity, DiyPageDto>{
 

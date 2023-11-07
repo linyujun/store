@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.store.StoreDto;
 
 /**
 * @author songsir
-* @date 2023-04-27
+* 门店对象
 */
 public interface StoreService extends IKService<StoreEntity, StoreDto>{
 

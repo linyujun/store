@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 /**
 * @author songsir
-* @date 2023-05-26
+* 商城充值
 */
 @Data
 @TableName(value = "kz_store_recharge", autoResultMap = true)

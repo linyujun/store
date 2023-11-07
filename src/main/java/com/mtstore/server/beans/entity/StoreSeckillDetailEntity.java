@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 /**
 * @author songsir
-* @date 2023-05-23
+* 秒杀商品关系
 */
 @Data
 @TableName(value = "kz_store_seckill_detail", autoResultMap = true)

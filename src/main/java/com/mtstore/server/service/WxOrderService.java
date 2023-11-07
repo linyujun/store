@@ -13,9 +13,11 @@ import com.mtstore.server.beans.entity.StoreRechargeEntity;
 import com.mtstore.server.beans.entity.UserLevelEntity;
 import com.mtstore.server.beans.enums.BillEnum;
 import com.mtstore.server.beans.enums.PayBizEnum;
+import com.mtstore.server.schedule.event.order.OrderPaidEvent;
 import com.mtstore.server.util.OrderUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -43,6 +45,8 @@ public class WxOrderService {
     private final UserService userService;
 
     private final UserLevelService userLeaveService;
+
+    private final ApplicationEventPublisher publisher;
 
 
     /**
@@ -92,6 +96,9 @@ public class WxOrderService {
 
             orderQueueService.finishOrder(outerOrderId);
             orderService.orderPaySuccess(outerOrderId, orderResult.getTransactionId(), orderResult.getTimeEnd());
+
+            //支付成功，打印订单
+            publisher.publishEvent(new OrderPaidEvent(this, outerOrderId));
         } else {
             log.error("微信支付失败：{}", orderResult);
         }

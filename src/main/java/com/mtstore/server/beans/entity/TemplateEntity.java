@@ -9,12 +9,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * <p>
- * 点评模板
- * </p>
- *
  * @author songsir
- * @since 2022-12-28
+ * 点评模板
  */
 @Getter
 @Setter

@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-04-19
+* 购物车
 */
 public interface StoreCartService extends IKService<StoreCartEntity, CartDto>{
 

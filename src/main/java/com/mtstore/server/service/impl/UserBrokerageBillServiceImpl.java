@@ -17,7 +17,7 @@ import java.util.Optional;
 
 /**
 * @author songsir
-* @date 2023-06-19
+* 用户佣金记录
 */
 @Service
 @RequiredArgsConstructor
@@ -27,10 +27,6 @@ public class UserBrokerageBillServiceImpl extends ServiceImpl<UserBrokerageBillM
 
     /**
      * 收入
-     * @param uid
-     * @param action
-     * @param amount
-     * @param description
      */
     @Override
     @Transactional
@@ -50,10 +46,6 @@ public class UserBrokerageBillServiceImpl extends ServiceImpl<UserBrokerageBillM
 
     /**
      * 支出
-     * @param uid
-     * @param action
-     * @param amount
-     * @param description
      */
     @Override
     @Transactional
@@ -79,6 +71,7 @@ public class UserBrokerageBillServiceImpl extends ServiceImpl<UserBrokerageBillM
         });
     }
 
+    /**佣金提取到余额总量*/
     @Override
     public BigDecimal getWithdrawTotal() {
         QueryWrapper queryWrapper = new QueryWrapper();

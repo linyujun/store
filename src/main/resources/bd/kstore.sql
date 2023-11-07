@@ -2488,7 +2488,6 @@ INSERT INTO `kz_sys_menu` VALUES (236, 245, 'Combination', '拼团', NULL, NULL,
 INSERT INTO `kz_sys_menu` VALUES (237, 245, 'Seckill', '秒杀', NULL, NULL, '/seckill/index', '', '@views/mall/seckill/index', '', 11, 0, NULL, 0, 0, 1, NULL, 1, '2023-05-09 20:16:39', '2023-06-06 17:31:30', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (238, 245, 'Bargain', '砍价', NULL, NULL, '/bargain/index', '', '@views/mall/bargain/index', '', 13, 0, NULL, 0, 0, 1, NULL, 1, '2023-05-09 20:17:37', '2023-05-23 21:27:12', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (239, 245, 'Community', '社区团购', NULL, NULL, '/community/index', '', '@views/mall/community/index', '', 14, 0, NULL, 0, 1, 1, NULL, NULL, '2023-05-09 20:25:39', '2023-05-30 10:14:48', 1, 1);
-INSERT INTO `kz_sys_menu` VALUES (240, 248, 'promoteSettings', '分销设置', NULL, NULL, '/property/promote', '', '@views/property/promote', '', 5, 0, NULL, 0, 0, 1, NULL, 1, '2023-05-10 09:05:26', '2023-05-18 18:43:11', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (241, 224, 'withdraw', '提现设置', NULL, NULL, '/property/withdraw', '', '@views/property/withdraw', '', 8, 0, NULL, 0, 0, 1, NULL, 1, '2023-05-10 09:06:04', '2023-05-10 09:06:04', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (242, 224, 'Payment', '支付设置', NULL, NULL, '/property/payment', '', '@views/property/payment', '', 10, 0, NULL, 0, 0, 1, NULL, 1, '2023-05-10 10:55:36', '2023-05-10 10:55:36', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (243, 208, 'MallService', '商城服务', NULL, NULL, '/mall/service/index', '', '@views/mall/service/index', '', 17, 0, NULL, 0, 0, 1, NULL, 1, '2023-05-13 21:27:43', '2023-06-21 15:08:02', 1, 0);
@@ -2496,8 +2495,6 @@ INSERT INTO `kz_sys_menu` VALUES (244, 224, 'website', '站点设置', NULL, NUL
 INSERT INTO `kz_sys_menu` VALUES (245, 208, 'market', '营销功能', NULL, NULL, '/market', '', 'Layout', '', 0, 0, NULL, 0, 0, 0, NULL, 1, '2023-05-17 19:36:25', '2023-06-21 15:10:18', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (246, 245, 'package', '组合套餐', NULL, NULL, '/package/index', '', '@views/mall/package/index', '', 7, 0, NULL, 0, 1, 1, NULL, 1, '2023-05-17 19:38:43', '2023-05-30 10:14:23', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (247, 15, 'Comments', '商品评论', NULL, NULL, '/comment/index', '', '@views/mall/comment/index', '', 8, 0, NULL, 0, 0, 1, NULL, 1, '2023-05-18 11:04:48', '2023-06-21 15:11:09', 1, 0);
-INSERT INTO `kz_sys_menu` VALUES (248, 208, 'promote', '分销管理', NULL, NULL, '/promote/index', '', '@views/promote/index', '', 15, 0, NULL, 0, 0, 0, NULL, 1, '2023-05-18 17:11:13', '2023-06-21 15:07:42', 1, 0);
-INSERT INTO `kz_sys_menu` VALUES (249, 248, 'promoter', '分销员', NULL, NULL, '/promote/promoter', '', '@views/promote/promoter', '', 3, 0, NULL, 0, 0, 1, NULL, 1, '2023-05-18 17:52:43', '2023-05-18 17:52:43', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (250, 224, 'weixinOpen', '开放平台配置', NULL, NULL, '/property/open', '', '@views/property/open', '', 11, 0, NULL, 0, 0, 1, NULL, 1, '2023-05-19 18:16:40', '2023-06-08 15:27:02', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (251, 0, 'Shop', '店铺', 'store-2-line', NULL, '/shop/', '', 'Layout', '', 1, 0, NULL, 0, 1, 1, NULL, 1, '2023-05-23 10:57:56', '2023-06-21 15:04:06', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (252, 251, 'Applet', '小程序管理', NULL, NULL, '/applet', '', '@views/applet', '', 1, 0, NULL, 0, 0, 0, NULL, 1, '2023-05-23 11:02:16', '2023-05-23 11:02:16', 1, 0);
@@ -2524,8 +2521,6 @@ INSERT INTO `kz_sys_menu` VALUES (272, 245, 'combinationProduct', '创建拼团�
 INSERT INTO `kz_sys_menu` VALUES (273, 245, 'bargainEdit', '砍价设置', NULL, NULL, '/bargain/edit', '1', '	\r\n@views/mall/bargain/edit', '', 13, 0, NULL, 0, 1, 1, NULL, 1, '2023-06-06 17:31:19', '2023-06-06 17:31:19', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (274, 245, 'bargainDetails', '砍价活动商品', NULL, NULL, '/bargain/details', '1', '	\r\n@views/mall/bargain/details', '', 13, 0, NULL, 0, 1, 1, NULL, 1, '2023-06-06 17:31:19', '2023-06-07 18:39:36', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (275, 245, 'bargainProduct', '创建砍价商品', NULL, NULL, '/bargain/product', '1', '	\r\n@views/mall/bargain/product', '', 13, 0, NULL, 0, 1, 1, NULL, 1, '2023-06-06 17:31:19', '2023-06-06 17:31:19', 1, 0);
-INSERT INTO `kz_sys_menu` VALUES (276, 248, 'promoteProducts', '分销商品', NULL, NULL, '/promote/products', '', '@views/promote/products', '', 3, 0, NULL, 0, 0, 1, NULL, 1, '2023-06-09 17:36:36', '2023-06-09 17:41:31', 1, 0);
-INSERT INTO `kz_sys_menu` VALUES (277, 248, 'promoteProduct', '创建分销商品', NULL, NULL, '/promote/product', '', '@views/promote/product', '', 3, 0, NULL, 0, 1, 1, NULL, 1, '2023-06-09 17:36:36', '2023-06-09 17:41:31', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (278, 2, 'SystemAddress', '售后地址', NULL, NULL, '/system/address', '', '@views/system/address', '', 10, 0, NULL, 0, 0, 1, NULL, 1, '2023-06-13 10:45:43', '2023-06-13 10:45:43', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (279, 261, 'Withdraw', '提现管理', NULL, NULL, '/withdraw', '', '@views/withdraw/index', '', 1, 0, NULL, 0, 0, 1, NULL, 1, '2023-06-14 19:34:17', '2023-06-14 19:34:17', 1, 0);
 INSERT INTO `kz_sys_menu` VALUES (280, 208, 'Print', '打印管理', NULL, NULL, '/print', '', 'Layout', '', 12, 0, NULL, 0, 0, 1, NULL, 1, '2023-06-15 14:07:05', '2023-06-21 15:07:31', 1, 0);
@@ -2876,13 +2871,6 @@ INSERT INTO `kz_sys_property` VALUES (34, 33, 'trade', '自动收货时间（天
 INSERT INTO `kz_sys_property` VALUES (35, 33, 'trade', '未支付自动关闭时间（分钟）', NULL, 'autoClose', '30', 0, 'number', 0, 0, NULL, 0, '2023-05-09 11:45:57', '2023-05-09 14:07:57', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (36, 33, 'trade', '在线支付', NULL, 'onlinePay', '1', 0, 'switch', 0, 0, NULL, 0, '2023-05-09 11:45:57', '2023-05-09 14:07:57', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (37, 33, 'trade', '余额支付', NULL, 'balancePay', '1', 0, 'switch', 0, 0, NULL, 0, '2023-05-09 11:45:57', '2023-05-09 14:07:57', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (42, 0, 'promote', '分销设置', NULL, 'promote', NULL, 0, 'form', 1, 0, NULL, 0, '2023-05-09 20:29:48', '2023-05-18 18:40:43', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (43, 42, 'promote', '是否开启分销', NULL, 'promoteEnabled', '1', 0, 'switch', 0, 0, NULL, 0, '2023-05-09 20:37:15', '2023-05-18 18:40:43', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (44, 42, 'promote', '分销层级', NULL, 'promoteLevel', '2', 0, 'radio', 0, 0, NULL, 0, '2023-05-09 20:37:15', '2023-05-18 18:40:43', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (46, 42, 'promote', '分销商售申请方式', NULL, 'applyType', 'all', 0, 'radio', 0, 0, NULL, 0, '2023-05-09 20:37:15', '2023-05-18 18:40:43', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (47, 42, 'promote', '成为分销商的条件', NULL, 'conditionType', 'none', 0, 'radio', 0, 0, NULL, 0, '2023-05-09 20:37:15', '2023-05-18 18:40:43', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (48, 42, 'promote', '一级返佣比例（%）', NULL, 'firstRate', '10', 0, 'number', 0, 0, NULL, 0, '2023-05-09 20:37:15', '2023-05-18 18:40:43', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (49, 42, 'promote', '二级返佣比例（%）', NULL, 'secondRate', '5', 0, 'number', 0, 0, NULL, 0, '2023-05-09 20:37:15', '2023-05-18 18:40:43', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (50, 0, 'withdraw', '提现设置', NULL, 'withdraw', NULL, 0, 'form', 1, 0, NULL, 0, '2023-05-09 20:38:21', '2023-06-14 19:51:36', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (51, 50, 'withdraw', '提现审核', NULL, 'isAudit', '1', 0, 'switch', 0, 0, 1, 0, '2023-05-09 20:41:11', '2023-06-14 19:51:36', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (52, 50, 'withdraw', '佣金手续费（%）', NULL, 'rebate', '1', 0, 'number', 0, 0, 2, 0, '2023-05-09 20:41:11', '2023-06-14 19:51:37', NULL, 1, 0);
@@ -2900,7 +2888,6 @@ INSERT INTO `kz_sys_property` VALUES (63, 60, 'website', '站点介绍', NULL, '
 INSERT INTO `kz_sys_property` VALUES (64, 60, 'website', '登录页背景图', NULL, 'background', 'https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684121447519.png', 0, 'input', 0, 0, NULL, 1, '2023-05-15 11:16:57', '2023-05-15 16:17:45', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (69, 7, 'wx.miniapp', '小程序原始id', NULL, 'input', NULL, 0, 'input', 0, 0, NULL, 0, '2023-05-15 11:19:52', '2023-05-15 11:19:52', 1, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (70, 60, 'website', '备案号', NULL, 'beian', '桂ICP备2021017792号', 0, 'input', 0, 0, NULL, 0, '2023-05-15 16:17:45', '2023-05-15 16:17:45', 1, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (71, 42, 'promote', '分销海报', NULL, 'posterImgs', '[\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684406829072.png\",\"https://kmp-oss.oss-cn-hangzhou.aliyuncs.com/shieldImg/image1684406829082.png\"]', 1, 'input', 0, 0, NULL, 1, '2023-05-18 18:40:43', '2023-05-18 18:40:43', 1, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (72, 0, 'wx.open', '微信开放平台', NULL, 'wx.open', NULL, 0, 'form', 1, 0, NULL, 0, '2023-05-19 18:11:36', '2023-05-19 18:21:29', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (84, 58, 'agreement', '充值说明', NULL, 'rechargeDesc', '1、充值后帐户的金额不可提现，可用于商城消费使用\n2、佣金导入账户之后不能再次导出\n3、账户充值出现问题可联系商城客服，也可拨打商城客服热线\n4、充值赠送活动，请选择如上充值方案，自定义充值金额不享受赠送福利', 0, 'textarea', 0, 0, 2, 0, '2023-05-26 15:14:49', '2023-05-31 14:33:04', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (85, 8, 'wx.pay', '支付回调地址', NULL, 'notifyUrl', 'https://www.bitworldonline.cn/wx/notify/order', 0, 'input', 0, 0, 5, 0, '2023-05-30 20:42:51', '2023-05-30 20:49:06', NULL, 1, 0);
@@ -3288,7 +3275,6 @@ CREATE TABLE `kz_user`  (
   `brokerage` decimal(20, 2) NULL DEFAULT NULL COMMENT '佣金',
   `exp` bigint(20) NULL DEFAULT NULL COMMENT '经验值',
   `tags` json NULL COMMENT '用户标签',
-  `is_promoter` tinyint(1) NULL DEFAULT 0 COMMENT '是否分销员',
   `last_check_time` datetime(0) NULL DEFAULT NULL COMMENT '上次签到时间',
   `last_login_time` datetime(0) NULL DEFAULT NULL COMMENT '上次登录时间',
   `check_times` int(11) NULL DEFAULT 0 COMMENT '连续签到天数，7天则0',

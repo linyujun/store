@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 
 /**
 * @author songsir
-* @date 2023-05-08
+* 用户优惠券
 */
 @Data
 @TableName(value = "kz_user_coupon", autoResultMap = true)

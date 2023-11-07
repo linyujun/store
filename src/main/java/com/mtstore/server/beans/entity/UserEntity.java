@@ -19,12 +19,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
- * <p>
- * 学生表
- * </p>
- *
  * @author songsir
- * @since 2022-12-04
+ * 小程序端用户信息
  */
 @Getter
 @Setter
@@ -98,8 +94,6 @@ public class UserEntity extends BaseEntity {
 
     @TableField(exist = false)
     private Boolean isFirstLogin = false;
-
-    private Boolean isPromoter;//是否分销
 
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private LocalDate lastCheckTime;

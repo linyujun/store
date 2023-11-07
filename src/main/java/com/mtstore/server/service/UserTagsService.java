@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.user.UserTagsDto;
 
 /**
 * @author songsir
-* @date 2023-05-26
+* 用户标签
 */
 public interface UserTagsService extends IKService<UserTagsEntity, UserTagsDto>{
 

@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
 * @author songsir
-* @date 2023-05-23
+* 管理后台-商城-秒杀模块
 */
 @RequiredArgsConstructor
 @RestController

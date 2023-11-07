@@ -12,7 +12,7 @@ import java.time.*;
 
 /**
 * @author songsir
-* @date 2023-04-20
+* 订单状态
 */
 @Data
 @TableName(value = "kz_store_order_status", autoResultMap = true)

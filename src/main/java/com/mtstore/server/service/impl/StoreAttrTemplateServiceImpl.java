@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 /**
 * @author songsir
-* @date 2023-04-14
+* 规格模板
 */
 @Service
 @RequiredArgsConstructor

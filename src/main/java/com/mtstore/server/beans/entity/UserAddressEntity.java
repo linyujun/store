@@ -11,7 +11,7 @@ import io.swagger.annotations.*;
 
 /**
 * @author songsir
-* @date 2023-04-19
+* 用户收货地址
 */
 @Data
 @TableName(value = "kz_user_address", autoResultMap = true)

@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.mall.recharge.RechargeDto;
 
 /**
 * @author songsir
-* @date 2023-05-26
+* 商城充值
 */
 public interface StoreRechargeService extends IKService<StoreRechargeEntity, RechargeDto>{
 

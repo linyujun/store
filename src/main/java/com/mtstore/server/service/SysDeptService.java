@@ -5,7 +5,7 @@ import com.mtstore.server.beans.entity.sys.SysDeptEntity;
 
 /**
  * <p>
- * 组织架构 服务类
+ * 组织架构
  * </p>
  *
  * @author songsir

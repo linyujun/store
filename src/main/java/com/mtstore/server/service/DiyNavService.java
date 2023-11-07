@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * <p>
- * 商品分类表 服务类
+ * 导航栏DIY
  * </p>
  *
  * @author songsir

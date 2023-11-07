@@ -9,12 +9,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * <p>
- *
- * </p>
- *
  * @author songsir
- * @since 2022-04-02
+ * 系统权限
  */
 @Getter
 @Setter

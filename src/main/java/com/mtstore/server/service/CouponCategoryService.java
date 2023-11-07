@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-05-06
+* 优惠券-分类关系
 */
 public interface CouponCategoryService extends IKService<CouponCategoryEntity, CouponCategoryDto>{
 

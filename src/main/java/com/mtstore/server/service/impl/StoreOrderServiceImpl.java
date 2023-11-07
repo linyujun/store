@@ -12,7 +12,6 @@ import com.mtstore.server.beans.dto.order.OrderStatusVo;
 import com.mtstore.server.beans.dto.order.OrderCartDto;
 import com.mtstore.server.beans.dto.order.OrderTotalDateVo;
 import com.mtstore.server.beans.dto.order.OrderTotalHourVo;
-import com.mtstore.server.beans.dto.user.UserPromoterDto;
 import com.mtstore.server.beans.vo.OrderTotalVo;
 import com.mtstore.server.service.*;
 import com.mtstore.server.util.FilterUtil;
@@ -41,7 +40,7 @@ import java.util.stream.Collectors;
 
 /**
 * @author songsir
-* @date 2023-04-20
+* 管理后台-订单，包含多个商品
 */
 @Slf4j
 @Service
@@ -63,8 +62,6 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
     final ExpressService expressService;
 
     final ProductService productService;
-
-    final PromoterService promoterService;
 
     final UserService userService;
 
@@ -138,10 +135,11 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
         String orderId = OrderUtil.nextId();
         List<StoreOrderDetailEntity> orderDetailList = buildOrderDetailList(orderId, cartList);
         StoreOrderEntity orderEntity = buildOrderDto(orderId, orderDetailList, dto);
+        //真正发起订单
         if (isSave) {
-            //用户试用积分抵扣
+            //用户用积分抵扣
             if (orderEntity.getTotalCredit().compareTo(BigDecimal.ZERO) > 0) {
-                userService.findCurrentUser().getCredit();
+                //userService.findCurrentUser().getCredit();
                 BigDecimal userCredit = Optional.ofNullable(userService.findCurrentUser())
                         .map(UserEntity::getCredit)
                         .orElseThrow(() -> new RuntimeException("用户不存在"));
@@ -193,15 +191,13 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
                     orderEntity.getTotalCredit(),
                     orderEntity.getProductInfo());
         }
-        //扣减活动库存
+        //更新销量
         if (CollectionUtils.isNotEmpty(detailList)) {
-
             detailList.forEach(detail -> {
                 productService.sales(detail.getProductId(), detail.getProductDetailId(), detail.getCartNum());
             });
         }
         handleActivity(orderEntity);
-        handleFee(orderEntity);
         saveOrUpdate(orderEntity);
 
         log.info("订单已支付，等待发货：{}", orderEntity);
@@ -220,38 +216,6 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
 
         if (orderEntity.getScope().equals(CartScopeEnum.JOIN_COMBINATION)) {
             combinationService.join(orderEntity);
-        }
-    }
-
-    /**
-     * 根据实付金额，处理佣金逻辑
-     * @param orderEntity
-     */
-    private void handleFee(StoreOrderEntity orderEntity) {
-        Integer userId = orderEntity.getUid();
-        List<UserPromoterDto> promoters = promoterService.findParentPromoters(userId);
-        if (CollectionUtils.isEmpty(promoters)) return;
-        if (promoters.size() > 1) {
-            Optional.ofNullable(promoters.get(1)).ifPresent(v -> {
-
-                orderEntity.setSecondUid(v.getUserId());
-                if (orderEntity.getPayPrice().compareTo(BigDecimal.ZERO) > 0
-                        && v.getFeeRate().compareTo(BigDecimal.ZERO) > 0) {
-                    orderEntity.setSecondFee(v.getFeeRate().multiply(orderEntity.getPayPrice()));
-                }
-
-            });
-        }
-
-        if (promoters.size() > 0) {
-            Optional.ofNullable(promoters.get(0)).ifPresent(v -> {
-                orderEntity.setFirstUid(v.getUserId());
-                if (orderEntity.getPayPrice().compareTo(BigDecimal.ZERO) > 0
-                        && v.getFeeRate().compareTo(BigDecimal.ZERO) > 0) {
-                    BigDecimal fee = v.getFeeRate().multiply(orderEntity.getPayPrice());
-                    orderEntity.setFirstFee(fee);
-                }
-            });
         }
     }
 
@@ -422,42 +386,6 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
                 .eq(StoreOrderEntity::getStatus, 4)
                 .eq(StoreOrderEntity::getUid, LoggedUser.get().getUserId())
                 .update();
-    }
-
-    @Override
-    public BigDecimal getTotalFee(Integer userId) {
-        //TODO 需要检查订单状态
-        BigDecimal resultFee = BigDecimal.ZERO;
-        //一级
-        List<StoreOrderEntity> firstList = lambdaQuery().eq(StoreOrderEntity::getFirstUid, userId).list();
-        if (CollectionUtils.isNotEmpty(firstList)) {
-            BigDecimal sum1 = firstList.stream().map(StoreOrderEntity::getFirstFee).reduce(BigDecimal.ZERO, BigDecimal::add);
-            resultFee = resultFee.add(sum1);
-        }
-
-        //二级
-        List<StoreOrderEntity> secondList = lambdaQuery().eq(StoreOrderEntity::getSecondUid, userId).list();
-        if (CollectionUtils.isNotEmpty(secondList)) {
-            BigDecimal sum2 = secondList.stream().map(StoreOrderEntity::getSecondFee).reduce(BigDecimal.ZERO, BigDecimal::add);
-
-            resultFee = resultFee.add(sum2);
-        }
-
-        return resultFee;
-    }
-
-    /**
-     * 获取分销订单数量
-     * @param userId
-     * @return
-     */
-    @Override
-    public Long getTotalPromoteOrder(Integer userId) {
-        return lambdaQuery()
-                .eq(StoreOrderEntity::getFirstUid, userId)
-                .or()
-                .eq(StoreOrderEntity::getSecondUid, userId)
-                .count();
     }
 
     @Override
@@ -664,7 +592,7 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
     }
 
     /**
-     * 组装订单详情
+     * 组装订单详情 sku
      * @param orderId
      * @param cartList
      * @return
@@ -732,6 +660,7 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
         BigDecimal totalCredit = orderDetailList.stream()
                 .map(StoreOrderDetailEntity::getTotalCredit)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
+        //计算邮费
         BigDecimal postagePrice = calcPostagePrice(orderDetailList, cartDto);
         log.error("postagePrice {}", postagePrice);
         if (null != cartDto.getCouponId()) {

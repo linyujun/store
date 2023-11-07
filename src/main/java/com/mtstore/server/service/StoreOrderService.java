@@ -16,7 +16,7 @@ import java.util.Map;
 
 /**
 * @author songsir
-* @date 2023-04-20
+* 管理后台-订单，包含多个商品
 */
 public interface StoreOrderService extends IKService<StoreOrderEntity, OrderDto>{
 
@@ -53,10 +53,6 @@ public interface StoreOrderService extends IKService<StoreOrderEntity, OrderDto>
     ExpressInfo getExpressInfo(String orderId);
 
     void initComments(String orderId);
-
-    BigDecimal getTotalFee(Integer userId);
-
-    Long getTotalPromoteOrder(Integer userId);
 
     List<Map<String, Object>> groupByStatus();
 

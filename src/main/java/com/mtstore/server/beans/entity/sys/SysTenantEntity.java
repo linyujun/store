@@ -18,12 +18,8 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * <p>
- * 代理商表
- * </p>
- *
  * @author songsir
- * @since 2022-02-09
+ * 代理商表
  */
 @Data
 @TableName(value = "kz_sys_tenant", autoResultMap = true)

@@ -7,7 +7,7 @@ import com.mtstore.server.beans.entity.StoreOrderEntity;
 
 /**
 * @author songsir
-* @date 2023-06-02
+* 拼团
 */
 public interface StoreCombinationService extends IKService<StoreCombinationEntity, StoreCombinationDto>{
 

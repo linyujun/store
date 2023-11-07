@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.merchant.MerchantDto;
 
 /**
 * @author songsir
-* @date 2023-04-06
+* 商家
 */
 public interface MerchantService extends IKService<MerchantEntity, MerchantDto>{
 }

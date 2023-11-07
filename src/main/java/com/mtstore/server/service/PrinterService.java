@@ -5,7 +5,7 @@ import com.mtstore.server.beans.dto.printer.PrinterDto;
 
 /**
 * @author songsir
-* @date 2023-06-15
+* 打印机管理
 */
 public interface PrinterService extends IKService<PrinterEntity, PrinterDto>{
 

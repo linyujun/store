@@ -7,7 +7,7 @@ import io.swagger.annotations.*;
 
 /**
 * @author songsir
-* @date 2023-05-26
+* 用户标签
 */
 @Data
 @TableName(value = "kz_user_tags", autoResultMap = true)

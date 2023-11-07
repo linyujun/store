@@ -42,7 +42,7 @@ public class MBargainController {
 
 
     @PostMapping("/app/bargain/create")
-    @ApiOperation(value = "创建砍价")
+    @ApiOperation(value = "用户发起砍价")
     public Object doBargain(@RequestBody @Validated BargainCreateDto dto){
 
         return R.ok("操作成功", bargainService.create(dto));

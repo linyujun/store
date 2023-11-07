@@ -15,7 +15,7 @@ import java.util.Optional;
 
 /**
 * @author songsir
-* @date 2023-04-19
+* 用户收货地址
 */
 @Service
 @RequiredArgsConstructor
@@ -27,6 +27,7 @@ public class UserAddressServiceImpl extends ServiceImpl<UserAddressMapper, UserA
                 .ofNullable(dto.getId())
                 .map(this::getById)
                 .orElseGet(UserAddressEntity::new);
+        //去重
         if (!isExist(dto)){
             BeanUtils.copyProperties(dto, entity);
             if (!exists()) {

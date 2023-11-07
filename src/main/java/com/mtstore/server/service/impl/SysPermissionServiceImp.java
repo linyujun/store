@@ -20,12 +20,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * <p>
- *  服务实现类
- * </p>
- *
  * @author songsir
- * @since 2022-04-02
+ * 系统权限
  */
 @Slf4j
 @Service

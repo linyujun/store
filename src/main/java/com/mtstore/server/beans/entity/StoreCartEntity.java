@@ -13,7 +13,7 @@ import io.swagger.annotations.*;
 
 /**
 * @author songsir
-* @date 2023-04-19
+* 购物车
 */
 @Data
 @TableName(value = "kz_store_cart", autoResultMap = true)

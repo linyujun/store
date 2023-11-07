@@ -6,7 +6,7 @@ import com.mtstore.server.beans.entity.TemplateEntity;
 
 /**
  * <p>
- * 点评模板 服务类
+ * 评论模板
  * </p>
  *
  * @author songsir

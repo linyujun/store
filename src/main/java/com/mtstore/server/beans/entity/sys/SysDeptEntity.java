@@ -12,12 +12,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * <p>
- * 组织架构
- * </p>
- *
  * @author songsir
- * @since 2023-03-03
+ * 组织架构
  */
 @Getter
 @Setter

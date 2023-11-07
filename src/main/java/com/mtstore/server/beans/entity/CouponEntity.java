@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-05-06
+* 商城优惠券对象
 */
 @Data
 @TableName(value = "kz_store_coupon", autoResultMap = true)
@@ -33,7 +33,7 @@ public class CouponEntity extends BaseEntity{
     private String title;
 
     /** 优惠券类型，满减，折扣，类目，无门槛等 */
-    @ApiModelProperty("优惠券类型，满减，折扣，类目，无门槛等")
+    @ApiModelProperty("优惠券类型，满减，折扣，无门槛等")
     @TableField(typeHandler = EnumTypeHandler.class)
     private CouponTypeEnum couponType;
 

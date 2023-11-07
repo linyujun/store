@@ -21,7 +21,6 @@ import java.util.Map;
 
 /**
  * 物流查询服务
- * <p>
  * 快递鸟即时查询API http://www.kdniao.com/api-track
  */
 @Slf4j

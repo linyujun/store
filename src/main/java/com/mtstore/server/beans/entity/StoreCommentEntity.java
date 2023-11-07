@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-05-17
+* 商品评价
 */
 @Data
 @TableName(value = "kz_store_comment", autoResultMap = true)

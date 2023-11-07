@@ -11,12 +11,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * <p>
- *  服务实现类
- * </p>
- *
  * @author songsir
- * @since 2023-03-16
+ * 系统上传路径
  */
 @Service
 public class SysUploadServiceImp extends ServiceImpl<SysUploadMapper, SysUploadEntity> implements SysUploadService {

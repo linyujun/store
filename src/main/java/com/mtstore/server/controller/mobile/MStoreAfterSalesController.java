@@ -38,7 +38,7 @@ public class MStoreAfterSalesController {
     }
 
     @PostMapping("/returned")
-    @ApiOperation("退货方式")
+    @ApiOperation("已经退货")
     public Object returned(@Validated @RequestBody StoreReturnDto dto){
         StoreAfterSalesEntity entity = storeAfterSalesService.returned(dto);
 

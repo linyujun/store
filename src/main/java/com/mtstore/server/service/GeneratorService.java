@@ -17,6 +17,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
+/**
+ * @author Zheng Jie
+ * 代码生成
+ */
 public interface GeneratorService {
 
     Page getPageList(PageDto pageDto, QueryWrapper wrapper);

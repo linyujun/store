@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-04-11
+* spu
 */
 @Data
 @TableName(value = "kz_store_product", autoResultMap = true)
@@ -84,6 +84,7 @@ public class ProductEntity extends BaseEntity{
     @TableField(typeHandler = FastjsonTypeHandler.class)
     private List<AttrDto> attrs;
 
+    /** sku */
     @TableField(exist = false)
     private List<ProductDetailEntity> details;
 

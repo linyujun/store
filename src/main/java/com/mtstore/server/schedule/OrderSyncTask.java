@@ -2,6 +2,7 @@ package com.mtstore.server.schedule;
 
 import com.github.binarywang.wxpay.bean.result.WxPayOrderQueryResult;
 import com.mtstore.server.beans.entity.OrderQueueEntity;
+import com.mtstore.server.schedule.event.order.OrderPaidEvent;
 import com.mtstore.server.service.OrderQueueService;
 import com.mtstore.server.service.OrderService;
 import com.mtstore.server.service.WxOrderService;
@@ -36,6 +37,7 @@ public class OrderSyncTask {
             results.parallelStream().forEach(entity -> {
                 WxPayOrderQueryResult orderResult = wxOrderService.queryOrder(entity.getOrderId());
                 if (null != orderResult) {
+                    //查询一下
                     wxOrderService.syncOrder(orderResult);
                 }
             });

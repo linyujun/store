@@ -10,7 +10,7 @@ import javax.persistence.*;
 
 /**
  * @author ww
- * @date 2021/6/9
+ * 系统角色
  **/
 
 @Data

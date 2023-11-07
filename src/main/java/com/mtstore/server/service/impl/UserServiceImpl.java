@@ -1,5 +1,6 @@
 package com.mtstore.server.service.impl;
 
+import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -34,12 +35,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * <p>
- *  服务实现类
- * </p>
- *
  * @author songsir
- * @since 2021-11-23
+ * 小程序端用户信息
  */
 @Service
 @Slf4j
@@ -284,7 +281,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
     }
 
     private String getUuid() {
-        return  "30" + RandomUtil.randomNumbers(17);
+        return  "666" + IdUtil.randomUUID();
     }
 
     private String getNickName() {
@@ -309,7 +306,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
         Integer uid = LoggedUser.get().getUserId();
         UserEntity user = getById(uid);
         if (null == user) {
-
             return;
         }
 
@@ -321,7 +317,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
         } else {
             //TODO 用户非第一次签到，且当天已签到
             if (user.getLastCheckTime().equals(LocalDate.now())) {
-
                 throw new RuntimeException("签到失败，当天已签到！");
             }
 
@@ -345,7 +340,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
         Boolean isCheckIn = false;
         UserEntity user = getById(LoggedUser.get().getUserId());
         if (null == user) {
-
             throw new RuntimeException("用户不存在！");
         }
         if (null != user.getLastCheckTime() && user.getLastCheckTime().equals(LocalDate.now())) {

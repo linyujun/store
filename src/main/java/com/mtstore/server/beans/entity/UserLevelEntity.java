@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 
 /**
 * @author songsir
-* @date 2023-04-25
+* 用户等级
 */
 @Data
 @TableName(value = "kz_user_level", autoResultMap = true)

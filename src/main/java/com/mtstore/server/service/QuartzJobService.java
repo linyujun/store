@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * @author hupeng
- * @date 2020-05-13
+ * 定时任务
  */
 public interface QuartzJobService  extends IKService<SysQuartzJob, QuartzJobDto> {
 

@@ -8,12 +8,8 @@ import com.mtstore.server.util.tree.CategoryBuilder;
 import java.util.List;
 
 /**
- * <p>
- *  服务类
- * </p>
- *
  * @author songsir
- * @since 2021-11-22
+ * 商品分类实现类
  */
 public interface CategoryService extends IKService<CategoryEntity, CategoryDto> {
 

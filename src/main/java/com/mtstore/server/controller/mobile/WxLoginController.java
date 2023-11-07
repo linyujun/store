@@ -74,6 +74,7 @@ public class WxLoginController {
     @PostMapping("/phone")
     public Object phone(@RequestBody UserWxLoginDto loginDto) {
         try {
+            log.info("微信授权手机号登录 {}", loginDto);
             WxMaJscode2SessionResult session = wxService.getUserService().getSessionInfo(loginDto.getCode());
             WxMaPhoneNumberInfo phoneNoInfo = wxService.getUserService().getPhoneNoInfo(session.getSessionKey(),
                     loginDto.getEncryptedData(), loginDto.getIv());
@@ -85,7 +86,7 @@ public class WxLoginController {
                 }
             }
             String token = jwtHelper.createJWT(userPayloadDto);
-            log.info("微信授权手机号登录 {}", loginDto);
+
             return R.ok("登陆成功", JwtTokenVo.builder()
                     .accessToken(token)
                     .userInfo(userPayloadDto)

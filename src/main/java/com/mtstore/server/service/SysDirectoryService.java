@@ -5,7 +5,7 @@ import com.mtstore.server.beans.entity.sys.SysDirectoryEntity;
 
 /**
  * <p>
- * 视频目录表 服务类
+ * 视频目录表
  * </p>
  *
  * @author songsir

@@ -9,7 +9,7 @@ import io.swagger.annotations.*;
 
 /**
 * @author songsir
-* @date 2023-04-27
+* 门店对象
 */
 @Data
 @TableName(value = "kz_store", autoResultMap = true)

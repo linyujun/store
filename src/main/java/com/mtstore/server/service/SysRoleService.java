@@ -11,7 +11,7 @@ import org.springframework.beans.BeanUtils;
 
 /**
  * <p>
- * 系统角色Service层
+ * 系统角色
  * </p>
  *
  * @author songsir

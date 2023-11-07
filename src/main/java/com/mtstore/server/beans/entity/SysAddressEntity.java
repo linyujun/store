@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-06-13
+* 系统售后收货地址
 */
 @Data
 @TableName(value = "kz_sys_address", autoResultMap = true)

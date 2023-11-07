@@ -10,12 +10,8 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
- * <p>
- * 提现分润记录表 服务类
- * </p>
- *
  * @author songsir
- * @since 2022-09-20
+ * 提现记录表
  */
 public interface WithdrawService extends IKService<WithdrawEntity, WithdrawDto> {
 

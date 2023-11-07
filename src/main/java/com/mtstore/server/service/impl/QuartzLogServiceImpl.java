@@ -12,14 +12,9 @@ import com.mtstore.server.service.QuartzLogService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-// 默认不使用缓存
-//import org.springframework.cache.annotation.CacheConfig;
-//import org.springframework.cache.annotation.CacheEvict;
-//import org.springframework.cache.annotation.Cacheable;
-
 /**
 * @author hupeng
-* @date 2020-05-13
+* 定时任务日志
 */
 @Service
 @AllArgsConstructor

@@ -5,8 +5,7 @@ import com.mtstore.server.beans.entity.UserCouponEntity;
 import com.mtstore.server.beans.dto.user.UserCouponDto;
 
 /**
-* @author songsir
-* @date 2023-05-08
+* 用户-优惠券关系
 */
 public interface UserCouponService extends IKService<UserCouponEntity, UserCouponDto>{
 

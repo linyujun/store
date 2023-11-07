@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  * <p>
- * 系统配置处理服务类
+ * 系统配置处理
  * </p>
  *
  * @author songsir

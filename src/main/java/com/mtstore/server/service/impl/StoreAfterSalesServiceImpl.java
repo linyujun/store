@@ -25,7 +25,7 @@ import java.util.Optional;
 
 /**
 * @author songsir
-* @date 2023-06-12
+* 售后服务
 */
 @Service
 @RequiredArgsConstructor
@@ -94,6 +94,7 @@ public class StoreAfterSalesServiceImpl extends ServiceImpl<StoreAfterSalesMappe
             entity.setStatusDesc(AfterSaleStatusEnum.MERCHANT_REFUND_SUCCESS.getDesc());
         }
 
+        //退货已经收到退款
         if (dto.getStatus().equals(AfterSaleStatusEnum.MERCHANT_REFUND_SUCCESS) &&
                 entity.getApplyType().equals(AfterSaleTypeEnum.REFUND_GOODS)) {
             if (dto.getRefundPrice().compareTo(entity.getPayPrice()) > 0) {
@@ -105,6 +106,7 @@ public class StoreAfterSalesServiceImpl extends ServiceImpl<StoreAfterSalesMappe
             entity.setStatusDesc(AfterSaleStatusEnum.MERCHANT_REFUND_SUCCESS.getDesc());
         }
 
+        //等待买家退货
         if (dto.getStatus().equals(AfterSaleStatusEnum.PASS) &&
                 entity.getApplyType().equals(AfterSaleTypeEnum.REFUND_GOODS)) {
             if (null == dto.getAddressId()) {
@@ -128,7 +130,7 @@ public class StoreAfterSalesServiceImpl extends ServiceImpl<StoreAfterSalesMappe
     }
 
     /**
-     * 退货方式
+     * 退货
      * @param dto
      * @return
      */

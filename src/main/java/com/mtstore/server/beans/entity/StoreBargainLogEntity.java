@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-06-07
+* 砍价记录
 */
 @Data
 @TableName(value = "kz_store_bargain_log", autoResultMap = true)

@@ -10,7 +10,7 @@ import java.time.*;
 
 /**
 * @author songsir
-* @date 2023-06-15
+* 打印机对象
 */
 @Data
 @TableName(value = "kz_printer", autoResultMap = true)

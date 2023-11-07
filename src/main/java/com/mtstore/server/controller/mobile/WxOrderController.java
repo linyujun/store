@@ -19,6 +19,7 @@ import com.mtstore.server.beans.enums.PayTypeEnum;
 import com.mtstore.server.service.*;
 import com.mtstore.server.util.OrderUtil;
 import com.mtstore.server.beans.dto.order.*;
+import com.mtstore.server.util.StringUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
@@ -156,6 +157,9 @@ public class WxOrderController {
         log.info(LoggedUser.get().getUserId() + " 创建微信预订单: " + orderId + " -> " + total);
 
         String notifyUrl = sysPropertyService.getValue("notifyUrl");
+        if (StringUtils.isEmpty(notifyUrl)) {
+            notifyUrl = "https://www.bitworldonline.cn/wx/notify/order";
+        }
         final WxPayUnifiedOrderRequest wxPayUnifiedOrderRequest = WxPayUnifiedOrderRequest.newBuilder()
                 //调起支付的人的 openId
                 .openid(LoggedUser.get().getOpenId())

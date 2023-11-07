@@ -9,7 +9,7 @@ import com.mtstore.server.util.FilterUtil;
 
 /**
  * <p>
- * 用户账户余额表 服务类
+ * 用户账户余额
  * </p>
  *
  * @author songsir

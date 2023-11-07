@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * <p>
- * 系统菜单表 服务类
+ * 系统菜单表
  * </p>
  *
  * @author songsir

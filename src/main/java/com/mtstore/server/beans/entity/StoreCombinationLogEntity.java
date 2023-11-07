@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-06-02
+* 拼团记录
 */
 @Data
 @TableName(value = "kz_store_combination_log", autoResultMap = true)

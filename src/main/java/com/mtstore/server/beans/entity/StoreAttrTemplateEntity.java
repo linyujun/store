@@ -10,7 +10,7 @@ import io.swagger.annotations.*;
 
 /**
 * @author songsir
-* @date 2023-04-14
+* 规格模板
 */
 @Data
 @TableName(value = "kz_store_attr_template", autoResultMap = true)

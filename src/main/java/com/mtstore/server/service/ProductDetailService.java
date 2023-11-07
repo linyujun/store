@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-04-14
+* 商品详情 sku
 */
 public interface ProductDetailService extends IKService<ProductDetailEntity, ProductDetailDto>{
 

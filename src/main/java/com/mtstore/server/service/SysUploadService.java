@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * <p>
- *  服务类
+ *  系统上传路径
  * </p>
  *
  * @author songsir

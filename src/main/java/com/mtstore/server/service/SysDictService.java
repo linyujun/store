@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * <p>
- * 系统字典表 服务类
+ * 系统字典表
  * </p>
  *
  * @author songsir

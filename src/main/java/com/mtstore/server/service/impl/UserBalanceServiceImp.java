@@ -7,12 +7,8 @@ import com.mtstore.server.service.UserBalanceService;
 import org.springframework.stereotype.Service;
 
 /**
- * <p>
- * 用户账户余额表 服务实现类
- * </p>
- *
  * @author songsir
- * @since 2022-04-06
+ * 用户账户余
  */
 @Service
 public class UserBalanceServiceImp extends ServiceImpl<UserBalanceMapper, UserBalanceEntity> implements UserBalanceService {

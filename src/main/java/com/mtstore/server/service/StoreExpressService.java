@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
 * @author songsir
-* @date 2023-05-31
+* 运费模板
 */
 public interface StoreExpressService extends IKService<StoreExpressEntity, StoreExpressDto>{
 

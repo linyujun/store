@@ -28,7 +28,7 @@ import java.util.*;
 
 /**
 * @author songsir
-* @date 2023-06-07
+* 砍价
 */
 @Slf4j
 @Service
@@ -68,7 +68,7 @@ public class StoreBargainServiceImpl extends ServiceImpl<StoreBargainMapper, Sto
                 .orElseThrow(() -> new RuntimeException("砍价商品不存在！"));
         ProductDetailEntity productDetailEntity = productDetailService.getById(dto.getProductDetailId());
 
-        StoreBargainLogEntity longEntity = new StoreBargainLogEntity()
+        StoreBargainLogEntity logEntity = new StoreBargainLogEntity()
                 .setBargainId(dto.getBargainId())
                 .setParentId(0)
                 .setProductId(dto.getProductId())
@@ -85,9 +85,9 @@ public class StoreBargainServiceImpl extends ServiceImpl<StoreBargainMapper, Sto
                 .setExpiredTime(LocalDateTime.now().plusMinutes(entity.getExpireMinute()))
                 .setStatus(ActivityStatusEnum.RUNNING)
                 .setStatusDesc(ActivityStatusEnum.RUNNING.getDesc());
-        bargainLogService.saveOrUpdate(longEntity);
+        bargainLogService.saveOrUpdate(logEntity);
 
-        return longEntity;
+        return logEntity;
     }
 
     @Override

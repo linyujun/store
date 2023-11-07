@@ -17,12 +17,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 
 /**
- * <p>
- * 代理商表 服务实现类
- * </p>
- *
  * @author songsir
- * @since 2022-02-09
+ * 代理商
  */
 @Service
 @RequiredArgsConstructor

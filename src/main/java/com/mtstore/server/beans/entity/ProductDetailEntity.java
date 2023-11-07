@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 
 /**
 * @author songsir
-* @date 2023-04-14
+* @date 对应sku
 */
 @Data
 @TableName(value = "kz_store_product_detail", autoResultMap = true)

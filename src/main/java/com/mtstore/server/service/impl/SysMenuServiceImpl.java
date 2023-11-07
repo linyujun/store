@@ -15,12 +15,8 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * <p>
- * 系统菜单表 服务实现类
- * </p>
- *
  * @author songsir
- * @since 2021-11-18
+ * 系统菜单表
  */
 @Slf4j
 @Service

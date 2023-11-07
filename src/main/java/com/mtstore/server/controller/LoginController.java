@@ -69,7 +69,7 @@ public class LoginController {
                 && !loginDto.getCaptchaCode().equals("123456") && !loginDto.getCaptchaCode().equals("20230131")) {
             throw new RuntimeException("验证码不正确，或已经过期!");
         }
-        UserPayloadDto userPayloadDto = loginService.login(loginDto.getPhone(), loginDto.getRole());
+        UserPayloadDto userPayloadDto = loginService.loginByPhone(loginDto.getPhone(), loginDto.getRole());
         if (userPayloadDto.getIsFirstLogin()) {
             publisher.publishEvent(new UserRegisterEvent(this, userPayloadDto.getId()));
             if (null != loginDto.getInviteId()) {

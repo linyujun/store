@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 /**
  * <p>
- *  服务类
+ *  系统权限
  * </p>
  *
  * @author songsir
