@@ -18,19 +18,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-
-/**
- * <p>
- * 用户账单，余额，积分等
- * </p>
- *
- * @author songsir
- * @since 2022-10-12
- */
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@Api(tags = "移动端-用户账单")
+@Api(tags = "移动端-用户账单，余额，积分")
 @RequestMapping("/app/user/bill")
 public class MUserBillController {
     final UserBillService service;

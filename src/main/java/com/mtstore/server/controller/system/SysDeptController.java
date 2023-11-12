@@ -20,12 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <p>
- * 组织架构
- * </p>
- *
- * @author songsir
- * @since 2023-03-03
+ 组织架构
  */
 @Slf4j
 @RestController

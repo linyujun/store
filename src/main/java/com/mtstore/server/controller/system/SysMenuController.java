@@ -22,12 +22,7 @@ import java.util.Map;
 
 
 /**
- * <p>
  * 系统菜单表
- * </p>
- *
- * @author songsir
- * @since 2021-11-18
  */
 @Slf4j
 @RestController

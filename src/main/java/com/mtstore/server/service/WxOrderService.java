@@ -46,8 +46,6 @@ public class WxOrderService {
 
     private final UserLevelService userLeaveService;
 
-    private final ApplicationEventPublisher publisher;
-
 
     /**
      * 同步订单
@@ -80,6 +78,9 @@ public class WxOrderService {
             if (null == orderEntity) {
                 log.error("微信支付成功但是未找到对应订单：{}", orderResult);
                 throw new RuntimeException("未找到对应订单~");
+            } else if (orderEntity.getStatus() != 0) {
+                log.error("订单已经支付过，不需重复支付：{}", orderResult);
+                throw new RuntimeException("订单已经支付过，不需重复支付~");
             }
 
             if (orderEntity.getBizType().equals(PayBizEnum.STORE)) {
@@ -97,8 +98,6 @@ public class WxOrderService {
             orderQueueService.finishOrder(outerOrderId);
             orderService.orderPaySuccess(outerOrderId, orderResult.getTransactionId(), orderResult.getTimeEnd());
 
-            //支付成功，打印订单
-            publisher.publishEvent(new OrderPaidEvent(this, outerOrderId));
         } else {
             log.error("微信支付失败：{}", orderResult);
         }

@@ -24,9 +24,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 
 /**
-* @author songsir
  * 订单状态修改
-* @date 2023-04-20
 */
 @RequiredArgsConstructor
 @RestController
@@ -36,11 +34,7 @@ public class StoreOrderController {
 
     private final StoreOrderService storeOrderService;
 
-    private final StoreOrderDetailService storeOrderDetailService;
-
     private final StoreOrderStatusService storeOrderStatusService;
-
-    private final OrderService orderService;
 
     @GetMapping("{id}")
     public Object getOne(@PathVariable("id") Integer id){

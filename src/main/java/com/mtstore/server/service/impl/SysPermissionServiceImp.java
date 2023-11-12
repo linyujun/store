@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 /**
  * @author songsir
- * 系统权限
+ * 系统角色菜单权限
  */
 @Slf4j
 @Service

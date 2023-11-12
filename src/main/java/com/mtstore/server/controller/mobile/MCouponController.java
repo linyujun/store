@@ -15,10 +15,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
-/**
-* @author songsir
-* @date 2023-05-06
-*/
 @RequiredArgsConstructor
 @RestController
 @Api(tags = "移动端-商城-优惠券模块")

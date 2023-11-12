@@ -14,8 +14,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @author songsir
- * @date 2021/6/4
+ 系统字典
  **/
 @Slf4j
 @RestController

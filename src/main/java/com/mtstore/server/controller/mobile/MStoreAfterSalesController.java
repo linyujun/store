@@ -15,10 +15,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-/**
-* @author songsir
-* @date 2023-06-12
-*/
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/app/store/afterSales")
@@ -27,6 +23,13 @@ import org.springframework.web.bind.annotation.*;
 public class MStoreAfterSalesController {
 
     private final StoreAfterSalesService storeAfterSalesService;
+
+    @PostMapping
+    @ApiOperation("发起售后")
+    public Object save(@Validated @RequestBody StoreAfterSalesDto dto){
+        log.info(LoggedUser.get().getUserId() + " 发起售后：" + dto.getOrderId());
+        return R.ok("保存成功", storeAfterSalesService.saveOrUpdate(dto));
+    }
 
     @GetMapping("{id}")
     @ApiOperation("售后详情")
@@ -43,13 +46,6 @@ public class MStoreAfterSalesController {
         StoreAfterSalesEntity entity = storeAfterSalesService.returned(dto);
 
         return R.ok("操作成功", entity);
-    }
-
-    @PostMapping
-    @ApiOperation("发起售后")
-    public Object save(@Validated @RequestBody StoreAfterSalesDto dto){
-        log.info(LoggedUser.get().getUserId() + " 发起售后：" + dto.getOrderId());
-        return R.ok("保存成功", storeAfterSalesService.saveOrUpdate(dto));
     }
 
     @ApiOperation("售后记录分页")

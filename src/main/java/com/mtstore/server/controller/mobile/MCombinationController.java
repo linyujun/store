@@ -22,10 +22,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
-* @author songsir
-* @date 2023-05-06
-*/
 @RequiredArgsConstructor
 @RestController
 @Api(tags = "移动端-商城-拼团模块")

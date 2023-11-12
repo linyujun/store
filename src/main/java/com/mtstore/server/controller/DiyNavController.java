@@ -14,12 +14,7 @@ import java.util.List;
 
 
 /**
- * <p>
- * DIY底部导航栏
- * </p>
- *
- * @author songsir
- * @since 2023-03-31
+ 导航栏DIY
  */
 @Slf4j
 @RestController

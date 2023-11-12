@@ -36,11 +36,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author songsir
- * @date 2021/6/4
- **/
-@Api(tags="管理后台登录模块")
+@Api(tags="非微信登录模块")
 @Slf4j
 @RestController
 @RequiredArgsConstructor
@@ -66,7 +62,7 @@ public class LoginController {
     @SneakyThrows
     public Object login(@RequestBody @Validated UserLoginDto loginDto) {
         if (!sendMsgService.verify(loginDto.getPhone(), loginDto.getCaptchaCode())
-                && !loginDto.getCaptchaCode().equals("123456") && !loginDto.getCaptchaCode().equals("20230131")) {
+                && !loginDto.getCaptchaCode().equals("123456")) {
             throw new RuntimeException("验证码不正确，或已经过期!");
         }
         UserPayloadDto userPayloadDto = loginService.loginByPhone(loginDto.getPhone(), loginDto.getRole());
@@ -112,7 +108,7 @@ public class LoginController {
 
 
     /**
-     * 登录
+     * 后台管理员登录
      * @return 返回登录后的信息
      */
     @PostMapping("/admin")
@@ -123,8 +119,10 @@ public class LoginController {
         UserPayloadDto userPayloadDto = null;
         try {
             if (null != redisUtil.get(clientIP)) {
+                //防止刷登录接口
                 limit = Integer.parseInt(redisUtil.get(clientIP));
             }
+            //手机号登录
             if (null != user.getPhone()) {
 
                 if (null == user.getCaptchaCode()) {
@@ -136,6 +134,7 @@ public class LoginController {
                 }
                 userPayloadDto = loginService.loginAdmin(user.getPhone(), null);
             }
+            // 账号密码登录
             if (null != user.getUsername()) {
                 if (limit > 3) {
                     if (null == user.getCsrfToken()) {
@@ -157,7 +156,7 @@ public class LoginController {
             if (null == userPayloadDto) {
                 throw new RuntimeException("登录失败~");
             }
-            log.info("后台管理员账号密码登录 {}", userPayloadDto);
+            log.info("后台管理员登录 {}", userPayloadDto);
             String token = jwtHelper.createJWT(userPayloadDto);
             redisUtil.delete(clientIP);
             return R.ok("登陆成功", JwtTokenVo
@@ -240,9 +239,9 @@ public class LoginController {
         SpecCaptcha specCaptcha = new SpecCaptcha(117, 44, 4);
         specCaptcha.setCharType(Captcha.TYPE_ONLY_NUMBER);
         String verCode = specCaptcha.text().toLowerCase();
-        String key = UUID.randomUUID().toString();
-        redisUtil.setEx(key, verCode, 30, TimeUnit.MINUTES);
-        result.put("csrfToken", key);
+        String csrfToken = UUID.randomUUID().toString();
+        redisUtil.setEx(csrfToken, verCode, 30, TimeUnit.MINUTES);
+        result.put("csrfToken", csrfToken);
         result.put("image", specCaptcha.toBase64());
         result.put("showCaptcha", limit > 3);
 

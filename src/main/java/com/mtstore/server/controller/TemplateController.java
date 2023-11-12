@@ -12,12 +12,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * <p>
  * 点评模板
- * </p>
- *
- * @author songsir
- * @since 2022-12-28
  */
 @Slf4j
 @RestController

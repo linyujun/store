@@ -26,9 +26,6 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * 微信小程序用户接口
- */
 @Api(tags="移动端-微信登录")
 @RestController
 @RequestMapping("/login/wx")
@@ -53,11 +50,10 @@ public class WxLoginController {
     public Object login(@RequestBody @Validated WxLoginDto dto) {
         try {
             WxMaJscode2SessionResult session = wxService.getUserService().getSessionInfo(dto.getCode());
-            log.info(session.getSessionKey());
             log.info(session.getOpenid());
             UserPayloadDto userPayloadDto = loginService.loginWx(null, session.getOpenid(), dto.getUserInfo());
             String token = jwtHelper.createJWT(userPayloadDto);
-            log.info("微信登录 {}", userPayloadDto);
+            log.info("通过code微信登录 {}", userPayloadDto);
             return R.ok("登陆成功", JwtTokenVo.builder().accessToken(token).build());
         } catch (Exception e) {
             log.error(e.getMessage(), e);

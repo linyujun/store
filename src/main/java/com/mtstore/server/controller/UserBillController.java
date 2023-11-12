@@ -13,12 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 /**
- * <p>
  * 用户账单，余额，积分等
- * </p>
- *
- * @author songsir
- * @since 2022-10-12
  */
 @Slf4j
 @RestController

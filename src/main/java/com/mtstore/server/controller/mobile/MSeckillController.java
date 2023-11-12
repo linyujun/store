@@ -15,10 +15,6 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-/**
-* @author songsir
-* @date 2023-05-06
-*/
 @RequiredArgsConstructor
 @RestController
 @Api(tags = "移动端-商城-秒杀模块")

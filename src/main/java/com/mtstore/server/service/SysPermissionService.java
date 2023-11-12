@@ -10,12 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * <p>
- *  系统权限
- * </p>
- *
- * @author songsir
- * @since 2022-04-02
+ *  系统角色菜单权限
  */
 public interface SysPermissionService extends IService<SysPermissionEntity> {
 

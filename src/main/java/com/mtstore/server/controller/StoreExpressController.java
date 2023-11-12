@@ -15,10 +15,6 @@ import io.swagger.annotations.*;
 import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 
-/**
-* @author songsir
-* @date 2023-05-31
-*/
 @RequiredArgsConstructor
 @Api(tags = "商城运费模板管理")
 @RestController

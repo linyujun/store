@@ -36,7 +36,7 @@ import java.math.BigDecimal;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-@Api(tags = "移动端-支付接口")
+@Api(tags = "移动端-下单支付")
 @RestController
 @RequestMapping({"/app/wx/pay"})
 @Slf4j

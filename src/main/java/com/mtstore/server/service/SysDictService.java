@@ -8,12 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * <p>
- * 系统字典表
- * </p>
- *
- * @author songsir
- * @since 2021-11-18
+ 系统字典表
  */
 public interface SysDictService extends IKService<SysDictEntity, DictDto> {
 

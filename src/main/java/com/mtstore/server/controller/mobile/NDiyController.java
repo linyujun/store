@@ -13,11 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
-/**
- * @author songsir
- * @date 2021/6/4
- **/
 @Slf4j
 @RestController
 @CrossOrigin

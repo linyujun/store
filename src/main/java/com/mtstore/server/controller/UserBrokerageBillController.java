@@ -14,10 +14,6 @@ import io.swagger.annotations.*;
 import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 
-/**
-* @author songsir
-* @date 2023-06-19
-*/
 @RequiredArgsConstructor
 @Api(tags = "用户佣金记录管理")
 @RestController

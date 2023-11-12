@@ -17,12 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 /**
- * <p>
- * 提现分润记录表
- * </p>
- *
- * @author songsir
- * @since 2022-09-20
+ * 提现记录
  */
 @Slf4j
 @RestController

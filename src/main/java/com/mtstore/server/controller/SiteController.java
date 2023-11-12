@@ -10,10 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author songsir
- * @date 2021/6/4
- **/
+
 @Api(tags="平台配置信息（免登录）")
 @RestController
 @CrossOrigin

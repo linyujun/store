@@ -16,10 +16,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 
-/**
-* @author songsir
-* @date 2023-04-19
-*/
 @RequiredArgsConstructor
 @Api(tags = "移动端-用户-收货地址管理")
 @RestController

@@ -13,6 +13,7 @@ import com.mtstore.server.beans.dto.order.OrderCartDto;
 import com.mtstore.server.beans.dto.order.OrderTotalDateVo;
 import com.mtstore.server.beans.dto.order.OrderTotalHourVo;
 import com.mtstore.server.beans.vo.OrderTotalVo;
+import com.mtstore.server.schedule.event.order.OrderPaidEvent;
 import com.mtstore.server.service.*;
 import com.mtstore.server.util.FilterUtil;
 import com.mtstore.server.util.OrderUtil;
@@ -25,6 +26,7 @@ import com.mtstore.server.beans.mapper.StoreOrderMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.transaction.annotation.Transactional;
@@ -70,6 +72,8 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
     final StoreCombinationService combinationService;
 
     final StoreBargainLogService bargainLogService;
+
+    private final ApplicationEventPublisher publisher;
 
     @Override
     public StoreOrderEntity findByOrderId(String orderId) {
@@ -203,6 +207,9 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
         log.info("订单已支付，等待发货：{}", orderEntity);
 
         orderStatusService.paid(orderId);
+
+        //支付成功，打印订单
+        publisher.publishEvent(new OrderPaidEvent(this, orderId));
     }
 
     /**

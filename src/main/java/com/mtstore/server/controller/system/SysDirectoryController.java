@@ -24,12 +24,7 @@ import java.util.List;
 
 
 /**
- * <p>
- * 目录表
- * </p>
- *
- * @author songsir
- * @since 2023-03-16
+ 目录表
  */
 @Slf4j
 @RestController

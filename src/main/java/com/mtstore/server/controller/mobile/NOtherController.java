@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-/**
- * @author songsir
- * @date 2021/6/4
- **/
 @Slf4j
 @RestController
 @CrossOrigin

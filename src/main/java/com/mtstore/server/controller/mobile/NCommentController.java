@@ -18,11 +18,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-
-/**
- * @author songsir
- * @date 2021/6/4
- **/
 @Slf4j
 @RestController
 @CrossOrigin
@@ -33,8 +28,6 @@ public class NCommentController {
     private final StoreCommentService storeCommentService;
 
     private final UserService userService;
-
-    private final StoreOrderService storeOrderService;
 
     @ApiOperation("分页查询评论数据")
     @PostMapping("/getPageList")

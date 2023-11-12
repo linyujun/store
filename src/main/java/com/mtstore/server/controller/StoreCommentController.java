@@ -15,10 +15,6 @@ import io.swagger.annotations.*;
 import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 
-/**
-* @author songsir
-* @date 2023-05-17
-*/
 @RequiredArgsConstructor
 @Api(tags = "商城商品评价管理")
 @RestController

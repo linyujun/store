@@ -14,10 +14,6 @@ import io.swagger.annotations.*;
 import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 
-/**
-* @author songsir
-* @date 2023-05-26
-*/
 @RequiredArgsConstructor
 @Api(tags = "用户标签管理")
 @RestController

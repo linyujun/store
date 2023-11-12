@@ -7,12 +7,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import java.util.List;
 
 /**
- * <p>
  * 导航栏DIY
- * </p>
- *
- * @author songsir
- * @since 2023-03-31
  */
 public interface DiyNavService extends IService<DiyNavEntity> {
 

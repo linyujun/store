@@ -18,6 +18,9 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * 生成预览二维码
+ */
 @Slf4j
 @RestController
 @RequiredArgsConstructor
@@ -37,7 +40,7 @@ public class QrCodeController {
                     dto.getPage(),
                     dto.getEnvVersion().equals("release"), dto.getEnvVersion(), dto.getWidth(), true, null, false);
 
-            return R.ok("获取成功", encodeFileToBase64Binary(data));
+            return R.ok("获取成功", encodeDataToBase64Binary(data));
         } catch (WxErrorException e) {
             e.printStackTrace();
 
@@ -45,7 +48,7 @@ public class QrCodeController {
         }
     }
 
-    private String encodeFileToBase64Binary(byte[] data){
+    private String encodeDataToBase64Binary(byte[] data){
 
         return "data:image/jpg;base64," + Base64.getEncoder().encodeToString(data);
     }

@@ -11,12 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * <p>
  * 用户账户余额表
- * </p>
- *
- * @author songsir
- * @since 2022-04-06
  */
 @Slf4j
 @RestController

@@ -13,12 +13,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * <p>
  * 租户表
- * </p>
- *
- * @author songsir
- * @since 2022-02-09
  */
 @Slf4j
 @RestController

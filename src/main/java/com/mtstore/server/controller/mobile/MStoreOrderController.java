@@ -23,10 +23,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Arrays;
 import java.util.List;
 
-/**
-* @author songsir
-* @date 2023-04-20
-*/
 @RequiredArgsConstructor
 @Api(tags = "移动端-商城-订单管理")
 @RestController

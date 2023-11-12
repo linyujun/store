@@ -13,10 +13,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @author songsir
- * @date 2021/6/4
- **/
 @Slf4j
 @Api(tags="支付回调接口")
 @RestController

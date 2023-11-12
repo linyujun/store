@@ -16,12 +16,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * <p>
- *
- * </p>
  *用户信息管理
- * @author songsir
- * @since 2021-11-23
  */
 @Slf4j
 @RestController

@@ -21,10 +21,6 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 
-/**
-* @author songsir
-* @date 2023-04-11
-*/
 @RequiredArgsConstructor
 @RestController
 @Slf4j

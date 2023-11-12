@@ -20,15 +20,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-
-/**
- * <p>
- *
- * </p>
- *
- * @author songsir
- * @since 2023-03-16
- */
 @Slf4j
 @RestController
 @RequiredArgsConstructor

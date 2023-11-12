@@ -30,7 +30,7 @@ public class MWithdrawController {
 
     @ApiOperation("提现申请-发起")
     @PostMapping("/apply")
-    public Object save(@RequestBody @Validated WithdrawDto dto) {
+    public Object apply(@RequestBody @Validated WithdrawDto dto) {
         log.info(LoggedUser.get().getUserId() + " 提现申请-发起：{}" , dto);
         return R.ok("保存成功", withdrawService.saveOrUpdate(dto));
     }

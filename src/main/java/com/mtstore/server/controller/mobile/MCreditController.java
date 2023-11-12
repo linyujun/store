@@ -15,10 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-/**
-* @author songsir
-* @date 2023-05-06
-*/
 @RequiredArgsConstructor
 @RestController
 @Api(tags = "移动端-商城-积分模块")

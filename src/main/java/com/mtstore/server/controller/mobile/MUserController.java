@@ -15,10 +15,7 @@ import org.springframework.util.Assert;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @author songsir
- * @date 2021/6/4
- **/
+
 @Slf4j
 @RestController
 @CrossOrigin

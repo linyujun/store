@@ -23,12 +23,7 @@ import java.util.stream.Collectors;
 
 
 /**
- * <p>
  * 控制面板，统计信息等
- * </p>
- *
- * @author songsir
- * @since 2022-04-05
  */
 @Slf4j
 @RestController
@@ -318,7 +313,7 @@ public class DashboardController {
     private List<LocalDateTime> getDateRange() {
         List<LocalDateTime> result = new ArrayList<>();
         LocalDateTime now = LocalDateTime.now();
-        LocalDateTime start = LocalDateTime.parse("2019-06-19T15:30:00", DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+        LocalDateTime start = LocalDateTime.parse("2023-11-19T15:30:00", DateTimeFormatter.ISO_LOCAL_DATE_TIME);
         result.add(start);
         result.add(now);
 

@@ -17,9 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author songsir
- * @since 2021-11-22
+ 商品分类实现类
  */
 @Slf4j
 @RestController

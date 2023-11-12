@@ -16,8 +16,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 
 /**
-* @author songsir
-* @date 2023-06-15
+* 打印模板
 */
 @RequiredArgsConstructor
 @RestController
