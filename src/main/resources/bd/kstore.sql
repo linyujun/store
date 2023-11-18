@@ -2854,7 +2854,7 @@ INSERT INTO `kz_sys_property` VALUES (10, 0, 'oss', '存储配置', NULL, 'oss',
 INSERT INTO `kz_sys_property` VALUES (18, 8, 'wx.pay', '小程序appid', 'wx.pay.appId', 'mAppId', '', 0, 'input', 0, 0, 1, 0, NULL, NULL, NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (19, 8, 'wx.pay', '微信支付商户号', 'wx.pay.mchId', 'mchId', '', 0, 'input', 0, 0, 2, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (20, 8, 'wx.pay', '微信支付商户密钥', 'wx.pay.mchKey', 'mchKey', '', 0, 'input', 0, 0, 3, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (21, 8, 'wx.pay', 'p12证书', 'wx.pay.keyPath', 'keyPath', 'upload/file/ae5876d1-5b45-4ab6-863c-0b206c5f0dc6.p12', 0, 'input', 0, 0, 4, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (21, 8, 'wx.pay', 'p12证书', 'wx.pay.keyPath', 'keyPath', 'cert/apiclient_cert.p12', 0, 'input', 0, 0, 4, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (22, 0, 'shopSettings', '店铺设置', NULL, 'shopSettings', NULL, 0, 'form', 0, 0, NULL, 0, '2023-03-16 11:47:33', '2023-06-26 16:38:11', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (23, 9, 'aliyun.msg', '短信服务商', NULL, 'msgOrgType', 'ALIYUN', 0, 'radio', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (24, 9, 'aliyun.msg', 'AccessKeyID', NULL, 'accessKeyId', 'LTAI5t7JR7wwTXgZ32gJaen6', 0, 'input', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
