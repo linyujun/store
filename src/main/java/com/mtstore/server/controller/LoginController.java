@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.core.plugins.IgnoreStrategy;
 import com.baomidou.mybatisplus.core.plugins.InterceptorIgnoreHelper;
 import com.mtstore.server.beans.common.R;
 import com.mtstore.server.beans.dto.login.AdminLoginDto;
-import com.mtstore.server.beans.dto.login.GetMobileDto;
 import com.mtstore.server.beans.dto.login.MsgDto;
 import com.mtstore.server.beans.dto.login.SwitchUserDto;
 import com.mtstore.server.beans.dto.user.MockLoginDto;
@@ -18,7 +17,6 @@ import com.mtstore.server.schedule.event.user.UserRegisterEvent;
 import com.mtstore.server.service.LoginService;
 import com.mtstore.server.service.SendMsgService;
 import com.mtstore.server.util.RedisUtil;
-import com.mtstore.server.util.aliyun.AliyunKeyLoginUtil;
 import com.mtstore.server.util.helper.JwtHelper;
 import com.wf.captcha.SpecCaptcha;
 import com.wf.captcha.base.Captcha;
@@ -136,7 +134,7 @@ public class LoginController {
             }
             // 账号密码登录
             if (null != user.getUsername()) {
-                if (limit > 3) {
+                if (limit > 10) {
                     if (null == user.getCsrfToken()) {
                         throw new RuntimeException("CSRF必填");
                     }
@@ -207,20 +205,6 @@ public class LoginController {
         log.info("发送短信验证码 request {}", msgDto);
 
         return R.ok("发送成功", sendMsgService.test(msgDto.getPhone()));
-    }
-
-    /**
-     * 发送短信
-     * @param msgDto
-     * @return
-     */
-    @PostMapping("/getMobile")
-    @ApiOperation("一键登录Token换手机号")
-    public Object GetMobile(@RequestBody @Validated GetMobileDto msgDto){
-        log.info("一键登录Token换手机号 request {}", msgDto);
-        String mobile = AliyunKeyLoginUtil.getMobile(msgDto.getAccessToken());
-
-        return R.ok("获取成功", mobile);
     }
 
     /**
