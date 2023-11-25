@@ -59,11 +59,11 @@ public class OrderListener {
             if (null != templateEntity && null != printerEntity) {
                 OrderEntity orderEntity = orderService.findByOrderId(orderId);
                 StoreOrderEntity storeOrderEntity = storeOrderService.getByOrderId(orderId);
-                String result = feiEPrinterService.print(printerEntity.getSnId(),
-                        printerEntity.getAppKey(),
-                        printerEntity.getAppSecret(),
-                        getTemplate(templateEntity.getTemplate(), storeOrderEntity));
-                log.info("打印结果 {}", result);
+//                String result = feiEPrinterService.print(printerEntity.getSnId(),
+//                        printerEntity.getAppKey(),
+//                        printerEntity.getAppSecret(),
+//                        getTemplate(templateEntity.getTemplate(), storeOrderEntity));
+//                log.info("打印结果 {}", result);
             }
         };
     }
