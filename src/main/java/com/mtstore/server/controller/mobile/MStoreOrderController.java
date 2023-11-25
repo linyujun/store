@@ -32,10 +32,6 @@ public class MStoreOrderController {
 
     private final StoreOrderService storeOrderService;
 
-    private final StoreOrderDetailService storeOrderDetailService;
-
-    private final StoreOrderStatusService storeOrderStatusService;
-
     @GetMapping("{id}")
     @ApiOperation("查询商城订单")
     public Object getOne(@PathVariable("id") String orderId){

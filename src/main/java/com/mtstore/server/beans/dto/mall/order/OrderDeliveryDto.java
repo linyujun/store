@@ -14,14 +14,14 @@ public class OrderDeliveryDto {
     private String orderId;
 
     @ApiModelProperty("快递公司")
-    @NotBlank(message = "快递公司必填")
+    //@NotBlank(message = "快递公司必填")
     private String deliveryCompany;
 
     @ApiModelProperty("快递公司识别码")
-    @NotBlank(message = "快递公司识别码必填")
+    //@NotBlank(message = "快递公司识别码必填")
     private String deliveryId;
 
     @ApiModelProperty("快递单号")
-    @NotBlank(message = "快递单号必填")
+    //@NotBlank(message = "快递单号必填")
     private String deliveryNo;
 }

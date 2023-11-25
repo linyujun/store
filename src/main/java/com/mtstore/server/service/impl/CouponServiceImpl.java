@@ -105,10 +105,11 @@ public class CouponServiceImpl extends ServiceImpl<StoreCouponMapper, CouponEnti
 
     @Override
     public CouponEntity findCouponByUserId(Integer userId, Integer userCouponId) {
-        //TODO 需要检查
+        //TODO 需要检查 未使用
         QueryWrapper<UserCouponEntity> queryWrapper = new QueryWrapper<>();
         UserCouponEntity userCouponEntity = userCouponService.getOne(queryWrapper.lambda()
                 .eq(UserCouponEntity::getUid, userId)
+                .eq(UserCouponEntity::getStatus, 0)
                 .eq(UserCouponEntity::getId, userCouponId));
 
         return Optional.ofNullable(userCouponEntity)

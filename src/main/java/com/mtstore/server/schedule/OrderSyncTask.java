@@ -29,7 +29,7 @@ public class OrderSyncTask {
 
     /**
      * 主动同步订单支付状态
-     * 2秒一次处理订单队列
+     * 一分钟刷一次处理订单队列
      */
     public void syncQueueOrder() {
         List<OrderQueueEntity>  results = orderQueueService.selectQueueInFiveMinute();

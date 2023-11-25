@@ -22,6 +22,8 @@ public interface UserCouponService extends IKService<UserCouponEntity, UserCoupo
      */
     UserCouponEntity save(Integer userId, CouponEntity coupon, String obtainType);
 
+    void used(Integer id);
+
     /**
      * 过期检测
      */

@@ -69,6 +69,8 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
 
     final UserBillService userBillService;
 
+    final UserCouponService userCouponService;
+
     final StoreCombinationService combinationService;
 
     final StoreBargainLogService bargainLogService;
@@ -150,6 +152,10 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
                 if (userCredit.compareTo(orderEntity.getTotalCredit()) < 0) {
                     throw new RuntimeException("订单创建失败，用户积分不足");
                 }
+            }
+            if (null != dto.getCouponId()) {
+                //锁住优惠券
+                userCouponService.used(dto.getCouponId());
             }
             StoreCartEntity cartEntity = cartList.stream().findFirst().orElse(null);
             OrderActivityDto activityInfo = BeanUtil.copyProperties(cartEntity, OrderActivityDto.class);

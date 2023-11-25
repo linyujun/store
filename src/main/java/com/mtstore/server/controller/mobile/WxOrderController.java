@@ -177,6 +177,7 @@ public class WxOrderController {
                 .build();
 
         WxPayMpOrderResult wxPayMpOrderResult = wxPayService.createOrder(wxPayUnifiedOrderRequest);
+        log.info(LoggedUser.get().getUserId() + " 创建微信预订单结果: {}", wxPayMpOrderResult);
         SortedMap orderInfo = convertToSortedMap(wxPayMpOrderResult);
         orderInfo.put("package", wxPayMpOrderResult.getPackageValue());
         orderInfo.put("orderId", orderId);

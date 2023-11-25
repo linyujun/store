@@ -40,10 +40,18 @@ public class UserCouponServiceImpl extends ServiceImpl<UserCouponMapper, UserCou
         entity.setStatus(0);
         entity.setUuid(uuid);
         entity.setStatusDesc("未使用");
-        entity.setCouponId(coupon.getId());
         saveOrUpdate(entity);
 
         return entity;
+    }
+
+    @Override
+    public void used(Integer id) {
+        lambdaUpdate()
+                .eq(UserCouponEntity::getId, id)
+                .set(UserCouponEntity::getStatus, 1)
+                .set(UserCouponEntity::getStatusDesc, "已使用")
+                .update();
     }
 
     @Override
@@ -61,7 +69,7 @@ public class UserCouponServiceImpl extends ServiceImpl<UserCouponMapper, UserCou
         return lambdaQuery()
                 .eq(UserCouponEntity::getCouponId, couponId)
                 .eq(UserCouponEntity::getUid, userId)
-                .eq(UserCouponEntity::getStatus, 0)
+                //.eq(UserCouponEntity::getStatus, 0)
                 .count();
     }
 }
