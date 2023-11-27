@@ -2857,8 +2857,8 @@ INSERT INTO `kz_sys_property` VALUES (20, 8, 'wx.pay', '微信支付商户密钥
 INSERT INTO `kz_sys_property` VALUES (21, 8, 'wx.pay', 'p12证书', 'wx.pay.keyPath', 'keyPath', 'cert/apiclient_cert.p12', 0, 'input', 0, 0, 4, 0, '2023-03-16 11:33:24', '2023-05-30 20:49:06', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (22, 0, 'shopSettings', '店铺设置', NULL, 'shopSettings', NULL, 0, 'form', 0, 0, NULL, 0, '2023-03-16 11:47:33', '2023-06-26 16:38:11', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (23, 9, 'aliyun.msg', '短信服务商', NULL, 'msgOrgType', 'ALIYUN', 0, 'radio', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (24, 9, 'aliyun.msg', 'AccessKeyID', NULL, 'accessKeyId', 'LTAI5t7JR7wwTXgZ32gJaen6', 0, 'input', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (25, 9, 'aliyun.msg', 'AccessKeySecret', NULL, 'accessSecret', 'OvLcLDVgzqN7SMggHMLVcwMjcZhCxk', 0, 'password', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (24, 9, 'aliyun.msg', 'AccessKeyID', NULL, 'accessKeyId', '', 0, 'input', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (25, 9, 'aliyun.msg', 'AccessKeySecret', NULL, 'accessSecret', '', 0, 'password', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (26, 9, 'aliyun.msg', '模板CODE', NULL, 'templateCode', 'SMS_217965520', 0, 'input', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (27, 9, 'aliyun.msg', '短信签名', NULL, 'signName', '千栈', 0, 'input', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (28, 9, 'aliyun.msg', '区域Id', NULL, 'regionId', 'cn-hangzhou', 0, 'input', 0, 0, NULL, 0, '2023-03-21 09:31:11', '2023-03-21 09:36:52', NULL, 1, 0);
@@ -2904,8 +2904,8 @@ INSERT INTO `kz_sys_property` VALUES (98, 95, 'print', '订单打印方式', NUL
 INSERT INTO `kz_sys_property` VALUES (99, 95, 'print', '开启打印', NULL, 'printSwitch', '1', 0, 'switch', 0, 0, 1, 0, '2023-06-16 14:28:54', '2023-06-16 14:29:26', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (107, 10, 'oss', '区域', NULL, 'region', 'oss-cn-hangzhou', 0, 'select', 0, 0, 2, 1, '2023-06-26 14:17:29', '2023-06-26 14:33:13', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (108, 10, 'oss', 'bucket', NULL, 'bucket', 'kmp-oss', 0, 'input', 0, 0, 3, 1, '2023-06-26 14:17:29', '2023-06-26 14:33:13', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (109, 10, 'oss', 'accessKeyId', NULL, 'oAccessKeyId', 'LTAI5t7JR7wwTXgZ32gJaen6', 0, 'input', 0, 0, 4, 1, '2023-06-26 14:19:40', '2023-06-26 14:33:13', NULL, 1, 0);
-INSERT INTO `kz_sys_property` VALUES (110, 10, 'oss', 'accessKeySecret', NULL, 'oAccessKeySecret', 'OvLcLDVgzqN7SMggHMLVcwMjcZhCxk', 0, 'password', 0, 0, 5, 1, '2023-06-26 14:19:40', '2023-06-26 14:33:13', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (109, 10, 'oss', 'accessKeyId', NULL, 'oAccessKeyId', '', 0, 'input', 0, 0, 4, 1, '2023-06-26 14:19:40', '2023-06-26 14:33:13', NULL, 1, 0);
+INSERT INTO `kz_sys_property` VALUES (110, 10, 'oss', 'accessKeySecret', NULL, 'oAccessKeySecret', '', 0, 'password', 0, 0, 5, 1, '2023-06-26 14:19:40', '2023-06-26 14:33:13', NULL, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (118, 10, 'oss', '存储引擎', NULL, 'oEngine', 'oss', 0, 'radio', 0, 0, 1, 1, '2023-06-26 14:33:12', '2023-06-26 14:33:12', 1, 1, 0);
 INSERT INTO `kz_sys_property` VALUES (119, 22, 'shopSettings', '副主题色', NULL, 'secondColor', '#FFBD41', 0, 'color', 0, 0, 5, 1, '2023-06-26 16:38:12', '2023-06-26 16:38:12', 1, 1, 0);
 
