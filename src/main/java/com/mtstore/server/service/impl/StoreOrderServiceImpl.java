@@ -1,10 +1,13 @@
 package com.mtstore.server.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
 import com.alibaba.excel.EasyExcel;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import com.mtstore.server.beans.dto.express.ExpressInfo;
 import com.mtstore.server.beans.dto.filter.PageDto;
 import com.mtstore.server.beans.dto.logged.LoggedUser;
@@ -25,7 +28,12 @@ import com.mtstore.server.beans.enums.*;
 import com.mtstore.server.beans.mapper.StoreOrderMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import me.chanjar.weixin.common.error.WxErrorException;
+import me.chanjar.weixin.common.util.json.GsonParser;
+import me.chanjar.weixin.open.api.WxOpenService;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -76,6 +84,11 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
     final StoreBargainLogService bargainLogService;
 
     private final ApplicationEventPublisher publisher;
+
+    @Autowired
+    final WxOpenService wxOpenService;
+    private final OrderService orderService;
+    final SysPropertyService sysPropertyService;
 
     @Override
     public StoreOrderEntity findByOrderId(String orderId) {
@@ -249,6 +262,64 @@ public class StoreOrderServiceImpl extends ServiceImpl<StoreOrderMapper, StoreOr
         saveOrUpdate(orderEntity);
 
         orderStatusService.send(orderId);
+        wxDeliverySend(orderEntity);
+    }
+
+    private static long lastTokenTime = 0;
+    private static long expiresIn = 0;
+    private static String accessToken;
+    private static final String TOKEN_URL = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential";
+    private static final String SHIPPING_URL = "https://api.weixin.qq.com/wxa/sec/order/upload_shipping_info?access_token=";
+    private void wxDeliverySend(StoreOrderEntity orderEntity) {
+        try {
+            if ((System.currentTimeMillis() - lastTokenTime) > (expiresIn * 1000) / 2) {
+                Map<String, Object> mapConfig = sysPropertyService.getFormData("wx.miniapp");
+                String appid = mapConfig.get("appId").toString();
+                String secret = mapConfig.get("secret").toString();
+                String tokenString = wxOpenService.get(TOKEN_URL + "&appid=" + appid + "&secret=" + secret, null);
+                JsonObject token = GsonParser.parse(StringUtils.defaultString(tokenString, "{}"));
+                accessToken = token.get("access_token").getAsString();
+                expiresIn = token.get("expires_in").getAsInt();
+                lastTokenTime = System.currentTimeMillis();
+                log.info("获取接口调用凭据：" + tokenString);
+            }
+
+            String url =  SHIPPING_URL + accessToken ;
+
+            JsonObject reqJsonObject = new JsonObject();
+            reqJsonObject.addProperty("delivery_mode" ,"1");
+            reqJsonObject.addProperty("logistics_type","2");
+            reqJsonObject.addProperty("upload_time", DateUtil.format(new Date(), "yyyy-MM-dd'T'HH:mm:ssXXX"));
+
+            JsonObject orderKey = new JsonObject();
+            OrderEntity oe = orderService.findByOrderId(orderEntity.getOrderId());
+            if (oe != null) {
+                orderKey.addProperty("order_number_type", "2");
+                orderKey.addProperty("transaction_id", oe.getTransactionId());
+                reqJsonObject.add("order_key", orderKey);
+            }
+
+            JsonObject payer = new JsonObject();
+            UserEntity userEntity = userService.getById(orderEntity.getUid());
+            if (userEntity != null) {
+                payer.addProperty("openid", userEntity.getOpenId());
+                reqJsonObject.add("payer", payer);
+            }
+
+            JsonArray shippingList = new JsonArray();
+            JsonObject sp = new JsonObject();
+            sp.addProperty("item_desc", orderEntity.getProductInfo());
+            JsonObject contact = new JsonObject();
+            contact.addProperty("consignor_contact", "182****8822");
+            sp.add("contact", contact);
+            shippingList.add(sp);
+            reqJsonObject.add("shipping_list", shippingList);
+
+            String response = wxOpenService.post(url, reqJsonObject.toString());
+            log.info("微信发货信息录入接口返回：" + response);
+        } catch (WxErrorException e) {
+            log.error("微信发货信息录入接口错误：" + e.getMessage());
+        }
     }
 
     /**
