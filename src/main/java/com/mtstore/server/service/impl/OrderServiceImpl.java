@@ -59,7 +59,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, OrderEntity> impl
         OrderEntity orderEntity = Optional.ofNullable(findByOrderId(orderId)).orElse(new OrderEntity());
         orderQueueService.saveOrUpdateByOrderId(orderId);
         orderEntity.setOrderId(orderId)
-                .setPrepayId(null)
+                .setPrepayId(orderResult.getPackageValue())
                 .setOpenId(LoggedUser.get().getOpenId())
                 .setTotal(total)
                 .setBizType(bizType)

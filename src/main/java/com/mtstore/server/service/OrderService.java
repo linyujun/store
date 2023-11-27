@@ -70,9 +70,10 @@ public interface OrderService extends IService<OrderEntity> {
      * 订单退款
      * @param orderId
      */
-    default void refundOrder(String orderId) {
+    default void refundOrder(String orderId, String refundId) {
         UpdateWrapper updateWrapper = new UpdateWrapper();
         updateWrapper.eq("order_id", orderId);
+        updateWrapper.set("refund_id", refundId);
         updateWrapper.set("status", 5);
         updateWrapper.set("status_desc", "订单已退款");
 

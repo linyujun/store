@@ -215,7 +215,7 @@ public class WxOrderService {
                 throw new RuntimeException("退款失败，请联系系统管理员查看原因！");
             }
             if (result.getResultCode().equalsIgnoreCase("SUCCESS")) {
-                orderService.refundOrder(orderId);
+                orderService.refundOrder(orderId, refundId);
             }
         } catch (WxPayException e) {
             e.printStackTrace();
